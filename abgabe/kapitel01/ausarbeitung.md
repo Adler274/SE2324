@@ -402,3 +402,11 @@ Daraus folgen diese Kompetenz-Bereiche für Soft skills:
    * Was ist ein Software-Ingenieur?
    * Welche Eigenschaften besitzt ein idealer Software-Ingenieur (Kommunikationsfähigkeit, Neugier, etc.)
 
+## Verteilte SoftwareSysteme
+
+Lernziele:
+* Eigenschaften, Vorteile, Nachteile
+* Motivation (Warum man Verteilung braucht)
+* Distributed vs decentralized
+* Concurrent vs parallel
+
