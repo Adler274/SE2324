@@ -1,6 +1,6 @@
 # Kapitelüberschrift
 
-**Autor:** Simon Fedrau
+**Autor:** Simon Fedrau, Jannis Wilmsmeier, Sascha Hahn
 
 
 # Systemarchitektur verteilter Softwaresysteme
@@ -25,6 +25,8 @@ Datenbanken und stellt E-Mail-Clients die erforderlichen Informationen zur Verf�
 [3]
 #### Web Architekturen
 
+* Einfach ausgedrückt, ist die Architektur einer Webanwendung eine Übersicht darüber, wie die verschiedenen Komponenten deiner Webanwendung miteinander interagieren.
+
 ##### PWA vs SPA vs MPA
 
 PWA (Progressive Web App): PWAs sind webbasierte Anwendungen, die eine App-ähnliche Erfahrung bieten. Sie zeichnen sich durch Ressourceneffizienz, Offline-Fähigkeiten, Push-Benachrichtigungen und schnelle Ladezeiten aus. PWAs sind auf verschiedenen Geräten und Betriebssystemen nutzbar.
@@ -41,7 +43,7 @@ Seitennavigation: PWAs können sowohl dynamische als auch mehrseitige Navigation
 SEO-Freundlichkeit: PWAs und MPAs können SEO-freundlich sein, während SPAs möglicherweise zusätzliche Maßnahmen benötigen. MPAs sind von Natur aus SEO-freundlich.
 Komplexität: PWAs und SPAs sind in der Regel komplexer, da sie Technologien und Frameworks nutzen, während MPAs einfacher in Entwicklung und Wartung sind.
 Offline-Fähigkeit: PWAs sind auf die Offline-Nutzung ausgerichtet, während SPAs und MPAs möglicherweise zusätzlichen Aufwand erfordern.
-[4]
+[4-5]
 
 ### Peer to peer
 
@@ -321,16 +323,17 @@ Z-Achse (Datenpartitionierung): Daten werden in separate Partitionen aufgeteilt,
 [2] :https://www.heise.de/blog/Was-ist-Architektur-4931898.html
 [3] :https://www.fonial.de/wissen/begriff/client-server-modell/
 [4] :https://www.linkedin.com/pulse/mpa-spa-pwa-whats-difference-how-does-work-together-marek-kubacak 
-[5] :https://innowise-group.com/de/blog/best-software-architecture-patterns/
-[6] :https://en.wikipedia.org/wiki/Event-driven_architecture 
-[7] :https://nordicapis.com/whats-the-difference-between-event-brokers-and-message-queues/
-[8] :https://www.redhat.com/de/topics/integration/what-is-event-driven-architecture
-[9] :https://www.sciencedirect.com/science/article/abs/pii/S0306437920300028
-[10]:https://scoutapm.com/blog/distributed-monoliths-vs-microservices
-[11]:https://camunda.com/blog/2023/02/orchestration-vs-choreography/
-[12]:https://www.redhat.com/de/topics/microservices/what-is-a-service-mesh
-[13]:https://www.designgurus.io/blog/Load-Balancer-Reverse-Proxy-API-Gateway
-[14]:https://www.singlestore.com/blog/database-sharding-vs-partitioning-whats-the-difference/
-[15]:https://www.enjoyalgorithms.com/blog/types-of-load-balancing-algorithms
-[16]:https://www.geeksforgeeks.org/caching-system-design-concept-for-beginners/
-[17]:Quelle: https://www.geeksforgeeks.org/the-scale-cube/
+[5] :https://kinsta.com/de/blog/web-anwendungs-architektur/
+[6] :https://innowise-group.com/de/blog/best-software-architecture-patterns/
+[7] :https://en.wikipedia.org/wiki/Event-driven_architecture 
+[8] :https://nordicapis.com/whats-the-difference-between-event-brokers-and-message-queues/
+[9] :https://www.redhat.com/de/topics/integration/what-is-event-driven-architecture
+[10] :https://www.sciencedirect.com/science/article/abs/pii/S0306437920300028
+[11]:https://scoutapm.com/blog/distributed-monoliths-vs-microservices
+[12]:https://camunda.com/blog/2023/02/orchestration-vs-choreography/
+[13]:https://www.redhat.com/de/topics/microservices/what-is-a-service-mesh
+[14]:https://www.designgurus.io/blog/Load-Balancer-Reverse-Proxy-API-Gateway
+[15]:https://www.singlestore.com/blog/database-sharding-vs-partitioning-whats-the-difference/
+[16]:https://www.enjoyalgorithms.com/blog/types-of-load-balancing-algorithms
+[17]:https://www.geeksforgeeks.org/caching-system-design-concept-for-beginners/
+[18]:Quelle: https://www.geeksforgeeks.org/the-scale-cube/
