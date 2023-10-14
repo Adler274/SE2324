@@ -75,7 +75,7 @@ Auch bekannt als Architekturmuster oder Entwurfsmuster, sind erprobte Lösungsan
   - Anwendungsbespiel wären Web Architekturen
 
 ![:scale 80%](media/Client-Server.jpg)
-
+[3,17]
 ---
 ## Web Architekturen
 ***
@@ -98,7 +98,7 @@ Auch bekannt als Architekturmuster oder Entwurfsmuster, sind erprobte Lösungsan
 | **PWA** | Apps laufen sehr flüssig und bieten plattformübergreifende Kompatibilität, Die Skalierbarkeit ist einfach, Offline-Zugriff und gerätenative APIs wie Background Worker und Push-Benachrichtigungen sind für Entwickler/innen zugänglich | Es gibt eine begrenzte Unterstützung für Linkmanagement und SEO, Die Übertragung von Updates auf Offline-PWAs ist komplexer als bei nativen Apps |
 | **SPA** | SPAs sind einfach zu skalieren, ie Optimierung von SPAs für die Leistung erfordert keinen großen Aufwand, Du kannst hochgradig interaktive Webanwendungen erstellen,  | SPAs schränken die Flexibilität bei Hyperlinks und SEO ein, Das anfängliche Rendern ist in der Regel langsam, Die Navigation durch die App kann unintuitiv sein |
 | **MPA** | MPA sind tendenziell besser für SEO, da jede Seite eine eindeutige URL hat,  MPA bieten eine traditionelle Navigationsstruktur mit klaren Seitentrennungen, die für Benutzer vertraut ist, Da nur der Inhalt einer Seite geladen wird, sind MPA oft schneller beim initialen Laden | Die Entwicklung von MPA kann komplexer sein, da Entwickler sich mit der Handhabung von Seitennavigation und -zuständen befassen müssen, MPAs sind weniger geeignet für dynamische Inhalte, die häufige Aktualisierungen erfordern, ohne die gesamte Seite neu zu laden |  | 
-
+[4,5,17]
 ---
 ## Systemarchitekturmuster Peer to Peer
 ***
@@ -108,7 +108,7 @@ Beispiele:
 - Filesharing-Netzwerken wie BitTorrent oder das ursprüngliche Napster
 
 - Internet of Things, in einigen IoT-Anwendungen kommunizieren IoT-Geräte direkt miteinander über P2P-Netzwerke, um Daten auszutauschen und Aufgaben zu automatisieren
-
+[2,5,17]
 ---
 # Event Driven Architecture
 ***
@@ -120,6 +120,7 @@ Event-Driven Architecture (EDA), ist ein architektonisches Muster, bei dem die K
 - Message Broker
 - ESB vs Message Broker
 
+[6,17]
 ---
 ## Event Types
 ***
@@ -146,6 +147,7 @@ Funktionalität:
 - ESB ist eine umfassende Integrationsplattform, die verschiedene Anwendungen miteinander verknüpft und Nachrichtenvermittlung, Routing und umfangreiche Nachrichtenverarbeitungsfunktionen bietet.
 - Message Queues sind Mechanismen zur Nachrichtenvermittlung und Fokussieren sich darauf, Nachrichten temporär zu speichern und zu übertragen, um eine zuverlässige Kommunikation zwischen Anwendungen zu ermöglichen.
 
+[7,17]
 ---
 
 ## ESB vs Message Queue 
@@ -155,6 +157,8 @@ Funktionalität:
 Gemeinsamkeiten: 
 
 Trotz dieser Unterschiede weisen beide Technologien einige Gemeinsamkeiten auf, darunter die Entkopplung, Nachrichtenvermittlung, Skalierbarkeit und Fehlertoleranz. Diese Merkmale sind für viele ereignisgesteuerte Architekturen von großer Bedeutung.
+
+[7,17]
 ---
 
 ## Anwendunsbeispiele Event Type, ESB, Message Broker 
@@ -223,6 +227,7 @@ Service-Oriented Architecture ist ein Softwareentwurfsansatz, bei dem Softwarefu
 
 - Service Discovery ist von großer Bedeutung in einer SOA und anderen verteilten Systemen. Dieser Prozess bezieht sich darauf, wie Dienste in einem verteilten Netzwerk automatisch identifiziert und aufgefunden werden. In SOA ist Service Discovery entscheidend, um Dienste zu entdecken, auf sie zuzugreifen und sie in Anwendungen zu verwenden.
 
+[9,17]
 ---
 
 ## Microservices
@@ -247,6 +252,7 @@ Kommunikation
 
  - Microservices: Dienste kommunizieren über definierte APIs, oft über HTTP-REST oder Messaging-Protokolle.
 
+[10,17]
 ---
 ## Monolith vs. Distributed Monolith vs. Microservice
 ***
@@ -259,6 +265,7 @@ Fazit
 
 Monolithen sind einfacher und schneller zu entwickeln, haben jedoch Schwierigkeiten bei der Skalierung und Wartung. Distributed Monoliths sind eine Möglichkeit, eine größere Anwendung auf mehrere Server zu verteilen, behalten jedoch einige Nachteile von Monolithen bei. Microservices bieten Flexibilität und Skalierbarkeit, erfordern jedoch mehr Entwicklungs- und Wartungsaufwand. Die Entscheidung sollte auf Grundlage der Projektanforderungen, der Teamfähigkeiten und der Zukunftsaussichten getroffen werden.
 
+[10,17]
 ---
 ## Choreography Pattern
 ***
@@ -270,6 +277,7 @@ Monolithen sind einfacher und schneller zu entwickeln, haben jedoch Schwierigkei
 
 - Häufig in Microservices-Architekturen verwendet.
 
+[11,17]
 ---
 
 ## Orchestration Pattern
@@ -283,6 +291,7 @@ Monolithen sind einfacher und schneller zu entwickeln, haben jedoch Schwierigkei
 
 - In BPM, Workflow-Systemen und Service-Oriented Architecture eingesetzt.
 
+[11,17]
 ---
 ## Choreography Pattern vs Orchestration Pattern
 ***
@@ -296,6 +305,7 @@ Die Wahl zwischen Choreography und Orchestration hängt von den spezifischen Anf
 Trotz dieser Unterschiede haben beide Muster gemeinsame Ziele
 Die Organisation und Steuerung der Zusammenarbeit und Interaktion zwischen Diensten oder Komponenten in verteilten Systemen.
 
+[11,17]
 ---
 
 ## Service Mesh
@@ -306,6 +316,7 @@ Ein Service Mesh ist eine spezielle Komponente in Microservices-Architekturen. E
 Bsp:
   Sie betreiben ein E-Commerce-System, das auf einer Microservices-Architektur basiert. In diesem System gibt es verschiedene Dienste, wie den Benutzerservice, den Produktservice und den Bestellungsservice, die miteinander interagieren müssen. Ein Service Mesh unterstützt Sie bei der Verwaltung dieser Interaktionen.
 
+[12,17]
 ---
 
 ## Systemdesign
@@ -331,18 +342,21 @@ Systemdesign beinhaltet architektonische Entscheidungen darüber, wie verschiede
 
 Ein Skaliermuster bezieht sich auf bewährte Praktiken und Techniken, die verwendet werden, um die Skalierbarkeit eines Systems zu ermöglichen oder zu verbessern. Die Skalierbarkeit eines Systems bezieht sich auf seine Fähigkeit, eine wachsende Anzahl von Benutzern, Daten oder Lasten zu bewältigen, ohne dass die Leistung erheblich beeinträchtigt wird. Skaliermuster dienen dazu, die Struktur und die Komponenten eines Systems so zu gestalten, dass es in der Lage ist, mit steigender.
 
+[17]
 ---
 
 ## Horizontale Skalierung
 ***
 Bei diesem Muster werden zusätzliche Ressourcen hinzugefügt, indem mehr Server oder Instanzen eines Dienstes bereitgestellt werden. Dies erhöht die Kapazität des Systems, indem die Last auf mehrere Ressourcen verteilt wird. Es ist besonders nützlich für Systeme, die viele parallele Anfragen verarbeiten müssen.
 
+[17]
 ---
 ## Vertikale Skalierung
 ***
 
 Hierbei wird die Leistungsfähigkeit einer vorhandenen Ressource durch Hinzufügen von CPU, RAM oder anderen Ressourcen erhöht. Dies ist effektiv, wenn ein einzelner Server oder eine einzelne Instanz mehr Last bewältigen muss.
 
+[17]
 ---
 
 ## Horizontale Skalierung vs vertikale Skalierung
@@ -350,7 +364,7 @@ Hierbei wird die Leistungsfähigkeit einer vorhandenen Ressource durch Hinzufüg
 
 Sowohl horizontale als auch vertikale Skalierung sind Skalierungsstrategien, die darauf abzielen, die Leistungsfähigkeit und Kapazität eines Systems zu erhöhen, um mehr Benutzer, Daten oder Lasten zu bewältigen.
 
-
+[17]
 ---
 
 ## Replication
@@ -368,6 +382,7 @@ Der Begriff "Partitioning" und "Sharding" werden oft synonym verwendet, da beide
 
 - Sharding ist ein spezifischer Begriff im Kontext von Datenbanken. Sharding bezieht sich auf die Aufteilung von Datenbankdatensätzen in separate Server oder Datenbankinstanzen (Shards) basierend auf einem Schlüsselwert, wie z. B. Benutzername oder Region. In Sharding-Szenarien müssen Mechanismen zur Synchronisation und Aufrechterhaltung der Konsistenz zwischen den Shards implementiert werden.
 
+[14,17]
 ---
 ## Load Balancing
 ***
@@ -377,20 +392,18 @@ Load Balancing ist eine Technik im Systemdesign und in der Netzwerkarchitektur. 
 
 ## Round Robin und andere Algorithmen
 ***
-- Round Robin: Dieser Algorithmus verteilt den Datenverkehr gleichmäßig auf eine Liste von Servern oder Ressourcen. Jede Anfrage wird nacheinander an den nächsten Server in der Liste weitergeleitet. Nachdem der letzte Server erreicht ist, beginnt der Zyklus von vorne. Round Robin ist eine einfache und effektive Methode, berücksichtigt jedoch nicht die aktuelle Auslastung der Server. 
+- Round Robin: Dieser Algorithmus verteilt den Datenverkehr gleichmäßig auf eine Liste von Servern oder Ressourcen. Jede Anfrage wird nacheinander an den nächsten Server in der Liste weitergeleitet. 
 
 - Least Connections (Wenigste Verbindungen): Bei diesem Algorithmus werden Anfragen an den Server mit der geringsten Anzahl aktiver Verbindungen weitergeleitet. Dies gewährleistet, dass weniger ausgelastete Server priorisiert werden und ist hilfreich, wenn die Server unterschiedliche Lasten aufweisen.
 
 - IP-Hash: Bei diesem Ansatz wird die IP-Adresse des Clients zur Ermittlung des Zielservers verwendet. Dies sorgt dafür, dass ein bestimmter Client bei wiederholten Anfragen immer zum gleichen Server weitergeleitet wird. Dies kann wichtig sein, wenn Sitzungsinformationen oder zustandsbezogene Daten auf dem Server gespeichert sind
 
-- Random (Zufällig): Es wird zufällig ausgewählt
-
+[15,17]
 ---
 
 ## Caching
 *** 
-Caching im Kontext von Skalierungsmustern bedeutet, häufig verwendete Daten vorübergehend zu speichern, um den Zugriff zu beschleunigen und die Belastung der ursprünglichen Datenquelle zu verringern. Dies verbessert die Leistung und Skalierbarkeit von Systemen, indem wiederholte Anfragen schneller bedient werden. Caching wird häufig in Webanwendungen, Datenbanken und anderen Systemen eingesetzt, um Antwortzeiten zu optimieren und Ressourcen effizient zu nutzen.
-Es gibt verschiedene Arten von Caching, wie "Lokales Caching", "Verteiltes Caching" und "Hierarchisches Caching". Diese Ansätze beschreiben, wie das Caching im System organisiert ist.
+Caching bedeutet, häufig verwendete Daten vorübergehend zu speichern, um den Zugriff zu beschleunigen und die Belastung der ursprünglichen Datenquelle zu verringern. Das verbessert die Leistung und Skalierbarkeit von Systemen, indem wiederholte Anfragen schneller bedient werden.
 
 - Bei Local Caching wird der Cache auf einer einzelnen lokalen Maschine oder einem Server gespeichert.
 - Beim Distributed Caching wird der Cache über mehrere Server oder Knoten im Netzwerk verteilt.
@@ -398,13 +411,52 @@ Es gibt verschiedene Arten von Caching, wie "Lokales Caching", "Verteiltes Cachi
 - Hierarchical Caching beinhaltet eine Kombination aus Local und Distributed Caching in einem hierarchischen Aufbau.
 - Ein Content Delivery Network ist eine spezialisierte Form des verteilten Cachings, das auf die Bereitstellung von Inhalten, wie   Bilder, Videos und Webseiten, spezialisiert ist. 
 
+[17,18]
 ---
 
 ## Skalierungswürfel
 ***
-Der Skalierungswürfel (Scale Cube) ist ein Konzept im Systemdesign von Martin Fowler, einem renommierten Softwarearchitekten. Er dient dazu, die verschiedenen Dimensionen der Skalierung zu verstehen und zu planen. Der Würfel unterteilt die Skalierung in drei Hauptdimensionen:
-X-Achse (Horizontale Skalierung): Zusätzliche Instanzen oder Server werden hinzugefügt, um die Last zu verteilen, was in Cloud-Umgebungen zur Bewältigung von Lastspitzen und zur Steigerung der Ausfallsicherheit verwendet wird.
-Y-Achse (Funktionale Aufteilung): Die Anwendung wird in separate Funktionen oder Dienste aufgeteilt, um die Skalierbarkeit und Wartbarkeit zu verbessern. Jeder Dienst kann unabhängig skaliert und gewartet werden.
-Z-Achse (Datenpartitionierung): Daten werden in separate Partitionen aufgeteilt, um die Leistung und Skalierbarkeit der Datenverarbeitung zu steigern. Dies kann durch Sharding oder Replikation erfolgen, um große Datenmengen zu bewältigen.
+-  X-Achse (Horizontale Skalierung)
+Zusätzliche Instanzen oder Server werden hinzugefügt, um die Last zu verteilen.
+In Cloud-Umgebungen zur Bewältigung von Lastspitzen und zur Steigerung der Ausfallsicherheit verwendet.
+
+- Y-Achse (Funktionale Aufteilung)
+Die Anwendung wird in separate Funktionen oder Dienste aufgeteilt.
+Verbessert Skalierbarkeit und Wartbarkeit.
+Jeder Dienst kann unabhängig skaliert und gewartet werden.
+
+- Z-Achse (Datenpartitionierung):
+Daten werden in separate Partitionen aufgeteilt.
+Steigert Leistung und Skalierbarkeit der Datenverarbeitung.
+Kann durch Sharding oder Replikation erfolgen, um große Datenmengen zu bewältigen.
+
+![:scale 30%](media/Scale_Cube.png)
+[17,19]
 
 ---
+#### Referenzen
+***
+###### [1]:https://de.wikipedia.org/wiki/IT-Architektur  
+###### [2]:https://www.heise.de/blog/Was-ist-Architektur-4931898.html
+###### [3] :https://www.fonial.de/wissen/begriff/client-server-modell/
+###### [4] :https://www.linkedin.com/pulse/mpa-spa-pwa-whats-difference-how-does-work-together-marek-kubacak 
+###### [5] :https://kinsta.com/de/blog/web-anwendungs-architektur/
+###### [6] :https://innowise-group.com/de/blog/best-software-architecture-patterns/
+###### [7] :https://en.wikipedia.org/wiki/Event-driven_architecture 
+###### [8] :https://nordicapis.com/whats-the-difference-between-event-brokers-and-message-queues/
+###### [9] :https://www.redhat.com/de/topics/integration/what-is-event-driven-architecture
+###### [10]:https://www.sciencedirect.com/science/article/abs/pii/S0306437920300028
+###### [11]:https://scoutapm.com/blog/distributed-monoliths-vs-microservices
+
+
+---
+#### Referenzen
+***
+###### [12]:https://camunda.com/blog/2023/02/orchestration-vs-choreography/
+###### [13]:https://www.redhat.com/de/topics/microservices/what-is-a-service-mesh
+###### [14]:https://www.designgurus.io/blog/Load-Balancer-Reverse-Proxy-API-Gateway
+###### [15]:https://www.singlestore.com/blog/database-sharding-vs-partitioning-whats-the-difference/
+###### [16]:https://www.enjoyalgorithms.com/blog/types-of-load-balancing-algorithms
+###### [17]:https://chat.openai.com/
+###### [18]:https://www.geeksforgeeks.org/caching-system-design-concept-for-beginners/
+###### [19]:Quelle: https://www.geeksforgeeks.org/the-scale-cube/

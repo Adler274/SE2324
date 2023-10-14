@@ -5,7 +5,9 @@
 
 # Systemarchitektur verteilter Softwaresysteme
 
-* Die Systemarchitektur in verteilten Softwaresystemen beschreibt die strukturelle Organisation und Interaktion von Komponenten an verschiedenen Standorten. Sie definiert Aufgabenverteilung, Kommunikation, Datenflüsse und die Verteilung von Software über Netzwerke. Diese Architektur beeinflusst Funktion, Skalierbarkeit und Verhalten des Systems, um Leistungs- und Zuverlässigkeitsanforderungen zu erfüllen. Sie dient als Leitfaden für Entwicklung und Wartung, inklusive Skalierung, Leistungsoptimierung und Sicherheitsmaßnahmen. Eine klare Dokumentation ist entscheidend, um die Architektur zu verstehen und effektiv zu arbeiten. [1-2]
+* Die Systemarchitektur in verteilten Softwaresystemen beschreibt die strukturelle Organisation und Interaktion von Komponenten an verschiedenen Standorten. Sie definiert Aufgabenverteilung, Kommunikation, Datenflüsse und die Verteilung von Software über Netzwerke. Diese Architektur beeinflusst Funktion, Skalierbarkeit und Verhalten des Systems, um Leistungs- und Zuverlässigkeitsanforderungen zu erfüllen. Sie dient als Leitfaden für Entwicklung und Wartung, inklusive Skalierung, Leistungsoptimierung und Sicherheitsmaßnahmen. Eine klare Dokumentation ist entscheidend, um die Architektur zu verstehen und effektiv zu arbeiten.
+ 
+ [1-2,17]
 
 ## Visualisierung von Systemarchitekturen
 
@@ -22,7 +24,7 @@
 
 * E-Mail-Clients wie Outlook oder Thunderbird kommunizieren mit E-Mail-Servern, um E-Mails abzurufen, zu senden und zu speichern. Der Server verwaltet die E-Mail
 Datenbanken und stellt E-Mail-Clients die erforderlichen Informationen zur Verfügung.
-[3]
+[3,17]
 #### Web Architekturen
 
 * Einfach ausgedrückt, ist die Architektur einer Webanwendung eine Übersicht darüber, wie die verschiedenen Komponenten deiner Webanwendung miteinander interagieren.
@@ -43,7 +45,7 @@ Seitennavigation: PWAs können sowohl dynamische als auch mehrseitige Navigation
 SEO-Freundlichkeit: PWAs und MPAs können SEO-freundlich sein, während SPAs möglicherweise zusätzliche Maßnahmen benötigen. MPAs sind von Natur aus SEO-freundlich.
 Komplexität: PWAs und SPAs sind in der Regel komplexer, da sie Technologien und Frameworks nutzen, während MPAs einfacher in Entwicklung und Wartung sind.
 Offline-Fähigkeit: PWAs sind auf die Offline-Nutzung ausgerichtet, während SPAs und MPAs möglicherweise zusätzlichen Aufwand erfordern.
-[4-5]
+[4-5,17]
 
 ### Peer to peer
 
@@ -62,12 +64,12 @@ Sicherheit und Datenschutz: Sicherheit und Datenschutz sind von besonderer Bedeu
 
 * P2P-Systeme sind besonders bekannt für ihre Verwendung in Filesharing-Netzwerken. Beispiele sind BitTorrent, eDonkey, und das ursprüngliche Napster. In diesen Netzwerken teilen Benutzer Dateien direkt miteinander, ohne einen zentralen Server.
 Internet of Things (IoT): In einigen IoT-Anwendungen kommunizieren IoT-Geräte direkt miteinander über P2P-Netzwerke, um Daten auszutauschen und Aufgaben zu automatisieren.
-[2,5]
+[2,5,17]
 ### Event Driven Architecture
 
 * Event-Driven Architecture (EDA), auf Deutsch "ereignisgesteuerte Architektur", ist ein architektonisches Muster, bei dem die Kommunikation und Informationsverarbeitung zwischen Systemkomponenten durch das Senden und Empfangen von Ereignissen strukturiert ist. In einer EDA sendet eine Komponente, der sogenannte Ereignisproduzent, ein Ereignis aus. Andere Komponenten, die Ereignisverbraucher, können auf diese Ereignisse reagieren und entsprechende Aktionen auslösen. Ereignisse fungieren als Vermittler zur Kommunikation und Koordination zwischen den verschiedenen Teilen des Systems. 
 EDA wird in verschiedenen Anwendungen und Systemen eingesetzt, einschließlich Microservices-Architekturen, IoT-Anwendungen, Streaming-Datenverarbeitung und Benutzeroberflächenereignissen in Anwendungen. Es ist ein effektiver Ansatz, um die Interaktion und Koordination zwischen den Komponenten eines Systems zu erleichtern und gleichzeitig die Flexibilität und Skalierbarkeit zu erhöhen.
-[6]
+[6,17]
 #### Event Types
 
 * In einer ereignisgesteuerten Architektur (Event-Driven Architecture, EDA) repräsentieren Event-Typen verschiedene Kategorien oder Klassifikationen von Ereignissen, die in einem System auftreten können. Diese Event-Typen organisieren, beschreiben und klassifizieren Ereignisse, um sicherzustellen, dass die entsprechenden Systemkomponenten oder Verbraucher sie verstehen und darauf reagieren können. Die Auswahl der Event-Typen hängt von den spezifischen Anforderungen der Anwendung ab. Hier sind einige Beispiele für Event-Typen in ereignisgesteuerten Architekturen: 
@@ -128,7 +130,7 @@ Die Buchungsanfrage wird in die Message Queue gestellt.
 Der Sitzplatzbestätigungsdienst (Anwendung B) überwacht die Message Queue und empfängt die Buchungsanfrage.
 Der Sitzplatzbestätigungsdienst bestätigt den Sitzplatz und legt die Buchungsbestätigung in die Message Queue.
 Die Buchungsbestätigung wird an das Flugbuchungssystem zurückgegeben, und der Kunde erhält eine Bestätigung
-[7]
+[7,17]
 
 ## Modulare Architekturen
 
@@ -145,7 +147,7 @@ Bsp:
 Ihre Anwendungen, z. B. die Bestellverwaltungsanwendung, müssen auf den Produktkatalog-Service zugreifen.
 Die Anwendung kann das Service Discovery-System abfragen und nach Diensten suchen, die den Namen "ProductService" anbieten.
 Das Service Discovery-System liefert die IP-Adresse "192.168.1.100" zurück, unter der der Produktkatalog-Service erreichbar ist.
-[9]
+[9,17]
 ### Microservices
 
 * Microservices sind spezielle Module in modularen Architekturen, die häufig in einer Service-Oriented Architecture (SOA) oder einer verteilten Systemarchitektur zum Einsatz kommen. Diese Module repräsentieren eigenständige, in sich geschlossene Dienste, die spezifische Geschäftsfunktionen oder Aufgaben in einer Anwendung bereitstellen. Der Hauptfokus von Microservices liegt auf einer stark entkoppelten, dezentralen und skalierbaren Architektur.
@@ -187,7 +189,7 @@ Erweiterbarkeit: Ermöglicht die Erweiterung eines Monolithen auf mehrere Server
  Wiederverwendbarkeit: Dienste können in verschiedenen Anwendungen wiederverwendet werden.
  Technologische Vielfalt: Ermöglicht die Verwendung verschiedener Technologien und Frameworks für verschiedene Dienste.
 
-[10]
+[10,17]
 #### Choreography Pattern vs Orchestration Pattern
 
 Das "Choreography Pattern" und das "Orchestration Pattern" sind zwei unterschiedliche Ansätze zur Koordination von Diensten oder Komponenten in einer verteilten Softwarearchitektur
@@ -209,12 +211,12 @@ Die Organisation und Steuerung der Zusammenarbeit und Interaktion zwischen Diens
 Ihre Anwendbarkeit in verschiedenen Architekturkontexten, einschließlich Microservices und Service-Oriented Architecture (SOA).
 Die Wahl zwischen Choreography und Orchestration hängt von den spezifischen Anforderungen eines Systems und der gewünschten Art der Steuerung ab. Choreography bietet Autonomie und Flexibilität für Dienste, während Orchestration eine genauere Kontrolle über den Ablauf von Aufgaben ermöglicht. In vielen Fällen können sie auch miteinander kombiniert werden, um komplexe Systeme zu erstellen, die sowohl die Autonomie der Dienste als auch eine zentrale Steuerung nutzen.
 
-[11]
+[11,17]
 #### Service Mesh 
 
  Ein Service Mesh ist eine spezielle Komponente in Microservices-Architekturen. Es besteht aus einer Gruppe von Proxies, die zwischen den einzelnen Mikrodiensten in einer verteilten Anwendung platziert sind. Diese Proxies übernehmen die Verwaltung verschiedener Netzwerkaufgaben und -dienste, um die Kommunikation, Sicherheit, Zuverlässigkeit und Überwachung der Dienste in einem Microservices-System zu gewährleisten.
  Stellen Sie sich vor, Sie betreiben ein E-Commerce-System, das auf einer Microservices-Architektur basiert. In diesem System gibt es verschiedene Dienste, wie den Benutzerservice, den Produktservice und den Bestellungsservice, die miteinander interagieren müssen. Ein Service Mesh unterstützt Sie bei der Verwaltung dieser Interaktionen.
-[12]
+[12,17]
 # Systemdesign
 
  Systemdesign beinhaltet architektonische Entscheidungen darüber, wie verschiedene Komponenten eines Systems interagieren und funktionieren sollten. In diesem Zusammenhang sind API-Gateway, Proxy, Reverse Proxy und Lastenausgleicher Komponenten, die unterschiedliche Zwecke in einem System erfüllen
@@ -264,7 +266,7 @@ Der Begriff "Partitioning" und "Sharding" werden oft synonym verwendet, da beide
 
 * Sharding
  Sharding ist ein spezifischer Begriff im Kontext von Datenbanken. Sharding bezieht sich auf die Aufteilung von Datenbankdatensätzen in separate Server oder Datenbankinstanzen (Shards) basierend auf einem Schlüsselwert, wie z. B. Benutzername oder Region. In Sharding-Szenarien müssen Mechanismen zur Synchronisation und Aufrechterhaltung der Konsistenz zwischen den Shards implementiert werden.
-[14]
+[14,17]
 ### Load Balancing
 
 Load Balancing (Lastenausgleich) ist eine Technik im Systemdesign und in der Netzwerkarchitektur. Sie verteilt eingehenden Netzwerkverkehr oder Anfragen auf verschiedene Server oder Ressourcen, um die Last gleichmäßig zu verteilen und die Leistung, Zuverlässigkeit und Verfügbarkeit des Systems zu steigern. Der Hauptzweck des Lastenausgleichs besteht darin, sicherzustellen, dass keine einzelne Serverinstanz oder Ressource überlastet wird, während andere unterausgelastet sind. 
@@ -284,13 +286,16 @@ Round Robin und andere Algorithmen
 
 * Random 
  Es wird zufällig verteilt.
-[15]
+[15,17]
 ### Caching
  Caching im Kontext von Skalierungsmustern bedeutet, häufig verwendete Daten vorübergehend zu speichern, um den Zugriff zu beschleunigen und die Belastung der ursprünglichen Datenquelle zu verringern. Dies verbessert die Leistung und Skalierbarkeit von Systemen, indem wiederholte Anfragen schneller bedient werden. Caching wird häufig in Webanwendungen, Datenbanken und anderen Systemen eingesetzt, um Antwortzeiten zu optimieren und Ressourcen effizient zu nutzen.
- Es gibt verschiedene Arten von Caching, wie "Globales Caching", "CDN" und "Hierarchisches Caching". Diese Ansätze beschreiben, wie das Caching im System organisiert ist
+ Es gibt verschiedene Arten von Caching, wie "lokales Caching", "CDN" und "Hierarchisches Caching" usw. Diese Ansätze beschreiben, wie das Caching im System organisiert ist
 
 * Application Server Cache
  Der Application Server Cache ist ein Speicher, der in einer Webanwendung in Verbindung mit dem Anwendungsserver verwendet wird. Er speichert oft angefragte Daten im Arbeitsspeicher, um die Antwortzeiten zu beschleunigen. Bei wiederholten Anfragen werden die Daten aus dem Cache zurückgegeben. Wenn neue Anfragen auftreten, werden die Daten von der Festplatte geladen und dann in den Cache gelegt. Dies hilft, die Leistung zu verbessern.
+
+* Lokales Caching
+  Lokales Zwischenspeichern von Daten ist eine Technik, die verwendet wird, um den Netzwerkzugriff auf Datendateien zu beschleunigen. Dabei werden Daten, wenn möglich, auf den Client-Geräten zwischengespeichert, anstatt auf den Servern. Die Auswirkung des lokalen Zwischenspeicherns besteht darin, dass es ermöglicht, mehrere Schreibvorgänge auf demselben Bereich einer Datei zu einem einzelnen Schreibvorgang über das Netzwerk zusammenzufassen.
 
 * Globales Caching 
  Wie der Name bereits sagt, handelt es sich um einen einzigen gemeinsam genutzten Cache, den alle Anwendungsknoten verwenden. Wenn die angeforderten Daten nicht im globalen Cache gefunden werden, liegt es in der Verantwortung des Caches, das fehlende Datenstück aus dem zugrunde liegenden Datenspeicher zu ermitteln.
@@ -304,8 +309,7 @@ Round Robin und andere Algorithmen
 * Content Delivery Networks
  Ein Content Delivery Network ist eine spezialisierte Form des verteilten Cachings, das auf die Bereitstellung von Inhalten, wie Bilder, Videos und Webseiten, spezialisiert ist. 
 
-[16]
-
+[17,18]
 
 ### Skalierungswürfel
 
@@ -313,10 +317,9 @@ Der Skalierungswürfel (Scale Cube) ist ein Konzept im Systemdesign von Martin F
 X-Achse (Horizontale Skalierung): Zusätzliche Instanzen oder Server werden hinzugefügt, um die Last zu verteilen, was in Cloud-Umgebungen zur Bewältigung von Lastspitzen und zur Steigerung der Ausfallsicherheit verwendet wird.
 Y-Achse (Funktionale Aufteilung): Die Anwendung wird in separate Funktionen oder Dienste aufgeteilt, um die Skalierbarkeit und Wartbarkeit zu verbessern. Jeder Dienst kann unabhängig skaliert und gewartet werden.
 Z-Achse (Datenpartitionierung): Daten werden in separate Partitionen aufgeteilt, um die Leistung und Skalierbarkeit der Datenverarbeitung zu steigern. Dies kann durch Sharding oder Replikation erfolgen, um große Datenmengen zu bewältigen.### Bilder
-[17]
+[17,19]
 
-![](media/Client-Server.jpg)
-
+---
 ## Referenzen
 
 [1] :https://de.wikipedia.org/wiki/IT-Architektur  
@@ -335,5 +338,7 @@ Z-Achse (Datenpartitionierung): Daten werden in separate Partitionen aufgeteilt,
 [14]:https://www.designgurus.io/blog/Load-Balancer-Reverse-Proxy-API-Gateway
 [15]:https://www.singlestore.com/blog/database-sharding-vs-partitioning-whats-the-difference/
 [16]:https://www.enjoyalgorithms.com/blog/types-of-load-balancing-algorithms
-[17]:https://www.geeksforgeeks.org/caching-system-design-concept-for-beginners/
-[18]:Quelle: https://www.geeksforgeeks.org/the-scale-cube/
+[17]:https://chat.openai.com/
+[18]:https://www.geeksforgeeks.org/caching-system-design-concept-for-beginners/
+[19]:Quelle: https://www.geeksforgeeks.org/the-scale-cube/
+
