@@ -1,16 +1,14 @@
 ## Kapitelüberschrift
 
-**Autor:** Max Mustermann
+**Autor:** Jannis Wilmsmeier
 
 Folgende Mindmaps zeigen die Inhalte des Kapitels 2.
 
-## Themengebiet
-
-Mindmap:
+## Verteilte Softwaresysteme
 
 ```mermaid
 mindmap
-  root((mindmap))
+  STILL MISSING
     Origins
       Long history
       Popularisation
@@ -27,42 +25,109 @@ mindmap
       Mermaid
 ```
 
-Mindmap:
+## Systemarchitektur verteilter Softwaresysteme
 
 ```mermaid
 mindmap
-  root(Cofinder)  
-    (Introduction)  
-      (Designed to help the Cohere Community find relevant content)  
-      (Users can ask natural language questions)  
-      (Semantic search tool that brings together information from multiple sources)  
-    (Repository Contents)  
-      (cohere_text_preprocessing.csv)  
-      (preprocessing.ipynb)  
-      (main.py)  
-      (cohere_text_final.csv)  
-      (search_index.ann)  
-    (Five Steps to Building the Application)  
-      (Data Sources)  
-        (Pre-processing the article text into chunks)  
-      (Embeddings & Search Index)  
-        (Use co.embed to obtain a vector representation of data)  
-        (Store embeddings in a vector database)  
-      (Front End)  
-        (Streamlit for user interaction)  
-      (Search)  
-        (Use co.embed to get vector representation of user query)  
-        (Use nearest neighbours to return relevant content)  
-      (Answer)  
-        (Use co.generate to answer the query given the context from the search results and the question)  
-    (Streamlit Application)  
-      (Load libraries, data and search index)  
-      (Add functions to generate embeddings to search the Annoy index for the user’s query)  
-      (Generate an answer from the context)  
-      (Add Streamlit search input and button to run functions)
+  Systemarchitektur verteilter Softwaresysteme
+    Systemarchitekturmuster
+      Client Server
+        Vorteile
+          Skalierbarkeit
+          Resourcennutzung
+        Anwendungsbeispiele
+          Outlook
+          Thunderbird
+        Web Architekturen
+          PWA
+            App-ähnliche Erfahrung
+            Resourceneffizienz
+            Offline-Fähigkeiten
+            Push-Benachrichtigungen
+            Ladezeit
+          SPA
+            eine HTML Seite
+            dynamische Aktualisierung
+            nahtlose Benutzererlebnisse
+            schnelle Ansichtswechsel
+          MPA
+            Seiten laden seperat
+            einfach zu entwickeln
+            gute Benutzererfahrung
+            SEO-freundlich
+      Peer to peer
+        Vorteile
+          Gleichberechtigung
+          dezentral
+          ausfallsicher
+          direkte Kommunikation
+        Andwendungsbeispiele
+          BitTorrent
+          eDonkey
+          einige IoT-Anwendungen
+      Event Driven Architecture
+        Event types (Klassifikation von Ereignissen)
+          Systemereignisse
+          Fehler- und Ausnahmeereignisse
+        Message Broker (Vermittlung und Verteilung von Ereignissen)
+        Kommunikation zwischen Anwengunen und Systemkomponenten
+          ESB
+            Integrationsplattform
+              Verknüpfung von Anwendungen
+              Nachrichtenvermittlung
+              Routing
+              Nachrichtenverarbeitung
+              Anwendungsbeispiel
+                E-Commerce-Plattform für Bestellungen + Lagerverwaltungssystem
+          Message Queue
+            Nachrichten temporär speichern/übertragen
+            zuverlässige Kommunikation zwischen Anwendungen
+            Anwendungsbeispiel
+                Flugbuchungssystem + Sitzplatzbestätigung
+    Modulare Architekturen
+      Service oriented Architecture
+        Vorteile
+          wiederverwendbar
+          lose Kopplung
+          Interoperabilität
+        Service Discovery
+          Dienste identifzieren
+          Dienste auffinden
+          auf Dienste zugreifen
+    Microservices
+      Vorteile
+        entkoppelt
+        dezentral
+        skalierbar
+      Arten
+        Monolith
+          einzige Anwendungseinheit
+          Kommunikation innerhalb der Anwendung
+          schwer sklaierbar
+          einfach in der Entwicklung
+        Distributed Monolith
+          Monolith auf mehreren Servern
+          Kommunikation über Netzwerke
+          begrent skaliberbar
+        Microservice
+          unabhängige Dienste
+          definierte APIs oder Messaging-Protokolle
+          unabhängig skalierbar
+          wiederverwendbar
+      Koordinationsansätze
+        Choreography Pattern
+          Interaktion/Kommunikation zwischen Diensten
+          Dienste handeln autonom
+          dezentrale Koordination
+        Orchestration Pattern
+          zentrale Koordination/Steuerung
+          Orchestrator definiert Handlung von Diensten
+      Service Mesh
+        Proxies zwischen Mikrodiensten
+        Verwaltung von Netzwerkaufgaben und -diensten
 ```
 
-Mindmap:
+## Systemdesign
 
 ```mermaid
 mindmap
@@ -96,6 +161,3 @@ mindmap
       Pen and paper
       Mermaid
 ```
-
-
-
