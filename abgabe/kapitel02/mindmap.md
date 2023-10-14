@@ -131,33 +131,70 @@ mindmap
 
 ```mermaid
 mindmap
-  root((mindmap))
-      Mermaid.js Mind Map Article
-        Basic Mind Map
-            Indentation
-        Shapes
-            Default
-            Square
-            Rounded
-            Circle
-            Bang
-            Cloud
-            Hexagon            
-        Icons
-            Font Awesome
-            Other Icons
-    Origins
-      Long history
-      Popularisation
-        British popular psychology author Tony Buzan
-    Research
-      On effectiveness<br/>and features
-      On Automatic creation
-        Uses
-            Creative techniques
-            Strategic planning
-            Argument mapping
-    Tools
-      Pen and paper
-      Mermaid
+  Systemdesign
+    Komponenten
+      API Gateway
+        verwaltet APIs
+      Proxy
+        leitet Client-Anfragen an Backend-Server weiter
+        Vorteile
+          Lastenausgleich
+          Caching
+          Sicherheit
+          vielseitig einsetzbar
+      Reverse Proxy
+        verarbeitet Client-Anfragen
+        leitet an richtigen Backend-Server weiter
+        Vorteile
+          Sicherheit
+          Leistungsverbessrung
+      Load Balancer
+        Verteilung von Datenverkehr
+          Leistungssteigerung
+          Ausfallsicherheit
+    Skalierungsmuster
+      Horizontale Skalierung
+        mehr Server/Instanzen bereitstellen
+        besonders hilfreich für parallele Verarbeitung
+      Vertikale Skalierung
+        vorhandende Resource wird verstärkt
+        einzelne Instanz kann mehr Last bewältigen
+      Replication
+        Erstellen/Pflegen von Datenkopien
+        verschiedene Standorte/Server
+        Vorteile
+          Leistung
+          Verfügbarkeit
+          Ausfallsicheheut
+          Reduzierung von Latenz
+      Partitioning
+        teilen von Daten
+        überschaubare Partitionen
+      Sharding
+        Aufteilung von Datenbanksätzen
+        basiert auf Schlüsselwert
+      Load Balancing
+        Round robin
+          verteilt Datenverkehr gleichmäßig
+          ignoriert Auslastung
+        Least Connections
+          priorisiert weniger ausgelastete Server
+        IP-Hash
+          Server wird mittels Client-IP zugeteilt
+        Random
+      Caching
+        Application Server Cache
+          oft angefragte Daten im Arbeitsspeicher
+        Globales Caching
+          ein einziger Cache
+        Distrbuted Caching
+          Cache wird über mehrere Server/Knoten verteilt
+        Hierarchisches Caching
+          Kombination aus Local und Distributed Caching
+        Content Delivery Network
+          Spezialisierung verteilter Caches
+      Skalierungswürfel
+        Horizontale Skalierung
+        Funktionale Aufteilung
+        Datenpartitionierung
 ```
