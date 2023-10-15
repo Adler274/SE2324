@@ -31,62 +31,80 @@ Datenbanken und stellt E-Mail-Clients die erforderlichen Informationen zur Verf�
 
 ##### PWA vs SPA vs MPA
 
-PWA (Progressive Web App): PWAs sind webbasierte Anwendungen, die eine App-ähnliche Erfahrung bieten. Sie zeichnen sich durch Ressourceneffizienz, Offline-Fähigkeiten, Push-Benachrichtigungen und schnelle Ladezeiten aus. PWAs sind auf verschiedenen Geräten und Betriebssystemen nutzbar.
-SPA (Single Page Application): SPAs sind Webanwendungen, bei denen der gesamte Inhalt auf einer einzigen HTML-Seite geladen wird. Sie erlauben dynamische Aktualisierungen ohne Seitenneuladung und bieten nahtlose Benutzererlebnisse mit schnellen Ansichtswechseln.
-MPA (Multi-Page Application): MPAs sind traditionelle Webanwendungen, bei denen jede Seite separat vom Server geladen wird. Seitenwechsel erfordern komplette Serveranfragen. MPAs sind einfach zu entwickeln und SEO-freundlich, können jedoch in der Benutzerinteraktion langsamer sein als SPAs.
-Gemeinsamkeiten:
-Benutzerfreundlichkeit: Sie legen Wert auf eine gute Benutzererfahrung und bieten reaktionsschnelle Oberflächen.
+### PWA (Progressive Web App): 
+PWAs sind webbasierte Anwendungen, die eine App-ähnliche Erfahrung bieten. Sie zeichnen sich durch Ressourceneffizienz, Offline-Fähigkeiten, Push-Benachrichtigungen und schnelle Ladezeiten aus. PWAs sind auf verschiedenen Geräten und Betriebssystemen nutzbar.
+### SPA (Single Page Application): 
+SPAs sind Webanwendungen, bei denen der gesamte Inhalt auf einer einzigen HTML-Seite geladen wird. Sie erlauben dynamische Aktualisierungen ohne Seitenneuladung und bieten nahtlose Benutzererlebnisse mit schnellen Ansichtswechseln.
+### MPA (Multi-Page Application): 
+MPAs sind traditionelle Webanwendungen, bei denen jede Seite separat vom Server geladen wird. Seitenwechsel erfordern komplette Serveranfragen. MPAs sind einfach zu entwickeln und SEO-freundlich, können jedoch in der Benutzerinteraktion langsamer sein als SPAs.
+### Gemeinsamkeiten:
+#### Benutzerfreundlichkeit: 
+Sie legen Wert auf eine gute Benutzererfahrung und bieten reaktionsschnelle Oberflächen.
 Responsivität: Alle können auf verschiedenen Geräten und Bildschirmgrößen funktionieren.
 Interaktivität: Sie ermöglichen die Interaktion mit Benutzern und reagieren auf Benutzeraktionen.
 
-Unterschiede:
-Ladeverhalten: PWAs zeichnen sich durch schnelles und flüssiges Laden aus, während SPAs einmalig geladen werden und danach nur den Inhalt dynamisch nachladen. MPAs haben im Vergleich längere Ladezeiten.
+#### Unterschiede:
+##### Ladeverhalten: 
+PWAs zeichnen sich durch schnelles und flüssiges Laden aus, während SPAs einmalig geladen werden und danach nur den Inhalt dynamisch nachladen. MPAs haben im Vergleich längere Ladezeiten.
 Seitennavigation: PWAs können sowohl dynamische als auch mehrseitige Navigation verwenden, während SPAs auf dynamische Navigation auf einer einzigen HTML-Seite setzen und MPAs separate HTML-Seiten für die Navigation verwenden.
-SEO-Freundlichkeit: PWAs und MPAs können SEO-freundlich sein, während SPAs möglicherweise zusätzliche Maßnahmen benötigen. MPAs sind von Natur aus SEO-freundlich.
-Komplexität: PWAs und SPAs sind in der Regel komplexer, da sie Technologien und Frameworks nutzen, während MPAs einfacher in Entwicklung und Wartung sind.
-Offline-Fähigkeit: PWAs sind auf die Offline-Nutzung ausgerichtet, während SPAs und MPAs möglicherweise zusätzlichen Aufwand erfordern.
+##### SEO-Freundlichkeit: 
+PWAs und MPAs können SEO-freundlich sein, während SPAs möglicherweise zusätzliche Maßnahmen benötigen. MPAs sind von Natur aus SEO-freundlich.
+##### Komplexität:
+PWAs und SPAs sind in der Regel komplexer, da sie Technologien und Frameworks nutzen, während MPAs einfacher in Entwicklung und Wartung sind.
+##### Offline-Fähigkeit:
+PWAs sind auf die Offline-Nutzung ausgerichtet, während SPAs und MPAs möglicherweise zusätzlichen Aufwand erfordern.
 [4-5,17]
 
 ### Peer to peer
 
-* Das Peer-to-Peer (P2P)-Systemarchitekturmuster ist eine Art von Architektur, bei der Computer oder Knoten (Peers) gleichberechtigt miteinander kommunizieren, um Ressourcen, Dienste oder Informationen gemeinsam zu nutzen, ohne die Notwendigkeit eines zentralen Servers oder einer zentralen Autorität. In einem P2P-System kann jeder Peer Anfragen stellen und Dienste bereitstellen, was zu einem dezentralen und selbstorganisierten Netzwerk führt. 
+ Das Peer-to-Peer (P2P)-Systemarchitekturmuster ist eine Art von Architektur, bei der Computer oder Knoten (Peers) gleichberechtigt miteinander kommunizieren, um Ressourcen, Dienste oder Informationen gemeinsam zu nutzen, ohne die Notwendigkeit eines zentralen Servers oder einer zentralen Autorität. In einem P2P-System kann jeder Peer Anfragen stellen und Dienste bereitstellen, was zu einem dezentralen und selbstorganisierten Netzwerk führt. 
 
-Merkmale des P2P-Systemarchitekturmusters:
+### Merkmale des P2P-Systemarchitekturmusters:
 Gleichberechtigung: Alle Peers sind gleichberechtigt und können Ressourcen teilen oder anfordern.
 Dezentralisierung: Kein zentraler Server kontrolliert den Datenverkehr, was zu einer dezentralisierten Struktur führt.
-Selbstorganisation: Peers organisieren sich selbst, ohne zentrale Koordination.
+#### Selbstorganisation: 
+Peers organisieren sich selbst, ohne zentrale Koordination.
 Ressourcenteilung: Peers teilen verschiedene Ressourcen, darunter Dateien, Rechenleistung und Bandbreite.
-Skalierbarkeit: Das System kann leicht skaliert werden, indem neue Peers hinzugefügt werden.
-Robustheit: P2P-Systeme sind widerstandsfähig gegenüber Ausfällen.
-Sicherheit und Datenschutz: Sicherheit und Datenschutz sind von besonderer Bedeutung, da Peers direkt miteinander kommunizieren.
+#### Skalierbarkeit: 
+Das System kann leicht skaliert werden, indem neue Peers hinzugefügt werden.
+#### Robustheit: 
+P2P-Systeme sind widerstandsfähig gegenüber Ausfällen.
+#### Sicherheit und Datenschutz:
+Sicherheit und Datenschutz sind von besonderer Bedeutung, da Peers direkt miteinander kommunizieren.
 
 #### Anwendungsbeispiel
 
 * P2P-Systeme sind besonders bekannt für ihre Verwendung in Filesharing-Netzwerken. Beispiele sind BitTorrent, eDonkey, und das ursprüngliche Napster. In diesen Netzwerken teilen Benutzer Dateien direkt miteinander, ohne einen zentralen Server.
-Internet of Things (IoT): In einigen IoT-Anwendungen kommunizieren IoT-Geräte direkt miteinander über P2P-Netzwerke, um Daten auszutauschen und Aufgaben zu automatisieren.
+* #### Internet of Things (IoT):
+In einigen IoT-Anwendungen kommunizieren IoT-Geräte direkt miteinander über P2P-Netzwerke, um Daten auszutauschen und Aufgaben zu automatisieren.
 [2,5,17]
 ### Event Driven Architecture
 
-* Event-Driven Architecture (EDA), auf Deutsch "ereignisgesteuerte Architektur", ist ein architektonisches Muster, bei dem die Kommunikation und Informationsverarbeitung zwischen Systemkomponenten durch das Senden und Empfangen von Ereignissen strukturiert ist. In einer EDA sendet eine Komponente, der sogenannte Ereignisproduzent, ein Ereignis aus. Andere Komponenten, die Ereignisverbraucher, können auf diese Ereignisse reagieren und entsprechende Aktionen auslösen. Ereignisse fungieren als Vermittler zur Kommunikation und Koordination zwischen den verschiedenen Teilen des Systems. 
+* #### Event-Driven Architecture (EDA):
+ ist ein architektonisches Muster, bei dem die Kommunikation und Informationsverarbeitung zwischen Systemkomponenten durch das Senden und Empfangen von Ereignissen strukturiert ist. In einer EDA sendet eine Komponente, der sogenannte Ereignisproduzent, ein Ereignis aus. Andere Komponenten, die Ereignisverbraucher, können auf diese Ereignisse reagieren und entsprechende Aktionen auslösen. Ereignisse fungieren als Vermittler zur Kommunikation und Koordination zwischen den verschiedenen Teilen des Systems. 
 EDA wird in verschiedenen Anwendungen und Systemen eingesetzt, einschließlich Microservices-Architekturen, IoT-Anwendungen, Streaming-Datenverarbeitung und Benutzeroberflächenereignissen in Anwendungen. Es ist ein effektiver Ansatz, um die Interaktion und Koordination zwischen den Komponenten eines Systems zu erleichtern und gleichzeitig die Flexibilität und Skalierbarkeit zu erhöhen.
 [6,17]
-#### Event Types
+### Event Types
 
-* In einer ereignisgesteuerten Architektur (Event-Driven Architecture, EDA) repräsentieren Event-Typen verschiedene Kategorien oder Klassifikationen von Ereignissen, die in einem System auftreten können. Diese Event-Typen organisieren, beschreiben und klassifizieren Ereignisse, um sicherzustellen, dass die entsprechenden Systemkomponenten oder Verbraucher sie verstehen und darauf reagieren können. Die Auswahl der Event-Typen hängt von den spezifischen Anforderungen der Anwendung ab. Hier sind einige Beispiele für Event-Typen in ereignisgesteuerten Architekturen: 
+In einer ereignisgesteuerten Architektur (Event-Driven Architecture, EDA) repräsentieren Event-Typen verschiedene Kategorien oder Klassifikationen von Ereignissen, die in einem System auftreten können. Diese Event-Typen organisieren, beschreiben und klassifizieren Ereignisse, um sicherzustellen, dass die entsprechenden Systemkomponenten oder Verbraucher sie verstehen und darauf reagieren können. Die Auswahl der Event-Typen hängt von den spezifischen Anforderungen der Anwendung ab. 
+Hier sind einige Beispiele für Event-Typen in ereignisgesteuerten 
+
+### Architekturen: 
 Systemereignisse: Systemereignisse sind Ereignisse, die durch den Betriebssystem oder niedrigeren Ebenen des Systems ausgelöst werden. Dies können Ereignisse wie Hardwarefehler, Geräteverbindungen, Systemwartungen oder Änderungen des Systemzustands sein.
 Fehler- und Ausnahmeereignisse: Diese Event-Typen repräsentieren Fehler, Ausnahmen oder unerwartete Bedingungen im System. Sie umfassen etwa Fehlerprotokolle, Absturzmeldungen und Fehlerbenachrichtigungen.
 
 
-#### Message Broker
+### Message Broker
 
-* Ein Message Broker in einer EDA ist eine spezialisierte Softwarekomponente oder ein Dienst, der die Vermittlung und Verteilung von Ereignissen oder Nachrichten zwischen verschiedenen Komponenten, Anwendungen oder Diensten im System ermöglicht. Der Message Broker übernimmt die Aufgabe eines Vermittlers, indem er Nachrichten empfängt, weiterleitet und an die entsprechenden Empfänger weitergibt. Dies erleichtert die Umsetzung einer lose gekoppelten Kommunikation zwischen den verschiedenen Komponenten im System und trägt zur einfacheren Entwicklung und Skalierung von ereignisgesteuerten Systemen bei. 
-Bsp:
+* Ein Message Broker in einer EDA ist eine spezialisierte Softwarekomponente oder ein Dienst, der die Vermittlung und Verteilung von Ereignissen oder Nachrichten zwischen verschiedenen Komponenten, Anwendungen oder Diensten im System ermöglicht. Der Message Broker übernimmt die Aufgabe eines Vermittlers, indem er Nachrichten empfängt, weiterleitet und an die entsprechenden Empfänger weitergibt. Dies erleichtert die Umsetzung einer lose gekoppelten Kommunikation zwischen den verschiedenen Komponenten im System und trägt zur einfacheren Entwicklung und Skalierung von ereignisgesteuerten Systemen bei.
+
+#### Bsp:
 Nachrichtenvermittlung: Der Message Broker fungiert als Zwischenschicht, um die Kommunikation zwischen verschiedenen Komponenten zu ermöglichen. Er nimmt Nachrichten von Produzenten Ereignisproduzenten entgegen und leitet sie an die entsprechenden Konsumenten Ereignisverbraucher weiter.
 
-#### ESB vs Message Queue
+### ESB vs Message Queue
 
 * Ein Enterprise Service Bus (ESB) und eine Message Queue (Nachrichtenwarteschlange) sind zwei unterschiedliche Technologien, die in EDAs verwendet werden, um die Kommunikation und Koordination zwischen Anwendungen und Systemkomponenten zu ermöglichen. Sie erfüllen spezifische Funktionen und haben unterschiedliche Einsatzzwecke. Im Folgenden sind die wichtigsten Unterschiede zwischen ESB und Message Queue. 
-Funktionalität:
+#### Funktionalität:
 ESB ist eine umfassende Integrationsplattform, die verschiedene Anwendungen miteinander verknüpft und Nachrichtenvermittlung, Routing und umfangreiche Nachrichtenverarbeitungsfunktionen bietet.
 Message Queues sind Mechanismen zur Nachrichtenvermittlung und Fokussieren sich darauf, Nachrichten temporär zu speichern und zu übertragen, um eine zuverlässige Kommunikation zwischen Anwendungen zu ermöglichen.
 
@@ -96,35 +114,44 @@ Trotz dieser Unterschiede weisen beide Technologien einige Gemeinsamkeiten auf, 
 
 Die Wahl zwischen ESB und Message Queues hängt von den spezifischen Anforderungen und Zielen Ihres Projekts ab. In einigen Fällen kann es sogar sinnvoll sein, beide Technologien zu kombinieren, um die Vorteile beider Ansätze zu nutzen und eine effiziente Kommunikation und Integration in Ihrem System zu gewährleisten.
 
-#### Anwendungsbeispiel Event Type
+### Anwendungsbeispiel Event Type
 
-* Ereignistyp: "Benutzerregistrierung"
-Beschreibung: Dieser Ereignistyp wird ausgelöst, wenn ein neuer Benutzer sich in einer Webanwendung registriert.
-Beispielereignis: Ein Benutzer mit dem Namen "Max" hat sich erfolgreich registriert.
-Anwendungsbeispiele Message Broker:
-Sender: Eine Webanwendung, die Benutzerregistrierungen verarbeitet.
-Empfänger: Ein Benachrichtigungsdienst, der E-Mails an Administratoren sendet.
-Ablauf:
+#### Ereignistyp: "Benutzerregistrierung" 
+Dieser Ereignistyp wird ausgelöst, wenn ein neuer Benutzer sich in einer Webanwendung registriert.
+#### Beispielereignis: 
+Ein Benutzer mit dem Namen "Max" hat sich erfolgreich registriert.
+
+### Anwendungsbeispiel Message Broker:
+
+#### Sender: 
+Eine Webanwendung, die Benutzerregistrierungen verarbeitet.
+#### Empfänger: 
+Ein Benachrichtigungsdienst, der E-Mails an Administratoren sendet.
+#### Ablauf:
 Die Webanwendung sendet eine Benutzerregistrierungsanfrage an den Message Broker "EventHub".
 Der EventHub leitet das Ereignis an den Benachrichtigungsdienst weiter.
 Der Benachrichtigungsdienst sendet eine E-Mail an die Administratoren über die neue Benutzerregistrierung. 
 
-#### Anwendungsbeispiel ESB (Enterprise Service Bus)
+### Anwendungsbeispiel ESB (Enterprise Service Bus)
 
-* Anwendung A: Eine E-Commerce-Plattform für Bestellungen.
-Anwendung B: Ein Lagerverwaltungssystem für die Bestandsverwaltung.
-Ablauf:
+#### Anwendung A: 
+Eine E-Commerce-Plattform für Bestellungen.
+#### Anwendung B:
+ Ein Lagerverwaltungssystem für die Bestandsverwaltung.
+#### Ablauf:
 Ein Kunde tätigt eine Bestellung auf der E-Commerce-Plattform (Anwendung A).
+
 Die E-Commerce-Plattform sendet die Bestellnachricht an den ESB.
 Der ESB wandelt die Nachricht in ein für das Lagerverwaltungssystem (Anwendung B) verständliches Format um und leitet sie dorthin weiter.
 Das Lagerverwaltungssystem aktualisiert den Lagerbestand und sendet eine Bestätigungsnachricht an den ESB.
 Der ESB leitet die Bestätigungsnachricht zurück an die E-Commerce-Plattform.
 
-#### Anwendungsbeispiele Message Queue (Nachrichtenwarteschlange)
+### Anwendungsbeispiele Message Queue (Nachrichtenwarteschlange)
 
-* Anwendung A: Ein Flugbuchungssystem.
-Anwendung B: Ein Sitzplatzbestätigungsdienst.
-Ablauf:
+#### Anwendung A: Ein Flugbuchungssystem.
+#### Anwendung B: 
+Ein Sitzplatzbestätigungsdienst.
+#### Ablauf:
 Ein Kunde bucht einen Flug über das Flugbuchungssystem (Anwendung A).
 Die Buchungsanfrage wird in die Message Queue gestellt.
 Der Sitzplatzbestätigungsdienst (Anwendung B) überwacht die Message Queue und empfängt die Buchungsanfrage.
@@ -135,13 +162,13 @@ Die Buchungsbestätigung wird an das Flugbuchungssystem zurückgegeben, und der 
 ## Modulare Architekturen
 
 * Modulare Architekturen in verteilten Softwaresystemen beziehen sich auf eine Designmethode, bei der das Gesamtsystem in separate, unabhängige Module oder Komponenten aufgeteilt wird. Jedes Modul erfüllt eine spezifische Funktion und ist so gestaltet, dass es eigenständig agieren kann. Diese Module sind in der Lage, miteinander zu kommunizieren und zusammenzuarbeiten, um die gewünschte Gesamtfunktionalität des verteilten Systems bereitzustellen.
-Bsp:
+#### Bsp:
 Modulare Anwendungsplattformen: Einige Plattformen und Frameworks, wie das Spring Framework für Java oder die .NET-Plattform von Microsoft, verwenden modulare Architekturen. Entwickler können Module hinzufügen oder entfernen, um die Funktionalität der Plattform anzupassen. Zum Beispiel kann ein Entwickler spezifische Module für Datenbankzugriff, Sicherheit oder Webentwicklung in eine Anwendungsplattform integrieren. 
 
 ### Service oriented architecture (SOA)
 
 * Service-Oriented Architecture (SOA) ist ein Softwareentwurfsansatz, bei dem Softwarefunktionen als eigenständige Dienste organisiert sind. Diese Dienste bieten klare Schnittstellen für den Aufruf und sind wiederverwendbar. SOA fördert die lose Kopplung zwischen Diensten, verbessert die Interoperabilität und ermöglicht die Orchestrierung von Diensten zur Erstellung komplexer Geschäftsprozesse. Zum Beispiel kann ein E-Commerce-System separate Dienste für Benutzerverwaltung, Produktkatalog, Bestellverarbeitung und Zahlungsabwicklung verwenden. Dies steigert die Flexibilität und Wiederverwendbarkeit von Softwarekomponenten in verteilten Systemen.
-und was ist dann Service Discovery in dem Kontext? 
+#### und was ist dann Service Discovery in dem Kontext? 
 Service Discovery (Diensteerkennung) ist von großer Bedeutung in einer Service-Oriented Architecture (SOA) und anderen verteilten Systemen. Dieser Prozess bezieht sich darauf, wie Dienste in einem verteilten Netzwerk automatisch identifiziert und aufgefunden werden. In SOA ist Service Discovery entscheidend, um Dienste zu entdecken, auf sie zuzugreifen und sie in Anwendungen zu verwenden.
 Bsp:
 Ihre Anwendungen, z. B. die Bestellverwaltungsanwendung, müssen auf den Produktkatalog-Service zugreifen.
@@ -194,12 +221,13 @@ Erweiterbarkeit: Ermöglicht die Erweiterung eines Monolithen auf mehrere Server
 
 Das "Choreography Pattern" und das "Orchestration Pattern" sind zwei unterschiedliche Ansätze zur Koordination von Diensten oder Komponenten in einer verteilten Softwarearchitektur
 
-* Choreography Pattern
+* ##### Choreography Pattern
   Das Choreography Pattern konzentriert sich auf die Interaktion und Kommunikation zwischen verschiedenen Diensten oder Komponenten in einem verteilten System. Im Rahmen dieses Musters handeln die Dienste autonom und reagieren auf Ereignisse oder Nachrichten, die von anderen Diensten gesendet werden. Die Koordination erfolgt dezentral, ohne eine zentrale Steuerungseinheit. Die Dienste sind so konzipiert, dass sie wissen, wie sie auf bestimmte Ereignisse reagieren sollen, und sie initiieren Aktionen aufgrund der empfangenen Nachrichten. Dieses Muster findet oft Anwendung in Microservices-Architekturen, in denen die Dienste eigenständig agieren und sich aufgrund von Systemereignissen anpassen.
 
-* Orchestration Pattern
+* ##### Orchestration Pattern
  Das Orchestration Pattern konzentriert sich auf die zentrale Steuerung und Koordination von Diensten oder Komponenten in einem verteilten System. Dieses Muster beinhaltet eine zentrale Entität, die oft als Orchestrator bezeichnet wird. Der Orchestrator legt den Ablauf und die Reihenfolge der auszuführenden Aufgaben oder Dienste fest. Er definiert, wie die verschiedenen Dienste miteinander interagieren sollen und initiiert die Ausführung von Aufgaben basierend auf einem vordefinierten Workflow.
-Das Orchestration Pattern findet Anwendung in BPM (Business Process Management) und Workflow-Systemen, ebenso wie in Service-Oriented Architecture (SOA). Es wird verwendet, um komplexe Geschäftsprozesse zu steuern und zu automatisieren, wobei der Orchestrator die zentrale Figur ist, die die verschiedenen Aktivitäten koordiniert und den Prozessablauf definiert.
+
+* Das Orchestration Pattern findet Anwendung in BPM (Business Process Management) und Workflow-Systemen, ebenso wie in Service-Oriented Architecture (SOA). Es wird verwendet, um komplexe Geschäftsprozesse zu steuern und zu automatisieren, wobei der Orchestrator die zentrale Figur ist, die die verschiedenen Aktivitäten koordiniert und den Prozessablauf definiert.
 
 ##### Fazit
 
@@ -267,22 +295,21 @@ Der Begriff "Partitioning" und "Sharding" werden oft synonym verwendet, da beide
 * Sharding
  Sharding ist ein spezifischer Begriff im Kontext von Datenbanken. Sharding bezieht sich auf die Aufteilung von Datenbankdatensätzen in separate Server oder Datenbankinstanzen (Shards) basierend auf einem Schlüsselwert, wie z. B. Benutzername oder Region. In Sharding-Szenarien müssen Mechanismen zur Synchronisation und Aufrechterhaltung der Konsistenz zwischen den Shards implementiert werden.
 [14,17]
+
 ### Load Balancing
 
 Load Balancing (Lastenausgleich) ist eine Technik im Systemdesign und in der Netzwerkarchitektur. Sie verteilt eingehenden Netzwerkverkehr oder Anfragen auf verschiedene Server oder Ressourcen, um die Last gleichmäßig zu verteilen und die Leistung, Zuverlässigkeit und Verfügbarkeit des Systems zu steigern. Der Hauptzweck des Lastenausgleichs besteht darin, sicherzustellen, dass keine einzelne Serverinstanz oder Ressource überlastet wird, während andere unterausgelastet sind. 
 
 #### Round Robin und andere Algorithmen
  
-Round Robin und andere Algorithmen
-
 * Round Robin
- Dieser Algorithmus verteilt den Datenverkehr gleichmäßig auf eine Liste von Servern oder Ressourcen. Jede Anfrage wird nacheinander an den nächsten Server in der Liste weitergeleitet. Nachdem der letzte Server erreicht ist, beginnt der Zyklus von vorne. Round Robin ist eine einfache und effektive Methode, berücksichtigt jedoch nicht die aktuelle Auslastung der Server. 
+   Dieser Algorithmus verteilt den Datenverkehr gleichmäßig auf eine Liste von Servern oder Ressourcen. Jede Anfrage wird nacheinander an den nächsten Server in der Liste weitergeleitet. Nachdem der letzte Server erreicht ist, beginnt der Zyklus von vorne. Round Robin ist eine einfache und effektive Methode, berücksichtigt jedoch nicht die aktuelle Auslastung der Server. 
 
 * Least Connections
- Bei diesem Algorithmus werden Anfragen an den Server mit der geringsten Anzahl aktiver Verbindungen weitergeleitet. Dies gewährleistet, dass weniger ausgelastete Server priorisiert werden und ist hilfreich, wenn die Server unterschiedliche Lasten aufweisen.
+   Bei diesem Algorithmus werden Anfragen an den Server mit der geringsten Anzahl aktiver Verbindungen weitergeleitet. Dies gewährleistet, dass weniger ausgelastete Server priorisiert werden und ist hilfreich, wenn die Server unterschiedliche Lasten aufweisen.
 
 * IP-Hash
- Bei diesem Ansatz wird die IP-Adresse des Clients zur Ermittlung des Zielservers verwendet. Dies sorgt dafür, dass ein bestimmter Client bei wiederholten Anfragen immer zum gleichen Server weitergeleitet wird. Dies kann wichtig sein, wenn Sitzungsinformationen oder zustandsbezogene Daten auf dem Server gespeichert sind.
+  Bei diesem Ansatz wird die IP-Adresse des Clients zur Ermittlung des Zielservers verwendet. Dies sorgt dafür, dass ein bestimmter Client bei wiederholten Anfragen immer zum gleichen Server weitergeleitet wird. Dies kann wichtig sein, wenn Sitzungsinformationen oder zustandsbezogene Daten auf dem Server gespeichert sind.
 
 * Random 
  Es wird zufällig verteilt.
@@ -291,32 +318,36 @@ Round Robin und andere Algorithmen
  Caching im Kontext von Skalierungsmustern bedeutet, häufig verwendete Daten vorübergehend zu speichern, um den Zugriff zu beschleunigen und die Belastung der ursprünglichen Datenquelle zu verringern. Dies verbessert die Leistung und Skalierbarkeit von Systemen, indem wiederholte Anfragen schneller bedient werden. Caching wird häufig in Webanwendungen, Datenbanken und anderen Systemen eingesetzt, um Antwortzeiten zu optimieren und Ressourcen effizient zu nutzen.
  Es gibt verschiedene Arten von Caching, wie "lokales Caching", "CDN" und "Hierarchisches Caching" usw. Diese Ansätze beschreiben, wie das Caching im System organisiert ist
 
-* Application Server Cache
- Der Application Server Cache ist ein Speicher, der in einer Webanwendung in Verbindung mit dem Anwendungsserver verwendet wird. Er speichert oft angefragte Daten im Arbeitsspeicher, um die Antwortzeiten zu beschleunigen. Bei wiederholten Anfragen werden die Daten aus dem Cache zurückgegeben. Wenn neue Anfragen auftreten, werden die Daten von der Festplatte geladen und dann in den Cache gelegt. Dies hilft, die Leistung zu verbessern.
+* ### Application Server Cache
+  Der Application Server Cache ist ein Speicher, der in einer Webanwendung in Verbindung mit dem Anwendungsserver verwendet wird. Er speichert oft angefragte Daten im Arbeitsspeicher, um die Antwortzeiten zu beschleunigen. Bei wiederholten Anfragen werden die Daten aus dem Cache zurückgegeben. Wenn neue Anfragen auftreten, werden die Daten von der Festplatte geladen und dann in den Cache gelegt. Dies hilft, die Leistung zu verbessern.
 
-* Lokales Caching
+* ### Lokales Caching
   Lokales Zwischenspeichern von Daten ist eine Technik, die verwendet wird, um den Netzwerkzugriff auf Datendateien zu beschleunigen. Dabei werden Daten, wenn möglich, auf den Client-Geräten zwischengespeichert, anstatt auf den Servern. Die Auswirkung des lokalen Zwischenspeicherns besteht darin, dass es ermöglicht, mehrere Schreibvorgänge auf demselben Bereich einer Datei zu einem einzelnen Schreibvorgang über das Netzwerk zusammenzufassen.
 
-* Globales Caching 
- Wie der Name bereits sagt, handelt es sich um einen einzigen gemeinsam genutzten Cache, den alle Anwendungsknoten verwenden. Wenn die angeforderten Daten nicht im globalen Cache gefunden werden, liegt es in der Verantwortung des Caches, das fehlende Datenstück aus dem zugrunde liegenden Datenspeicher zu ermitteln.
+* ### Globales Caching 
+  Wie der Name bereits sagt, handelt es sich um einen einzigen gemeinsam genutzten Cache, den alle Anwendungsknoten verwenden. Wenn die angeforderten Daten nicht im globalen Cache gefunden werden, liegt es in der Verantwortung des Caches, das fehlende Datenstück aus dem zugrunde liegenden Datenspeicher zu ermitteln.
 
-* Distributed Caching
- Beim Distributed Caching wird der Cache über mehrere Server oder Knoten im Netzwerk verteilt.
+* ### Distributed Caching
+  Beim Distributed Caching wird der Cache über mehrere Server oder Knoten im Netzwerk verteilt.
 
-* Hierarchisches Caching
- Hierarchical Caching beinhaltet eine Kombination aus Local und Distributed Caching in einem hierarchischen Aufbau.
+* ### Hierarchisches Caching
+  Hierarchical Caching beinhaltet eine Kombination aus Local und Distributed Caching in einem hierarchischen Aufbau.
 
-* Content Delivery Networks
- Ein Content Delivery Network ist eine spezialisierte Form des verteilten Cachings, das auf die Bereitstellung von Inhalten, wie Bilder, Videos und Webseiten, spezialisiert ist. 
+* ### Content Delivery Networks
+  Ein Content Delivery Network ist eine spezialisierte Form des verteilten Cachings, das auf die Bereitstellung von Inhalten, wie Bilder, Videos und Webseiten, spezialisiert ist. 
 
 [17,18]
 
 ### Skalierungswürfel
 
 Der Skalierungswürfel (Scale Cube) ist ein Konzept im Systemdesign von Martin Fowler, einem renommierten Softwarearchitekten. Er dient dazu, die verschiedenen Dimensionen der Skalierung zu verstehen und zu planen. Der Würfel unterteilt die Skalierung in drei Hauptdimensionen:
-X-Achse (Horizontale Skalierung): Zusätzliche Instanzen oder Server werden hinzugefügt, um die Last zu verteilen, was in Cloud-Umgebungen zur Bewältigung von Lastspitzen und zur Steigerung der Ausfallsicherheit verwendet wird.
-Y-Achse (Funktionale Aufteilung): Die Anwendung wird in separate Funktionen oder Dienste aufgeteilt, um die Skalierbarkeit und Wartbarkeit zu verbessern. Jeder Dienst kann unabhängig skaliert und gewartet werden.
-Z-Achse (Datenpartitionierung): Daten werden in separate Partitionen aufgeteilt, um die Leistung und Skalierbarkeit der Datenverarbeitung zu steigern. Dies kann durch Sharding oder Replikation erfolgen, um große Datenmengen zu bewältigen.### Bilder
+
+#### X-Achse (Horizontale Skalierung):
+ Zusätzliche Instanzen oder Server werden hinzugefügt, um die Last zu verteilen, was in Cloud-Umgebungen zur Bewältigung von Lastspitzen und zur Steigerung der Ausfallsicherheit verwendet wird.
+#### Y-Achse (Funktionale Aufteilung):
+ Die Anwendung wird in separate Funktionen oder Dienste aufgeteilt, um die Skalierbarkeit und Wartbarkeit zu verbessern. Jeder Dienst kann unabhängig skaliert und gewartet werden.
+#### Z-Achse (Datenpartitionierung):
+ Daten werden in separate Partitionen aufgeteilt, um die Leistung und Skalierbarkeit der Datenverarbeitung zu steigern. Dies kann durch Sharding oder Replikation erfolgen, um große Datenmengen zu bewältigen.### Bilder
 [17,19]
 
 ---
