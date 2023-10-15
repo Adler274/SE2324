@@ -28,7 +28,9 @@ mindmap
         keine Entscheidungen von Zentralinstanz
     Kollaboration
       Concurrent
+        hintereinander bearbeiten
       Parallel
+        parallel bearbeiten
 ```
 
 ## Systemarchitektur verteilter Softwaresysteme
