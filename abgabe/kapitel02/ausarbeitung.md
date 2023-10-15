@@ -264,7 +264,7 @@ Die Wahl zwischen Choreography und Orchestration hängt von den spezifischen Anf
  Verteilt Datenverkehr auf Server zur Leistungssteigerung und Ausfallsicherheit. Spezialisiert auf gleichmäßige Lastenverteilung und Serverüberwachung.
 
 Insgesamt sind diese Komponenten nicht ausschließlich voneinander getrennt und können in Kombination verwendet werden, um die Anforderungen eines bestimmten Systems zu erfüllen. Die Wahl zwischen ihnen hängt von den spezifischen Anforderungen und Zielen Ihres Projekts ab. 
-Quelle:  https://www.designgurus.io/blog/Load-Balancer-Reverse-Proxy-API-Gateway
+
 
 ## Skalierungsmuster
 
