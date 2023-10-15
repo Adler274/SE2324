@@ -45,7 +45,7 @@ Simon Fedrau, Jannis Wilmsmeier, Sascha Hahn
 |einfache Sklierbarkeit bei steigenden Anforderungen|Synchronisierung und Koordinierung aufwändig|
 |durch Redundante Geräte bessere Ausfallsicherheit|Suche nach Fehlern möglicherweise schwierig wenn man Gerät nicht kennt|
 |Entwickler und Benutzer müssen die Verteilung nicht kennen(Transparenz)|Daten müssen bessere gesichert werden|
-|Verscheidene Software und Hardwresysteme einbaubar(Heterogenität)|
+|Verscheidene Software und Hardwresysteme einbaubar(Heterogenität)||
 [1,2]
 
 ---
@@ -68,6 +68,15 @@ Wie schon bei den Vor- und Nachteilen zu sehen bieten verteilte Systeme viele m�
 [3]
 
 ---
+
+## Concurrent vs parallel
+### Def.: Mehrere Aufgaben gleichteitig bearbeiten
+### Concurrent:
+- #### schnell hintereinander/abwechselnd
+### Parallel:
+- #### tatsächlich gleichzeitige verrarbeitung
+[17]
+
 ## Systemarchitektur verteilter Softwaresysteme
 ***
 

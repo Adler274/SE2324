@@ -33,7 +33,11 @@ Beispiele hierfür sind z.B. Cryptowährungen oder allgemein die Blockchain-Tech
 [3]
 
 ## Concurrent vs parallel
-
+Die beiden Begriffe Beziehen sich darauf wie mehrere Aufgaben in der Informatik gleichzeit ausgeführt werden.
+Bei der Konkurrenz werden die Aufgaben nicht gleichzeitig bearbeitet, sondern schnell hintereinander/abwechelnd.
+Bei der Parallelität werden die Aufgaben auch tatsächlich gleichzeit bearbeitet.
+Beides wird genutzt um Resourcen effizient zu nutzen und Aufagaen schneller zu bearbeiten.
+[17]
 
 
 # Systemarchitektur verteilter Softwaresysteme
@@ -385,10 +389,11 @@ Der Skalierungswürfel (Scale Cube) ist ein Konzept im Systemdesign von Martin F
 [17,19]
 
 ---
+
 ## Referenzen
 
 [1] :https://de.wikipedia.org/wiki/IT-Architektur  
-[2] :https://www.heise.de/blog/Was-ist-Architektur-4931898.html
+[2] :https://www.heise.de/blog/Was-ist-Architektur-4931898.html<br>
 [3] :https://www.fonial.de/wissen/begriff/client-server-modell/
 [4] :https://www.linkedin.com/pulse/mpa-spa-pwa-whats-difference-how-does-work-together-marek-kubacak 
 [5] :https://kinsta.com/de/blog/web-anwendungs-architektur/
@@ -407,6 +412,6 @@ Der Skalierungswürfel (Scale Cube) ist ein Konzept im Systemdesign von Martin F
 [18]:https://www.geeksforgeeks.org/caching-system-design-concept-for-beginners/
 [19]:Quelle: https://www.geeksforgeeks.org/the-scale-cube/
 
-[1]: https://www.youtube.com/watch?v=MYjQWiDDdVQ&list=PLcVYkCRLcLtGHzfmkfYjdN8Ai9tkHaHvi&index=2
-[2]: https://www.youtube.com/watch?v=RR_iiLYTdDM
-[3]: https://www.hivenet.com/post/decentralized-or-distributed-whats-the-big-difference#:~:text=In%20a%20decentralized%20system%2C%20control,sharing%20of%20resources%20and%20workloads.
+[20]: https://www.youtube.com/watch?v=MYjQWiDDdVQ&list=PLcVYkCRLcLtGHzfmkfYjdN8Ai9tkHaHvi&index=2
+[21]: https://www.youtube.com/watch?v=RR_iiLYTdDM
+[22]: https://www.hivenet.com/post/decentralized-or-distributed-whats-the-big-difference#:~:text=In%20a%20decentralized%20system%2C%20control,sharing%20of%20resources%20and%20workloads.
