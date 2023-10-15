@@ -434,6 +434,21 @@ Kann durch Sharding oder Replikation erfolgen, um große Datenmengen zu bewälti
 [17,19]
 
 ---
+## Fragen 
+
+- Warum braucht man verteilung für Softwaresysteme
+- Was ist der unterschied zwischen destributed und decentralized
+- Welche Systemarchitekturmuster gibt es?
+- Was für Event Types gibt es?
+- Was für arten von Microservices gibt es 
+- Worin unterscheiden sich Choreography Pattern und Orchestration Pattern
+- Was für Komponenten gibt es in einem System
+- Was für Load Balancing Alogrithmen gibt es?
+- Was für arten von Caching gibt es?
+- Was sind die drei Achsen des Skalierungswürfels
+
+
+---
 #### Referenzen
 ***
 ###### [1]  :https://de.wikipedia.org/wiki/IT-Architektur  
