@@ -88,13 +88,8 @@ Wie schon bei den Vor- und Nachteilen zu sehen bieten verteilte Systeme viele m√
 
 ## Visualisierung von Systemarchitekturen
 ***
-Muss noch gemacht werden, vlt paar Bilder oder so 
-
-1. # Muss noch gemacht werden 
-
-2. # Muss noch gemacht werden 
-
-3. # Muss noch gemacht werden 
+![:scale 30%](media/peer-to-peer.png)
+![:scale 30%](media/client_server_modell.png)
 
 ---
 
