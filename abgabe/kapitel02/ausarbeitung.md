@@ -10,6 +10,7 @@ verteilt sind. Dem Anwender erscheint dies als ein einziges System.
 ## Eigenschaften, Vorteile, Nachteile
 Verteilte Systeme ermöglichen es die Leistungsfähigkeit eines Systems zu erhöhen, indem die Aufgaben auf mehrere Rechner verteilt werden. Die Rechner sind über Netzwerke und dem Internet miteinander verbunden und kommunizieren über bestimmte protokolle miteinander.
 Im Nachfolgenden sind einige Vor- und Nachteile aufgelistet.
+[1,2]
 
 
 | Vorteile|Nachteile|
@@ -18,17 +19,21 @@ Im Nachfolgenden sind einige Vor- und Nachteile aufgelistet.
 |**AusfallSicherheit:** <br> Bei Ausfall einzelner Komponenten ist das System nicht zwingengt komplett beeinträchtigt sondern nur Teilweise.Außerderm kann das System so gebaut werden dass mehrere Komponenten die gleiche Aufgabe erfüllen und bei Ausfällen entprächend ein anderes Gerät übernimmt|==>**Ausfallerkennung - Leslie Lamport:**<br>A distributed system is one in which the failure of a computer which you didn't even know existd can render your own computer unusable.<br> **1.** Es existsieren trotzdem abhängigkeiten, die einen stark beeinträchtigen können<br> **2.** Bei sehr großen System kann sich die suche nach dem Fehler über eine große Anzahl von Rechner als sehr zeit- und kostspielig herausstellen.|
 |**Transparenz**:<br> Entwickler und Benutzer müssen nicht wissen wie bestimmte Eigenschafte auf die einzelnen Rchner verteilt sind.(Ortstransparenz, Zugriffsttransparenz, Replikationstransparenz, Namenstransparenz)|**Datensicherheit:**Daten müssen massiver gegen Angriffe geschnützt werden, da es mehrere Angriffspunkte gibt.|
 |**Heterogenität:**<br>das System kann aus verschiedenen Hardware- und Softwarekomponenten besteht, was mehr möglichkeiten bietet.|
+[1,2]
 
 
 ## Motivation (Warum man Verteilung braucht)
 Wie schon bei den Vor- und Nachteilen zu sehen bieten verteilte Systeme viele möglichkeiten zur Systemverbesserung, wie z.B. die Skalierbarkeit, Ausfallsicherheit, Transparenz und Heterognetität. Diese Eigenschaften sind in der heutigen Zeit sehr wichtig, da die Anforderungen an die Systeme immer weiter steigen. Verteilte Systeme sind zwar deutlich komplexer und aufwändiger zu entwickeln, bieten aber die Möglichkeiten große Systeme anforderungsgerecht aufzubauen.
+[1,2]
 
 ## Distributed vs decentralized
 Wie wir schon wissen beziehen sich Distributed(Verteilte) Systeme auf die Verteilung der Software auf physisch getrennte Geräte.
 Jetzt stellt sich die Frage was mit einem dezentrallene System gemeint ist. Ein dezentrallenes System ist ein System, bei dem die *Entscheidungen* nicht von einer zentralen Instanz getroffen werden, sondern von mehreren/verteilten Instanzen.
-Beispiele hierfür sind z.B. Cryptowährungen oder allgemein die Blockchain-Technologie. Hierbei werden die Entscheidungen von mehreren Instanzen getroffen, die sich gegenseitig überprüfen und somit die Sicherheit des Systems gewährleisten.[3]
+Beispiele hierfür sind z.B. Cryptowährungen oder allgemein die Blockchain-Technologie. Hierbei werden die Entscheidungen von mehreren Instanzen getroffen, die sich gegenseitig überprüfen und somit die Sicherheit des Systems gewährleisten.
+[3]
 
 ## Concurrent vs parallel
+
 
 
 # Systemarchitektur verteilter Softwaresysteme
