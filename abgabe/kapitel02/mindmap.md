@@ -1,6 +1,6 @@
-## Kapitelüberschrift
+## Verteilte Softwaresysteme
 
-**Autor:** Jannis Wilmsmeier
+**Autor:** Simon Fedrau, Jannis Wilmsmeier, Sascha Hahn
 
 Folgende Mindmaps zeigen die Inhalte des Kapitels 2.
 
@@ -8,21 +8,27 @@ Folgende Mindmaps zeigen die Inhalte des Kapitels 2.
 
 ```mermaid
 mindmap
-  STILL MISSING
-    Origins
-      Long history
-      Popularisation
-        British popular psychology author Tony Buzan
-    Research
-      On effectiveness<br/>and features
-      On Automatic creation
-        Uses
-            Creative techniques
-            Strategic planning
-            Argument mapping
-    Tools
-      Pen and paper
-      Mermaid
+  Verteilte Softwaresysteme
+    Eigenschaften
+      Software über mehrere Server verteilt
+      erscheint als ein System
+      Vorteile
+        Skalierbarkeit
+        Ausfallsicherheit
+        Transparenz
+        Heterogenität
+      Nachteile
+        Komplexität
+        Ausfallerkennung
+        Datensicherheit
+    Verteilung
+      Distrbuted
+        physisch getrennte Geräte
+      Decentralized
+        keine Entscheidungen von Zentralinstanz
+    Kollaboration
+      Concurrent
+      Parallel
 ```
 
 ## Systemarchitektur verteilter Softwaresysteme
