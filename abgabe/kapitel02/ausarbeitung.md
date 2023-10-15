@@ -430,8 +430,8 @@ Der Skalierungswürfel (Scale Cube) ist ein Konzept im Systemdesign von Martin F
 
 [19] :https://www.geeksforgeeks.org/the-scale-cube/
 
-[20]: https://www.youtube.com/watch?v=MYjQWiDDdVQ&list=PLcVYkCRLcLtGHzfmkfYjdN8Ai9tkHaHvi&index=2
+[20] :https://www.youtube.com/watch?v=MYjQWiDDdVQ&list=PLcVYkCRLcLtGHzfmkfYjdN8Ai9tkHaHvi&index=2
 
-[21]: https://www.youtube.com/watch?v=RR_iiLYTdDM
+[21] :https://www.youtube.com/watch?v=RR_iiLYTdDM
 
-[22]: https://www.hivenet.com/post/decentralized-or-distributed-whats-the-big-difference#:~:text=In%20a%20decentralized%20system%2C%20control,sharing%20of%20resources%20and%20workloads.
+[22] :https://www.hivenet.com/post/decentralized-or-distributed-whats-the-big-difference#:~:text=In%20a%20decentralized%20system%2C%20control,sharing%20of%20resources%20and%20workloads.
