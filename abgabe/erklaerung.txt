@@ -1,8 +1,14 @@
 Hiermit versichere ich/wir
 
+Wilmsmeier, Jannis       1320534
 ________________________ ______________
 Name, Vorname            Matrikelnummer
 
+Fedrau, Simon            1318904
+________________________ ______________
+Name, Vorname            Matrikelnummer
+
+Hahn, Sascha             1320857
 ________________________ ______________
 Name, Vorname            Matrikelnummer
 
@@ -14,5 +20,6 @@ Mir ist bekannt, dass es sich bei einem Plagiat um eine Täuschung handelt, die 
 
 Ich versichere, dass ich die vorliegende Arbeit oder Teile daraus nicht bereits anderweitig innerhalb und außerhalb der Hochschule als Prüfungsleistung eingereicht habe.
 
+Minden, 15.10.2023    
 _____________________ ___________________ 
 Ort, Datum            Unterschrift 
