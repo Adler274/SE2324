@@ -354,22 +354,53 @@ Der Skalierungswürfel (Scale Cube) ist ein Konzept im Systemdesign von Martin F
 ## Referenzen
 
 [1] :https://de.wikipedia.org/wiki/IT-Architektur  
+
 [2] :https://www.heise.de/blog/Was-ist-Architektur-4931898.html
+
 [3] :https://www.fonial.de/wissen/begriff/client-server-modell/
+
 [4] :https://www.linkedin.com/pulse/mpa-spa-pwa-whats-difference-how-does-work-together-marek-kubacak 
+
 [5] :https://kinsta.com/de/blog/web-anwendungs-architektur/
+
 [6] :https://innowise-group.com/de/blog/best-software-architecture-patterns/
+
 [7] :https://en.wikipedia.org/wiki/Event-driven_architecture 
+
 [8] :https://nordicapis.com/whats-the-difference-between-event-brokers-and-message-queues/
+
 [9] :https://www.redhat.com/de/topics/integration/what-is-event-driven-architecture
+
 [10] :https://www.sciencedirect.com/science/article/abs/pii/S0306437920300028
-[11]:https://scoutapm.com/blog/distributed-monoliths-vs-microservices
-[12]:https://camunda.com/blog/2023/02/orchestration-vs-choreography/
-[13]:https://www.redhat.com/de/topics/microservices/what-is-a-service-mesh
-[14]:https://www.designgurus.io/blog/Load-Balancer-Reverse-Proxy-API-Gateway
-[15]:https://www.singlestore.com/blog/database-sharding-vs-partitioning-whats-the-difference/
-[16]:https://www.enjoyalgorithms.com/blog/types-of-load-balancing-algorithms
-[17]:https://chat.openai.com/
-[18]:https://www.geeksforgeeks.org/caching-system-design-concept-for-beginners/
-[19]:Quelle: https://www.geeksforgeeks.org/the-scale-cube/
+
+[11] :https://scoutapm.com/blog/distributed-monoliths-vs-microservices
+
+[12] :https://camunda.com/blog/2023/02/orchestration-vs-choreography/
+
+[13] :https://www.redhat.com/de/topics/microservices/what-is-a-service-mesh
+
+[14] :https://www.designgurus.io/blog/Load-Balancer-Reverse-Proxy-API-Gateway
+
+[15] :https://www.singlestore.com/blog/database-sharding-vs-partitioning-whats-the-difference/
+
+[16] :https://www.enjoyalgorithms.com/blog/types-of-load-balancing-algorithms
+
+[17] :https://chat.openai.com/
+
+[18] :https://www.geeksforgeeks.org/caching-system-design-concept-for-beginners/
+
+[19] :https://www.geeksforgeeks.org/the-scale-cube/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
