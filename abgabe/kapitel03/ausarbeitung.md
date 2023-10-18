@@ -1,54 +1,62 @@
-# Kapitelüberschrift
+# Aufgabe 2
 
-**Autor:** Max Mustermann
+**Autor:** Simon Fedrau, Sascha Hahn
 
-# Headings
 
-* Überschrift H1: `# Überschrift`
+### Debugging 
 
-# Überschrift
+  Unter Debugging versteht man den Prozess der Identifizierung und Behebung von Fehlern oder Bugs in einem Softwaresystem. Es ist ein wichtiger Aspekt der Softwareentwicklung, denn Fehler können dazu führen, dass ein Softwaresystem nicht richtig funktioniert, was wiederum eine schlechte Leistung oder falsche Ergebnisse zur Folge haben kann. Die Fehlersuche kann eine zeitaufwändige und komplexe Aufgabe sein, aber sie ist unerlässlich, um sicherzustellen, dass ein Softwaresystem korrekt funktioniert.
 
-* Überschrift H2: `## Überschrift`
+https://www.geeksforgeeks.org/software-engineering-debugging/
+Aufgerufen 18.10.23
 
-## Überschrift
 
-*  Überschrift H3: `### Überschrift`
+## Problem solving, Root cause analysis 
 
-### Überschrift
 
-*  Überschrift H4: `#### Überschrift`
 
-#### Überschrift
+## Debugging vs. Testen
 
-* Überschrift H5: `##### Überschrift`
+  Das Debuggen unterscheidet sich vom Testen. Das Testen konzentriert sich auf das Auffinden von Bugs, Fehlern usw., während das debuggen beginnt, nachdem ein Fehler in der Software identifiziert wurde. Das Testen dient dazu, sicherzustellen, dass das Programm korrekt ist und mit einer bestimmten Mindesterfolgsquote funktioniert. Das Testen kann manuell oder automatisiert erfolgen. Es gibt verschiedene Arten von Tests: Unit-Tests, Integrationstests, Alpha- und Beta-Tests usw. Die Fehlersuche erfordert eine Menge Wissen, Fähigkeiten und Erfahrung. Sie kann durch einige automatisierte Tools unterstützt werden, ist aber eher ein manueller Prozess, da jeder Fehler anders ist und eine andere Technik erfordert, im Gegensatz zu einem vordefinierten Testmechanismus.
 
-##### Überschrift
 
-*  Überschrift H6: `###### Überschrift`
+https://www.geeksforgeeks.org/software-engineering-debugging/
+Aufgerufen 18.10.23
 
-###### Überschrift
 
-# Paragraphs
 
-* Paragraphen werden durch eine oder mehrere leere Zeilen von einander getrennt:
+## Rubber Duck Debugging 
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
-# Emphasis
+## Time-travel debugging (reverse debugging)
 
-* kursiv: `_dieser Text wird kursiv_`
 
-_dieser Text wird kursiv_
+## Logging / Tracing 
 
-* fett: `**dieser Text wird fett**`
 
-**dieser Text wird fett**
 
-* durchgestrichen: `~~dieser Text wird durchgestrichen~~`
+## Ablauf des Debuggings
 
-~~dieser Text wird durchgestrichen~~
+
+
+## Beispiel
+
+
+
+## Werkzeuge
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Listen
 
@@ -64,9 +72,10 @@ _dieser Text wird kursiv_
 
 ## Unterkapitel
 
-* **Softwaresystem**:
+ **Softwaresystem**:
   Die *innere* Sicht des Informatikers nimmt Software als Softwaresystem wahr.
-* **Softwareprodukt**: Die *äußere* Sicht eines Auftraggeber nimmt ein Softwaresystem als Softwareprodukt wahr. 
+
+ **Softwareprodukt**: Die *äußere* Sicht eines Auftraggeber nimmt ein Softwaresystem als Softwareprodukt wahr. 
 
 ### Tabelle
 
