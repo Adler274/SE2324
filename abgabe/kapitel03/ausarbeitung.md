@@ -83,11 +83,52 @@ Spans sind die kleinste Einheit des Distributed Tracings und bilden den eigentli
 
 https://www.adesso.de/de/news/blog/logging-vs-tracing-2.jsp
 
+https://www.embedded-software-engineering.de/durch-traceability-lassen-sich-unbaendige-projekte-zaehmen-a-919617/
+
 
 
 ## Ablauf des Debuggings
 
+Das Debugging ist der Prozess des Identifizierens, Isolierens und Behebens von Fehlern oder Bugs in Software oder Hardware. Hier ist eine allgemeine Beschreibung des Ablaufs des Debuggings:
 
+Fehlereridentifikation:
+Identifiziere Anzeichen für einen Fehler, wie unerwartetes Verhalten, Fehlermeldungen oder Abstürze der Anwendung. Benutzer-Feedback und Protokolldateien sind oft hilfreiche Quellen, um auf Probleme hinzuweisen.
+
+  Reproduzierbarkeit sicherstellen:
+        Versuche, den Fehler reproduzierbar zu machen. Das bedeutet, dass du eine genaue Abfolge von Schritten dokumentieren musst, die notwendig sind, um den Fehler jedes Mal zu provozieren. Dies erleichtert die Fehleranalyse.
+
+    Fehlerisolation:
+        Begrenze den Bereich, in dem du den Fehler vermutest. Dies kann bedeuten, dass du Teile des Codes oder Hardware-Komponenten ausschließt, die keinen Zusammenhang mit dem Fehler zu haben scheinen.
+
+    Fehleranalyse:
+        Untersuche den isolierten Bereich gründlich, um die Ursache des Fehlers zu identifizieren. Dies beinhaltet das Lesen des Quellcodes, das Überprüfen von Variablen und das Verfolgen der Ausführungsschritte. Werkzeuge wie Debugging-Tools, Protokollierung und Profiling können hilfreich sein.
+
+    Hypothesenbildung:
+        Basierend auf deinen Erkenntnissen erstellst du Hypothesen darüber, was den Fehler verursachen könnte. Du könntest vermuten, dass ein bestimmter Codeabschnitt, eine Variable oder eine Konfiguration fehlerhaft ist.
+
+    Experimente durchführen:
+        Um deine Hypothesen zu überprüfen, führe gezielte Experimente durch, indem du Codeänderungen vornimmst, Variablenwerte änderst oder Konfigurationseinstellungen anpasst. Überwache die Auswirkungen dieser Experimente und stelle fest, ob der Fehler behoben wurde oder sich verändert hat.
+
+    Schrittweises Testen:
+        Teste jede Änderung schrittweise und systematisch, um sicherzustellen, dass der Fehler nicht nur behoben wurde, sondern auch keine neuen Fehler eingeführt wurden.
+
+    Behebung und Validierung
+
+      Entwickler beheben den Fehler und führen Tests durch, um sicherzustellen, dass die Software weiterhin wie erwartet funktioniert. Sie werden möglicherweise neue Tests schreiben, um zu prüfen, ob der Fehler in Zukunft wieder auftritt.
+
+    Dokumentation:
+        Halte alle durchgeführten Experimente und gefundenen Lösungen in einer geeigneten Form (wie Notizen oder Kommentaren im Code) fest, um anderen Entwicklern zu helfen und zukünftige Debugging-Bemühungen zu unterstützen.
+
+    Abschluss:
+        Wenn der Fehler behoben ist und die Anwendung wieder wie erwartet funktioniert, teste gründlich, um sicherzustellen, dass keine weiteren Probleme auftreten. Informiere bei Bedarf Benutzer oder Teammitglieder über die Behebung des Fehlers.
+
+Debugging kann ein zeitaufwändiger Prozess sein, erfordert Geduld und systematisches Vorgehen, ist jedoch entscheidend, um stabile und zuverlässige Software oder Hardware zu entwickeln. Die Verwendung von geeigneten Debugging-Tools und Techniken kann diesen Prozess erleichtern und beschleunigen.
+
+
+https://aws.amazon.com/de/what-is/debugging/
+
+https://chat.openai.com/ Frage: beschreibe mir den Ablauf des 
+Debuggings
 
 ## Beispiel
 
@@ -95,12 +136,118 @@ https://www.adesso.de/de/news/blog/logging-vs-tracing-2.jsp
 
 ## Werkzeuge
 
+Es gibt viele Debugging-Werkzeuge, die Entwickler verwenden können, um Fehler in Software zu identifizieren und zu beheben. Hier sind einige typische Debugging-Werkzeuge:
+
+Integrierte Entwicklungsumgebungen (IDEs): Viele moderne IDEs bieten eingebaute Debugging-Tools, die es Entwicklern ermöglichen, den Code Schritt für Schritt auszuführen, Variablenwerte zu überwachen, Breakpoints zu setzen und Stack-Traces anzuzeigen. Beispiele sind Visual Studio für C#, PyCharm für Python und Eclipse für Java.
+
+Debugger für spezielle Sprachen:
+GDB (GNU Debugger): Ein leistungsstarker Debugger für C, C++, und andere Sprachen.
+PDB (Python Debugger): Ein Debugger für Python.
+Xcode Debugger: Der Debugger für Anwendungen, die auf Apple-Plattformen entwickelt werden.
+
+Version Control Systeme: Diese Systeme (z. B. Git) ermöglichen es, den Verlauf von Code-Änderungen zu verfolgen und zu vergleichen, um Fehler zu finden, die durch Codeänderungen eingeführt wurden.
+
+Protokollierung (Logging): Das Hinzufügen von Protokollierungsinformationen zu deinem Code kann dir dabei helfen, den Zustand deiner Anwendung zu verstehen und Fehler nachzuverfolgen.
+
+Profiling-Tools: Diese Tools helfen dabei, die Leistung deiner Anwendung zu analysieren und Engpässe oder ineffiziente Codeabschnitte zu identifizieren.
+
+Memory Debugging-Tools: Speicherleckagen und Speicherfehler können schwer zu finden sein. Tools wie Valgrind für C/C++ oder Memory Profiler für C# können hier helfen.
+
+Browser-Entwicklertools: Wenn du webbasierte Anwendungen entwickelst, bieten moderne Webbrowser Entwicklertools, mit denen du JavaScript-Code debuggen, Netzwerkaktivitäten überwachen und den DOM (Document Object Model) inspizieren kannst.
+
+Fehlerberichterstattungstools: Diese Tools sammeln Fehlerberichte von Benutzern, um Entwicklern bei der Identifizierung und Behebung von Problemen zu helfen. Ein Beispiel ist Sentry.
+
+Remote Debugging-Tools: Für mobile und eingebettete Systeme können Entwickler Remote-Debugging-Werkzeuge verwenden, um Fehler auf Geräten oder in der Cloud zu analysieren.
+
+Testwerkzeuge: Automatisierte Testwerkzeuge wie JUnit für Java oder unittest für Python helfen, Fehler durch gezielte Tests zu identifizieren.
+
+Virtuelle Maschinen und Container: Die Verwendung von VMs oder Containern ermöglicht es Entwicklern, die Umgebung zu isolieren und Probleme in einer konsistenten Umgebung zu debuggen.
+
+Die Wahl des richtigen Debugging-Werkzeugs hängt von der Entwicklungsumgebung, der Programmiersprache und der Art des Problems ab. Oftmals ist eine Kombination aus verschiedenen Werkzeugen notwendig, um komplexe Fehler zu identifizieren und zu beheben.
+
+https://chat.openai.com/c/48dc5e10-62ff-4bad-af36-aed923432e5c
+
+Frage: was sind typische Debugging werkzteuge
+
+
+
+
+# Agile testing workflows
+
+
+  ## TDD, BDD, ATDD
+
+
+
+  ### Motivation, Ablauf, Inhalte, Frameworks
+
+## Test doubles
+
+
+
+### Mocks vs Fakes vs Stubs vs Spy
+
+
+
+
+### Frameworks
 
 
 
 
 
+# Pair programming
 
+
+   ## Ablauf
+
+
+
+   ## Best practices
+
+
+
+# Code reviews
+  
+  
+  ## Conventional comments
+  
+  
+  ## Ablauf
+  
+  
+  ## Best practices
+
+
+
+# Refactoring
+
+
+
+  ## Ziele des Refactorings
+
+
+
+  ## Refactoring-Patterns
+
+
+# Werkzeuge
+
+
+
+  ## Testing / Build
+
+
+
+  
+  
+  
+  ### Github actions
+  
+  
+  
+  
+## Bug and work tracking
 
 
 
