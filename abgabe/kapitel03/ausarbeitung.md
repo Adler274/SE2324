@@ -27,12 +27,61 @@ Aufgerufen 18.10.23
 
 ## Rubber Duck Debugging 
 
+Oder zu deutsch "Quietscheentchen-Debugging"
+
+Quietscheentchen-Debugging (englisch „Rubber Ducking“) bezeichnet eine Methode zum Debuggen, also dem Finden von Programmfehlern in Computerprogrammen. Es existieren mehrere Bezeichnungen für diese Methode, oft mit anderen unbelebten Objekten.
+
+Beim Quietscheentchen-Debugging erklärt der Programmierer den Quelltext Zeile für Zeile einem Quietscheentchen (oder zum Beispiel einer Person, die nichts vom Programmieren versteht). Die Erklärung erfordert ein tieferes Verständnis des Programmcodes. Bei der zeilenweisen Erklärung, was das Programm machen soll, im Vergleich zu dem, was es tatsächlich macht, fallen eventuelle Ungleichheiten auf. Während des Erklärungsprozesses fällt dem Programmierer der Fehler auf. Der Vorteil des Quietscheentchens gegenüber einer anderen Person ist, dass niemand gestört werden muss. 
+
+Nicht zuletzt sei gesagt, dass ein Austausch des klassischen Quietscheentchens durch einen individuell bevorzugten ‚Gesprächspartner‘ die Erfolgsaussichten des Debuggings keinesfalls trübt …
+
+https://de.wikipedia.org/wiki/Quietscheentchen-Debugging#cite_note-2
+
+https://web.archive.org/web/20170907213645/http://quietscheentchen.net/quietscheentchen-debugging
+
+
 
 
 ## Time-travel debugging (reverse debugging)
 
+Zeitreise-Debugging (auch Reverse-Debugging genannt) ermöglicht es Entwicklern, alle Programmaktivitäten zur Laufzeit aufzuzeichnen (jeden Speicherzugriff, jede Berechnung und jeden Aufruf des Betriebssystems) und dann zurückzuspulen und wieder abzuspielen, um den Programmzustand zu untersuchen.
+
+Diese riesige Datenmenge lässt sich mit einer aussagekräftigen Metapher beschreiben: die Möglichkeit, in der Zeit zurückzureisen (und wieder vorwärts), um den Programmzustand zu untersuchen.
+
+Um die Leistung zu optimieren, nehmen die Entwickler in der Regel eine Feinabstimmung des Zeitreise-Debuggers vor, um nur die Informationen zu sammeln, die für eine genaue Wiedergabe des untersuchten Programms erforderlich sind.
+
+
+Nehmen wir an, Sie erhalten eine E-Mail-Benachrichtigung, dass ein Dienst abstürzt, kurz nachdem Ihre letzte Codeänderung implementiert wurde. Der Absturz tritt nur bei 0,1 Prozent der Server auf, auf denen der Dienst läuft. Da Sie aber in einem großen Unternehmen arbeiten, entsprechen 0,1 Prozent Tausenden von Servern - und dieses Problem wird schwer zu reproduzieren sein. Einige Stunden später können Sie das Problem immer noch nicht reproduzieren, und Sie haben einen ganzen Tag damit verbracht, diesem Problem nachzugehen.
+
+An dieser Stelle kommt das Reverse Debugging ins Spiel. Bestehende Methoden ermöglichen es Ingenieuren, ein angehaltenes (oder abgestürztes) Programm aufzuzeichnen und dann zurückzuspulen und wieder abzuspielen, um die Grundursache zu finden. Für große Unternehmen wie Facebook sind diese Lösungen jedoch zu aufwändig, um in der Produktion eingesetzt werden zu können. Deshalb haben wir eine neue Technik entwickelt, die es Ingenieuren ermöglicht, einen fehlgeschlagenen Lauf zu verfolgen und seinen Verlauf zu untersuchen, um die Ursache zu finden, ohne das Programm erneut ausführen zu müssen, was eine enorme Zeitersparnis bedeutet. Wir tun dies, indem wir die CPU-Aktivitäten auf unseren Servern effizient verfolgen und bei Abstürzen die Prozesshistorie speichern, die später mit Hilfe des LLDB-Debuggers in einem für den Menschen lesbaren Format angezeigt wird, das von der Ansicht der Befehlshistorie bis zum Reverse Debugging alles bietet.
+
+
+
+https://undo.io/resources/6-things-time-travel-debugging
+https://engineering.fb.com/2021/04/27/developer-tools/reverse-debugging/
 
 ## Logging / Tracing 
+
+
+### Logging 
+Der Begriff Logging beschreibt im IT-Umfeld das automatisierte Protokollieren von System- und Prozessmeldungen. Bei den protokollierten Logdaten handelt es sich um Statusinformationen oder Ereignisse, die beim Betrieb von IT-Systemen oder bei der Ausführung von Hard- und Softwareprozessen auftreten.
+
+Ergebnisse des Loggings sind Logdateien, die häufig in Form von Textdateien vorliegen. Die in diesen Dateien protokollierten Informationen und Ereignisse sind mit einem Zeitstempel versehen und innerhalb der Logdatei in der Regel chronologisch angeordnet. Oft sind Logdateien in ihrer maximalen Größe beschränkt, weshalb die Informationen und Ereignisse nach einer bestimmten Zeit überschrieben werden.
+In einigen Bereichen und Branchen ist das Log-Management verpflichtend vorgeschrieben, um beispielsweise gesetzlichen Pflichten nachzukommen, Compliance-Richtlinien zu erfüllen oder die Nachvollziehbarkeit von Transaktionen sicherzustellen.
+
+https://www.ip-insider.de/was-ist-logging-event-log-management-a-efd311ecd8621b98baa59d2405d870ad/
+
+### Tracing
+
+Wir starten am besten erneut mit einer Definition: Ein Trace ist eine direkte Visualisierung eines Requests beim Durchlauf durch eine Anwendung oder einer kompletten Anwendungslandschaft. Hierbei wird er durch eine eindeutige Trace ID identifiziert und nimmt bei jedem Arbeitsschritt Spans auf.
+
+Spans sind die kleinste Einheit des Distributed Tracings und bilden den eigentlichen Workflow ab. Hierzu zählen beispielsweise HTTP Requests, der Aufruf einer Datenbank oder die Verarbeitung einer Nachricht beim Eventing. Analog zu einem Trace erhalten auch sie eine eindeutige Span ID und zusätzlich noch Angaben über das genaue Timing, optionale weitere Attribute, Events oder Status, je nach Use Case.
+
+
+
+
+
+https://www.adesso.de/de/news/blog/logging-vs-tracing-2.jsp
 
 
 
@@ -135,7 +184,7 @@ public class A {
 Syntax Highlighting für Javascript. Weitere Sprachen müssen in 'index.html' konfiguriert werden.
 
 ### Mermaid
-
+ahn
 ```mermaid
 graph LR
     A --- B
