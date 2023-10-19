@@ -1,11 +1,11 @@
-# Aufgabe 2
+# Aufgabe 3
 
 **Autor:** Simon Fedrau, Sascha Hahn
 
 
 # Debugging 
 
-  Unter Debugging versteht man den Prozess der Identifizierung und Behebung von Fehlern oder Bugs in einem Softwaresystem. Es ist ein wichtiger Aspekt der Softwareentwicklung, denn Fehler können dazu führen, dass ein Softwaresystem nicht richtig funktioniert, was wiederum eine schlechte Leistung oder falsche Ergebnisse zur Folge haben kann. Die Fehlersuche kann eine zeitaufwändige und komplexe Aufgabe sein, aber sie ist unerlässlich, um sicherzustellen, dass ein Softwaresystem korrekt funktioniert.
+Unter Debugging versteht man den Prozess der Identifizierung und Behebung von Fehlern oder Bugs in einem Softwaresystem. Es ist ein wichtiger Aspekt der Softwareentwicklung, denn Fehler können dazu führen, dass ein Softwaresystem nicht richtig funktioniert, was wiederum eine schlechte Leistung oder falsche Ergebnisse zur Folge haben kann. Die Fehlersuche kann eine zeitaufwändige und komplexe Aufgabe sein, aber sie ist unerlässlich, um sicherzustellen, dass ein Softwaresystem korrekt funktioniert.
 
 [1]
 
@@ -70,8 +70,8 @@ Dadurch kann man wie beim Logging nachvollziehen warum sich ein Programm so verh
 
 Das Debugging ist der Prozess des Identifizierens, Isolierens und Behebens von Fehlern.
 
-Fehlereridentifikation:
-Identifiziere Anzeichen für einen Fehler, wie unerwartetes Verhalten, Fehlermeldungen oder Abstürze der Anwendung. Benutzer-Feedback und Protokolldateien sind oft hilfreiche Quellen, um auf Probleme hinzuweisen.
+      Fehlereridentifikation:
+      Identifiziere Anzeichen für einen Fehler, wie unerwartetes Verhalten, Fehlermeldungen oder Abstürze der Anwendung. Benutzer-Feedback und Protokolldateien sind oft hilfreiche Quellen, um auf Probleme hinzuweisen.
 
      Reproduzierbarkeit sicherstellen:
         Versuche, den Fehler reproduzierbar zu machen. 
@@ -131,8 +131,6 @@ y = 3
 result = add_numbers(x, y)
 print(f'Die Summe von {x} und {y} ist {result}')
 ```
-
-
 
 ## Werkzeuge
 
@@ -231,7 +229,7 @@ ATDD steht für "Acceptance Test-Driven Development" und ist eine agile Praxis, 
 
 ## Test doubles
 
-In der Computerprogrammierung und in der Informatik setzen Programmierer eine Technik ein, die als automatisierte Einheitstests bezeichnet wird, um die Wahrscheinlichkeit des Auftretens von Fehlern in der Software zu verringern. Die endgültige Software besteht aus einem komplexen Satz von Objekten oder Prozeduren, die zusammenwirken, um das Endergebnis zu erzeugen. Bei automatisierten Unit-Tests kann es notwendig sein, Objekte oder Prozeduren zu verwenden, die wie ihre für die Veröffentlichung vorgesehenen Gegenstücke aussehen und sich auch so verhalten, aber eigentlich vereinfachte Versionen sind, die die Komplexität reduzieren und das Testen erleichtern. Ein Testdoppel ist ein allgemeiner (Meta-)Begriff, der für diese Objekte oder Prozeduren verwendet wird.
+Test doubles kommen in automatisierten Einheitstests vor, um die Wahrscheinlichkeit des Auftretens von Fehlern in der Software zu verringern. Die endgültige Software besteht aus einem komplexen Satz von Objekten oder Prozeduren, die zusammenwirken, um das Endergebnis zu erzeugen. Bei automatisierten Unit-Tests kann es notwendig sein, Objekte oder Prozeduren zu verwenden, die wie ihre für die Veröffentlichung vorgesehenen Gegenstücke aussehen und sich auch so verhalten, aber eigentlich vereinfachte Versionen sind, die die Komplexität reduzieren und das Testen erleichtern. Ein Testdoppel ist ein allgemeiner (Meta-)Begriff, der für diese Objekte oder Prozeduren verwendet wird.
 
 [17] 
 
@@ -313,47 +311,36 @@ Unabhängig von Erfahrung und Reputation der Entwickler ergibt es Sinn, Codeübe
 
 [23] 
 
+
   ## Conventional comments
   
-  Konventionelle Kommentare sind ein strukturiertes Kommentarsystem für Code-Reviews und andere Formen des technischen Dialogs. Sie enthalten eine Reihe von vordefinierten Bezeichnungen, wie z.B. "nitpick", "issue", "suggestion", "praise", "question", "thought" und vor allem "non-blocking". Jedes Label entspricht einem bestimmten Kommentartyp und einer erwarteten Antwort.
+  Konventionelle Kommentare sind ein strukturiertes Kommentarsystem für Code-Reviews und andere Formen des technischen Dialogs. Sie enthalten eine Reihe von vordefinierten Bezeichnungen.
+  Jedes Label entspricht einem bestimmten Kommentartyp und einer erwarteten Antwort.
 
-praise: Hebt etwas Positives hervor. Suchen Sie immer nach etwas, das Sie aufrichtig loben können.
-nitpick: Triviale, auf Vorlieben basierende Anfragen. Diese sollten von Natur aus nicht blockierend sein.
-suggestion: Schlägt Verbesserungen zum aktuellen Thema vor. Seien Sie explizit und klar, was vorgeschlagen wird und warum es eine Verbesserung ist.
-issue: Weist auf spezifische Probleme mit dem untersuchten Thema hin. Diese Probleme können auf der Benutzerseite oder hinter den Kulissen liegen. Es wird dringend empfohlen, diesen Kommentar mit einem Vorschlag zu verbinden.
-todo: Kleine, triviale, aber notwendige Änderungen. Die Unterscheidung zwischen todo-Kommentaren und Problemen oder Vorschlägen hilft, die Aufmerksamkeit des Lesers auf Kommentare zu lenken, die mehr Engagement erfordern.
-Question: Geeignet, wenn Sie ein mögliches Anliegen haben, aber nicht sicher sind, ob es relevant ist oder nicht. Die Bitte an den Autor um Klärung oder Nachforschung kann zu einer schnellen Lösung führen.
-thougt: Stellt eine Idee dar, die bei der Durchsicht aufgetaucht ist. Diese Kommentare sind von Natur aus nicht blockierend, aber sie sind äußerst wertvoll und können zu gezielteren Initiativen und Mentoring-Möglichkeiten führen.
+* praise: Hebt etwas Positives hervor. Suchen Sie immer nach etwas, das Sie aufrichtig loben können.
 
-chore: Einfache Aufgaben, die erledigt werden müssen, bevor das Thema "offiziell" angenommen werden kann. Normalerweise beziehen sich diese Kommentare auf einen gemeinsamen Prozess.
-note: Immer nicht blockierend und hebt einfach etwas hervor, das der Leser zur Kenntnis nehmen sollte.
-typo: Tippfehler-Kommentare sind wie todo:, wobei das Hauptproblem ein Rechtschreibfehler ist.
-polish: polish-Kommentare sind wie ein Vorschlag, bei dem nicht unbedingt etwas mit dem betreffenden Inhalt nicht stimmt, sondern es nur einige Möglichkeiten gibt, die Qualität sofort zu verbessern.
-quibble: Quibbles sind ähnlich wie nitpick:, nur dass es keine Bilder von Läusen und tierischen Hygienepraktiken hervorruft.
+* nitpick: Triviale, auf Vorlieben basierende Anfragen. Diese sollten von Natur aus nicht blockierend sein.
+* suggestion: Schlägt Verbesserungen zum aktuellen Thema vor. Seien Sie explizit und klar, was vorgeschlagen wird und warum es eine Verbesserung ist.
+* issue: Weist auf spezifische Probleme mit dem untersuchten Thema hin. Diese Probleme können auf der Benutzerseite oder hinter den Kulissen liegen. Es wird dringend empfohlen, diesen Kommentar mit einem Vorschlag zu verbinden.
 
+* todo: Kleine, triviale, aber notwendige Änderungen. Die Unterscheidung zwischen todo-Kommentaren und Problemen oder Vorschlägen hilft, die Aufmerksamkeit des Lesers auf Kommentare zu lenken, die mehr Engagement erfordern.
+* question: Geeignet, wenn Sie ein mögliches Anliegen haben, aber nicht sicher sind, ob es relevant ist oder nicht. Die Bitte an den Autor um Klärung oder Nachforschung kann zu einer schnellen Lösung führen.
+* thougt: Stellt eine Idee dar, die bei der Durchsicht aufgetaucht ist. Diese Kommentare sind von Natur aus nicht blockierend, aber sie sind äußerst wertvoll und können zu gezielteren Initiativen und Mentoring-Möglichkeiten führen.
+* chore: Einfache Aufgaben, die erledigt werden müssen, bevor das Thema "offiziell" angenommen werden kann. Normalerweise beziehen sich diese Kommentare auf einen gemeinsamen Prozess.
+* note: Immer nicht blockierend und hebt einfach etwas hervor, das der Leser zur Kenntnis nehmen sollte.
+* typo: Tippfehler-Kommentare sind wie todo:, wobei das Hauptproblem ein Rechtschreibfehler ist.
+* polish: polish-Kommentare sind wie ein Vorschlag, bei dem nicht unbedingt etwas mit dem betreffenden Inhalt nicht stimmt, sondern es nur einige Möglichkeiten gibt, die Qualität sofort zu verbessern.
+* quibble: Quibbles sind ähnlich wie nitpick:, nur dass es keine Bilder von Läusen und tierischen Hygienepraktiken hervorruft.
 
-Auch hier gibt es eine Tabelle !!!!
+* nicht blockierend:	Ein Kommentar mit dieser Auszeichnung sollte nicht verhindern, dass das zu prüfende Thema akzeptiert wird. Dies ist hilfreich für Organisationen, die Kommentare standardmäßig als blockierend betrachten.
+* blockierend:	Ein Kommentar mit dieser Auszeichnung sollte verhindern, dass der zu prüfende Gegenstand angenommen wird, bis er gelöst ist. Dies ist für Organisationen hilfreich, die Kommentare standardmäßig als nicht blockierend betrachten.
+* if-minor:	Diese Dekoration gibt dem Autor eine gewisse Freiheit, den Kommentar nur zu lösen, wenn die Änderungen geringfügig oder trivial sind.
 
-Dekoration Beschreibung
-
-nicht blockierend:	Ein Kommentar mit dieser Auszeichnung sollte nicht verhindern, dass das zu prüfende Thema akzeptiert wird. Dies ist hilfreich für Organisationen, die Kommentare standardmäßig als blockierend betrachten.
-
-blockierend:	Ein Kommentar mit dieser Auszeichnung sollte verhindern, dass der zu prüfende Gegenstand angenommen wird, bis er gelöst ist. Dies ist für Organisationen hilfreich, die Kommentare standardmäßig als nicht blockierend betrachten.
-
-if-minor:	Diese Dekoration gibt dem Autor eine gewisse Freiheit, den Kommentar nur zu lösen, wenn die Änderungen geringfügig oder trivial sind.
-
-
-  https://dev.to/tsotsi1/enhancing-code-reviews-with-conventional-comments-2j9i#:~:text=Conventional%20Comments%20are%20a%20structured,and%20notably%2C%20non%2Dblocking%20.
+[24] 
   
   ## Ablauf
   
 Im Zentrum des Codereviews steht ein gemeinsames Treffen aller Beteiligten. Der Review-Leiter legt den Termin fest und führt durch das Treffen; der Protokollführer hält die anwesenden Teilnehmer und die Ergebnisse des Treffens fest. Der Code-Verantwortliche präsentiert den Code über Beamer; Verbesserungsvorschläge werden von den Reviewern eingebracht und diskutiert. Das Treffen sollte auf 1 Stunde angesetzt werden.
-https://sdq.kastel.kit.edu/wiki/Codereview
-
-Beim Code-Review wird ein Programmabschnitt nach oder während der Entwicklung von einem oder mehreren Gutachtern Korrektur gelesen, um mögliche Fehler, Vereinfachungen oder Testfälle zu finden. Dabei kann der Gutachter selbst ein Softwareentwickler sein
-https://de.wikipedia.org/wiki/Review_(Softwaretest)#:~:text=Beim%20Code%2DReview%20wird%20ein,Gutachter%20selbst%20ein%20Softwareentwickler%20sein.
-
-
 
 Autor stellt den Quellcodes bereit.
 Autor initiiert eine Code Review Anfrage.
@@ -363,9 +350,8 @@ Prüfer prüft den Code und dokumentiert die Funde (Code_Review_Vorlage.docx).
 Prüfer gibt das Dokument an den Autor zurück.
 Autor arbeitet Befunde ein.
 Autor initiiert eine neue Runde des Review-Prozesses (GOTO 1).
-https://wiki.hshl.de/wiki/index.php/Anleitung_zum_Code_Review#Ablauf_Code-Review
 
-
+[25] [26] [27]
 
   ## Best practices
 
@@ -375,83 +361,87 @@ https://wiki.hshl.de/wiki/index.php/Anleitung_zum_Code_Review#Ablauf_Code-Review
 4. Prüfen Sie nicht mehr als 200-400 Codezeilen auf einmal
 5. Ergänzen Sie Ihre Best Practices durch Automatisierung
 
-https://www.atlassian.com/blog/add-ons/code-review-best-practices
+[28] 
 
 # Refactoring
 
-Refactoring (auch Refaktorisierung, Refaktorierung oder Restrukturierung) bezeichnet in der Software-Entwicklung die manuelle oder automatisierte Strukturverbesserung von Quelltexten unter Beibehaltung des beobachtbaren Programmverhaltens. Dabei sollen Lesbarkeit, Verständlichkeit, Wartbarkeit und Erweiterbarkeit verbessert werden, mit dem Ziel, den jeweiligen Aufwand für Fehleranalyse und funktionale Erweiterungen deutlich zu senken.
-https://de.wikipedia.org/wiki/Refactoring
+Refactoring bezeichnet in der Software-Entwicklung die manuelle oder automatisierte Strukturverbesserung von Quelltexten unter Beibehaltung des beobachtbaren Programmverhaltens. Dabei sollen Lesbarkeit, Verständlichkeit, Wartbarkeit und Erweiterbarkeit verbessert werden, mit dem Ziel, den jeweiligen Aufwand für Fehleranalyse und funktionale Erweiterungen deutlich zu senken.
+
+[29] 
 
 
-  ## Ziele des Refactorings
+## Ziele des Refactorings
 
-Effizienter durch Beseitigung von Abhängigkeiten und Komplexitäten gestaltet.
-Wartungsfreundlicher oder wiederverwendbar durch Erhöhung der Effizienz und Lesbarkeit macht.
-Sauberer organisiert, so dass er leichter zu lesen und zu verstehen ist.
-Softwareentwickler können Fehler oder Schwachstellen im Code leichter finden und beheben.
+Ziel des Refactorings ist es Effizienter durch Beseitigung von Abhängigkeiten und Komplexitäten zu sein.
+* Denn Code Wartungsfreundlicher oder wiederverwendbarer durch Erhöhung der Effizienz und Lesbarkeit zu machen.
+* Sauberer organisiert, so dass er leichter zu lesen und zu verstehen ist.
+* Softwareentwickler können Fehler oder Schwachstellen im Code leichter finden und beheben.
 
-https://www.computerweekly.com/de/definition/Refactoring#:~:text=Ziel%20des%20Refactoring%20ist%20es,Implementierung%20von%20Software%20zu%20verbessern.
+[30] 
 
-
-  ## Refactoring-Patterns
+## Refactoring-Patterns
 
 Refactoring-Patterns sind bewährte Techniken und Strategien, die in der Softwareentwicklung verwendet werden, um den bestehenden Code zu verbessern, ohne das Verhalten der Anwendung zu ändern. Sie sind hilfreich, um Code lesbarer, wartbarer und effizienter zu gestalten. Es gibt viele Refactoring-Patterns, aber hier sind einige der häufigsten:
 
-Extract Method (Methode extrahieren): Diese Technik beinhaltet das Extrahieren von Code aus einer bestehenden Methode in eine neue Methode. Dies verbessert die Lesbarkeit und ermöglicht die Wiederverwendung von Code.
+* Extract Method: Diese Technik beinhaltet das Extrahieren von Code aus einer bestehenden Methode in eine neue Methode. Dies verbessert die Lesbarkeit und ermöglicht die Wiederverwendung von Code.
 
-Rename Method (Methode umbenennen): Ändert den Namen einer Methode, um sicherzustellen, dass er die Funktion der Methode besser widerspiegelt.
+* Rename Method: Ändert den Namen einer Methode, um sicherzustellen, dass er die Funktion der Methode besser widerspiegelt.
 
-Move Method (Methode verschieben): Diese Technik beinhaltet das Verschieben einer Methode von einer Klasse in eine andere, um die Verantwortlichkeiten zu organisieren und die Klassenhierarchie zu verbessern.
+* Move Method: Diese Technik beinhaltet das Verschieben einer Methode von einer Klasse in eine andere, um die Verantwortlichkeiten zu organisieren und die Klassenhierarchie zu verbessern.
 
-Extract Class (Klasse extrahieren): Teil eines bestehenden Objekts wird in eine neue Klasse verschoben, um die Verantwortlichkeiten aufzuteilen und den Code besser zu organisieren.
+* Extract Class: Teil eines bestehenden Objekts wird in eine neue Klasse verschoben, um die Verantwortlichkeiten aufzuteilen und den Code besser zu organisieren.
 
-Encapsulate Field (Feld kapseln): Setzt auf die Verwendung von Getter- und Setter-Methoden, um auf private Klassenvariablen zuzugreifen, anstatt direkt auf sie zuzugreifen.
+* Encapsulate Field: Setzt auf die Verwendung von Getter- und Setter-Methoden, um auf private Klassenvariablen zuzugreifen, anstatt direkt auf sie zuzugreifen.
 
-Replace Magic Number with Symbolic Constant (Magische Zahlen durch symbolische Konstanten ersetzen): Ersetzt harte Kodierung von Zahlen durch Konstanten, um die Lesbarkeit und Wartbarkeit des Codes zu verbessern.
+* Introduce Parameter Object: Wenn eine Methode viele Parameter akzeptiert, werden diese in ein Objekt zusammengefasst, um den Funktionsaufruf übersichtlicher zu gestalten.
 
-Introduce Parameter Object (Parameterobjekt einführen): Wenn eine Methode viele Parameter akzeptiert, werden diese in ein Objekt zusammengefasst, um den Funktionsaufruf übersichtlicher zu gestalten.
+* Replace Conditional with Polymorphism: Ersetzt lange if-else-Anweisungen durch die Verwendung von Polymorphismus und Vererbung, um den Code klarer und erweiterbarer zu machen.
 
-Replace Conditional with Polymorphism (Bedingte Anweisung durch Polymorphismus ersetzen): Ersetzt lange if-else-Anweisungen durch die Verwendung von Polymorphismus und Vererbung, um den Code klarer und erweiterbarer zu machen.
+* Remove Duplication: Identischer Code wird an einer zentralen Stelle zusammengefasst, um Redundanz zu vermeiden und Wartungskosten zu senken.
 
-Remove Duplication (Duplikation entfernen): Identischer Code wird an einer zentralen Stelle zusammengefasst, um Redundanz zu vermeiden und Wartungskosten zu senken.
+* Extract Interface: Erstellt eine Schnittstelle, um den Code unabhängiger und austauschbarer zu machen.
 
-Extract Interface (Schnittstelle extrahieren): Erstellt eine Schnittstelle, um den Code unabhängiger und austauschbarer zu machen.
+* Replace Inheritance with Delegation: Ersetzt die Vererbung durch die Delegierung von Funktionalität an andere Klassen, um die Flexibilität zu erhöhen.
 
-Replace Inheritance with Delegation (Vererbung durch Delegation ersetzen): Ersetzt die Vererbung durch die Delegierung von Funktionalität an andere Klassen, um die Flexibilität zu erhöhen.
+* Replace Method with Method Object: Wenn eine Methode zu komplex ist, wird sie in eine separate Klasse mit einer Methode transformiert, um den Code zu vereinfachen.
 
-Replace Method with Method Object (Methode durch Methode-Objekt ersetzen): Wenn eine Methode zu komplex ist, wird sie in eine separate Klasse mit einer Methode transformiert, um den Code zu vereinfachen.
-
-
-https://chat.openai.com/ 
-Frage : welche Refactoring-Patterns gibt es
+[31] 
 
 
 # Werkzeuge
 
 
+## Testing / Build
+
+|    | Testing         |     Build        |
+    |:--   |---       |          ---:|
+    |  |   Tests sind Verfahren, die angewendet werden, um die Funktionalität, Leistung und Zuverlässigkeit einer Software zu überprüfen.        |     Build bezieht sich auf den Prozess der Kompilierung des Quellcodes und aller erforderlichen Ressourcen, um ein funktionsfähiges Softwareprodukt zu erzeugen.        |
+    |Beispiel         |   Gradle,Ant       |  JUnit,PyTest|
 
 
-
-
-  ## Testing / Build
-
-
-
-  
-  
   
 ### Github actions
   
+* GitHub Actions ist ein Dienst von GitHub, der es Entwicklern ermöglicht, automatisierte Workflows für ihre Projekte zu erstellen.
+
+* Mit GitHub Actions können Sie Build-, Test- und Bereitstellungsprozesse automatisieren. Dies erleichtert die kontinuierliche Integration (CI) und die kontinuierliche Bereitstellung (CD).
+
+* Sie können benutzerdefinierte Workflows erstellen, die auf bestimmte Ereignisse in Ihrem GitHub-Repository reagieren, wie z.B. das Einreichen eines Pull Requests oder das Pushen von Code in den Master-Zweig.
+
+* GitHub Actions unterstützt verschiedene Programmiersprachen und ermöglicht die Verwendung von Containern, um komplexe Build-Umgebungen zu erstellen.
+Es bietet eine Vielzahl von vorkonfigurierten Aktionen und ermöglicht es Ihnen, benutzerdefinierte Aktionen zu erstellen, um spezifische Aufgaben in Ihren Workflows auszuführen.
+
+[32] 
   
   
   
 ## Bug and work tracking
 
+Bug and work tracking
+Bug-Tracking beinhaltet das Protokollieren von Fehlern oder Problemen, die während der Entwicklung oder nach der Bereitstellung einer Software auftreten, um sicherzustellen, dass sie identifiziert, priorisiert und behoben werden.
 
-
-
-
-
+Arbeitsverfolgung bezieht sich auf die Zuweisung und Verfolgung von Aufgaben, die im Rahmen der Softwareentwicklung durchgeführt werden müssen.
+Ziel: Die Implementierung eines effektiven Bug- und Arbeitsverfolgungssystems ist entscheidend, um sicherzustellen, dass Softwareprojekte effizient verwaltet werden, Probleme rechtzeitig behoben werden und Aufgaben effektiv verfolgt und abgeschlossen werden, um die Produktivität und Qualität der Softwareentwicklung zu gewährleisten.
 
 ### Bilder
 
@@ -507,6 +497,24 @@ Aufgerufen am 18.10.23
 [22] :https://t2informatik.de/wissen-kompakt/pair-programming/
 
 [23] :https://t2informatik.de/wissen-kompakt/code-review/
+
+[24] :https://dev.to/tsotsi1/enhancing-code-reviews-with-conventional-comments-2j9i#:~:text=Conventional%20Comments%20are%20a%20structured,and%20notably%2C%20non%2Dblocking%20.
+  
+[25] :https://sdq.kastel.kit.edu/wiki/Codereview
+[26] :https://de.wikipedia.org/wiki/Review_(Softwaretest)#:~:text=Beim%20Code%2DReview%20wird%20ein,Gutachter%20selbst%20ein%20Softwareentwickler%20sein.
+
+[27] :https://wiki.hshl.de/wiki/index.php/Anleitung_zum_Code_Review#Ablauf_Code-Review
+
+[28] :https://www.atlassian.com/blog/add-ons/code-review-best-practices
+
+[29] :https://de.wikipedia.org/wiki/Refactoring
+
+[30] :https://www.computerweekly.com/de/definition/Refactoring#:~:text=Ziel%20des%20Refactoring%20ist%20es,Implementierung%20von%20Software%20zu%20verbessern.
+
+[31] : https://chat.openai.com/ frage : Frage : welche Refactoring-Patterns gibt es
+
+[32] :https://chat.openai.com/  frage: was sind GitHub Actions
+
 
 
 
