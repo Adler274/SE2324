@@ -3,7 +3,22 @@
 **Autor:** Simon Fedrau, Sascha Hahn
 
 
-# Debugging 
+
+# Lernziele
+
+* Was ist Debugging und wie geht man dabei vor
+* Welche Methoden bittet das Debuggen
+* Welche Werkzeuge gibt es
+* Was sind Agile testing workflows
+* Was sind Test doubles
+* Wie geht Pair programming
+* Was sind Code reviews
+* Warum ist Refactoring so wichtig und was sind dessen Ziele
+* Was ist Testing / Build
+* 
+
+
+## Debugging 
 
 Unter Debugging versteht man den Prozess der Identifizierung und Behebung von Fehlern oder Bugs in einem Softwaresystem. Es ist ein wichtiger Aspekt der Softwareentwicklung, denn Fehler können dazu führen, dass ein Softwaresystem nicht richtig funktioniert, was wiederum eine schlechte Leistung oder falsche Ergebnisse zur Folge haben kann. Die Fehlersuche kann eine zeitaufwändige und komplexe Aufgabe sein, aber sie ist unerlässlich, um sicherzustellen, dass ein Softwaresystem korrekt funktioniert.
 
@@ -446,6 +461,29 @@ Ziel: Die Implementierung eines effektiven Bug- und Arbeitsverfolgungssystems is
 ### Bilder
 
 ![](media/image.jpg)
+
+
+# Verstädnisfragen
+
+* Was ist Debugging und wieso ist es so wichtig?
+
+* Was sind typische Werkzeuge des Debuggings?
+
+* Was ist Pair programming und wie ist der Ablauf?
+
+* Was sind Ziele des Refactorings?
+
+* Was ist die Motivation für Agile testing workflows?
+
+
+
+
+
+
+
+
+
+
 
 ## Referenzen
 
