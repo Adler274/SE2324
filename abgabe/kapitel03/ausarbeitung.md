@@ -611,14 +611,62 @@ git merge --squash <branchname>
 Alle commits des Branches werden zu einem zusammengefasst und dann in den main Branch gemerged.
 [33]
 #### Rebase and Merge
-### Aufbau und Inhalt von Commit messages
-      * https://gist.github.com/robertpainsi/b632364184e70900af4ab688decf6f53
-# AI-driven development
-## Conversational AI vs. Generative AI
-## Prompt engineering
-## ChatGPT, Github Copilot
-## Best practices für "googling"
+```bash
+git switch main
+git merge --rebase <branchname>
+```
+Hier werden die Commits des Branches auf den main Branch gesetzt.
+Am Ende sieht es also so aus als hätte der andere Branch nie existiert und es verbleit eine chronologische reihenfolge.
+[33]
 
+### Aufbau und Inhalt von Commit messages
+**Aufbau:**
+1. kurzer Zusammenfassung 72 zeichen oder weniger
+2. detailierte Beschreibung
+
+**Conventions:**
+* Verwende den Imperativ: "Fix Bug" nicht "Fixed Bug"
+* Großschreibung am Anfang
+* Kein Punkt am Ende
+* beschreibe was und warum, nicht wie
+[37]
+
+# AI-driven development
+Einfach gesagt ist AI-driven development die unterstützung von Entwicklern durch KI.
+Zum Beispiel durch automatisches generieren von Code, automatisches testen oder auch durch automatisches debuggen.
+[32]
+
+## Conversational AI vs. Generative AI
+**Conversational:**
+AI-Systeme, welche auf menschliche Weise mit dem User interagieren.
+Diese Sind eher bekannt unter dem Begriff Chatbot oder Sprachassistent.
+Sie können Frgen beantworten Aufgaben erledigen oder einfach Informationen bereitstellen.
+
+**Generative:**
+AI-Systeme, welche neue Inhalte generieren können. Sie können Text, Bilder, Videos oder andere Inahlte generieren.
+Man kann sagen sie leisten kreative Arbeoit und erschaffen etwas neues.
+[38]
+
+Bei Vielen AI Tools überschneiden sich in diese beiden Bezeichnungen.
+Für die meisten ist wahrschinlich ChatGPT das bekannteste Beispiel, welches zum einen Text generiert und informationen liefert,
+aber auch neue Programmteile oder kreative Texte generieren kann.
+[32]
+## Prompt engineering
+Prompt Engineering ist die Erstellung von Prompts oder Eingabeaufforderungen für künstliche Intelligenz-Modelle.
+Der Zweck ist die gewüschten Antworten und Ausgaben des Modells zu beeinflussen.
+[39]
+
+## ChatGPT, Github Copilot
+Wie schon erwähnt ist ChatGPT ein AI-System, welches eine Generative und conversational AI ist, die auf der GPT-3 Architektur basiert. Man kann ihr Fragen stellen, oder auffordern bestimmte Texte zu schreiben, Aufgaben zu lösen oder Code zu Programmieren.
+Ähnlich dazu ist der GitHub-Copilot. Dieser funktioniert wie chatGPT, nur das er auf Code spezialisiert ist.
+Man benutzt ihn direkt in seiner IDE und er erkennt automaitsch den Kontext anhander der Datein und schlägt Code oder Text vor.
+[32]
+## Best practices für "googling"
+* klare Schlagwörter
+* mit Anfühurngszeichen knn man nach einem genauen Satz/Begriff suchen
+* Man kann "OR" benutzen für alternativen
+* nach der Suchanfrage Filtern nach Bildern, Videos, etc.
+[40]
 
 # Verstädnisfragen
 
@@ -708,3 +756,11 @@ Aufgerufen am 18.10.23
 [35] :https://kinsta.com/blog/monorepo-vs-multi-repo/
 
 [36] :https://git-scm.com/book/en/v2/Git-Tools-Submodules
+
+[37] :https://gist.github.com/robertpainsi/b632364184e70900af4ab688decf6f53
+
+[38] :https://www.datasciencecentral.com/a-complete-guide-conversational-ai-vs-generative-ai/#:~:text=Conversational%20AI%20is%20characterized%20by,art%2C%20music%2C%20and%20texts.
+
+[39] :https://www.promptingguide.ai/
+
+[40] :https://support.google.com/websearch/answer/2466433?hl=de
