@@ -1,4 +1,4 @@
-# Aufgabe 3
+# Kpitel 3
 
 **Autor:** Simon Fedrau, Sascha Hahn
 
@@ -674,6 +674,16 @@ Arbeitsverfolgung bezieht sich auf die Zuweisung und Verfolgung von Aufgaben, di
 Ziel: Die Implementierung eines effektiven Bug- und Arbeitsverfolgungssystems ist entscheidend, um sicherzustellen, dass Softwareprojekte effizient verwaltet werden, Probleme rechtzeitig behoben werden und Aufgaben effektiv verfolgt und abgeschlossen werden, um die Produktivität und Qualität der Softwareentwicklung zu gewährleisten.
 
 # Verstädnisfragen
+
+* Erklären sie Was VCS sind?
+
+* Was ist der Unterschied zwischen Git und Hit hub?
+
+* Was ist der Unterschied zwischen dem Git-Flow und dem GitHub-Flow?
+
+* Was passiert bei einem squash merge und wie führt man ihn aus?
+
+* Was ist Prompt Engineering?
 
 * Was ist Debugging und wieso ist es so wichtig?
 
