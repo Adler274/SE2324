@@ -2,8 +2,6 @@
 
 **Autor:** Simon Fedrau, Sascha Hahn
 
-
-
 # Lernziele
 
 * Was ist Debugging und wie geht man dabei vor
@@ -620,8 +618,6 @@ Alle commits des Branches werden zu einem zusammengefasst und dann in den main B
 ## Prompt engineering
 ## ChatGPT, Github Copilot
 ## Best practices für "googling"
-
-
 
 
 # Verstädnisfragen
