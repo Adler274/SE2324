@@ -46,16 +46,27 @@ Mit diesem Befehl werden alle Änderungen der Datein die sich im Stage Bereich b
     git commit -m "added chapter 3" <br>
 </div>
 
-      * https://marklodato.github.io/visual-git-guide/index-en.html
-      * https://onlywei.github.io/explain-git-with-d3/#
-      * Sequenzdiagramm für git data transfer commands
-        * https://blog.osteele.com/2008/05/my-git-workflow/
+[1,3]
 
 #### Remote repositories
 Remote repositories sind jene, mit denen sich alle Entwickler Synchronisieren.
 
 #### Multirepos vs. Monorepos
+**Multirepo:** Jedes Projekt/Teile eines Projektes werden in einzelnen Repos Versioniert
+**Monorepo:** Alle Projekte/Teile eines Projektes werden in einem Repo Versioniert
 
+|      |Pro          |Con         |
+|:-:   |:----------|:-----------|
+|Multi| Reduziet unerwünschte Abhängigkeiten|Hinzufgügen von Abhängigkeiten schwieriger|
+||Teams können unabhängiger an Teilen Arbeiten|Teilen von Code/Resourcen zwischen Projekten umständlicher|
+||Einfachere Verwaltung und Skalierbarkeit durch Übersichtlichkeit einfacher|Keine Einheitliche Versionskontrolle(welche Version des einen Projekts ins kompatibel mit dem Anderen?)|
+|Mono|Einfache Abhängigkeiten|Verwaltung und allgemeine Arbeit ist schwieriger, druch unübersichtlichkeit|
+||Konsistente Versionskontrolle|Entwickler Teams behindern sich häufiger|
+||einfache ResourcenTeilung||
+
+**kleines Fazit:**<br>
+Multirepos sind für kleinere Projekte besser geeignet, da sie einfacher zu verwalten sind. Bei größeren Projekten ist ein Monorepo besser geeignet, da es die Übersichtlichkeit erhöht und die Abhängigkeiten einfacher zu verwalten sind.
+[4]
 
 #### Submodules
 #### Pull requests
@@ -82,3 +93,5 @@ Remote repositories sind jene, mit denen sich alle Entwickler Synchronisieren.
 
 [1] :**Carsen Gips, Programmiermethoden Script:** https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1359639/index.html
 [2] :https://chat.openai.com/
+[3] :https://marklodato.github.io/visual-git-guide/index-en.html
+[4] :https://kinsta.com/blog/monorepo-vs-multi-repo/
