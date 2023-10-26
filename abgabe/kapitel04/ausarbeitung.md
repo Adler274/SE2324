@@ -160,11 +160,265 @@ Durch die Umsetzung des HATEOAS-Prinzips lässt sich die Schnittstelle eines RES
 
 ###### Best Practices für RESTful
 
+
 ###### Naming REST API Endpoints
 
+Die Benennung von REST-API-Endpunkten ist ein entscheidender Aspekt bei der Gestaltung einer klaren, verständlichen und konsistenten API. Hier sind bewährte Praktiken und Empfehlungen für die Benennung von REST-API-Endpunkten:
+
+
+Verwendung von Substantiven: Verwenden Sie Substantive, um Ihre Ressourcen in den Endpunkten zu bezeichnen. Vermeiden Sie Verben in den Endpunkt-URLs, da die HTTP-Methoden (GET, POST, PUT, DELETE) bereits die Aktionen beschreiben.
+
+Klare und beschreibende Namen: Wählen Sie Namen, die die Ressource oder den Zweck des Endpunkts klar beschreiben. Vermeiden Sie abgekürzte oder kryptische Bezeichnungen, die für API-Benutzer unverständlich sein könnten.
+
+Plurale Form für Sammlungen: Verwenden Sie die Pluralform von Substantiven, um Sammlungen von Ressourcen zu bezeichnen. Dies macht die API konsistenter und leichter verständlich.
+
+Hierarchische Struktur: Wenn Ihre Ressourcen hierarchisch verschachtelt sind, spiegeln Sie dies in der URL wider. Dies hilft, die Beziehungen zwischen Ressourcen klar darzustellen.
+
+
+Vermeidung von Verben: Vermeiden Sie die Verwendung von Verben in den Endpunkt-URLs, um Aktionen zu beschreiben. Verwenden Sie stattdessen die HTTP-Methoden (GET, POST, PUT, DELETE) für diese Zwecke.
+
+Verwendung von Bindestrichen: Verwenden Sie Bindestriche, um Worte in URL-Namen zu trennen. Vermeiden Sie Leerzeichen, Unterstriche oder Sonderzeichen.
+
+Versionierung: Wenn Sie Versionen Ihrer API erstellen, fügen Sie die Version in den Endpunkt-URLs hinzu, um Abwärtskompatibilität sicherzustellen.
+
+Klare Hierarchie: Strukturieren Sie Ihre Endpunkte so, dass sie eine klare Hierarchie widerspiegeln und den Benutzern ermöglichen, Ressourcen intuitiv zu navigieren.
+
+Vermeidung von sensiblen Informationen: Verwenden Sie keine sensiblen Informationen wie Passwörter oder IDs mit hoher Privatsphäre in den Endpunkt-URLs. Solche Informationen sollten im Anfrage- oder Antwortkörper (Payload) verschlüsselt übertragen werden.
+[12] [13] [14]
+
+
+##### Error Handling 
+
+Der erste Schritt im Umgang mit Fehlern besteht darin, dem Client einen angemessenen Statuscode bereitzustellen. Zusätzlich kann es erforderlich sein, weitere Informationen im Antworttext bereitzustellen.
+
+3.1. Grundlegende Antworten
+
+Die einfachste Möglichkeit, Fehler zu behandeln, besteht darin, mit einem entsprechenden Statuscode zu antworten. Hier sind einige häufige Statuscodes:
+
+400 Bad Request: Der Client hat eine ungültige Anfrage gesendet, z. B. fehlende Anfragekörper oder Parameter.
+401 Unauthorized: Der Client konnte sich nicht beim Server authentifizieren.
+403 Forbidden: Der Client ist authentifiziert, hat jedoch keine Berechtigung für den Zugriff auf die angeforderte Ressource.
+404 Not Found: Die angeforderte Ressource existiert nicht.
+412 Precondition Failed: Eine oder mehrere Bedingungen in den Anfrage-Headern waren falsch.
+500 Internal Server Error: Ein allgemeiner Fehler ist auf dem Server aufgetreten.
+503 Service Unavailable: Der angeforderte Dienst steht nicht zur Verfügung.
+Obwohl diese Codes einfach sind, ermöglichen sie dem Client zu verstehen, welche Art von Fehler aufgetreten ist. Zum Beispiel zeigt ein 403-Fehler an, dass dem Client die Berechtigung fehlt, auf die angeforderte Ressource zuzugreifen. In vielen Fällen müssen jedoch zusätzliche Details in den Antworten bereitgestellt werden.
+
+3.2. Standardmäßige Spring-Fehlerantworten
+
+Diese Grundsätze sind so weit verbreitet, dass Spring sie in seinem standardmäßigen Fehlerbehandlungsmechanismus kodiert hat. Spring gibt automatisch den HTTP-Statuscode 500 zurück, wenn eine Ausnahme wie "BookNotFoundException" ausgelöst wird. Es wird empfohlen, den spezifischsten Fehlercode zu verwenden, wenn dies möglich ist.
+
+3.3. Detaillierte Antworten
+
+Manchmal reicht ein Statuscode nicht aus, um die Spezifikationen des Fehlers anzuzeigen. In solchen Fällen kann der Antworttext dem Client zusätzliche Informationen bereitstellen, einschließlich:
+
+Error: Eine eindeutige Kennung für den Fehler.
+Message: Eine kurze, für Menschen lesbare Nachricht.
+Detail: Eine ausführlichere Erklärung des Fehlers.
+Help: Eine URL, die den Client zu weiteren Informationen führt.
+Normalerweise sollte das "Error"-Feld nicht mit dem Statuscode übereinstimmen, sondern eine eindeutige Anwendungsfehlerkennung sein. Die "Message" sollte für die Benutzeroberfläche geeignet sein, während die "Detail"-Information für Entwickler bestimmt ist.
+
+3.4. Standardisierte Antworttexte
+
+In einem Versuch, die Fehlerbehandlung von RESTful APIs zu standardisieren, hat das IETF RFC 7807 entwickelt, das ein generalisiertes Fehlerbehandlungsschema erstellt. Dieses Schema besteht aus fünf Teilen: "type", "title", "status", "detail" und "instance". Es soll die einheitliche Fehlerbehandlung erleichtern.
+
+Die Verwendung von RFC 7807 ermöglicht es, anstelle von benutzerdefinierten Fehlerantworten einen einheitlichen Fehlerantwortkörper zu verwenden. Dies erleichtert Bibliotheken und Frameworks die einheitliche Behandlung von Fehlern.
+[15]
+
+##### Best Practices Security
+
+Es gibt drei Hauptgründe für die Erstellung einer REST-API:
+
+Bereitstellung von Daten auf Ihrem Server für vernetzte Clients wie Single-Page-Apps im Browser oder mobile Apps.
+Bereitstellung eines programmatischen Zugriffs auf Daten für Endbenutzer und Programme.
+Kommunikation zwischen den vielen Diensten, die Ihre App-Infrastruktur bilden.
+Um Missbrauch der API durch schädliche oder unachtsame Benutzer zu verhindern, ist eine Zugriffsrichtlinie erforderlich. Dies definiert, wer Daten auf Ihrem Server anzeigen oder ändern kann. Dieser Prozess wird als "Autorisierung" bezeichnet.
+
+Es wird dringend empfohlen, immer TLS (Transport Layer Security) zu verwenden, um die Daten zu schützen, die über Ihre API gesendet werden.
+
+OAuth2 ist eine gute Methode für Single Sign-On (SSO) und ermöglicht es Benutzern, sich mit vertrauenswürdigen Drittanbietern zu authentifizieren, um auf Ressourcen zuzugreifen.
+
+Die Verwendung von API-Schlüsseln ist eine einfache Methode, um vorhandenen Benutzern programmatischen Zugriff zu gewähren. Diese Schlüssel sollten sorgfältig behandelt werden, um die Sicherheit zu gewährleisten.
+
+Die Konfiguration verschiedener Berechtigungen für verschiedene API-Schlüssel kann nützlich sein, um den Zugriff auf verschiedene Teile Ihrer API zu steuern.
+
+Komplexe Autorisierungslogik sollte in der Anwendungslogik und nicht in der Middleware umgesetzt werden. Tools wie Oso können bei der Vereinfachung von Autorisierungsrichtlinien helfen.
+
+Zusammenfassend wird empfohlen, auf bewährte Bibliotheken und Tools zurückzugreifen, um die Autorisierung zu erleichtern und Fehler zu minimieren. Die Sicherheit und die ordnungsgemäße Umsetzung von Autorisierung sind entscheidend für die Gestaltung nützlicher und sicherer API-Endpunkte.
+
+
+#### GraphQL
+
+GraphQL ist eine Abfragesprache und serverseitige Runtime für APIs, die den Kunden nur diejenigen Daten zur Verfügung stellt, die sie wirklich brauchen.
+
+GraphQL macht APIs schneller, flexibler und entwicklerfreundlicher. Es kann sogar innerhalb einer IDE (Integrated Development Environment) namens GraphiQL bereitgestellt werden. Mit dieser Alternative zu REST können Entwickler Anfragen strukturieren, die mit einem einzigen API-Aufruf Daten aus mehreren Quellen gleichzeitig abrufen.
+
+Außerdem können API-Maintainer mit GraphQL flexibel Felder hinzufügen oder entfernen, ohne dass dies bestehende Abfragen beeinträchtigt. Entwickler können APIs mit ihrer bevorzugten Methode erstellen, und die GraphQL-Spezifikation stellt sicher, dass die API für den Kunden auf vorhersehbare Weise funktioniert.
+
+#### Schema
+
+API-Entwickler erstellen mit GraphQL Schemata für alle möglichen Daten, die ein Kunde über diesen Service abfragen kann.
+
+Ein GraphQL-Schema definiert, welche Objekttypen Sie anfordern können und welche Felder enthalten sein sollen.
+
+GraphQL gleicht die eingehenden Abfragen mit dem Schema ab und führt die validierten Abfragen aus.
+
+In GraphQL ist ein Schema eine zentrale Komponente, die die Struktur und den Verhaltensrahmen Ihrer GraphQL-API definiert. Das Schema legt fest, welche Arten von Daten abgefragt werden können, wie diese Daten zusammenhängen und welche Abfrage- und Mutationsoperationen verfügbar sind. Das Schema dient als Vertragsdokument zwischen der Client-Anwendung und der Server-API und ermöglicht es Client-Anwendungen, genau zu verstehen, welche Daten sie anfordern können.
+
+Ein GraphQL-Schema besteht aus zwei Hauptteilen:
+
+Query-Typ: Dieser definiert die Lesedatenoperationen (Abfragen), die Client-Anwendungen durchführen können. Jede Abfrage beginnt mit einem Feld auf dem Query-Typ.
+
+Mutation-Typ: Dieser definiert die Schreib- und Änderungsoperationen (Mutations), die Client-Anwendungen ausführen können. Mutations werden verwendet, um Daten zu erstellen, zu aktualisieren oder zu löschen.
+
+Zusätzlich zu diesen Hauptteilen kann ein GraphQL-Schema auch benutzerdefinierte Typen definieren. Diese benutzerdefinierten Typen können Objekttypen, Skalar- oder Enumerationstypen sein. Objekttypen beschreiben die Datenstruktur und die Beziehungen zwischen verschiedenen Entitäten in Ihrer Anwendung. Skalar- und Enumerationstypen definieren, welche Arten von Werten für bestimmte Felder erlaubt sind.
+
+
+Schema:
+
+Das Schema ist die Grundlage jeder GraphQL-API. Es definiert, welche Daten abgerufen werden können und wie diese Daten strukturiert sind.
+Es besteht aus zwei Hauptteilen: dem Query-Typ und dem Mutation-Typ.
+Der Query-Typ enthält die Abfragen (Queries), die verwendet werden, um Daten abzurufen.
+Der Mutation-Typ enthält die Mutationen, die verwendet werden, um Daten zu ändern oder zu erstellen.
+Das Schema wird normalerweise in einer speziellen Abfragesprache definiert, die oft als "Schema Definition Language" (SDL) bezeichnet wird.
+
+[16] [17]
+
+##### Query:
+
+Eine Query in GraphQL ist eine Operation, mit der Daten aus der API abgerufen werden.
+Sie ermöglicht es dem Client, genau anzugeben, welche Daten und Felder benötigt werden.
+Die Struktur einer Query folgt der Struktur des Schemas und spiegelt oft die gewünschte Datenstruktur wider.
+Ein Beispiel für eine Query könnte sein: "Gib mir den Namen und das Alter eines Benutzers sowie die Titel seiner Beiträge."
+
+
+###### Resolver:
+
+Resolver sind Funktionen, die die eigentliche Arbeit in einer GraphQL-API ausführen. Sie bestimmen, wie die Daten für die verschiedenen Felder im Schema abgerufen oder verarbeitet werden.
+Jedes Feld im Schema ist einem Resolver zugeordnet. Wenn eine Query ausgeführt wird, ruft GraphQL die entsprechenden Resolver auf, um die angeforderten Daten zu erhalten.
+Resolver können Daten aus einer Datenbank abrufen, APIs aufrufen, Berechnungen durchführen oder auf andere Weise die Daten bereitstellen, die in der Query angefordert werden.
+Ein einfaches Beispiel für einen Resolver könnte sein: "Wenn nach dem Namen eines Benutzers gefragt wird, greife auf die Datenbank zu und gib den Namen des Benutzers zurück."
+
+###### Mutation:
+
+Mutationen sind Operationen in GraphQL, mit denen Daten geändert oder erstellt werden können.
+Im Gegensatz zu Queries, die nur lesend sind, erlauben Mutationen das Schreiben von Daten auf den Server.
+Mutationen sind oft in der Art einer Anfrage aufgebaut, die beschreibt, welche Daten geändert oder hinzugefügt werden sollen.
+Ein Beispiel für eine Mutation könnte sein: "Erstelle einen neuen Benutzer mit dem Namen und der E-Mail-Adresse."
+
+
+[16] [17]
+
+
+###### Backend For Frontend
+
+Das Backends for Frontends Pattern (BFF-Muster) ist ein Designmuster für die Architektur von Mikroservices. Dieses Muster konzentriert sich auf die Trennung von API-Gateways entsprechend den spezifischen Frontend-Anwendungen. Anstatt nur ein allgemeines API-Backend zu haben, werden mehrere Backend-Services für Frontend-Anwendungen bereitgestellt, und dazwischen wird ein API-Gateway zur Handhabung von Routing und Aggregationsvorgängen platziert.
+
+Die Verwendung dieses Musters hilft, den sogenannten Single Point of Failure zu vermeiden. Anstatt ein komplexes API-Gateway zu haben, das ein Risiko darstellen und zum Flaschenhals in der Architektur werden könnte, werden mehrere API-Gateways erstellt, die die Client-Anwendungen entsprechend ihrer Anwendungsgrenzen gruppieren.
+
+Durch die Anwendung des BFF-Musters können unterschiedliche Anforderungen der Frontend-Anwendungen erfüllt werden, ohne die anderen Frontend-Anwendungen zu beeinträchtigen. Das Muster ermöglicht die Implementierung mehrerer Gateways, wodurch eine flexible Anpassung an die Bedürfnisse der Benutzeroberfläche erfolgt.
+
+In der Praxis bedeutet dies, dass für verschiedene Arten von Client-Anwendungen, wie mobile, Web- und Desktop-Anwendungen, separate API-Gateways erstellt werden. Jedes dieser Gateways bietet maßgeschneiderte APIs, um den spezifischen Anforderungen der jeweiligen Client-Anwendung gerecht zu werden. Zum Beispiel kann ein mobiles Frontend unterschiedliche API-Anforderungen haben, die in speziellen API-Gateway-Services implementiert werden können.
+
+Die Anwendung des Backends for Frontends Pattern ist besonders hilfreich in Szenarien, in denen eine Anpassung eines einzigen Backends für verschiedene Benutzeroberflächen vermieden werden soll.
+
+Insgesamt ermöglicht das BFF-Muster eine effiziente und flexible Gestaltung von APIs, die auf die Bedürfnisse der Frontend-Umgebungen zugeschnitten sind. Es bietet eine klare Richtlinie für die Implementierung mehrerer Gateways, um den Anforderungen verschiedener Client-Anwendungen gerecht zu werden.
+
+[18]
 
 
 
+#### API Design
+
+API-Design bezieht sich auf die Gestaltung von Schnittstellen, über die Softwarekomponenten miteinander kommunizieren. Eine gut gestaltete API sollte benutzerfreundlich, konsistent, effizient, sicher, und gut dokumentiert sein. Sie sollte auch flexibel, testbar und gut überwachbar sein. Gutes API-Design ist entscheidend, um die Nutzung und Integration von Software zu erleichtern.
+
+###### Code First vs Design First
+
+Es gibt zwei Hauptansätze zur Entwicklung von APIs: Der Code-First-Ansatz, bei dem der Code nach Festlegung der Geschäftsanforderungen entwickelt wird, und die Dokumentation aus dem Code generiert wird. Der Design-First-Ansatz hingegen legt den Fokus darauf, den API-Vertrag zuerst zu entwerfen, bevor der Code geschrieben wird. Dieser Ansatz verwendet häufig das OpenAPI-Format, um menschen- und maschinenlesbare Verträge zu erstellen, bevor die eigentliche Entwicklung beginnt.
+[19]
+
+* Design First
+Beim Design-First-Ansatz wird die API zuerst geplant und spezifiziert, bevor der eigentliche Programmcode geschrieben wird. Dies bedeutet, dass zuerst die Struktur, das Verhalten und die Dokumentation der API festgelegt werden, oft mit Hilfe von Design-Tools wie Swagger. Erst danach beginnt die eigentliche Entwicklung des Codes, basierend auf diesem Design. Dieser Ansatz legt den Fokus auf eine klare und sorgfältige Gestaltung der API, bevor die Umsetzung beginnt.
+
+* Code First 
+Der Code-First-Ansatz ist eine Methode zur Entwicklung von APIs, bei der die Implementierung des API-Codes zuerst geschrieben wird, bevor die API-Spezifikation entworfen wird. Dies bedeutet, dass die API auf Grundlage des vorhandenen Codebasis gestaltet wird.
+
+Die Vorteile dieses Ansatzes sind ein besseres Verständnis der Funktionalität und des Verhaltens der API sowie eine effizientere Entwicklung. Entwickler können direkt mit der tatsächlichen Implementierung arbeiten und Anpassungen in Echtzeit vornehmen. Dies ist besonders nützlich für kleinere oder einfachere Projekte und in Fällen, in denen Anforderungen nicht gut definiert sind oder häufig ändern.
+
+Jedoch kann der Code-First-Ansatz zu mangelnder Dokumentation und Standardisierung führen, da es keine klare API-Spezifikation gibt. Das kann zu Verwirrung und Ineffizienz führen.
+
+Um diesen Herausforderungen zu begegnen, ist es wichtig, Tools zu verwenden, die API-Dokumentation aus dem Code erstellen können. Ein solches Tool ist Apidog, das sowohl im Debug-Modus als auch im Design-Modus verwendet werden kann.
+
+Vorteile des Code-First-Ansatzes sind schnellere Entwicklung, einfache Iteration, direkte Kontrolle über die Implementierung und nahtlose Integration mit vorhandenem Code. Nachteile sind mangelnde Dokumentation, erhöhte Abhängigkeit vom Codebasis und begrenzte Designflexibilität.
+
+* Code First vs Design First
+
+Der Code-First-Ansatz beginnt mit dem Schreiben des API-Codes und bietet schnellere Entwicklung und direkte Kontrolle. Allerdings fehlt eine klare Spezifikation und umfassende Dokumentation, was zu Problemen führen kann.
+
+Der Design-First-Ansatz legt die API-Spezifikation zuerst fest, was zu besserer Benutzerfreundlichkeit, kürzerer Entwicklungszeit und verbesserter Dokumentation führt. Allerdings kann er die Flexibilität einschränken und erfordert spezialisierte Designwerkzeuge.
+
+
+#### API Versioning
+
+API-Versionierung ist ein Konzept in der Softwareentwicklung, das bei der Veröffentlichung von APIs (Application Programming Interfaces) verwendet wird. Es bezieht sich auf die Verwaltung und Aktualisierung von APIs über die Zeit, um sicherzustellen, dass bestehende Anwendungen, die die API verwenden, weiterhin korrekt funktionieren, während gleichzeitig neue Funktionen hinzugefügt oder bestehende verbessert werden.
+
+Es gibt verschiedene Ansätze zur API-Versionierung:
+
+URI-Versionierung: Hier wird die Versionsnummer in der URL der API angegeben, z.B., https://api.example.com/v1/resource. Dies ermöglicht es, verschiedene Versionen der API parallel zu betreiben.
+
+Header-Versionierung: Die Version wird im HTTP-Header der Anfrage oder Antwort angegeben, um die Version der API zu identifizieren. Dies kann nützlich sein, wenn die Versionsnummer nicht in der URL erscheinen soll.
+
+Media-Type-Versionierung: Die Version wird im Media Type (z.B., application/vnd.example.v1+json) angegeben, um die Darstellung der API-Ressource zu kennzeichnen.
+
+Accept-Version Header: Dies ist eine Erweiterung von Header-Versionierung, bei der der Client mit dem Accept-Version-Header angibt, welche Version der API er verwenden möchte.
+
+API-Versionierung ist wichtig, um die Abwärtskompatibilität zu wahren, bestehende Benutzer nicht zu beeinträchtigen und gleichzeitig Raum für Weiterentwicklung zu schaffen. Die Wahl des Versionierungsansatzes hängt von den Anforderungen des Projekts und den Präferenzen des Entwicklungsteams ab.
+
+[20] [21]
+
+#### API Testing
+Mit einem API-Test können Entwickler bestimmen, ob APIs die Anforderungen in Sachen Funktionalität, Leistung, Zuverlässigkeit und Sicherheit erfüllen. Ziel ist es, Fehler und andere unerwartete Verhaltensweisen zu finden, damit Ihre Benutzer kein mangelhaftes oder unsicheres Produkt erhalten. Sie müssen sicherstellen, dass Sie APIs veröffentlichen, die effizient und effektiv funktionieren, sonst werden sie nicht eingesetzt.
+
+Arten von API-Tests und ihre Bedeutung:
+
+API-Tests umfassen Validierungs-, Funktion-, Last-, Zuverlässigkeits-, Sicherheits- und Penetrationstests. Validierungstests beurteilen die Qualität des Produkts und dessen Effizienz. Funktionstests gewährleisten die korrekte Funktionsweise der API, während Lasttests prüfen, wie gut sie hohe Belastungen bewältigen kann. Zuverlässigkeitstests stellen sicher, dass die API konsistente Ergebnisse liefert, und Sicherheitstests schützen vor Sicherheitslücken. Penetrationstests testen die API gegen Angriffe von außen.
+
+Warum sind API-Tests wichtig?
+
+API-Tests sind wichtig, da sie Entwicklern helfen, Fehler frühzeitig zu erkennen, bevor sie zu größeren Problemen werden. Sie ermöglichen den Zugriff auf die App ohne Benutzeroberfläche und sparen Zeit und Kosten. API-Tests sind technologieunabhängig und können mit GUI-Tests integriert werden. Sie schützen vor bösartigem Code und Fehlfunktionen.
+
+Vor- und Nachteile von API-Tests:
+
+Die Vorteile von API-Tests sind die Effizienz, der frühzeitige Fehlerhinweis, die Unabhängigkeit von Technologien und die Integration mit GUI-Tests. Die Nachteile sind die Validierung von Parametern, die Kombination von Parametern und die Aufrufreihenfolge, insbesondere bei Multithreading-Anwendungen.
+[22]
+
+###### Spezifikation / Dokumentation
+
+#### OpenAPI
+
+OpenAPI ist ein Standard zur Beschreibung von Programmierschnittstellen – Application Programming Interfaces (API). Die OpenAPI-Spezifikation definiert ein offenes und herstellerneutrales Beschreibungsformat für API-Dienste. Insbesondere lassen sich mithilfe von OpenAPI REST-konforme APIs beschreiben, entwickeln, testen und dokumentieren.
+
+Im Gegensatz zu JSON Schema handelt es sich bei einem OpenAPI-Dokument um eine Definition für eine komplette API und nicht nur um Datenmodelle. Vor der Einführung von OpenAPI wurden viele APIs entworfen, ohne die Möglichkeit, wie sie funktionieren sollten, oder die Möglichkeit zur Überprüfung, ob sie wie erwartet arbeiten. Mit dieser maschinenlesbaren Beschreibung können auch nützliche Tools für Menschen generiert werden, wie beispielsweise Dokumentation und Mock-Server.
+
+Du kannst JSON Schema verwenden, um Datenobjekte für Anfragen und Antworten zu beschreiben. OpenAPI geht jedoch über die Formatierung dieser Anfragen und Antworten hinaus und beinhaltet auch, wie sie strukturiert sein sollten. Ähnlich kannst du API-Antworten mit JSON Schema nachahmen, aber du benötigst etwas wie OpenAPI, um einen vollständigen Mock-Server zu generieren.
+
+OpenAPI ist also ein leistungsstarkes Werkzeug, um APIs umfassend zu beschreiben, von ihren Endpunkten über Datenmodelle bis hin zur Formatierung von Anfragen und Antworten. Dies erleichtert nicht nur die Entwicklung von APIs, sondern ermöglicht auch die Generierung von Dokumentation und Mock-Servern, die bei der Entwicklung und dem Test von APIs äußerst hilfreich sind.
+
+
+[23] [24]
+
+###### JSON Schema
+
+JSON Schema ist ein Werkzeug zur Beschreibung von JSON-Dokumenten und deren Struktur. Es handelt sich nicht um eine Datenbank oder ein JSON-Dokument selbst, sondern um eine Vorlage oder eine Schablone für die Struktur von JSON-Daten.
+
+Ein Schema dient dazu, wie Daten strukturiert sein sollten. Es bietet den Vorteil, dass Teams die Struktur ihrer Daten planen und überarbeiten können, bevor sie diese tatsächlich erstellen. Durch die Festlegung von Formaten können Teams effizienter zusammenarbeiten und Fehler vermeiden. Zum Beispiel können Client- und Server-Teams Feedback austauschen und Anwendungsfälle testen, ohne eine vollständige API mit Live-Daten zu benötigen.
+
+JSON Schema wird häufig in Verbindung mit APIs verwendet, aber es kann auch in anderen Kontexten nützlich sein. Es beschreibt ausschließlich die Struktur der Daten in einem JSON-Dokument. JSON Schema kann auch dazu verwendet werden, Datenbanken in wiederverwendbare Blöcke zu strukturieren, um die Effizienz und Handhabbarkeit zu steigern. Überall dort, wo JSON-Daten auf Übereinstimmung mit einem festgelegten Muster geprüft werden müssen, kann JSON Schema hilfreich sein.
+
+Ein Beispiel für die Verwendung von JSON Schema ist das Mock-Server-Tool Prism von Stoplight. Prism nutzt JSON Schema, um genaue Antworttypen anzuzeigen und kann mit aktivierten Erweiterungen sogar spezifische Werttypen wie Namen und Straßenadressen generieren.
+
+JSON Schema ermöglicht also die Definition von Regeln und Mustern, nach denen JSON-Daten validiert werden können. Dies ist besonders nützlich in der Entwicklung von APIs und anderen Anwendungen, bei denen die Struktur von JSON-Daten von großer Bedeutung ist.
+[24]
 
 ### Bilder
 
@@ -183,7 +437,18 @@ Durch die Umsetzung des HATEOAS-Prinzips lässt sich die Schnittstelle eines RES
 [9] : https://aws.amazon.com/de/what-is/restful-api/
 [10] : https://www.ionos.de/digitalguide/websites/web-entwicklung/hateoas-alle-informationen-zu-der-rest-eigenschaft/
 [11] : https://de.wikipedia.org/wiki/HATEOAS
-
-
+[12] : https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/
+[13] : https://www.freecodecamp.org/news/rest-api-best-practices-rest-endpoint-design-examples/
+[14] : https://www.makeuseof.com/api-endpoints-naming-best-practices/
+[15] : https://www.baeldung.com/rest-api-error-handling-best-practices
+[16] : https://www.redhat.com/de/topics/api/what-is-graphql
+[17] : https://chat.openai.com/ frage: erkläre mir was was Schema, Query, Resolver, Mutation in Graphql sind
+[18] : https://waytoeasylearn.com/learn/backends-for-frontends-pattern/
+[19] : https://www.visual-paradigm.com/guide/development/code-first-vs-design-first/
+[20] : https://chat.openai.com/ frage : was ist API Versioning
+[21] : https://www.torocloud.com/blog/api-versioning-url-vs-header-vs-media-type-versioning#:~:text=Header%20versioning%20is%20another%20approach,sent%20along%20with%20the%20request.
+[22] : https://www.lucidchart.com/blog/de/api-tests-grundlagen-und-best-prectices#:~:text=Was%20sind%20API%2DTests%3F,mangelhaftes%20oder%20unsicheres%20Produkt%20erhalten.
+[23] : https://www.ionos.de/digitalguide/websites/web-entwicklung/was-ist-openapi/
+[24] : https://blog.stoplight.io/openapi-json-schema#:~:text=Both%20are%20description%20formats%20for,API%2C%20not%20just%20data%20models.
 
 
