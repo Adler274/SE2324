@@ -596,5 +596,3 @@ JSON Schema ermöglicht also die Definition von Regeln und Mustern, nach denen J
 [22b] : https://www.lucidchart.com/blog/de/api-tests-grundlagen-und-best-prectices#:~:text=Was%20sind%20API%2DTests%3F,mangelhaftes%20oder%20unsicheres%20Produkt%20erhalten.
 [23b] : https://www.ionos.de/digitalguide/websites/web-entwicklung/was-ist-openapi/
 [24b] : https://blog.stoplight.io/openapi-json-schema#:~:text=Both%20are%20description%20formats%20for,API%2C%20not%20just%20data%20models.
-
-
