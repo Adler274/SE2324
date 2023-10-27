@@ -22,7 +22,7 @@ Simon Fedrau, Sascha Hahn
 ## APIs
 
 **Was ist eine API?**
-
+***
 API ist die Abkürzung für „application programming interface“ und der gängige Fachbegriff für eine Programmierschnittstelle, auch Anwendungsschnittstelle genannt. Bieten Online-Dienste solche Schnittstellen an, wird häufig der Begriff „Webservices“ verwendet.
 [1]
 
@@ -31,7 +31,7 @@ API ist die Abkürzung für „application programming interface“ und der gän
 APIs ermöglichen die nahtlose Kommunikation zwischen Produkten und Diensten, verbessern die Anwendungsentwicklung, sparen Zeit und Geld, fördern Flexibilität und Innovation. Sie erleichtern die Integration Ihrer Infrastruktur, den Datenaustausch mit Kunden und bieten Geschäftschancen, einschließlich Monetarisierung.
 ---
 ### API vs. SDK
-
+***
 **Was ist eine SDK?**
 
 Ein SDK (Software Development Kit) bietet eine integrierte Plattform, um Anwendungen effizient von Grund auf neu zu entwickeln. Es enthält Bausteine, die den Entwicklungsprozess verkürzen. Statt Code von Grund auf neu zu schreiben, können Sie auf Bibliotheken, Compiler, Debugger, Codebeispiele und Dokumentation im SDK zurückgreifen. Die integrierte Entwicklungsumgebung verbindet alle im SDK enthaltenen Tools.
@@ -39,7 +39,7 @@ Ein SDK (Software Development Kit) bietet eine integrierte Plattform, um Anwendu
 ---
 
 **Unterschied und Einsatzgebiete**
-
+***
 * **API**
 
   * Mechanismus für die Kommunikation zwischen Softwarekomponenten
@@ -67,7 +67,7 @@ Ein SDK (Software Development Kit) bietet eine integrierte Plattform, um Anwendu
 
 ---
 
-#### Resource style
+### Resource style
 ***
 
 **Was ist der Resource Style?**
@@ -90,7 +90,7 @@ Abstrahiert Implementierungsdetails hinter den Ressourcen
 Bietet eine klare und konsistente Struktur für die API
 
 ---
-#### Hypermedia-Style
+### Hypermedia-Style
 ***
 **Was ist der Hypermedia-Style?**
   * Ähnlich zum Navigieren im Web
@@ -112,7 +112,7 @@ Bietet eine klare und konsistente Struktur für die API
 * Nicht ideal, wenn Benutzer präzise Ergebnisse benötigen
 
 ---
-#### Query style
+### Query style
 ***
 **Was ist der Query Style?**
 * Ein einzelner Einstiegspunkt für den Zugriff auf Ressourcen
@@ -135,7 +135,7 @@ Bietet eine klare und konsistente Struktur für die API
 
 ---
 
-#### Tunnel Style 
+### Tunnel Style 
 ***
 **Was ist der Tunnel Style?**
 * API als Sammlung von remote aufrufbaren Funktionen
@@ -153,7 +153,7 @@ Bietet eine klare und konsistente Struktur für die API
 
 ---
 
-#### Event-based style
+### Event-based style
 ***
 - Was ist der Event-based Style?
   - API-Anbieter erzeugt Ereignisse und informiert API-Nutzer darüber
@@ -186,7 +186,7 @@ API Implementation Standards sind Leitlinien und Best Practices, die bei der Ent
 
 ---
 
-#### Vergleich, Motivation, Vorteile, Nachteile
+### Vergleich, Motivation, Vorteile, Nachteile
 ***
 
 **Vergleich:**
@@ -207,7 +207,7 @@ API Implementation Standards sind Leitlinien und Best Practices, die bei der Ent
   * Schnellere Entwicklung durch Standards.
 
 ---
-#### Vergleich, Motivation, Vorteile, Nachteile
+### Vergleich, Motivation, Vorteile, Nachteile
 ***
 
 **Vorteile:**
@@ -230,7 +230,7 @@ API Implementation Standards sind Leitlinien und Best Practices, die bei der Ent
   * Übermäßige Standards können Flexibilität behindern.
 
 ---
-#### RESTful
+### RESTful
 ***
 
 - **Representational State Transfer (REST):**
@@ -250,7 +250,7 @@ API Implementation Standards sind Leitlinien und Best Practices, die bei der Ent
   * Kommunikation zwischen Systemen.
 
 ---
-#### HATEOAS
+### HATEOAS
 ***
 
 - **HATEOAS-Prinzip:**
@@ -274,7 +274,7 @@ API Implementation Standards sind Leitlinien und Best Practices, die bei der Ent
 ---
 
 
-#### Naming REST API Endpoints
+### Naming REST API Endpoints
 ***
 - **Entscheidende Aspekte:**
   - Klare, verständliche und konsistente API-Gestaltung.
@@ -297,7 +297,7 @@ API Implementation Standards sind Leitlinien und Best Practices, die bei der Ent
 [12] [13] [14]
 
 ---
-#### Error Handling
+### Error Handling
 ***
 - **Grundlegende Antworten:**
   - Verwendung von Statuscodes, um Fehler zu identifizieren.
@@ -318,7 +318,7 @@ API Implementation Standards sind Leitlinien und Best Practices, die bei der Ent
   - Fördert einheitliche Fehlerbehandlung in RESTful APIs.
 [15]
 ---
-#### Best Practices Security
+### Best Practices Security
 ***
 
 - Zugriffsrichtlinie und Autorisierung: 
@@ -340,7 +340,7 @@ Definieren, wer auf Ihre API-Ressourcen zugreifen darf.
 
 ---
 
-#### GraphQL
+### GraphQL
 ***
 
 - GraphQL ist eine Abfragesprache und serverseitige Runtime für APIs.
@@ -355,7 +355,7 @@ Definieren, wer auf Ihre API-Ressourcen zugreifen darf.
 [16]
 ---
 
-#### Schema in GraphQL
+### Schema in GraphQL
 ***
 
 - Das Schema bildet die Grundlage jeder GraphQL-API.
@@ -372,7 +372,7 @@ Definieren, wer auf Ihre API-Ressourcen zugreifen darf.
 [16] [17]
 ---
 
-#### Query in GraphQL
+### Query in GraphQL
 ***
 - Eine Query in GraphQL ist eine Abfrageoperation, mit der Daten aus der API abgerufen werden.
 
@@ -385,7 +385,7 @@ Definieren, wer auf Ihre API-Ressourcen zugreifen darf.
 [17] [18]
 ---
 
-## Resolver in GraphQL
+### Resolver in GraphQL
 
 - Resolver sind Funktionen, die die eigentliche Arbeit in einer GraphQL-API ausführen.
 
@@ -401,7 +401,7 @@ Definieren, wer auf Ihre API-Ressourcen zugreifen darf.
 
 ---
 
-#### Mutation in GraphQL
+### Mutation in GraphQL
 ***
 
 - Mutationen sind Operationen in GraphQL, mit denen Daten geändert oder erstellt werden können.
@@ -416,7 +416,7 @@ Definieren, wer auf Ihre API-Ressourcen zugreifen darf.
 
 ---
 
-## Backend For Frontend (BFF-Muster)
+### Backend For Frontend (BFF-Muster)
 ***
 
 - Das Backends for Frontends Pattern  ist ein Designmuster für die Architektur von Mikroservices.
@@ -428,7 +428,7 @@ Definieren, wer auf Ihre API-Ressourcen zugreifen darf.
 
 
 ---
-#### API Design
+### API Design
 ***
 - API-Design bezieht sich auf die Gestaltung von Schnittstellen, über die Softwarekomponenten miteinander kommunizieren.
 
@@ -447,7 +447,7 @@ Definieren, wer auf Ihre API-Ressourcen zugreifen darf.
 
 ---
 
-#### Code First vs. Design First
+### Code First vs. Design First
 ***
 - Code-First-Ansatz:
   - Beginnt mit dem Schreiben des API-Codes.
@@ -464,7 +464,7 @@ Definieren, wer auf Ihre API-Ressourcen zugreifen darf.
   - Erfordert spezialisierte Designwerkzeuge.
 
 ---
-## API Versioning
+### API Versioning
 ***
 
 - Bedeutung: Wichtig bei API-Veröffentlichungen.
@@ -486,7 +486,7 @@ Definieren, wer auf Ihre API-Ressourcen zugreifen darf.
 [20] [21]
 ---
 
-#### API Testing
+### API Testing
 
 - **Zweck:** Überprüfung von APIs auf Funktionalität, Leistung, Zuverlässigkeit und Sicherheit.
 
@@ -504,7 +504,7 @@ API-Tests sind entscheidend für eine zuverlässige und fehlerfreie API-Nutzung.
 
 [22]
 ---
-#### OpenAPI
+### OpenAPI
 ***
 - **Was ist OpenAPI?** Ein Standard zur API-Beschreibung.
 - **Zweck:** Beschreibung, Entwicklung, Test und Dokumentation von REST-APIs.
@@ -517,7 +517,7 @@ API-Tests sind entscheidend für eine zuverlässige und fehlerfreie API-Nutzung.
 
 ---
 
-#### JSON Schema
+### JSON Schema
 ***
 ## JSON Schema
 
@@ -527,10 +527,6 @@ API-Tests sind entscheidend für eine zuverlässige und fehlerfreie API-Nutzung.
 - **Anwendungen:** Häufig in API-Entwicklung und anderen Bereichen, wo Datenstrukturen eine wichtige Rolle spielen.
 [24]
 ---
-
-# Zusammenfassung
-
-
 
 ---
 class: center, middle
