@@ -2,10 +2,12 @@
 
 # Software system integration
 Software Systems Integration ist der Prozess des Zusammenführens verschiedener Softwarekomponenten oder Systeme, um reibungslose Interaktion und nahtlose Kommunikation sicherzustellen. Dies ermöglicht es, Daten und Funktionen zwischen den Systemen auszutauschen und Geschäftsprozesse zu optimieren. Die Integration kann verschiedene Aspekte wie Datenintegration, Middleware-Kommunikation, Legacy-Systeme und Cloud-Services umfassen. Sie spielt eine entscheidende Rolle bei der Schaffung effizienter und kooperativer IT-Infrastrukturen in Unternehmen.
+[1,2]
 
 # Kommunikation
 Kommunikation in Software-Systemintegration bezieht sich auf den Prozess des Informationsaustauschs und der Interaktion zwischen den verschiedenen integrierten Komponenten.
 Effektive Kommunikation ist entscheidend, um sicherzustellen, dass die integrierten Systeme zusammenarbeiten. Sie umfasst die Festlegung von Schnittstellen, Protokollen und Mechanismen, die den Informationsaustausch unterstützen.
+[1,2]
 
 ### Command vs Query vs Event
 **Command (Befehl):**<br>
@@ -23,6 +25,7 @@ Effektive Kommunikation ist entscheidend, um sicherzustellen, dass die integrier
 * Events sind in der Regel nachrichtenbasiert und werden verwendet, um über Änderungen oder Ereignisse zu informieren.
 * Beispiel: "Benutzer hat sich angemeldet."
 
+[1,3]
 
 ### Synchron (RPC) vs asynchron (Messages)
 
@@ -35,6 +38,8 @@ Effektive Kommunikation ist entscheidend, um sicherzustellen, dass die integrier
 * Bei asynchroner Kommunikation erfolgt die Kommunikation ohne unmittelbare Antwort. Der aufrufende Prozess setzt seine Arbeit fort, ohne auf eine Antwort zu warten.
 * Dies wird häufig über Nachrichten oder Events realisiert, bei denen der aufgerufene Prozess die Nachricht verarbeitet, wenn er dazu bereit ist.
 * Asynchrone Kommunikation kann die Skalierbarkeit und die Reaktionsfähigkeit des Systems verbessern.
+
+[1,4]
 
 ### Patterns
 Patterns in der Softwareentwicklung sind bewährte Lösungsansätze für wiederkehrende Probleme. Sie helfen Entwicklern, effizienten und wartbaren Code zu schreiben, indem sie strukturierte Herangehensweisen für typische Aufgaben bieten. Diese Muster sind wie Bausteine, die in vielen Projekten wiederverwendet werden können, um Zeit zu sparen und die Qualität der Software zu erhöhen. Sie umfassen Beispiele wie Singleton für eine einzige Instanz einer Klasse, Factory zur Objekterzeugung und Observer für die Verfolgung von Änderungen im System. Patterns sind ein wertvolles Werkzeug, um Entwicklungsprozesse zu optimieren.
@@ -68,6 +73,8 @@ Patterns in der Softwareentwicklung sind bewährte Lösungsansätze für wiederk
 * Die empfangenden Systeme sind in der Regel von den auslösenden Ereignissen entkoppelt und können auf Benachrichtigungen reagieren.
 * Webhooks sind nützlich, um Echtzeitinformationen in verteilten Systemen zu übertragen.
 
+[1,5]
+
 ### Protokolle
 In der Softwareentwicklung sind Regelsätze und Vereinbarungen, die den Kommunikationsaustausch zwischen verschiedenen Systemen oder Komponenten ermöglichen. Sie dienen dazu, wie Daten gesendet, empfangen und interpretiert werden, festzulegen.
 
@@ -77,6 +84,8 @@ gRPC ist ein Remote Procedure Call (RPC)-Framework, das von Google entwickelt wu
 
 * **Merkmale:**
 gRPC bietet Effizienz, hohe Interoperabilität, Unterstützung für verschiedene Programmiersprachen und automatische Codegenerierung aus Protobuf-Dateien.
+
+
 
 #### HTTP/s
 HTTP/s (Hypertext Transfer Protocol Secure) ist ein Kommunikationsprotokoll, das für den Austausch von Informationen und Daten im World Wide Web verwendet wird. Die "s" steht für "sicher", da es die Verschlüsselung von Daten ermöglicht.
@@ -90,6 +99,8 @@ HTTP/s (Hypertext Transfer Protocol Secure) ist ein Kommunikationsprotokoll, das
 * Verwendung von SSL/TLS: HTTPS basiert auf dem Einsatz von SSL (Secure Sockets Layer) oder TLS (Transport Layer Security) zur Verschlüsselung und Authentifizierung.
 * Standardport: HTTPS verwendet in der Regel Port 443 für die Kommunikation.
 
+[1,6]
+
 ##### Continuous Connection
 Continuous Connection bezieht sich auf eine anhaltende Kommunikationsverbindung zwischen einem Client und einem Server. Statt bei jeder Anfrage eine neue Verbindung zu öffnen und zu schließen, wird eine bestehende Verbindung aufrechterhalten, um Daten in Echtzeit auszutauschen.
 
@@ -102,6 +113,8 @@ Long-Polling ist eine Weiterentwicklung des Pollings, bei dem der Server auf ein
 
 **SSE (Server-Sent Events):**<br>
 SSE ist ein Protokoll, das es dem Server ermöglicht, Daten proaktiv an den Client zu senden, sobald sie verfügbar sind. Dies eliminiert die Notwendigkeit für wiederholte Anfragen, und der Server kann Ereignisse an den Client senden, wenn sie auftreten. SSE ist besonders nützlich für Echtzeit-Informationen oder Benachrichtigungen in Webanwendungen.
+
+[1,7]
 
 ##### WebSockets
 Websockets sind ein Kommunikationsprotokoll, das eine bidirektionale, interaktive und kontinuierliche Kommunikation zwischen einem Client und einem Server ermöglicht. Im Gegensatz zum traditionellen HTTP, das auf anfragebasierten Kommunikation beruht, bleibt die Websocket-Verbindung geöffnet, sodass sowohl der Client als auch der Server Nachrichten in Echtzeit senden und empfangen können.
@@ -120,8 +133,12 @@ Moderne Webbrowser unterstützen Websockets, was sie zu einer geeigneten Wahl f�
 
 Websockets werden in einer Vielzahl von Anwendungen eingesetzt, darunter Online-Chats, Multiplayer-Spiele, Aktienhandelssysteme und Echtzeit-Dashboards.
 
+[1,7]
+
 #### Serialisierung
 Serialisierung ist der Prozess der Umwandlung von Datenstrukturen oder Objekten in ein Format, das zur Übertragung oder Speicherung verwendet werden kann. Dieser Prozess ermöglicht es, Daten in eine sequenzielle Reihenfolge von Bytes oder Zeichen umzuwandeln, die später rekonstruiert werden können.
+
+[1,8]
 
 ##### JSON, XML, Protocol Buffers
 JSON (JavaScript Object Notation), XML (eXtensible Markup Language) und Protocol Buffers (Protobuf) sind verschiedene Datenformate, die in der Serialisierung verwendet werden. Diese Formate dienen dazu, Daten zu strukturieren und für den Datenaustausch zu speichern. Sie sind unabhängig von der zugrunde liegenden Programmiersprache oder Plattform und ermöglichen so eine erhöhte Interoperabilität. Dies bedeutet, dass sie in verschiedenen Umgebungen und auf verschiedenen Geräten verwendet werden können.
@@ -149,6 +166,8 @@ Die Löschoperation erlaubt das Entfernen von Datensätzen oder Objekten aus der
 CQRS ist ein erweitertes Datenmanagementmuster, das die Trennung von Lese- (Query) und Schreiboperationen (Command) betont. Es schlägt vor, separate Modelle für Lese- und Schreibzugriffe zu verwenden.
 CQRS wird in komplexen Anwendungen eingesetzt, in denen die Anforderungen an die Lese- und Schreibvorgänge stark voneinander abweichen. Es ermöglicht die Optimierung und Skalierung von Lese- und Schreibzugriffen unabhängig voneinander.
 
+[1,9,10]
+
 # Software System Interfaces
 Software System Interfaces sind Schnittstellen, die Benutzern ermöglichen, mit einer Softwareanwendung zu interagieren. Sie können in verschiedenen Formen auftreten und bieten vielfältige Möglichkeiten für die Kommunikation zwischen Benutzern und der Software.
 
@@ -161,7 +180,17 @@ Voice UIs ermöglichen Benutzern die Interaktion mit einer Softwareanwendung mit
 ## CLIs (Command Line Interfaces)
 CLIs sind textbasierte Schnittstellen, die es Benutzern ermöglichen, Befehle und Anweisungen direkt in einer Kommandozeile einzugeben. Mit CLIs können erfahrene Benutzer komplexe Aufgaben ausführen und Systeme steuern, indem sie Textbefehle eingeben. Diese Schnittstellen sind in vielen Betriebssystemen und Entwicklertools gebräuchlich und bieten eine effiziente Möglichkeit zur Interaktion mit Software auf einem niedrigeren Abstraktionsniveau.
 
+[11]
+
 # Referenzen
 
-[1] :https://chat.openai.com/
-[2] :
+[2] :https://www.snaplogic.com/de/blog/system-integration-types-and-approaches
+[3] :https://kwahome.medium.com/microservice-interactions-query-command-event-d7e01d8cd63c#:~:text=The%20difference%20between%20queries%2C%20commands,completed%20(in%20the%20past).
+[4] :https://de.wikipedia.org/wiki/Remote_Procedure_Call
+[5] :https://de.wikibrief.org/wiki/Message_passing
+[6] :https://de.wikipedia.org/wiki/Internetprotokollfamilie
+[7] :https://medium.com/dailyjs/a-comparison-between-websockets-server-sent-events-and-polling-7a27c98cb1e3
+[8] :https://de.wikipedia.org/wiki/Serialisierung
+[9] :https://learn.microsoft.com/en-us/azure/architecture/patterns/category/data-management
+[10] :https://www.oreilly.com/library/view/design-patterns-for/9781492090700/ch04.html
+[11] :https://de.wikipedia.org/wiki/Schnittstelle
