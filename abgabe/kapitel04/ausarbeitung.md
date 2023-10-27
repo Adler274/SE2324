@@ -1,5 +1,15 @@
 # Kpitel 4
 
+# Lernziele
+1. Welche Arten von Kommunikation zwischen Software Systemen gibt es
+2. Wie Funktionieren Kommunikation patterns
+3. Welche Protokolle gibt es
+4. Wie funktioniert Serialisierung
+5. Welche Typen/Dateiformate gibt es zur Serialisierung
+6. Welche Data Management Patterns gibt es und wie funktionieren sie
+7. Was sind Software System Interfaces und welche Arten gibt es
+
+
 # Software system integration
 Software Systems Integration ist der Prozess des Zusammenführens verschiedener Softwarekomponenten oder Systeme, um reibungslose Interaktion und nahtlose Kommunikation sicherzustellen. Dies ermöglicht es, Daten und Funktionen zwischen den Systemen auszutauschen und Geschäftsprozesse zu optimieren. Die Integration kann verschiedene Aspekte wie Datenintegration, Middleware-Kommunikation, Legacy-Systeme und Cloud-Services umfassen. Sie spielt eine entscheidende Rolle bei der Schaffung effizienter und kooperativer IT-Infrastrukturen in Unternehmen.
 [1,2]
