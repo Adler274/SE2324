@@ -486,35 +486,50 @@ Definieren, wer auf Ihre API-Ressourcen zugreifen darf.
 [20] [21]
 ---
 
+#### API Testing
 
+- **Zweck:** Überprüfung von APIs auf Funktionalität, Leistung, Zuverlässigkeit und Sicherheit.
 
+- **Wichtigkeit:** Verhindert Fehler, sichert Zuverlässigkeit und fördert effiziente Nutzung.
 
+- **Testarten:** Funktionale, Leistungs-, Sicherheits- und Zuverlässigkeitstests.
 
+- **Werkzeuge:** Postman, Newman, JUnit und spezialisierte API-Testtools.
 
+- **Automatisierung:** Automatisierung für effiziente und wiederholbare Tests.
 
+- **Testabdeckung:** Deckt verschiedene Szenarien ab.
 
+API-Tests sind entscheidend für eine zuverlässige und fehlerfreie API-Nutzung.
 
+[22]
+---
+#### OpenAPI
+***
+- **Was ist OpenAPI?** Ein Standard zur API-Beschreibung.
+- **Zweck:** Beschreibung, Entwicklung, Test und Dokumentation von REST-APIs.
+- **Unterschied zu JSON Schema:** OpenAPI beschreibt die gesamte API, inklusive Endpunkten und Formatierung von Anfragen und Antworten.
+- **Warum ist OpenAPI nützlich?** Ermöglicht die Generierung von Dokumentation und Mock-Servern.
+- **Vereinfacht:** Die Entwicklung und das Testen von APIs.
 
+[23] [24]
 
 
 ---
 
-# Einführung
+#### JSON Schema
+***
+## JSON Schema
 
-Um die Prozesse in der Softwareentwicklung umzusetzen, stellen die Teams sicher, dass die zuvor festgelegten Standards und Ziele des Unternehmens mit dem Produkt übereinstimmen.
-
-![:scale 20%](media/image.jpg)
-
-![](media/image.jpg)
-
+- **Was ist JSON Schema?** Eine Vorlage zur Beschreibung der Struktur von JSON-Daten.
+- **Verwendung:** Zur Planung und Validierung von JSON-Datenstrukturen.
+- **Vorteile:** Effizientere Zusammenarbeit und Fehlervermeidung durch strukturierte Datenplanung.
+- **Anwendungen:** Häufig in API-Entwicklung und anderen Bereichen, wo Datenstrukturen eine wichtige Rolle spielen.
+[24]
 ---
 
 # Zusammenfassung
 
-- Folien werden mit `---` voneinander abgetrennt (Achtung: kein Leerzeichen am Ende)
-- Bilder, Diagramme etc. im `media`-Unterverzeichnis speichern
-- Wird die Datei `remark-latest.min.js` heruntergeladen, können die Folien offline bearbeitet werden. Pfad im `script`-Tag anpassen.
-- [Remark.js](https://remarkjs.com/)
 
 
 ---
@@ -522,12 +537,40 @@ class: center, middle
 
 # Fragen?
 ***
-
-
+* Was sind APIs
+* Wie schreibt man gute APIs
+* Welche Styles gibt es und wie wähle ich die richtige
+* Was ist RESTful
+* Wie geht gutes Error Handling
+* Warum ist GraphQL so wichtig
 
 
 ---
 # Quellen
 ***
+[1] : https://it-service.network/it-lexikon/api
+[2] : https://www.redhat.com/de/topics/api/what-are-application-programming-interfaces
+[3] : https://aws.amazon.com/de/compare/the-difference-between-sdk-and-api/
+[4] : https://geekflare.com/de/sdk-and-api-comparison/
+[5] : https://www.redhat.com/architect/api-styles
+[6] : https://www.deepl.com/de/translator
+[7] : https://chat.openai.com/c/d8c075bc-13b9-4124-aca4-4fd590244a2a frage : was sind API Implementation Standards
+[8] : https://chat.openai.com/c/d8c075bc-13b9-4124-aca4-4fd590244a2a frage : Was wären in dem Kontext  Vergleich, Motivation, Vorteile, Nachteile
+[9] : https://aws.amazon.com/de/what-is/restful-api/
+[10] : https://www.ionos.de/digitalguide/websites/web-entwicklung/hateoas-alle-informationen-zu-der-rest-eigenschaft/
+[11] : https://de.wikipedia.org/wiki/HATEOAS
+[12] : https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/
+[13] : https://www.freecodecamp.org/news/rest-api-best-practices-rest-endpoint-design-examples/
+[14] : https://www.makeuseof.com/api-endpoints-naming-best-practices/
+[15] : https://www.baeldung.com/rest-api-error-handling-best-practices
+[16] : https://www.redhat.com/de/topics/api/what-is-graphql
+[17] : https://chat.openai.com/ frage: erkläre mir was was Schema, Query, Resolver, Mutation in Graphql sind
+[18] : https://waytoeasylearn.com/learn/backends-for-frontends-pattern/
+[19] : https://www.visual-paradigm.com/guide/development/code-first-vs-design-first/
+[20] : https://chat.openai.com/ frage : was ist API Versioning
+[21] : https://www.torocloud.com/blog/api-versioning-url-vs-header-vs-media-type-versioning#:~:text=Header%20versioning%20is%20another%20approach,sent%20along%20with%20the%20request.
+[22] : https://www.lucidchart.com/blog/de/api-tests-grundlagen-und-best-prectices#:~:text=Was%20sind%20API%2DTests%3F,mangelhaftes%20oder%20unsicheres%20Produkt%20erhalten.
+[23] : https://www.ionos.de/digitalguide/websites/web-entwicklung/was-ist-openapi/
+[24] : https://blog.stoplight.io/openapi-json-schema#:~:text=Both%20are%20description%20formats%20for,API%2C%20not%20just%20data%20models.
 
 -
