@@ -32,7 +32,7 @@ Ein Software Development Kit (SDK) ist eine Reihe von plattformspezifischen Entw
 
 ### API Styles
 
-Anwendungsprogrammierschnittstellen (APIs) sind ein wesentliches Gestaltungselement in jeder Softwarearchitektur. Sie verbinden Komponenten digital miteinander und ermöglichen es verschiedenen Systemen und Geräten, problemlos miteinander zu kommunizieren. Wenn Entwickler eine neue API erstellen, denken sie zunächst über das API-Design nach und darüber, wie die API mit der Außenwelt interagiert, indem sie einen Stil und eine Technologie auswählen.
+APIs sind ein wesentliches Gestaltungselement in jeder Softwarearchitektur. Sie verbinden Komponenten digital miteinander und ermöglichen es verschiedenen Systemen und Geräten, problemlos miteinander zu kommunizieren. Wenn Entwickler eine neue API erstellen, denken sie zunächst über das API-Design nach und darüber, wie die API mit der Außenwelt interagiert, indem sie einen Stil und eine Technologie auswählen.
 [5]
 Im Folgenden werden fünf häufig genutzten APIs Architekturen vorgestellt.
 
@@ -82,28 +82,12 @@ Einige Nachteile bei der Wahl des eventbasierten Stils sind, dass die Implementi
 
 
   API Implementation Standards sind Leitlinien und Best Practices, die bei der Entwicklung und Umsetzung von APIs (Application Programming Interfaces) befolgt werden sollten. Diese Standards dienen dazu, die Qualität, Konsistenz, Interoperabilität und Sicherheit von APIs sicherzustellen. Hier sind einige wichtige Aspekte, die in API Implementation Standards behandelt werden:
-
-  Konsistenz in der Benennung und Dokumentation: Einheitliche Namenskonventionen für Endpunkte, Parameter und Ressourcen erleichtern es Entwicklern, die API zu verstehen und zu nutzen. Klare und umfassende Dokumentation ist ebenfalls entscheidend, um die API-Nutzer zu unterstützen.
-
-  Authentifizierung und Autorisierung: Standards für die sichere Authentifizierung und Autorisierung von API-Nutzern sind von entscheidender Bedeutung, um unbefugten Zugriff zu verhindern und die Datenintegrität zu gewährleisten.
-
-  Datenschutz und Sicherheit: Die Standards können Richtlinien für den Schutz von sensiblen Daten in der API festlegen, um sicherzustellen, dass personenbezogene Informationen und andere vertrauliche Daten angemessen geschützt sind.
-
-  HTTP-Methoden und Statuscodes: API Implementation Standards legen fest, welche HTTP-Methoden (GET, POST, PUT, DELETE usw.) in welchem Kontext verwendet werden sollten, sowie die Bedeutung von HTTP-Statuscodes (z. B. 200 OK, 404 Not Found).
-
-  Datenformate und -modelle: Standards können definieren, welche Datenformate (z. B. JSON oder XML) verwendet werden sollten, sowie die Struktur der Datenmodelle und Schemata, die in der API verwendet werden.
-
-  Rate Limiting und Caching: Sie können Richtlinien für die Begrenzung der Anfragen pro Zeiteinheit und für das Caching von Daten festlegen, um die Leistung der API zu verbessern und Missbrauch zu verhindern.
-
-  Monitoring und Analyse: API Implementation Standards können Empfehlungen für das Monitoring der API-Leistung und die Analyse von Nutzungsmetriken enthalten.
-
   Die genauen Standards können je nach API-Entwicklungsteam, Unternehmen und Anwendungsfall variieren. Sie dienen jedoch dazu, eine konsistente und hochwertige API-Entwicklung zu fördern und die Interoperabilität zwischen verschiedenen Systemen sicherzustellen. Standards sind entscheidend, um API-Verwirrung und Inkompatibilität zu verhindern, insbesondere in der heutigen vernetzten Welt, in der APIs eine zentrale Rolle spielen.
 
 #### Vergleich, Motivation, Vorteile, Nachteile
 
-**Vergleich:**
-
-  Vergleich mit individueller API-Entwicklung: API Implementation Standards bieten einen einheitlichen Ansatz für die API-Entwicklung und gewährleisten Konsistenz. Im Vergleich zur individuellen API-Entwicklung, bei der Entwickler möglicherweise eigene Konventionen und Praktiken verwenden, führen Standards zu einer höheren Qualität und besseren Wartbarkeit der APIs.
+  **Vergleich mit individueller API-Entwicklung:**
+   API Implementation Standards bieten einen einheitlichen Ansatz für die API-Entwicklung und gewährleisten Konsistenz. Im Vergleich zur individuellen API-Entwicklung, bei der Entwickler möglicherweise eigene Konventionen und Praktiken verwenden, führen Standards zu einer höheren Qualität und besseren Wartbarkeit der APIs.
   Vergleich verschiedener Standards: Es gibt verschiedene Standards und Spezifikationen wie REST, GraphQL, SOAP usw. Jede dieser Standards hat ihre eigenen Empfehlungen und Regeln. Ein Vergleich dieser Standards hilft dabei, den besten Ansatz für bestimmte Anwendungsfälle zu wählen.
   
   **Motivation:**
@@ -308,7 +292,6 @@ Der Design-First-Ansatz hingegen legt den Fokus darauf, den API-Vertrag zuerst z
 [19]
 
 
-**Dieses Thema muss überrarbeiet werden** 
 
 * Design First
 Beim Design-First-Ansatz wird die API zuerst geplant und spezifiziert, bevor der eigentliche Programmcode geschrieben wird. Dies bedeutet, dass zuerst die Struktur, das Verhalten und die Dokumentation der API festgelegt werden, oft mit Hilfe von Design-Tools wie Swagger. Erst danach beginnt die eigentliche Entwicklung des Codes, basierend auf diesem Design. Dieser Ansatz legt den Fokus auf eine klare und sorgfältige Gestaltung der API, bevor die Umsetzung beginnt.
@@ -321,13 +304,6 @@ Die Vorteile dieses Ansatzes sind ein besseres Verständnis der Funktionalität 
 Nachteile des Code-First-Ansatzes :Der Code-First-Ansatz kann zu mangelnder Dokumentation und Standardisierung führen, da es keine klare API-Spezifikation gibt. Das kann zu Verwirrung und Ineffizienz führen.
 
 Vorteile des Code-First-Ansatzes :Der Code-First-Ansatz kann zu schnellere Entwicklung, einfache Iteration, direkte Kontrolle über die Implementierung und nahtlose Integration mit vorhandenem Code. Nachteile sind mangelnde Dokumentation, erhöhte Abhängigkeit vom Codebasis und begrenzte Designflexibilität.
-
-* Code First vs Design First
-
-Der Code-First-Ansatz beginnt mit dem Schreiben des API-Codes und bietet schnellere Entwicklung und direkte Kontrolle. Allerdings fehlt eine klare Spezifikation und umfassende Dokumentation, was zu Problemen führen kann.
-
-Der Design-First-Ansatz legt die API-Spezifikation zuerst fest, was zu besserer Benutzerfreundlichkeit, kürzerer Entwicklungszeit und verbesserter Dokumentation führt. Allerdings kann er die Flexibilität einschränken und erfordert spezialisierte Designwerkzeuge.
-
 
 #### API Versioning
 

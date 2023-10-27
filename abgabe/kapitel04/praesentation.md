@@ -2,42 +2,503 @@ class: center, middle
 
 ## [Software Engineering](../../praesentationen.html)
 
-#### Kapitel x
+#### Kapitel 4
 
-# Kapitelüberschrift
 
-Max Mustermann
+Simon Fedrau, Sascha Hahn
 
 ---
 # Inhalt
 ***
+1. Software system integration
 
-1. Einführung
+1. Software system interfaces
 
-1. Standards
-
-1. Softwaremessung
-
-1. Zusammenfassung
+1. APIs
 
 1. Quellen
 
 ---
-# Einführung
+## APIs
 
-Softwaresysteme sollen "**_fit for purpose_**" sein.
+**Was ist eine API?**
 
-- **Effizient**
-- *Zuverlässig*
-- Fertigstellung innerhalb eines Zeit- und Kostenrahmens
+API ist die Abkürzung für „application programming interface“ und der gängige Fachbegriff für eine Programmierschnittstelle, auch Anwendungsschnittstelle genannt. Bieten Online-Dienste solche Schnittstellen an, wird häufig der Begriff „Webservices“ verwendet.
+[1]
 
-Die Techniken des Softwarequalitätsmanagements kommen ursprünglich aus der Fertigungsindustrie.
+**Wie funktionieren APIs?**
 
-**Qualitätssicherung** ist die Definition von Prozessen und Standards, die zu qualitativ hochwertigen Produkten führen, und die Einführung dieser Qualitätsprozesse in den Fertigungsprozess.
+APIs ermöglichen die nahtlose Kommunikation zwischen Produkten und Diensten, verbessern die Anwendungsentwicklung, sparen Zeit und Geld, fördern Flexibilität und Innovation. Sie erleichtern die Integration Ihrer Infrastruktur, den Datenaustausch mit Kunden und bieten Geschäftschancen, einschließlich Monetarisierung.
+---
+### API vs. SDK
 
-**Qualitätslenkung** ist die Anwendung dieser Qualitätsprozesse, um Produkte auszusieben, die dem geforderten Qualitätsniveau nicht entsprechen.
+**Was ist eine SDK?**
+
+Ein SDK (Software Development Kit) bietet eine integrierte Plattform, um Anwendungen effizient von Grund auf neu zu entwickeln. Es enthält Bausteine, die den Entwicklungsprozess verkürzen. Statt Code von Grund auf neu zu schreiben, können Sie auf Bibliotheken, Compiler, Debugger, Codebeispiele und Dokumentation im SDK zurückgreifen. Die integrierte Entwicklungsumgebung verbindet alle im SDK enthaltenen Tools.
 
 ---
+
+**Unterschied und Einsatzgebiete**
+
+* **API**
+
+  * Mechanismus für die Kommunikation zwischen Softwarekomponenten
+  * Ermöglicht die Interaktion mit bestehenden Softwarekomponenten
+  * Integration vorentwickelter Funktionen in Ihren Code
+  * Einsatzgebiete:
+    * Datenaustausch zwischen Anwendungen
+    * Integration von Diensten von Drittanbietern (z. B. Zahlungsabwicklung)
+    * Erstellung von benutzerdefinierten Erweiterungen für Plattformen
+  
+* **SDK**
+
+  * Plattformspezifische Entwicklungstools wie Debugger, Compiler und Bibliotheken
+  * Enthält Bausteine zur Beschleunigung des Entwicklungsprozesses
+  * Bereitstellung von Tools und Ressourcen von Drittanbietern
+  * Einsatzgebiete:
+    * Entwicklung von Anwendungen für eine bestimmte Plattform
+    * Verwendung von vorgefertigten Bausteinen, um die Entwicklungszeit zu verkürzen
+    * Schaffung konsistenter Entwicklungsprozesse
+---
+
+### API Styles
+***
+  API Styles sind grundlegende Ansätze und Methoden, die bei der Gestaltung von APIs verwendet werden, um die Art und Weise zu definieren, wie API-Endpunkte, Anfragen, und Antworten strukturiert werden. Sie beeinflussen, wie Entwickler mit der API interagieren und welche Konventionen bei der Kommunikation befolgt werden sollten. 
+
+---
+
+#### Resource style
+***
+
+**Was ist der Resource Style?**
+
+  Ein ressourcenorientierter API-Designstil
+  Betont die Freigabe von Ressourcen für Verbraucher
+
+  **Beispiele für Ressourcen:**
+
+Vergleichbar mit Webseiten beim Entwurf einer Website
+Ressourcen können persistente Konzepte wie Produkte und Kundendaten oder prozessorientierte Konzepte wie Bestellungen und Versandoptionen darstellen.
+
+**Popularität des Resource Styles:**
+
+Häufig verwendet, bestätigt durch die Popularität von OpenAPI
+Fokus auf die Offenlegung der API-Funktionalität durch Ressourcen
+Vorteile des Resource Styles:
+
+Abstrahiert Implementierungsdetails hinter den Ressourcen
+Bietet eine klare und konsistente Struktur für die API
+
+---
+#### Hypermedia-Style
+***
+**Was ist der Hypermedia-Style?**
+  * Ähnlich zum Navigieren im Web
+  * Verknüpft Ressourcen mithilfe von Links
+  * Maschinen entscheiden normalerweise über die Navigation
+  * Links benötigen maschinenlesbare Bezeichnungen
+
+**Bezeichnungen in Hypermedia-APIs:**
+  * Konzeptuell ähnlich wie Textlinks auf Webseiten
+  * In maschinenlesbarer Darstellung, oft in JSON
+  * Ermöglichen das Navigieren zwischen Ressourcen
+**Herausforderungen:**
+  * Benutzerfreundliches Navigieren kann zu fragmentierten Informationen führen
+  * "Gesprächige" APIs, die mehrere Interaktionen erfordern
+  * API-Nutzer sind oft unsicher über ihre Anforderungen
+
+**Effizienz und Anwendungsfall:**
+* Geeignet für Szenarien, in denen Navigieren und Entdecken wichtig sind
+* Nicht ideal, wenn Benutzer präzise Ergebnisse benötigen
+
+---
+#### Query style
+***
+**Was ist der Query Style?**
+* Ein einzelner Einstiegspunkt für den Zugriff auf Ressourcen
+* API-Anbieter verwaltet strukturierte Ressourcen
+* Abfrageergebnisse ähnlich der Arbeitsweise von Datenbankabfragen
+
+**Vorteile des Query Styles:**
+* Individuelle Anforderungen können abgefragt werden
+* Kombinieren von Ergebnissen in einer einzigen Abfrage
+* Effizienzsteigerung durch Reduzierung von HTTP-Anfragen
+
+**Herausforderungen:**
+* Abfragekomplexität erfordert Verständnis des Daten- und Abfragemodells
+* Cache-Implementierung kann komplexer sein
+* Begrenzung von Anfragen in einigen Implementierungen
+
+**Anwendungsgebiete:**
+* Geeignet für flexible und individuelle Datenabfragen
+* Ideal für Szenarien, in denen viele verschachtelte Ressourcen benötigt werden
+
+---
+
+#### Tunnel Style 
+***
+**Was ist der Tunnel Style?**
+* API als Sammlung von remote aufrufbaren Funktionen
+* APIs erweitern lokale Programmierungsszenarien
+
+**Haupttechnik: Remote Procedure Calls (RPC)**
+* Client sendet Anfragen an entfernten Server für bestimmte Verfahren
+* Antwort wird vom Server an den Client gesendet
+* Einfach und praktisch, aber weniger häufig in moderner API-Entwicklung
+
+**Effiziente Implementierung: gRPC**
+* SDKs für verschiedene Sprachen und Plattformen
+* Verwendet Protocol Buffers für Serialisierung und Deserialisierung
+* Nutzt HTTP/2 für optimierte binäre Übertragungen und bidirektionales Streaming
+
+---
+
+#### Event-based style
+***
+- Was ist der Event-based Style?
+  - API-Anbieter erzeugt Ereignisse und informiert API-Nutzer darüber
+  - Nutzer erwarten Benachrichtigungen bei Zustandsänderungen in der API
+
+- Message-Broker-Konzept:
+  - Broker verwaltet und leitet Ereignisse
+  - Konsumenten abonnieren spezifische Ereignistypen
+  - Schwerpunkt auf der Architektur des Auslieferungs-Brokers
+
+- Herausforderungen und Lösungen:
+  - Implementierungsaufwand kann höher sein
+  - Potenzielle Probleme wie doppelte Nachrichten
+  - Fehlerbehebung und Überwachung erfordern spezielle Tools
+
+---
+### API Implementation Standards
+***
+API Implementation Standards sind Leitlinien und Best Practices, die bei der Entwicklung und Umsetzung von APIs (Application Programming Interfaces) befolgt werden sollten. Diese Standards dienen dazu, die Qualität, Konsistenz, Interoperabilität und Sicherheit von APIs sicherzustellen.
+
+**Wichtige Aspekte der API Implementation Standards:**
+
+- Konsistenz in Bezug auf Endpunktbenennung und URI-Struktur
+- Datensicherheit und Authentifizierungsmethoden
+- Dokumentation und Beschreibung von API-Ressourcen
+- Versionierung und Änderungsverwaltung
+- Fehlerbehandlung und Statuscodes
+- Performanzoptimierung und Lastverteilung
+- Compliance mit branchenspezifischen Vorschriften (z. B. GDPR)
+
+---
+
+#### Vergleich, Motivation, Vorteile, Nachteile
+***
+
+**Vergleich:**
+* Einheitlicher Ansatz:
+   * Standards vs. individuelle Entwicklung.
+   * Qualität und Wartbarkeit.
+
+* Verschiedene Standards:
+  * REST, GraphQL, SOAP usw.
+  * Anwendungsfall-basierte Wahl.
+
+**Motivation:**
+* Interoperabilität:
+  * Plattformunabhängige API-Entwicklung.
+  * Qualitativ hochwertige APIs.
+
+* Effizienz:
+  * Schnellere Entwicklung durch Standards.
+
+---
+#### Vergleich, Motivation, Vorteile, Nachteile
+***
+
+**Vorteile:**
+
+* Konsistenz und Interoperabilität:
+
+  * Einheitliche Struktur, Integration.
+
+  * Sicherheit und Dokumentation.
+
+**Nachteile:**
+
+* Kreativitätseinschränkung:
+
+  * Strikte Standards in innovativen Fällen.
+  * Steile Lernkurven bei einigen Standards.
+ 
+  * Regulierung:
+
+  * Übermäßige Standards können Flexibilität behindern.
+
+---
+#### RESTful
+***
+
+- **Representational State Transfer (REST):**
+  - Software-Architektur für API-Design.
+  - Leitfaden für effiziente Kommunikation.
+  
+- **RESTful-APIs:**
+  - Schnittstellen für sicheren Informationsaustausch.
+  - Verbindung von Computersystemen.
+  
+- **Wichtige Merkmale:**
+  - Leicht implementierbar und modifizierbar.
+  - Sichtbarkeit und Portierbarkeit.
+  
+- **Anwendungsbeispiele:**
+  * Monatliche Gehaltsabrechnungen.
+  * Kommunikation zwischen Systemen.
+
+---
+#### HATEOAS
+***
+
+- **HATEOAS-Prinzip:**
+  - "Hypermedia as the Engine of Application State."
+  - Teil der REST-Architektur, von Fielding definiert.
+  - REST-Client navigiert durch Hypermedia-URIs.
+
+- **URIs im Hypermedia-Format:**
+  - Bereitstellung von URIs durch die Anwendung.
+  - HTML-Dokumente, JSON, oder XML-Attribute/Elemente.
+
+- **Anpassbare Schnittstelle:**
+  - Einzigartiger Vorteil von HATEOAS.
+  - Flexibilität zur Anpassung der API.
+
+- **Vergleich mit SOAP:**
+  - Gegenüber SOAP-basierten Strukturen.
+
+[10] [11]
+
+---
+
+
+#### Naming REST API Endpoints
+***
+- **Entscheidende Aspekte:**
+  - Klare, verständliche und konsistente API-Gestaltung.
+
+- **Bewährte Praktiken und Empfehlungen:**
+  - Verwendung von Substantiven: Beschreibung der Ressourcen, Vermeidung von Verben.
+
+  - Klare und beschreibende Namen: Verständliche Benennungen, keine Abkürzungen.
+
+  - Plurale Form für Sammlungen: Konsistenz und Verständlichkeit.
+
+  - Hierarchische Struktur: Darstellung von Beziehungen.
+
+  - Verwendung von Bindestrichen: Trennung von Worten.
+
+  - Versionierung: Hinzufügen der Version für Abwärtskompatibilität.
+
+  - Klare Hierarchie: Intuitive Navigation für Benutzer.
+
+[12] [13] [14]
+
+---
+#### Error Handling
+***
+- **Grundlegende Antworten:**
+  - Verwendung von Statuscodes, um Fehler zu identifizieren.
+  - Beispiele für häufige Statuscodes: 400, 401, 403, 404, 412, 500, 503.
+
+- **Standardmäßige Spring-Fehlerantworten:**
+  - Spring enthält standardmäßige Fehlerbehandlung für gängige Ausnahmen.
+  - Verwendung des spezifischsten Fehlercodes wird empfohlen.
+
+- **Detaillierte Antworten:**
+  - Manchmal sind Statuscodes allein nicht ausreichend.
+  - Error, Message, Detail und Help bieten zusätzliche Informationen.
+  - Fehlerkennung, Nachricht für Benutzer und detaillierte Erklärung.
+  
+- **Standardisierte Antworttexte:**
+  - RFC 7807 bietet ein generalisiertes Fehlerbehandlungsschema.
+  - Enthält "type", "title", "status", "detail" und "instance".
+  - Fördert einheitliche Fehlerbehandlung in RESTful APIs.
+[15]
+---
+#### Best Practices Security
+***
+
+- Zugriffsrichtlinie und Autorisierung: 
+Definieren, wer auf Ihre API-Ressourcen zugreifen darf.
+
+- **TLS verwenden:** Schützen Sie Daten während der Übertragung mit Transport Layer Security (TLS).
+
+- **OAuth2 für SSO:** Nutzen Sie OAuth2 für sicheres Single Sign-On (SSO).
+
+- **API-Schlüssel:** Gewähren Sie programmatischen Zugriff, behandeln Sie API-Schlüssel sorgfältig.
+
+- **Differenzierte Berechtigungen:** Konfigurieren Sie Berechtigungen für verschiedene API-Schlüssel zur Zugriffssteuerung.
+
+- **Komplexe Autorisierungslogik:** Implementieren Sie komplexe Autorisierungslogik in der Anwendungslogik, nicht in der Middleware.
+
+- **Bewährte Tools nutzen:** Vertrauen Sie bewährten Bibliotheken und Tools zur Fehlerminimierung und Vereinfachung der Autorisierung.
+
+- **Sicherheit hat Priorität:** Sicherheit und korrekte Autorisierung sind entscheidend für sichere und nützliche API-Endpunkte.
+
+---
+
+#### GraphQL
+***
+
+- GraphQL ist eine Abfragesprache und serverseitige Runtime für APIs.
+
+- Es bietet nur die benötigten Daten für Clients an, wodurch APIs schneller und flexibler werden.
+
+- GraphQL ermöglicht das gleichzeitige Abrufen von Daten aus verschiedenen Quellen mit einer einzigen Anfrage.
+
+- API-Maintainer können Felder hinzufügen oder entfernen, ohne bestehende Abfragen zu beeinträchtigen.
+
+- Entwickler können APIs auf ihre bevorzugte Weise erstellen, und GraphQL stellt sicher, dass sie auf vorhersehbare Weise funktionieren.
+[16]
+---
+
+#### Schema in GraphQL
+***
+
+- Das Schema bildet die Grundlage jeder GraphQL-API.
+
+- Es definiert, welche Daten abgerufen werden können und wie sie strukturiert sind.
+
+- Das Schema besteht aus zwei Hauptteilen:
+
+  - **Query-Typ:** Enthält Abfragen (Queries) zum Abrufen von Daten.
+
+  - **Mutation-Typ:** Enthält Mutationen zum Ändern oder Erstellen von Daten.
+
+- In der Regel wird das Schema in einer speziellen Abfragesprache definiert, die oft als "Schema Definition Language" (SDL) bezeichnet wird.
+[16] [17]
+---
+
+#### Query in GraphQL
+***
+- Eine Query in GraphQL ist eine Abfrageoperation, mit der Daten aus der API abgerufen werden.
+
+- Sie ermöglicht dem Client, präzise anzugeben, welche Daten und Felder benötigt werden.
+
+- Die Struktur einer Query folgt dem Schema und spiegelt oft die gewünschte Datenstruktur wider.
+
+- Beispiel einer Query: "Gib mir den Namen und das Alter eines Benutzers sowie die Titel seiner Beiträge."
+
+[17] [18]
+---
+
+## Resolver in GraphQL
+
+- Resolver sind Funktionen, die die eigentliche Arbeit in einer GraphQL-API ausführen.
+
+- Jedes Feld im Schema ist einem Resolver zugeordnet.
+
+- Wenn eine Query ausgeführt wird, ruft GraphQL die entsprechenden Resolver auf, um die angeforderten Daten zu erhalten.
+
+- Resolver können Daten aus einer Datenbank abrufen, APIs aufrufen, Berechnungen durchführen oder auf andere Weise die Daten bereitstellen, die in der Query angefordert werden.
+
+- Beispiel für einen Resolver: "Wenn nach dem Namen eines Benutzers gefragt wird, greife auf die Datenbank zu und gib den Namen des Benutzers zurück."
+
+[17] [18]
+
+---
+
+#### Mutation in GraphQL
+***
+
+- Mutationen sind Operationen in GraphQL, mit denen Daten geändert oder erstellt werden können.
+
+- Im Gegensatz zu Queries, die nur lesend sind, erlauben Mutationen das Schreiben von Daten auf den Server.
+
+- Mutationen sind oft in der Art einer Anfrage aufgebaut, die beschreibt, welche Daten geändert oder hinzugefügt werden sollen.
+
+- Beispiel für eine Mutation: "Erstelle einen neuen Benutzer mit dem Namen und der E-Mail-Adresse."
+
+[17] [18]
+
+---
+
+## Backend For Frontend (BFF-Muster)
+***
+
+- Das Backends for Frontends Pattern  ist ein Designmuster für die Architektur von Mikroservices.
+- Dieses Muster konzentriert sich auf die Trennung von API-Gateways entsprechend den spezifischen Frontend-Anwendungen.
+- Anstatt nur ein allgemeines API-Backend zu haben, werden mehrere Backend-Services für Frontend-Anwendungen bereitgestellt, und dazwischen wird ein API-Gateway zur Handhabung von Routing und Aggregationsvorgängen platziert.
+- hilft den sogenannten Single Point of Failure zu vermeiden, da mehrere API-Gateways für verschiedene Frontend-Anwendungen geschaffen werden.
+- Es können unterschiedliche Anforderungen der Frontend-Anwendungen erfüllt werden, ohne die anderen Frontend-Anwendungen zu beeinträchtigen.
+- Das BFF-Muster ist besonders hilfreich, wenn eine Anpassung eines einzigen Backends für verschiedene Benutzeroberflächen vermieden werden soll.[18]
+
+
+---
+#### API Design
+***
+- API-Design bezieht sich auf die Gestaltung von Schnittstellen, über die Softwarekomponenten miteinander kommunizieren.
+
+- Eine gut gestaltete API sollte folgende Eigenschaften aufweisen:
+  - Benutzerfreundlichkeit: Einfache und intuitive Nutzung für Entwickler.
+  - Konsistenz: Einheitliche Struktur und Namenskonventionen.
+  - Effizienz: Schnelle und ressourceneffiziente Datenübertragung.
+  - Sicherheit: Schutz vor unautorisiertem Zugriff und Datenlecks.
+  - Dokumentation: Klare und umfassende Anleitungen für Entwickler.
+  - Flexibilität: Anpassbar an verschiedene Anwendungsfälle.
+  - Testbarkeit: Einfache Prüfung und Fehlerbehebung.
+  - Überwachbarkeit: Ermöglicht die Überwachung und Analyse der API-Nutzung.
+
+- Ein gutes API-Design ist entscheidend, um die Nutzung und Integration von Software zu erleichtern.
+[19]
+
+---
+
+#### Code First vs. Design First
+***
+- Code-First-Ansatz:
+  - Beginnt mit dem Schreiben des API-Codes.
+  - Schnellere Entwicklung und direkte Kontrolle.
+  - Mangel an klarer Spezifikation und umfassender Dokumentation.
+  - Kann zu Problemen führen.
+
+- Design-First-Ansatz:
+  - Legt die API-Spezifikation zuerst fest.
+  - Bessere Benutzerfreundlichkeit.
+  - Kürzere Entwicklungszeit.
+  - Verbesserte Dokumentation.
+  - Kann die Flexibilität einschränken.
+  - Erfordert spezialisierte Designwerkzeuge.
+
+---
+## API Versioning
+***
+
+- Bedeutung: Wichtig bei API-Veröffentlichungen.
+- Ziel: Bestehende Anwendungen sollen korrekt funktionieren, während neue Funktionen hinzugefügt oder verbessert werden.
+
+* Ansätze:
+
+1. **URI-Versionierung:** Versionsnummer in der URL, z.B. https://api.example.com/v1/resource.
+2. **Header-Versionierung:** Version im HTTP-Header der Anfrage oder Antwort.
+3. **Media-Type-Versionierung:** Version im Media Type, z.B., `application/vnd.example.v1+json`.
+4. **Accept-Version Header:** Der Client gibt mit dem Accept-Version-Header an, welche API-Version er verwenden möchte.
+
+*  Wichtige Aspekte:
+
+- Bewahrung der Abwärtskompatibilität.
+- Keine Beeinträchtigung bestehender Benutzer.
+- Raum für Weiterentwicklung.
+- Der Ansatz hängt von den Projektanforderungen ab.
+[20] [21]
+---
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
 # Einführung
 
 Um die Prozesse in der Softwareentwicklung umzusetzen, stellen die Teams sicher, dass die zuvor festgelegten Standards und Ziele des Unternehmens mit dem Produkt übereinstimmen.
@@ -46,95 +507,8 @@ Um die Prozesse in der Softwareentwicklung umzusetzen, stellen die Teams sicher,
 
 ![](media/image.jpg)
 
-
----
-# Standards
-
-Softwarestandards spielen eine wichtige Rolle im Qualitätsmanagement.
-
-1. Standards kapseln Erfahrungen, die für das Unternehmen von großem Wert sind.
-
-2. Standards bieten einen Rahmen für die Definition, was "Qualität" innerhalb des Softwareentwicklungsprojektes bedeutet.
-
-3. Standards tragen zur Kontinuität bei, sodass alle Entwickler nach denselben Verfahren arbeiten.
-
 ---
 
-# Standards
-
-Standards müssen sich immer positiv auf die Produktqualität auswirken.
-
-**Produktstandards** sollten dabei so entworfen werden, dass sie kosteneffizient angewendet und geprüft werden können.
-
-**Prozessstandards** sollten die Prozesse definieren, die prüfen, dass die Produktstandards eingehalten werden.  
-
-| Rolle | Aufgabe |
-|:------:|:----------:|
-| **Auftraggeber** | Erteilt den Auftrag und bezahlt das Projekt |
-| **Auftragnehmer** | Nimmt die Anforderungen an das Softwareprodukt entgegen|
-| **Benutzer** | Benutzen die Software. Manchmal mit Auftraggeber identisch |
-| **Manager** | Treffen während des Projekts organisatorische Entscheidungen |
-| **Berater** | Unterstützen den Kunden in der Definition der Anforderungen |
-| **Informatiker** | Definieren und entwickeln Software in verschiedenen Rollen mit unterschiedlichen Aufgaben aufgeteilt|
-
----
-# Softwareentwicklung
-
-Entwicklungsmethoden:
-
-- _Prüfen von Code, bevor er eingefügt wird:_  
-  Entwickler prüfen den Code ihrer Teammitglieder, bevor der Code in die aktuelle Version eingebracht wird.
-
-- _Probleme beheben, sobald sie auftreten:_  
-  Probleme sollten sofort behoben werden, wenn sie entdeckt werden, auch wenn der Code von anderen Entwicklern stammt.
-
----
-# Softwaremessung
-
-Bei der Softwaremessung geht es darum, Merkmale eines Softwaresystems zu quantifizieren.
-
-Code block:
-
-```javascript
-function add(a, b)
-  return a + b
-end
-```
-
----
-# Markdown
-
-## Paragraph
-
-Paragraph mit **strong**, *italic*, `code`.
-
-Links so [github](https://github.com/) oder so https://github.com/ .
-
-## Tabelle
-
-|ID|Name|Value|
-|--|----|-----|
-| 1|foo |   10|
-| 2|bar |   20|
-
-
----
-# Aufzählung
-
-1. Nummer 1
-    - bullet 1
-    - bullet 2
-2. Nummer 2
-    1. child 1
-    2. child 2
-3. Nummer 3
-
-## Enumeration 
-
-* A
-* B
-
----
 # Zusammenfassung
 
 - Folien werden mit `---` voneinander abgetrennt (Achtung: kein Leerzeichen am Ende)
@@ -142,15 +516,18 @@ Links so [github](https://github.com/) oder so https://github.com/ .
 - Wird die Datei `remark-latest.min.js` heruntergeladen, können die Folien offline bearbeitet werden. Pfad im `script`-Tag anpassen.
 - [Remark.js](https://remarkjs.com/)
 
+
 ---
 class: center, middle
 
 # Fragen?
+***
+
+
+
 
 ---
 # Quellen
 ***
 
-- Kitchenham, B. (1990). Software Development Cost Models. 487-517.
-
-- Chidamber, S., and C. Kemerer. (1994). A Metrics Suite for Object-Oriented Design. 476-493.
+-
