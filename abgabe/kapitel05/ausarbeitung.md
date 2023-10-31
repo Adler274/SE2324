@@ -116,10 +116,40 @@ Continuous Integration, Continuous Delivery und Continuous Deployment sind Metho
 
 **Continuous Integration**
 
+Angenommen, mehrere Personen arbeiten an einem Softwareprodukt, was die Regel für die meisten kommerziellen und Open-Source-Projekte sein dürfte: Irgendwann müssen die separaten Teile, an denen die einzelnen Mitwirkenden gearbeitet haben, kombiniert werden, um zu überprüfen, ob das Endprodukt wie beabsichtigt funktioniert. Bei Continuous Integration passiert dies mindestens einmal am Tag oder noch häufiger.
 
+Die Begründung ist einfach. Wenn wir die Integration hinausschieben, bis der gesamte Code fertig ist, ist die Wahrscheinlichkeit hoch, dass wir einige Zeit damit verbringen müssen, Teile des Codes zu entfernen und neu zu schreiben, um überhaupt den Build zum Laufen zu bekommen – vom Erreichen der angepeilten Funktionalität gar nicht zu reden. Software ist komplex. Selbst wenn vorab ein detailliertes Design erstellt wird, ist es unglaublich schwierig, Probleme zu vermeiden und genau vorherzusagen, wie die Logik interagieren wird. Je größer der Umfang des Codes ist, desto größer ist die Komplexität und desto mehr muss rückgebaut werden, wenn etwas nicht funktioniert.
 
+Durch Continuous Integration steuern die einzelnen Mitwirkenden ihre Änderungen regelmäßig zum Gesamtsystem bei, indem sie mindestens einmal am Tag einen Commit in die Quellcodeverwaltung durchführen und dabei überprüfen, ob der Build durchläuft und die Tests besteht. Dadurch müssen bei einem Fehler weitaus weniger Änderungen analysiert werden, um die Ursache zu finden. Außerdem sind bei zeitnahem Feedback Probleme leichter zu beheben, da den Entwickler*innen der Kontext ihrer Aktivitäten noch präsent ist.
+
+[10]
+
+**Continuous Delivery**
+
+Bei Continuous Delivery ersetzen wir die manuellen Schritte, mit denen wir ein Build unserer Software für die Produktion freigeben, durch einen automatisierten Prozess.
+
+Früher erfolgte oft eine Übergabe von der Entwicklung an die Testabteilung und von dort an das Release-Management. Durch Continuous Delivery ist das gesamte Team (mit Mitgliedern aus verschiedenen Disziplinen) für den kompletten Prozess verantwortlich: Build, Test und Release. Dies bringt mehrere Vorteile mit sich:
+
+Durch die Vermeidung der traditionellen Silos hat das Entwicklungsteam einen besseren Einblick in die geschäftlichen und operativen Anforderungen, die zur Bereitstellung des Produkts an die Benutzer*innen erfüllt werden müssen.
+Dies eröffnet wiederum die Möglichkeit, Methoden aus der Softwareentwicklung in einen normalerweise manuellen und oft recht langwierigen Prozess einzubringen.
+Durch Automatisierung der Schritte zur Bereitstellung eines Produkts wird nicht nur der Prozess beschleunigt, sondern auch das Fehlerrisiko verringert, und das Produkt wird stabiler und zuverlässiger.
+Die genauen Schritte für die Bereitstellung von Software – und somit die erforderlichen Phasen in der Delivery-Pipeline – variieren je nach Geschäfts- und Nutzungsanforderungen. Normalerweise jedoch durchläuft eine Software vor dem Release mindestens eine Vorproduktionsumgebung.
+
+Diese Vorproduktionsumgebungen können unterschiedlich gestaltet sein, zum Beispiel als Testumgebungen mit zusätzlichen Testebenen für Sicherheits-, Last- oder Leistungstests, als Sandbox-Umgebungen, in denen sich Support- und Vertriebsteams mit neuen Funktionen vertraut machen, oder als Akzeptanztestumgebungen, in denen QS- und Produktexperten überprüfen, ob die Änderungen nach Plan funktionieren.
+Bei Continuous Delivery wird jeder erfolgreiche Build automatisch in jeder Vorproduktionsumgebung bereitgestellt, wobei das Vertrauen in die Qualität mit jeder Phase zunimmt.
+[10]
+
+**Continuous Deployment**
+
+Wenn ein Build alle vorangehenden Phasen der Pipeline erfolgreich durchläuft, wird er automatisch in die Produktion übernommen. Dies bedeutet, dass jede Änderung sofort den Weg zu Ihrer Benutzergemeinde findet, sobald die Software alle Tests bestanden hat. Durch Continuous Deployment wird die Feedback-Schleife zwischen Codeänderung und Produktionseinsatz verkürzt, sodass Ihr Team einen frühzeitigen Einblick in das Verhalten der Änderungen in der realen Welt erhält, ohne Kompromisse bei der Qualität eingehen zu müssen.
+
+Auch wenn die automatisierte Bereitstellung von Software für die Produktion nicht für jedes Produkt und jede Organisation geeignet ist, lohnt es sich, die dazu erforderlichen Schritte zu betrachten, da jedes einzelne Element bereits für sich genommen wertvoll ist:
+[10]
 
 ##### Releasing vs Deployment
+
+
+
 ##### Semantic Versioning
 ##### Deployment strategies
 ###### Blue-Green
