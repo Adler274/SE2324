@@ -22,14 +22,61 @@ Simon Fedrau, Jannis Wilmsmeier, Sascha Hahn
 
 ---
 
-# Verteilte Softwaresysteme 
+# Verteilte Softwaresysteme
 
-- **Hier muss Saschas Kram hin**
-- 
-- 
-
+- ## Eigenschaften, Vorteile, Nachteile
+- ## Motivation
+- ## Ditributed vs Decentralized
+- ## Concurrent vs Parallel
 
 ---
+
+## Eigenschaften, Vorteile, Nachteile
+- #### erhöhung der Leistungsfähigkeit
+- #### Skalierbarkeit
+- #### Ausfallsicherheit
+[1,2]
+
+---
+## Eigenschaften, Vorteile, Nachteile
+
+| Vorteile|Nachteile|
+|:-------|:-------|
+|einfache Sklierbarkeit bei steigenden Anforderungen|Synchronisierung und Koordinierung aufwändig|
+|durch Redundante Geräte bessere Ausfallsicherheit|Suche nach Fehlern möglicherweise schwierig wenn man Gerät nicht kennt|
+|Entwickler und Benutzer müssen die Verteilung nicht kennen(Transparenz)|Daten müssen bessere gesichert werden|
+|Verscheidene Software und Hardwresysteme einbaubar(Heterogenität)||
+[1,2]
+
+---
+
+## Motivation (Warum man Verteilung braucht)
+Wie schon bei den Vor- und Nachteilen zu sehen bieten verteilte Systeme viele möglichkeiten zur Systemverbesserung, wie z.B. die Skalierbarkeit, Ausfallsicherheit, Transparenz und Heterognetität. Diese Eigenschaften sind in der heutigen Zeit sehr wichtig, da die Anforderungen an die Systeme immer weiter steigen. Verteilte Systeme sind zwar deutlich komplexer und aufwändiger zu entwickeln, bieten aber die Möglichkeiten große Systeme anforderungsgerecht aufzubauen
+- #### Skalierbarkeit
+- ### -> immer höhere werdende Anforderungen
+- #### Ausfallsicherheit
+- #### bei geoßen Systemen überwiegen Vorteile die Komplexität
+[1,2]
+
+---
+
+## Distributed vs decentralized
+### Distributed:
+- #### Verteilung der Software auf physisch getrennte Geräte
+### Decentralized:
+- #### Entscheidungen werden von mehreren Instanzen getroffen
+[3]
+
+---
+
+## Concurrent vs parallel
+### Def.: Mehrere Aufgaben gleichteitig bearbeiten
+### Concurrent:
+- #### schnell hintereinander/abwechselnd
+### Parallel:
+- #### tatsächlich gleichzeitige verrarbeitung
+[17]
+
 ## Systemarchitektur verteilter Softwaresysteme
 ***
 
@@ -462,11 +509,14 @@ Kann durch Sharding oder Replikation erfolgen, um große Datenmengen zu bewälti
 ---
 #### Referenzen
 ***
-###### [12] :https://camunda.com/blog/2023/02/orchestration-vs-choreography/
-###### [13] :https://www.redhat.com/de/topics/microservices/what-is-a-service-mesh
-###### [14] :https://www.designgurus.io/blog/Load-Balancer-Reverse-Proxy-API-Gateway
-###### [15] :https://www.singlestore.com/blog/database-sharding-vs-partitioning-whats-the-difference/
-###### [16] :https://www.enjoyalgorithms.com/blog/types-of-load-balancing-algorithms
-###### [17] :https://chat.openai.com/
-###### [18] :https://www.geeksforgeeks.org/caching-system-design-concept-for-beginners/
-###### [19] :https://www.geeksforgeeks.org/the-scale-cube/
+###### [12]:https://camunda.com/blog/2023/02/orchestration-vs-choreography/
+###### [13]:https://www.redhat.com/de/topics/microservices/what-is-a-service-mesh
+###### [14]:https://www.designgurus.io/blog/Load-Balancer-Reverse-Proxy-API-Gateway
+###### [15]:https://www.singlestore.com/blog/database-sharding-vs-partitioning-whats-the-difference/
+###### [16]:https://www.enjoyalgorithms.com/blog/types-of-load-balancing-algorithms
+###### [17]:https://chat.openai.com/
+###### [18]:https://www.geeksforgeeks.org/caching-system-design-concept-for-beginners/
+###### [19]:Quelle: https://www.geeksforgeeks.org/the-scale-cube/
+###### [20]: https://www.youtube.com/watch?v=MYjQWiDDdVQ&list=PLcVYkCRLcLtGHzfmkfYjdN8Ai9tkHaHvi&index=2
+###### [21]: https://www.youtube.com/watch?v=RR_iiLYTdDM
+###### [22]: https://www.hivenet.com/post/decentralized-or-distributed-whats-the-big-difference#:~:text=In%20a%20decentralized%20system%2C%20control,sharing%20of%20resources%20and%20workloads.

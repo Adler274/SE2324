@@ -8,15 +8,279 @@ class: center, middle
 Simon Fedrau, Sascha Hahn
 
 ---
-# Inhalt
+
+# Software system integration
 ***
-1. Software system integration
+Software Systems Integration ist der Prozess des Zusammenführens verschiedener Softwarekomponenten oder Systeme, um reibungslose Interaktion und nahtlose Kommunikation sicherzustellen. Dies ermöglicht es, Daten und Funktionen zwischen den Systemen auszutauschen und Geschäftsprozesse zu optimieren. Die Integration kann verschiedene Aspekte wie Datenintegration, Middleware-Kommunikation, Legacy-Systeme und Cloud-Services umfassen. Sie spielt eine entscheidende Rolle bei der Schaffung effizienter und kooperativer IT-Infrastrukturen in Unternehmen.
 
-1. Software system interfaces
+[1a,2a]
 
-1. APIs
+---
 
-1. Quellen
+# Kommunikation
+***
+Kommunikation in Software-Systemintegration bezieht sich auf den Prozess des Informationsaustauschs und der Interaktion zwischen den verschiedenen integrierten Komponenten.
+Effektive Kommunikation ist entscheidend, um sicherzustellen, dass die integrierten Systeme zusammenarbeiten. Sie umfasst die Festlegung von Schnittstellen, Protokollen und Mechanismen, die den Informationsaustausch unterstützen.
+
+[1a,2a]
+
+---
+
+### Command vs Query vs Event
+***
+**Command (Befehl):**<br>
+* Ein Command ist eine Anweisung, um eine Aktion auszuführen oder eine Veränderung im System vorzunehmen.
+* Commands sind in der Regel zustandsverändernd und haben Auswirkungen auf das System, wie das Speichern von Daten oder das Auslösen einer Aktion.
+* Beispiel: "Erstelle einen neuen Benutzer."
+
+**Query (Abfrage):**<br>
+* Eine Query ist eine Anfrage nach Informationen oder Daten, die keine Veränderung im System verursacht.
+* Queries sind in der Regel schreibgeschützt und liefern Informationen, ohne den Systemzustand zu verändern.
+* Beispiel: "Gib alle Benutzer in der Datenbank zurück."
+
+[1a,3a]
+---
+
+### Command vs Query vs Event
+***
+**Event (Ereignis):**<br>
+* Ein Event ist eine Meldung über etwas, das im System geschehen ist.
+* Events sind in der Regel nachrichtenbasiert und werden verwendet, um über Änderungen oder Ereignisse zu informieren.
+* Beispiel: "Benutzer hat sich angemeldet."
+
+[1a,3a]
+
+---
+
+### Synchron (RPC) vs asynchron (Messages)
+***
+**Synchron (RPC - Remote Procedure Call):**<br>
+* Bei synchroner Kommunikation wartet der aufrufende Prozess auf eine sofortige Antwort vom aufgerufenen Prozess.
+* Dies erfolgt in der Regel über eine Funktion oder Methode, bei der der Aufruf blockiert, bis die Antwort zurückgegeben wird.
+* Synchronität kann einfacher zu implementieren sein, ist aber anfälliger für Verzögerungen und Engpässe.
+
+**Asynchron (Messages):**<br>
+* Bei asynchroner Kommunikation erfolgt die Kommunikation ohne unmittelbare Antwort. Der aufrufende Prozess setzt seine Arbeit fort, ohne auf eine Antwort zu warten.
+* Dies wird häufig über Nachrichten oder Events realisiert, bei denen der aufgerufene Prozess die Nachricht verarbeitet, wenn er dazu bereit ist.
+* Asynchrone Kommunikation kann die Skalierbarkeit und die Reaktionsfähigkeit des Systems verbessern.
+
+[1a,4a]
+
+---
+
+### Patterns
+***
+Patterns in der Softwareentwicklung sind bewährte Lösungsansätze für wiederkehrende Probleme. Sie helfen Entwicklern, effizienten und wartbaren Code zu schreiben, indem sie strukturierte Herangehensweisen für typische Aufgaben bieten. Diese Muster sind wie Bausteine, die in vielen Projekten wiederverwendet werden können, um Zeit zu sparen und die Qualität der Software zu erhöhen. Sie umfassen Beispiele wie Singleton für eine einzige Instanz einer Klasse, Factory zur Objekterzeugung und Observer für die Verfolgung von Änderungen im System. Patterns sind ein wertvolles Werkzeug, um Entwicklungsprozesse zu optimieren.
+
+[1a,5a]
+---
+
+### Patterns
+***
+**Publish-Subscribe:**<br>
+* Publish-Subscribe ist ein Muster, bei dem Sender (Publisher) Nachrichten an ein oder mehrere Empfänger (Subscriber) senden, ohne zu wissen, welche Empfänger die Nachrichten erhalten.
+* Dies fördert die Lockerheit der Kopplung zwischen Komponenten, da Publisher und Subscriber unabhängig voneinander agieren können.
+* Dieses Muster ist nützlich für ereignisgesteuerte Systeme, bei denen Komponenten auf Ereignisse oder Zustandsänderungen reagieren müssen.
+
+
+**Message Queueing:**<br>
+
+* Message Queueing ist ein Muster, bei dem Nachrichten in einer Warteschlange zwischengespeichert werden, bevor sie von den Empfängern verarbeitet werden.
+* Dies ermöglicht die Entkopplung von Sender und Empfänger, da Nachrichten in der Warteschlange auf Empfänger warten, um sie abzurufen.
+* Dieses Muster ist nützlich, um die Skalierbarkeit und Zuverlässigkeit in verteilten Systemen zu verbessern.
+
+[1a,5a]
+---
+
+### Patterns
+***
+**Request-Response Model:**<br>
+
+* Das Request-Response-Modell ist ein Kommunikationsmuster, bei dem ein Sender (Client) eine Anfrage an einen Empfänger (Server) sendet und auf eine direkte Antwort wartet.
+* Dieses Muster ist in Webanwendungen weit verbreitet, wo Benutzeranfragen an Webserver gesendet werden, die dann eine entsprechende Antwort generieren.
+
+**Push- und Pull-Model:**<br>
+
+* Das Push- und Pull-Modell sind zwei Ansätze zur Aktualisierung von Daten oder zur Kommunikation zwischen Systemen.
+* Im Push-Modell sendet der Sender aktiv Daten an Empfänger, ohne dass diese darum bitten.
+* Im Pull-Modell fordern Empfänger aktiv Daten vom Sender an.
+* Die Wahl zwischen Push und Pull hängt von den Anforderungen und dem Kontext des Systems ab.
+
+[1a,5a]
+---
+
+### Patterns
+***
+**Webhooks:**<br>
+
+* Webhooks sind ein Muster, bei dem ein System oder eine Anwendung Benachrichtigungen an andere Systeme sendet, wenn bestimmte Ereignisse auftreten.
+* Die empfangenden Systeme sind in der Regel von den auslösenden Ereignissen entkoppelt und können auf Benachrichtigungen reagieren.
+* Webhooks sind nützlich, um Echtzeitinformationen in verteilten Systemen zu übertragen.
+
+[1a,5a]
+
+---
+
+### Protokolle
+***
+In der Softwareentwicklung sind Regelsätze und Vereinbarungen, die den Kommunikationsaustausch zwischen verschiedenen Systemen oder Komponenten ermöglichen. Sie dienen dazu, wie Daten gesendet, empfangen und interpretiert werden, festzulegen.
+
+#### gRPC
+* **Beschreibung:**
+gRPC ist ein Remote Procedure Call (RPC)-Framework, das von Google entwickelt wurde. Es ermöglicht die Kommunikation zwischen verschiedenen Diensten und Systemen, wobei RPC-Aufrufe verwendet werden, um Methoden auf entfernten Servern aufzurufen.
+
+* **Merkmale:**
+gRPC bietet Effizienz, hohe Interoperabilität, Unterstützung für verschiedene Programmiersprachen und automatische Codegenerierung aus Protobuf-Dateien.
+
+[1a,6a]
+---
+
+### Protokolle
+***
+#### HTTP/s
+HTTP/s (Hypertext Transfer Protocol Secure) ist ein Kommunikationsprotokoll, das für den Austausch von Informationen und Daten im World Wide Web verwendet wird. Die "s" steht für "sicher", da es die Verschlüsselung von Daten ermöglicht.
+
+**HTTP:**<br>
+* Unverschlüsselte Datenübertragung: Bei HTTP werden Daten unverschlüsselt übertragen, was bedeutet, dass sie während der Übertragung abgefangen und gelesen werden können.
+* Standardport: HTTP verwendet in der Regel Port 80 für die Kommunikation.
+
+[1a,6a]
+---
+
+### Protokolle
+***
+**HTTPS:**<br>
+* Verschlüsselte Datenübertragung: Bei HTTPS werden die Daten verschlüsselt, sodass sie während der Übertragung geschützt sind und nicht ohne weiteres von Dritten gelesen werden können.
+* Verwendung von SSL/TLS: HTTPS basiert auf dem Einsatz von SSL (Secure Sockets Layer) oder TLS (Transport Layer Security) zur Verschlüsselung und Authentifizierung.
+* Standardport: HTTPS verwendet in der Regel Port 443 für die Kommunikation.
+
+[1a,6a]
+
+---
+
+##### Continuous Connection
+***
+Continuous Connection bezieht sich auf eine anhaltende Kommunikationsverbindung zwischen einem Client und einem Server. Statt bei jeder Anfrage eine neue Verbindung zu öffnen und zu schließen, wird eine bestehende Verbindung aufrechterhalten, um Daten in Echtzeit auszutauschen.
+
+###### Polling vs. Long-Polling vs. SSE
+**Polling:**<br>
+Beim Polling sendet der Client wiederholt Anfragen an den Server, um auf neue Daten zu prüfen. Dies kann ineffizient sein, da der Client oft leer ausgeht, wenn keine neuen Daten verfügbar sind.
+
+**Long-Polling:**<br>
+Long-Polling ist eine Weiterentwicklung des Pollings, bei dem der Server auf eine Anfrage des Clients nicht sofort antwortet, wenn keine neuen Daten verfügbar sind. Stattdessen wird die Anfrage offen gehalten (gehalten), bis neue Daten verfügbar sind. Dies reduziert die Anzahl der Anfragen, ist aber immer noch nicht die effizienteste Lösung.
+
+[1a,7a]
+---
+
+##### Continuous Connection
+***
+**SSE (Server-Sent Events):**<br>
+SSE ist ein Protokoll, das es dem Server ermöglicht, Daten proaktiv an den Client zu senden, sobald sie verfügbar sind. Dies eliminiert die Notwendigkeit für wiederholte Anfragen, und der Server kann Ereignisse an den Client senden, wenn sie auftreten. SSE ist besonders nützlich für Echtzeit-Informationen oder Benachrichtigungen in Webanwendungen.
+
+[1a,7a]
+
+---
+
+##### WebSockets
+***
+Websockets sind ein Kommunikationsprotokoll, das eine bidirektionale, interaktive und kontinuierliche Kommunikation zwischen einem Client und einem Server ermöglicht. Im Gegensatz zum traditionellen HTTP, das auf anfragebasierten Kommunikation beruht, bleibt die Websocket-Verbindung geöffnet, sodass sowohl der Client als auch der Server Nachrichten in Echtzeit senden und empfangen können.
+
+* **Echtzeitkommunikation:**<br>
+Websockets ermöglichen Echtzeitkommunikation zwischen Client und Server, was ideal für Anwendungen ist, die auf schnelle Aktualisierungen und Benachrichtigungen angewiesen sind.
+
+* **Bidirektional:**<br>
+Die Verbindung ermöglicht das Senden von Daten in beide Richtungen, wodurch sowohl der Client als auch der Server aktive Teilnehmer im Kommunikationsprozess sind.
+
+* **Geringer Overhead:**<br>
+Im Vergleich zu HTTP-Anfragen, bei denen jedes Mal Headerinformationen gesendet werden müssen, haben Websockets geringeren Overhead und sind effizienter für kontinuierliche Kommunikation.
+
+[1a,7a]
+---
+
+##### WebSockets
+***
+* **Unterstützung in Webbrowsern:**<br>
+Moderne Webbrowser unterstützen Websockets, was sie zu einer geeigneten Wahl für webbasierte Anwendungen macht.
+
+Websockets werden in einer Vielzahl von Anwendungen eingesetzt, darunter Online-Chats, Multiplayer-Spiele, Aktienhandelssysteme und Echtzeit-Dashboards.
+
+[1a,7a]
+
+---
+
+#### Serialisierung
+***
+Serialisierung ist der Prozess der Umwandlung von Datenstrukturen oder Objekten in ein Format, das zur Übertragung oder Speicherung verwendet werden kann. Dieser Prozess ermöglicht es, Daten in eine sequenzielle Reihenfolge von Bytes oder Zeichen umzuwandeln, die später rekonstruiert werden können.
+
+##### JSON, XML, Protocol Buffers
+JSON (JavaScript Object Notation), XML (eXtensible Markup Language) und Protocol Buffers (Protobuf) sind verschiedene Datenformate, die in der Serialisierung verwendet werden. Diese Formate dienen dazu, Daten zu strukturieren und für den Datenaustausch zu speichern. Sie sind unabhängig von der zugrunde liegenden Programmiersprache oder Plattform und ermöglichen so eine erhöhte Interoperabilität. Dies bedeutet, dass sie in verschiedenen Umgebungen und auf verschiedenen Geräten verwendet werden können.
+
+[1a,8a]
+---
+
+### Data Management Patterns
+***
+Data Management Patterns (Muster für die Datenverwaltung) sind bewährte Ansätze und Methoden zur Organisation und Verwaltung von Daten in einer Softwareanwendung. Diese Muster helfen Entwicklern, Daten effizient zu speichern, abzurufen und zu aktualisieren, um die Anforderungen einer Anwendung zu erfüllen. Hier sind zwei gängige Data Management Patterns:
+
+[1a,9a,10a]
+---
+
+#### CRUD (Create, Read, Update, Delete)
+***
+CRUD ist ein grundlegendes Datenverwaltungsmuster, das vier grundlegende Operationen beschreibt: Erstellen (Create), Lesen (Read), Aktualisieren (Update) und Löschen (Delete) von Daten.
+
+ * **Create:**<br>
+ Diese Phase beinhaltet das Anlegen neuer Datensätze oder Objekte. Entwickler haben die Möglichkeit, neue Einträge in einer Datenbank oder Datenstruktur zu erstellen, sei es ein neuer Benutzeraccount, ein Produkt oder andere Informationen.
+
+* **Read:**<br>
+Die Leseoperation ermöglicht das Abfragen und Abrufen von Daten aus der Datenquelle. Dies beinhaltet das Suchen nach bestimmten Datensätzen, das Anzeigen von Informationen und das Lesen von Daten für verschiedene Zwecke.
+
+[1a,9a,10a]
+---
+
+#### CRUD (Create, Read, Update, Delete)
+***
+* **Update:**<br>
+Während dieser Phase können vorhandene Datensätze geändert oder aktualisiert werden. Benutzer können beispielsweise ihre Profilinformationen ändern oder Entwickler können Daten aktualisieren, um sie auf dem neuesten Stand zu halten.
+
+* **Delete:**<br>
+Die Löschoperation erlaubt das Entfernen von Datensätzen oder Objekten aus der Datenquelle. Dies kann beispielsweise bei der Deaktivierung eines Benutzerkontos oder dem Entfernen von nicht mehr benötigten Informationen erfolgen.
+
+[1a,9a,10a]
+---
+
+#### CQRS (Command Query Responsibility Segregation)
+***
+CQRS ist ein erweitertes Datenmanagementmuster, das die Trennung von Lese- (Query) und Schreiboperationen (Command) betont. Es schlägt vor, separate Modelle für Lese- und Schreibzugriffe zu verwenden.
+CQRS wird in komplexen Anwendungen eingesetzt, in denen die Anforderungen an die Lese- und Schreibvorgänge stark voneinander abweichen. Es ermöglicht die Optimierung und Skalierung von Lese- und Schreibzugriffen unabhängig voneinander.
+
+[1a,9a,10a]
+
+---
+
+# Software System Interfaces
+***
+Software System Interfaces sind Schnittstellen, die Benutzern ermöglichen, mit einer Softwareanwendung zu interagieren. Sie können in verschiedenen Formen auftreten und bieten vielfältige Möglichkeiten für die Kommunikation zwischen Benutzern und der Software.
+
+[11a]
+---
+
+### GUIs (Graphical User Interfaces)
+***
+GUIs sind Benutzerschnittstellen, die visuelle Elemente wie Fenster, Schaltflächen und Symbole verwenden, um die Interaktion zwischen einem Benutzer und einer Softwareanwendung zu ermöglichen. Mit einem GUI können Benutzer auf einfache und intuitive Weise mit einer Anwendung interagieren, indem sie Mauszeiger bewegen und auf Bildschirmelemente klicken. GUIs sind in den meisten Desktop-Anwendungen, Betriebssystemen und mobilen Apps weit verbreitet und bieten eine benutzerfreundliche Möglichkeit, Aufgaben auszuführen und Informationen anzuzeigen.
+
+[11a]
+---
+
+### Voice UIs (Voice User Interfaces)
+***
+Voice UIs ermöglichen Benutzern die Interaktion mit einer Softwareanwendung mithilfe gesprochener Sprache. Diese Schnittstellen nutzen Spracherkennungstechnologien, um Befehle und Anfragen des Benutzers zu verstehen und darauf zu reagieren. Voice UIs finden Anwendung in Sprachassistenten, intelligenten Lautsprechern und Anwendungen, die die Sprache als Eingabemethode unterstützen.
+
+### CLIs (Command Line Interfaces)
+***
+CLIs sind textbasierte Schnittstellen, die es Benutzern ermöglichen, Befehle und Anweisungen direkt in einer Kommandozeile einzugeben. Mit CLIs können erfahrene Benutzer komplexe Aufgaben ausführen und Systeme steuern, indem sie Textbefehle eingeben. Diese Schnittstellen sind in vielen Betriebssystemen und Entwicklertools gebräuchlich und bieten eine effiziente Möglichkeit zur Interaktion mit Software auf einem niedrigeren Abstraktionsniveau.
+
+[11a]
 
 ---
 ## APIs
@@ -24,7 +288,7 @@ Simon Fedrau, Sascha Hahn
 **Was ist eine API?**
 ***
 API ist die Abkürzung für „application programming interface“ und der gängige Fachbegriff für eine Programmierschnittstelle, auch Anwendungsschnittstelle genannt. Bieten Online-Dienste solche Schnittstellen an, wird häufig der Begriff „Webservices“ verwendet.
-[1]
+[1b]
 
 **Wie funktionieren APIs?**
 
@@ -269,7 +533,7 @@ API Implementation Standards sind Leitlinien und Best Practices, die bei der Ent
 - **Vergleich mit SOAP:**
   - Gegenüber SOAP-basierten Strukturen.
 
-[10] [11]
+[10b] [11b]
 
 ---
 
@@ -294,7 +558,7 @@ API Implementation Standards sind Leitlinien und Best Practices, die bei der Ent
 
   - Klare Hierarchie: Intuitive Navigation für Benutzer.
 
-[12] [13] [14]
+[12b] [13b] [14b]
 
 ---
 ### Error Handling
@@ -316,7 +580,7 @@ API Implementation Standards sind Leitlinien und Best Practices, die bei der Ent
   - RFC 7807 bietet ein generalisiertes Fehlerbehandlungsschema.
   - Enthält "type", "title", "status", "detail" und "instance".
   - Fördert einheitliche Fehlerbehandlung in RESTful APIs.
-[15]
+[15b]
 ---
 ### Best Practices Security
 ***
@@ -352,7 +616,7 @@ Definieren, wer auf Ihre API-Ressourcen zugreifen darf.
 - API-Maintainer können Felder hinzufügen oder entfernen, ohne bestehende Abfragen zu beeinträchtigen.
 
 - Entwickler können APIs auf ihre bevorzugte Weise erstellen, und GraphQL stellt sicher, dass sie auf vorhersehbare Weise funktionieren.
-[16]
+[16b]
 ---
 
 ### Schema in GraphQL
@@ -369,7 +633,7 @@ Definieren, wer auf Ihre API-Ressourcen zugreifen darf.
   - **Mutation-Typ:** Enthält Mutationen zum Ändern oder Erstellen von Daten.
 
 - In der Regel wird das Schema in einer speziellen Abfragesprache definiert, die oft als "Schema Definition Language" (SDL) bezeichnet wird.
-[16] [17]
+[16b] [17b]
 ---
 
 ### Query in GraphQL
@@ -382,7 +646,7 @@ Definieren, wer auf Ihre API-Ressourcen zugreifen darf.
 
 - Beispiel einer Query: "Gib mir den Namen und das Alter eines Benutzers sowie die Titel seiner Beiträge."
 
-[17] [18]
+[17b] [18b]
 ---
 
 ### Resolver in GraphQL
@@ -397,7 +661,7 @@ Definieren, wer auf Ihre API-Ressourcen zugreifen darf.
 
 - Beispiel für einen Resolver: "Wenn nach dem Namen eines Benutzers gefragt wird, greife auf die Datenbank zu und gib den Namen des Benutzers zurück."
 
-[17] [18]
+[17b] [18b]
 
 ---
 
@@ -412,7 +676,7 @@ Definieren, wer auf Ihre API-Ressourcen zugreifen darf.
 
 - Beispiel für eine Mutation: "Erstelle einen neuen Benutzer mit dem Namen und der E-Mail-Adresse."
 
-[17] [18]
+[17b] [18b]
 
 ---
 
@@ -424,7 +688,7 @@ Definieren, wer auf Ihre API-Ressourcen zugreifen darf.
 - Anstatt nur ein allgemeines API-Backend zu haben, werden mehrere Backend-Services für Frontend-Anwendungen bereitgestellt, und dazwischen wird ein API-Gateway zur Handhabung von Routing und Aggregationsvorgängen platziert.
 - hilft den sogenannten Single Point of Failure zu vermeiden, da mehrere API-Gateways für verschiedene Frontend-Anwendungen geschaffen werden.
 - Es können unterschiedliche Anforderungen der Frontend-Anwendungen erfüllt werden, ohne die anderen Frontend-Anwendungen zu beeinträchtigen.
-- Das BFF-Muster ist besonders hilfreich, wenn eine Anpassung eines einzigen Backends für verschiedene Benutzeroberflächen vermieden werden soll.[18]
+- Das BFF-Muster ist besonders hilfreich, wenn eine Anpassung eines einzigen Backends für verschiedene Benutzeroberflächen vermieden werden soll.[18b]
 
 
 ---
@@ -443,7 +707,7 @@ Definieren, wer auf Ihre API-Ressourcen zugreifen darf.
   - Überwachbarkeit: Ermöglicht die Überwachung und Analyse der API-Nutzung.
 
 - Ein gutes API-Design ist entscheidend, um die Nutzung und Integration von Software zu erleichtern.
-[19]
+[19b]
 
 ---
 
@@ -483,7 +747,7 @@ Definieren, wer auf Ihre API-Ressourcen zugreifen darf.
 - Keine Beeinträchtigung bestehender Benutzer.
 - Raum für Weiterentwicklung.
 - Der Ansatz hängt von den Projektanforderungen ab.
-[20] [21]
+[20b] [21b]
 ---
 
 ### API Testing
@@ -502,7 +766,7 @@ Definieren, wer auf Ihre API-Ressourcen zugreifen darf.
 
 API-Tests sind entscheidend für eine zuverlässige und fehlerfreie API-Nutzung.
 
-[22]
+[22b]
 ---
 ### OpenAPI
 ***
@@ -512,7 +776,7 @@ API-Tests sind entscheidend für eine zuverlässige und fehlerfreie API-Nutzung.
 - **Warum ist OpenAPI nützlich?** Ermöglicht die Generierung von Dokumentation und Mock-Servern.
 - **Vereinfacht:** Die Entwicklung und das Testen von APIs.
 
-[23] [24]
+[23b] [24b]
 
 
 ---
@@ -525,7 +789,7 @@ API-Tests sind entscheidend für eine zuverlässige und fehlerfreie API-Nutzung.
 - **Verwendung:** Zur Planung und Validierung von JSON-Datenstrukturen.
 - **Vorteile:** Effizientere Zusammenarbeit und Fehlervermeidung durch strukturierte Datenplanung.
 - **Anwendungen:** Häufig in API-Entwicklung und anderen Bereichen, wo Datenstrukturen eine wichtige Rolle spielen.
-[24]
+[24b]
 ---
 
 ---
@@ -540,33 +804,53 @@ class: center, middle
 * Wie geht gutes Error Handling
 * Warum ist GraphQL so wichtig
 
-
 ---
+
 # Quellen
 ***
-[1] : https://it-service.network/it-lexikon/api
-[2] : https://www.redhat.com/de/topics/api/what-are-application-programming-interfaces
-[3] : https://aws.amazon.com/de/compare/the-difference-between-sdk-and-api/
-[4] : https://geekflare.com/de/sdk-and-api-comparison/
-[5] : https://www.redhat.com/architect/api-styles
-[6] : https://www.deepl.com/de/translator
-[7] : https://chat.openai.com/c/d8c075bc-13b9-4124-aca4-4fd590244a2a frage : was sind API Implementation Standards
-[8] : https://chat.openai.com/c/d8c075bc-13b9-4124-aca4-4fd590244a2a frage : Was wären in dem Kontext  Vergleich, Motivation, Vorteile, Nachteile
-[9] : https://aws.amazon.com/de/what-is/restful-api/
-[10] : https://www.ionos.de/digitalguide/websites/web-entwicklung/hateoas-alle-informationen-zu-der-rest-eigenschaft/
-[11] : https://de.wikipedia.org/wiki/HATEOAS
-[12] : https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/
-[13] : https://www.freecodecamp.org/news/rest-api-best-practices-rest-endpoint-design-examples/
-[14] : https://www.makeuseof.com/api-endpoints-naming-best-practices/
-[15] : https://www.baeldung.com/rest-api-error-handling-best-practices
-[16] : https://www.redhat.com/de/topics/api/what-is-graphql
-[17] : https://chat.openai.com/ frage: erkläre mir was was Schema, Query, Resolver, Mutation in Graphql sind
-[18] : https://waytoeasylearn.com/learn/backends-for-frontends-pattern/
-[19] : https://www.visual-paradigm.com/guide/development/code-first-vs-design-first/
-[20] : https://chat.openai.com/ frage : was ist API Versioning
-[21] : https://www.torocloud.com/blog/api-versioning-url-vs-header-vs-media-type-versioning#:~:text=Header%20versioning%20is%20another%20approach,sent%20along%20with%20the%20request.
-[22] : https://www.lucidchart.com/blog/de/api-tests-grundlagen-und-best-prectices#:~:text=Was%20sind%20API%2DTests%3F,mangelhaftes%20oder%20unsicheres%20Produkt%20erhalten.
-[23] : https://www.ionos.de/digitalguide/websites/web-entwicklung/was-ist-openapi/
-[24] : https://blog.stoplight.io/openapi-json-schema#:~:text=Both%20are%20description%20formats%20for,API%2C%20not%20just%20data%20models.
 
--
+[1b] : https://it-service.network/it-lexikon/api
+[2b] : https://www.redhat.com/de/topics/api/what-are-application-programming-interfaces
+[3b] : https://aws.amazon.com/de/compare/the-difference-between-sdk-and-api/
+[4b] : https://geekflare.com/de/sdk-and-api-comparison/
+[5b] : https://www.redhat.com/architect/api-styles
+[6b] : https://www.deepl.com/de/translator
+[7b] : https://chat.openai.com/c/d8c075bc-13b9-4124-aca4-4fd590244a2a frage : was sind API Implementation Standards
+[8b] : https://chat.openai.com/c/d8c075bc-13b9-4124-aca4-4fd590244a2a frage : Was wären in dem Kontext  Vergleich, Motivation, Vorteile, Nachteile
+[9b] : https://aws.amazon.com/de/what-is/restful-api/
+[10b] : https://www.ionos.de/digitalguide/websites/web-entwicklung/hateoas-alle-informationen-zu-der-rest-eigenschaft/
+[11b] : https://de.wikipedia.org/wiki/HATEOAS
+[12b] : https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/
+[13b] : https://www.freecodecamp.org/news/rest-api-best-practices-rest-endpoint-design-examples/
+[14b] : https://www.makeuseof.com/api-endpoints-naming-best-practices/
+[15b] : https://www.baeldung.com/rest-api-error-handling-best-practices
+
+---
+
+# Quellen
+***
+[16b] : https://www.redhat.com/de/topics/api/what-is-graphql
+[17b] : https://chat.openai.com/ frage: erkläre mir was was Schema, Query, Resolver, Mutation in Graphql sind
+[18b] : https://waytoeasylearn.com/learn/backends-for-frontends-pattern/
+[19b] : https://www.visual-paradigm.com/guide/development/code-first-vs-design-first/
+[20b] : https://chat.openai.com/ frage : was ist API Versioning
+[21b] : https://www.torocloud.com/blog/api-versioning-url-vs-header-vs-media-type-versioning#:~:text=Header%20versioning%20is%20another%20approach,sent%20along%20with%20the%20request.
+[22b] : https://www.lucidchart.com/blog/de/api-tests-grundlagen-und-best-prectices#:~:text=Was%20sind%20API%2DTests%3F,mangelhaftes%20oder%20unsicheres%20Produkt%20erhalten.
+[23b] : https://www.ionos.de/digitalguide/websites/web-entwicklung/was-ist-openapi/
+[24b] : https://blog.stoplight.io/openapi-json-schema#:~:text=Both%20are%20description%20formats%20for,API%2C%20not%20just%20data%20models.
+
+---
+
+# Quellen
+***
+[1a] https://chat.openai.com/
+[2] :https://www.snaplogic.com/de/blog/system-integration-types-and-approaches
+[3a] :https://kwahome.medium.com/microservice-interactions-query-command-event-d7e01d8cd63c#:~:text=The%20difference%20between%20queries%2C%20commands,completed%20(in%20the%20past).
+[4a] :https://de.wikipedia.org/wiki/Remote_Procedure_Call
+[5a] :https://de.wikibrief.org/wiki/Message_passing
+[6a] :https://de.wikipedia.org/wiki/Internetprotokollfamilie
+[7a] :https://medium.com/dailyjs/a-comparison-between-websockets-server-sent-events-and-polling-7a27c98cb1e3
+[8a] :https://de.wikipedia.org/wiki/Serialisierung
+[9a] :https://learn.microsoft.com/en-us/azure/architecture/patterns/category/data-management
+[10a] :https://www.oreilly.com/library/view/design-patterns-for/9781492090700/ch04.html
+[11a] :https://de.wikipedia.org/wiki/Schnittstelle
