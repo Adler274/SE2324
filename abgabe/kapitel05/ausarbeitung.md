@@ -111,6 +111,13 @@ DevOps-Pipelines und Automation sind zentrale Konzepte in der DevOps-Methodik, d
 
 #### Continuous Integration, Delivery und Deployment
 
+Continuous Integration, Continuous Delivery und Continuous Deployment sind Methoden, mit denen der Software-Releaseprozess beschleunigt werden soll, indem Feedback-Schleifen verkürzt und wiederholungsintensive Aufgaben automatisiert werden. Diese Methoden spielen eine Schlüsselrolle dabei, das Agile-Prinzip – Bereitstellung von wertvoller, funktionierender Software in kurzen Abständen – in die Wirklichkeit umzusetzen
+[10]
+
+**Continuous Integration**
+
+
+
 
 ##### Releasing vs Deployment
 ##### Semantic Versioning
@@ -137,5 +144,5 @@ DevOps-Pipelines und Automation sind zentrale Konzepte in der DevOps-Methodik, d
 [7] : https://www.atlassian.com/de/devops/frameworks/team-structure#:~:text=DevOps%2DTeams%20bestehen%20normalerweise%20aus,der%20Verwaltung%20der%20Infrastruktur%20auskennen.
 [8] : https://www.objectivity.de/blog/aufbau-einer-effizienten-devops-teamstruktur/
 [9] : https://www.atlassian.com/de/devops/devops-tools/devops-pipeline#:~:text=Was%20ist%20die%20DevOps%2DPipeline,f%C3%BCr%20eine%20Produktionsumgebung%20arbeiten%20k%C3%B6nnen.
-
+[10] : https://www.jetbrains.com/de-de/teamcity/ci-cd-guide/continuous-integration-vs-delivery-vs-deployment/
 
