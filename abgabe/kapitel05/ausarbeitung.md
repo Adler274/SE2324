@@ -19,7 +19,7 @@ Die DevOps-Bewegung nahm ihren Anfang etwa um das Jahr 2007. Sie entstand, als d
 ![:scale 50%](media\Titelbild-devops-tools-definition-best-practice.png)
 
 
-### Kultur, Ziele, Vorteile
+### Kultur, Ziele, Vorteile, Praktiken
 
 **Kultur** 
 
@@ -42,6 +42,13 @@ Die grundlegenden Vorteile von DevOps umfassen eine verstärkte Zusammenarbeit u
 Durch die Implementierung der DevOps-Methode können Teams ihre Produktivität steigern und den Weg zu häufigeren Releases ebnen, indem sie auf Automatisierung und standardisierte Tools setzen. Eine erhöhte Transparenz führt dazu, dass der Feedbackprozess verkürzt wird, wodurch Probleme und Aufgaben schneller identifiziert und angegangen werden können. Dank etablierter Prozesse und einer flexiblen, agilen Priorisierung, die sich an den Verlauf des Projekts anpasst, sind Teams in der Lage, unerwartete Aufgaben effektiver zu bewältigen, ohne dabei die geplanten Aufgaben aus den Augen zu verlieren.
 [5a]
 
+
+**Praktiken**
+
+MUSS NOCH GEMACHT WERDEN
+
+
+
 ### DevOps Teams
 
 DevOps-Teams setzen in der Regel auf Mitglieder, die sowohl über Fachkenntnisse im Bereich Softwareentwicklung als auch im Operations-Bereich verfügen. Einige Teammitglieder mögen hervorragend in der Code-Erstellung sein, während andere ihre Stärken eher in der Betriebsführung und der Infrastrukturverwaltung haben. Dieses Spektrum kann auch Release-Manager umfassen, die die Koordination und Verwaltung von Anwendungen von der Entwicklung bis zur Produktion übernehmen, sowie Automatisierungsarchitekten, die für die Wartung und Automatisierung der Continuous Integration/Continuous Deployment (CI/CD)-Pipeline des Teams verantwortlich sind.
@@ -56,7 +63,21 @@ Welche Qualifikationen sind erforderlich, um einem DevOps-Team beizutreten? Die 
 ***
 Welche DevOps-Teamstruktur implementiert werden soll, hängt von zahlreichen Faktoren ab. Das sind beispielsweise die Anzahl der Produkte, an denen ein Unternehmen arbeitet, die technische Führung und die Fähigkeit von Entwicklungs- und Operations-Teams, Prozesse aufeinander abzustimmen.
 Es ist wichtig zu verstehen, dass nicht jedes Team dieselben Ziele verfolgt oder dieselben Praktiken und Tools verwendet. Selbst die Art und Weise, wie ein Team zusammengesetzt ist, sollte nicht standardisiert werden. Je nach den Umständen des Unternehmens und seinem Drang, sich zu verändern, benötigen verschiedene Teams unterschiedliche Strukturen. DevOps-Teams in zwei unterschiedlichen Unternehmen können sich massiv voneinander unterscheiden.
-[7a]
+
+**Cross-Functional Teams (Funktionsübergreifende Teams):**
+ In dieser Struktur sind DevOps-Teams funktionsübergreifend zusammengesetzt, was bedeutet, dass sie Mitglieder aus den Bereichen Entwicklung, IT-Betrieb und manchmal auch Sicherheit und Qualitätssicherung (QA) umfassen. Diese Teams arbeiten gemeinsam an einem Produkt oder Projekt und teilen die Verantwortung für die gesamte Bereitstellungspipeline.
+
+**Embedded DevOps:**
+ In diesem Modell werden DevOps-Praktiken direkt in die einzelnen Entwicklungsteams eingebettet. Jedes Entwicklungsteam übernimmt die Verantwortung für die Bereitstellung, Überwachung und Wartung seiner Anwendungen. Dies fördert eine enge Zusammenarbeit zwischen Entwicklern und Betriebsmitarbeitern.
+
+**Zentralisierte DevOps-Teams:**
+ Hier gibt es ein zentrales DevOps-Team, das für die Bereitstellung und Wartung von Infrastruktur und Werkzeugen verantwortlich ist. Die einzelnen Entwicklungsteams nutzen diese Ressourcen, um ihre Anwendungen zu entwickeln und bereitzustellen.
+
+**Hybride Strukturen:**
+ Einige Organisationen kombinieren verschiedene Elemente der oben genannten Modelle, um ihren spezifischen Anforderungen gerecht zu werden. Zum Beispiel könnten sie funktionsübergreifende Teams für bestimmte Projekte haben und gleichzeitig eine zentrale Infrastrukturverwaltung aufrechterhalten.
+
+[7a] [21a] [22a]
+
 
 **Rollen**
 ***
@@ -164,7 +185,7 @@ Es legt fest, wie Versionen nummeriert werden sollen, um die Art der Änderungen
 Auf Grundlage einer Versionsnummer von MAJOR.MINOR.PATCH werden die einzelnen Elemente folgendermaßen erhöht:
 
 MAJOR wird erhöht, wenn API-inkompatible Änderungen veröffentlicht werden.
-MINOR wird erhöht, wenn neue Funktionalitäten, die kompatibel zur bisherigen API sind, veröffentlicht werden, und
+MINOR wird erhöht, wenn neue Funktionalitäten, die kompatibel zur bisherigen API sind, veröffentlicht werden, 
 PATCH wird erhöht, wenn die Änderungen ausschließlich API-kompatible Bugfixes umfassen.
 
 [13a]
@@ -213,6 +234,8 @@ Feature Toggles, auch als "Feature Flags" bezeichnet, sind eine Technik, um die 
 Es gibt Frameworks wie togglz [5], die eine benutzerfreundliche Oberfläche bieten, um alle Schalter zu verwalten, zu aktivieren oder zu deaktivieren, möglicherweise in Verbindung mit einer speziellen Freigabestrategie. Dabei ist es möglich, eine Funktion nur für ausgewählte Benutzer bereitzustellen, beispielsweise anhand von Kriterien wie Namen, IP-Adresse oder Standort, oder schrittweise mit einem kleinen Prozentsatz (ähnlich dem Canary Deployment). Mit diesem Ansatz kann A/B-Testing durchgeführt werden, bei dem eine Funktion nur für einen Teil der Benutzer aktiviert wird, um zu überprüfen, ob die Änderung akzeptiert wird. Wenn ein Feature Fehler verursacht oder nicht wie erwartet funktioniert, kann der Schalter deaktiviert werden, und die Entwickler können an einem neuen Inkrement für die Bereitstellung arbeiten. Dieses Verhalten wird als "fix forward" bezeichnet und bedeutet, dass es keine Notwendigkeit für Rollbacks gibt. Das kann viel Zeit sparen, da die Vorbereitung von Datenbankskripten, um auf die vorherige Version zurückzukehren, entfällt. Schließlich können Feature-Schalter auch verwendet werden, um eine Anwendung in den Wartungsmodus zu versetzen.
 
 Entwickler müssen den Einstiegspunkt eines Features in ihrem Code mit einem if-else-Konstrukt umgeben, wie im folgenden Beispiel dargestellt:
+
+```java
 if (Features.ENABLE_IMPORT.isActive()) {
   LOG.info("IMPORT gestartet");
   try {
@@ -224,7 +247,7 @@ if (Features.ENABLE_IMPORT.isActive()) {
 } else {
   LOG.info("IMPORT nicht möglich");
 }
-
+```
 Ein Codeblock, der mithilfe eines Schalters deaktiviert wurde, ist ähnlich wie auskommentierter Code.
 
 Es ist wichtig sicherzustellen, dass die Schalter entfernt werden, sobald sie nicht mehr benötigt werden, da ansonsten toter Code entsteht, der zu technischen Schulden führen kann. Feature Toggles können in einer Datenbank oder als Konfigurationseigenschaft in einer Konfigurationsdatei gespeichert werden.
@@ -303,3 +326,5 @@ Entfernung von Secrets aus Code, Konfigurationsdateien und anderen ungeschützte
 [18a] : https://docs.github.com/de/actions/automating-builds-and-tests/about-continuous-integration
 [19a] : https://www.jetbrains.com/de-de/teamcity/ci-cd-guide/ci-cd-tools/servers/#:~:text=Der%20CI%2DServer%20(oder%20Build,und%20Feedback%20sammelt%20und%20bereitstellt.
 [20a] : https://www.cyberark.com/de/what-is/secrets-management/#:~:text=Was%20ist%20Secrets%2DManagement%3F,Sicherheitsrichtlinien%20f%C3%BCr%20nicht%20menschliche%20Identit%C3%A4ten.
+[21a] : https://www.dev-insider.de/die-ideale-devops-teamstruktur-a-862217/
+[22a] : https://chat.openai.com/c/9ed09955-46c1-45b9-b032-ec8ee9756bab frage: was sind gängige DevOps team Strukturen?
