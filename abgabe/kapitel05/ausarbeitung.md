@@ -10,6 +10,13 @@
 * Was für Deployment strategies es gibt
 * Wie versioniert man richtig
 * Was ist Secrets Management
+* Was ist CALMAS und dessen Vorversionen
+* Was macht man mit dem SPACE und DevEx Framework
+* Was sind die Bewertungskriterien der DORA-Metriken
+und welche Risiken gibt es
+* Was ist DevSecOps und welche Vorteile hat es
+    * Welche Sicherheitsrisiken gibt es und was bringt einem STRIDE dabei
+
 
 ## DevOps
 
@@ -312,56 +319,184 @@ Entfernung von Secrets aus Code, Konfigurationsdateien und anderen ungeschützte
 
 [20a]
 
-## Referenzen
-***
-[1a]  : https://de.wikipedia.org/wiki/DevOps
-[2a]  : https://www.atlassian.com/de/devops  
-[3a]  : https://www.ibm.com/de-de/topics/devops
-[4a]  : https://www.atlassian.com/de/devops/what-is-devops/devops-culture
-[5a]  : https://mindsquare.de/knowhow/devops/#vorteile
-[6a]  : https://weissenberg-group.de/was-ist-devops/#:~:text=Das%20ultimative%20Ziel%20einer%20DevOps,schneller%20und%20einfacher%20zu%20liefern.
-[7a]  : https://www.atlassian.com/de/devops/frameworks/team-structure#:~:text=DevOps%2DTeams%20bestehen%20normalerweise%20aus,der%20Verwaltung%20der%20Infrastruktur%20auskennen.
-[8a]  : https://www.objectivity.de/blog/aufbau-einer-effizienten-devops-teamstruktur/
-[9a]  : https://www.atlassian.com/de/devops/devops-tools/devops-pipeline#:~:text=Was%20ist%20die%20DevOps%2DPipeline,f%C3%BCr%20eine%20Produktionsumgebung%20arbeiten%20k%C3%B6nnen.
-[10a] : https://www.jetbrains.com/de-de/teamcity/ci-cd-guide/continuous-integration-vs-delivery-vs-deployment/
-[11a] : https://dakitec.de/software-entwicklung/deployment#:~:text=Das%20Deployment%20zielt%20darauf%20ab,dem%20Produktivsystem%20einer%20bestimmten%20Version.
-[12a] : https://chat.openai.com/c/65fcfde4-4f21-4912-bcd4-c5b175833b7c frage: was ist der unterschied zwischen release und deployment im DevOps bereich
-[13a] : https://semver.org/
-[14a] : https://www.plutora.com/blog/deployment-strategies-6-explained-in-depth
-[15a] : https://cloud.google.com/architecture/application-deployment-and-testing-strategies?hl=de
-[16a] : https://entwickler.de/devops/roadmap-einer-spannenden-reise
-[17a] : https://www.jetbrains.com/de-de/teamcity/ci-cd-guide/ci-cd-tools/#:~:text=Ein%20CI%2FCD%2DTool%20leistet,dem%20Ver%C3%B6ffentlichen%20von%20Artefakten%20und
-[18a] : https://docs.github.com/de/actions/automating-builds-and-tests/about-continuous-integration
-[19a] : https://www.jetbrains.com/de-de/teamcity/ci-cd-guide/ci-cd-tools/servers/#:~:text=Der%20CI%2DServer%20(oder%20Build,und%20Feedback%20sammelt%20und%20bereitstellt.
-[20a] : https://www.cyberark.com/de/what-is/secrets-management/#:~:text=Was%20ist%20Secrets%2DManagement%3F,Sicherheitsrichtlinien%20f%C3%BCr%20nicht%20menschliche%20Identit%C3%A4ten.
-[21a] : https://www.dev-insider.de/die-ideale-devops-teamstruktur-a-862217/
-[22a] : https://chat.openai.com/c/9ed09955-46c1-45b9-b032-ec8ee9756bab frage: was sind gängige DevOps team Strukturen?
-[23a] : https://kruschecompany.com/de/devops-guide/#DevOps_als_Prozesse_und_Praktiken
-**Autor:** Simon Fedrau, Sascha Hahn
-
-## Lernziele
-
-
 ### CAMS, CALMS, CALMAS
+CAMS, CAMLS und CALMAS sind konzeptionelle Rahmen, die sich auf die Integration zwischen Entwicklern (Softwareentwicklern) und IT-Betriebsteams (IT-Operatoren) in der Softwareentwicklung konzentrieren.
+CALMAS ist eine erweiterte Version dieser Rahmen, die sechs Schlüsselaspekte hervorhebt:
+Kultur (Culture), Automatisierung (Automation), Schlankheit (Lean), Messung (Measurement), Agilität (Agile) und Teilen (Sharing). Diese Aspekte spielen eine entscheidende Rolle bei der Förderung der Zusammenarbeit, der Effizienz und der Qualität in der Softwareentwicklung.
+Während CAMS und CAMLS wichtige Grundlagen bieten, hebt CALMAS die Bedeutung von Agilität und Wissensaustausch hervor, um die Integration zwischen Entwicklung und Betrieb zu optimieren.
+Dieser ganzheitliche Ansatz zielt darauf ab, die Entwicklererfahrung zu verbessern und den Wertstrom in der Softwareentwicklung zu optimieren.
+[4b,12b]
 
+* **Culture:** Unternehmensweite geltende Werte, Überzeugungen und Haltungen. Beschreiben das Handeln in Entwicklung und Betrieb.
+
+* **Automation:** Alles was Automatisiert werden kann sollte auch Atomatisiert werden.
+    * Fehler reduzierung, und optimisierung 
+
+* **Lean:** Überschuss reduzieren bei einhaltung der gewüschten Ergebnisse.
+    * Meetings veringern, Teams verkleinern, Werkzeuge auf ein Minimum reduzieren
+
+* **Measurement:** Messen der Effizienz und Qualität der Softwareentwicklung, durch Sammeln von Daten um Systeme und Ereignisse seinsehbar und transparent zu gestallten.
+
+* **Agile:** Agile Entwicklungsmethoden, wie Scrum, Kanban, XP, etc.
+
+* **Sharing:** Wissen und Informationen Abteilungs übergeifend teilen und weitergeben.
 
 ### SPACE Framework
+"SPACE" ist ein Framework zur Verbesserung der Softwareentwicklungseffizienz.
+Es wurde von Nicole Forsgren entwickelt, die später bei den DORA-Metriken erneut auftaucht.
+"SPACE" steht für fünf Schlüsselaspekte der Produktivität: Zufriedenheit und Wohlbefinden, Leistung, Aktivität, Kommunikation und Zusammenarbeit, sowie Effizienz und Flow.
+Dieses Framework bietet eine umfassende Perspektive auf die Produktivität in der Softwareentwicklung und zielt darauf ab, Verbesserungen in diesen Bereichen zu fördern.
 
+[5b,12b]
 
 ### DevEx Framework
+Das DevEx Framework, abgekürzt für "Developer Experience" (Entwicklererfahrung), dreht sich um die Wahrnehmung der Entwickler hinsichtlich dessen, wie sie sich fühlen, was sie denken und wie sie ihre Arbeit bewerten.
+DevEx umfasst drei Kernpunkte:
+
+Feedback-Loops: Schnelles Feedback ist entscheidend, um die Effizienz zu steigern.
+Dies beinhaltet die Vermeidung von Verzögerungen bei der Veröffentlichung von Funktionen und die Förderung einer reibungslosen und schnellen Arbeitsweise durch effektive Kommunikation.
+
+Cognitive Load: Mit der raschen Entwicklung in der Softwareentwicklung ist die Komplexität und die kognitive Belastung der Entwickler gestiegen.
+Eine höhere kognitive Belastung führt zu mehr Fehlern und einer langsameren Entwicklung.
+
+Flow-State: Dies ist ein mentaler Zustand, in dem eine Person vollständig in eine Aktivität vertieft ist.
+Dies umfasst die Minimierung von Unterbrechungen und übermäßigen Besprechungen sowie die Unterstützung dieses Zustands durch Automatisierung und klare Zielsetzungen.
+
+[6b,12b]
 ### DORA Metriken
+Die DORA-Metriken sind Metriken zur Messung der Softwareentwicklungseffizienz.
+Menschen sind sehr aber sehr komplex, daher ist es schwierig, die Effizienz zu messen.
+DORA-Metriken sind ein Versuch, die Effizienz zu messen und durch sie zu verbessern. Sie bieten dabei keinen Nachteil zwischen Software  Geschwindigkeit und Qualität.
+
+
+Die DORA-Metriken sind enstanden, durch die sammlung und analyse von Daten der Praktiken der Softwarebereitstellung.
+Die Ergebisse dieser Analysen waren dabei die bei weitem gründlichste Untersuchung der Effinzienz und Qualität in der Softwareentwicklung.
+Dies waren die State of DevOps Reports.
+Ein paar Jahre später entwickelten Nicole Forsgren, Jez Humble und Gene Kim die DORA Metriken.
+Durch die State of DevOps Reports kann man sicher sagen dass die DORA Metriken State of the Art sind.
+Die DORA Metriken sind durch Folgende Aspekte charakterisiert:
+
+[1b,3b,12b]
 #### Deployment Frequency
+Deplyment Frequency ist ein Indikator für die Geschwindigkeit der Softwareentwicklung.
+Es misst die Kosten der Entwicklung in bezug auf Geld aber auch Zeit und Arbeitskraft.
+Besonders wird aber damit die Rate in der neue Features veröffentlicht werden gemessen.
+
+[3b,12b]
 #### Change Lead Time
-#### Change Failure Rate
+Die Change Lead Time auch ein Indikator für die Geschwindigkeit der Softwareentwicklung.
+Es beinhlatet die Zeit zwischen dem Beginn einer Änderung und der erfolgreichen Nutzung in der Produktion.
+Auch her geht es um die Kosten der Entwicklung.
+
+[3b,12b]
 #### Mean Time to Restore
+Die Mean Time to Restore gibt an wie lange es dauert ein Problem zu beheben, bzw. die Software wieder in einen funktionierenden Zustand zu bringen.
+Dieser Aspekt überprüft die Code Qualität, da durch einen sauberen und lesnaren code Fehler deutlich schneller erkannt und behoben werden können.
+
+[3b,12b]
+#### Change Failure Rate
+Die Change Failure Rate ist ein auch Indikator für die Qualität der Softwareentwicklung.
+Sie misst die Anzahl der Änderungen/Features, die zu einem Problem oder Ausfall führen.
+Die Change Failure Rate beschreibt somit die Quantität der Ausfälle, während die Mean Failure die Qualität/Schwere der Ausfälle beschreibt.
+
+[3b,12b]
+### Ziel
+Die DORA Metriken sollen die Effizienz der Softwareentwicklung messen 
+und damit auf lange Sicht den Erfolg des Projektes steigern und nicht kurzfristig Features um Features zu veröffentlichen.
+
+[3b,12b]
+### Falsche Interpretation
+Die DORA Metriken werden oft falsch interpretiert, da der Mensch dazu neigt sich nur auf die Bewertung zu konzentrieren und verliert, damit das eigenetliche Ziel aus den Augen.
+Zum Beispiel gibt es Fälle in dennen Entwickler die Change Failure Rate einfach nur als BugCount gesehen haben und diesen dann einfach nur reduziert haben, indem die nur die wichtigsten Bugs bearbeitet wurden.
+
+[3b,12b]
 ## DevSecOps
+* DevSecOps steht für Development, Security und Operations.
+* DevSecOps ist eine Praxis bei der man Sicherheits Test in jeden Entwicklungsschritt einbaut.
+* fördert Zusammenarbeit zwischen Entwicklern, Sicherheitsspezialisten und Betriebsteams zu fördern.
+* Sicherheit wird hier zu einem früheren Zeitpunkt in den Entwicklungsprozess integriert.
+
+DevSecOps steht für Development, Security und Operations. Es ist eine Praxis, die darauf abzielt, Sicherheit in den gesamten Lebenszyklus der Anwendungsentwicklung zu integrieren. DevSecOps fördert die Zusammenarbeit zwischen Entwicklern, Sicherheitsspezialisten und Betriebsteams, um die Sicherheit zu verbessern. Es ist eine Erweiterung von DevOps, die Sicherheit zu einem früheren Zeitpunkt in den Entwicklungsprozess integriert.
+
+[7b,12b]
 ### "Shift left"-testing
+Shift Left Testing ist eine der Methoden von DevSecOps.
+Entwickler überprüfen ihre Software auf Sicherheitslücken, bevor sie in die Produktion geht. Das Antipatter dazu wäre "Shift right"-testing, bei dem die Software erst in der Produktion auf Sicherheitslücken überprüft wird oder schlimmer dass die Kunden die Sicherheitslücken erst entdecken.
+
+[7b,12b]
 ### Sicherheitsziele der Kryptographie
-#### Authentizität, Integrität, Verbindlichkeit, Vertraulichkeit, Verfügbarkeit, Autorisierung
+Sicherheitsziele sind im Allgemeinene Richtilinien an ein System, um schtützenswerte Güter zu schützen.
+In der Computersicherheit sind das die Vertraulichkeit, Integrität und Verfügbarkeit von Daten.
+Gefährdung dieser geschieht meist bei der übertragung von Daten.
+Für die Meisten dieser Ziele schafft Kryptographie abhilfe.
+
+[8b,12b]
+#### Authentizität, Integrität, Verbindlichkeit, Zurechenbarkeit, Vertraulichkeit, Verfügbarkeit
+Sicherheitsziele können in einge unter Katogorien eingeteilt werden.
+
+* **Authentizität:** Echtheit, Überprüfbarkeit und Vertrauenswürdigkeit von Daten
+* **Integrität:** Daten sind unverändert und unverfälscht
+* **Verbindlichkeit:** durchgeführte Handlungen können nicht abgestritten werden können. z.b. bei elekrtonischem Abschulss eines Vertrages(Signatur)
+* **Zurechenbarkeit:** Handlungen müssen eine Person zugerechnet werden können
+* **Vertraulichkeit:** Daten dürfen nur von Autorisitirten Personen eingesehen und verändert werden.
+* **Verfügbarkeit:** Vermeidung von Systemausfällen, Zugriff auf Daten muss gewährleistet sein.
+
+[8b,12b]
 ### Threat Modeling (Bedrohungsmodellierung)
+Bedrohungmodellierung ist eine Prozess bei dem potentielle Bedrohungen für ein System indentifiziert und bewertet wird.
+Auch das Fehlen von entsprechender Schutmaßnahmen wird dabei berücksichtigt.
+Gegenmanßnahmen werden hiernach priorisiert und implementiert.
+
+[9b,12b]
 #### STRIDE
+Einer der Mothden zur Bedrohungsmodellierung ist STRIDE.
+STRIDE ist ein Model zur Klassifizierung von folgenden Bedrohungen Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service und Elevation of Privilege.
 
+* **Spoofing:** Fälschung von Identitäten. Angriff auf Accont eines anderen Benutzers oder eigenene Identität fälschen. 
+* **Tampering:** Veränderung von Daten in einer Datenbank oder im Netzwerkverkehr.
+* **Repudiation:** Verschleiern von bösartigen Handlungen in einem System.
+* **Information Disclosure:** Unbefugter Zugriff auf Daten.
+* **Denial of Service:** Verhindern der Verfügbarkeit eines Systems, durch zum Beispiel überlastung(eher bekannt als DDos Attacke)
+* **Elevation of Privilege:** Unerlaubte erweiterung von Zufgriffsrechten.
+
+[10b,11b,12b]
 ## Referenzen
+***
+[1a]  : https://de.wikipedia.org/wiki/DevOps<br>
+[2a]  : https://www.atlassian.com/de/devops<br>
+[3a]  : https://www.ibm.com/de-de/topics/devops<br>
+[4a]  : https://www.atlassian.com/de/devops/what-is-devops/devops-culture<br>
+[5a]  : https://mindsquare.de/knowhow/devops/#vorteile<br>
+[6a]  : https://weissenberg-group.de/was-ist-devops/#:~:text=Das%20ultimative%20Ziel%20einer%20DevOps,schneller%20und%20einfacher%20zu%20liefern<br>
+[7a]  : https://www.atlassian.com/de/devops/frameworks/team-structure#:~:text=DevOps%2DTeams%20bestehen%20normalerweise%20aus,der%20Verwaltung%20der%20Infrastruktur%20auskennen<br>
+[8a]  : https://www.objectivity.de/blog/aufbau-einer-effizienten-devops-teamstruktur/<br>
+[9a]  : https://www.atlassian.com/de/devops/devops-tools/devops-pipeline#:~:text=Was%20ist%20die%20DevOps%2DPipeline,f%C3%BCr%20eine%20Produktionsumgebung%20arbeiten%20k%C3%B6nnen<br>
+[10a] : https://www.jetbrains.com/de-de/teamcity/ci-cd-guide/continuous-integration-vs-delivery-vs-deployment/<br>
+[11a] : https://dakitec.de/software-entwicklung/deployment#:~:text=Das%20Deployment%20zielt%20darauf%20ab,dem%20Produktivsystem%20einer%20bestimmten%20Version<br>
+[12a] : https://chat.openai.com/c/65fcfde4-4f21-4912-bcd4-c5b175833b7c<br>
+    frage: was ist der unterschied zwischen release und deployment im DevOps bereich<br>
+[13a] : https://semver.org/<br>
+[14a] : https://www.plutora.com/blog/deployment-strategies-6-explained-in-depth<br>
+[15a] : https://cloud.google.com/architecture/application-deployment-and-testing-strategies?hl=de<br>
+[16a] : https://entwickler.de/devops/roadmap-einer-spannenden-reise<br>
+[17a] : https://www.jetbrains.com/de-de/teamcity/ci-cd-guide/ci-cd-tools/#:~:text=Ein%20CI%2FCD%2DTool%20leistet,dem%20Ver%C3%B6ffentlichen%20von%20Artefakten%20und<br>
+[18a] : https://docs.github.com/de/actions/automating-builds-and-tests/about-continuous-integration<br>
+[19a] : https://www.jetbrains.com/de-de/teamcity/ci-cd-guide/ci-cd-tools/servers/#:~:text=Der%20CI%2DServer%20(oder%20Build,und%20Feedback%20sammelt%20und%20bereitstellt<br>
+[20a] : https://www.cyberark.com/de/what-is/secrets-management/#:~:text=Was%20ist%20Secrets%2DManagement%3F,Sicherheitsrichtlinien%20f%C3%BCr%20nicht%20menschliche%20Identit%C3%A4ten<br>
+[21a] : https://www.dev-insider.de/die-ideale-devops-teamstruktur-a-862217/<br>
+[22a] : https://chat.openai.com/c/9ed09955-46c1-45b9-b032-ec8ee9756bab frage: was sind gängige DevOps team Strukturen?<br>
+[23a] : https://kruschecompany.com/de/devops-guide/#DevOps_als_Prozesse_und_Praktiken<br><br>
 
-[1b] :https://chat.openai.com/
-[2b] :https://blog.upbound.io/developers-and-operators-complicated-relationship
+
+[1b] :https://chat.openai.com/<br>
+[2b] :https://blog.up bound.io/developers-and-operators-complicated-relationship<br>
+[3b] :https://www.youtube.com/watch?v=hbeyCECbLhk<br>
+[4b] : https://www.computerweekly.com/de/definition/CALMS#:~:text=CALMS%20ist%20ein%20konzeptioneller%20Rahmen,)%20und%20Sharing%20(Austausch)<br>
+[5b] :https://www.swarmia.com/blog/space-framework/?utm_term=space%20framework&utm_campaign=SRH-SPACE-EU-EN&utm_source=adwords&utm_medium=ppc&hsa_acc=6644081770&hsa_cam=19643106124&hsa_grp=145044312719&hsa_ad=646821562962&hsa_src=g&hsa_tgt=kwd-567479290791&hsa_kw=space%20framework&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=Cj0KCQjwtJKqBhCaARIsAN_yS_lvUSBQFNwT_lFYrpV_pLv4g7HcPFGqhDenxk8YrhUgQVOY5uuql88aAvDAEALw_wcB<br>
+[6b] :https://queue.acm.org/detail.cfm?id=3595878<br>
+[7b] :https://aws.amazon.com/de/what-is/devsecops/#:~:text=building%20the%20software.-,What%20does%20DevSecOps%20stand%20for%3F,they%20are%20building%20software%20applications<br>
+[8b] :https://www.identible.de/glossar/sicherheitsziele.html<br>
+[9b] :https://en.wikipedia.org/wiki/Threat_model<br>
+[10b] :https://de.wikipedia.org/wiki/STRIDE_(IT-Sicherheit)<br>
+[11b] :https://geballte-sicherheit.de/threat-modelling-bedrohungsanalyse-4-teil-ermittlung-und-einstufung-von-bedrohungen/<br>
+[12b] :Teilweise Formulierung von Git-Hub Co-Piolot<br>

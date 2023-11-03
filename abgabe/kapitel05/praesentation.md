@@ -423,6 +423,8 @@ DevEx besteht aus 3 Kern Punkten:
     * vermeidungen umgehen wie Unterbrechungen und Meetings
     * unterstütung des Zustands durch Atomation und klare Ziele
 
+
+
 [6b]
 ---
 
@@ -436,7 +438,7 @@ durch sie sie zu verbessern
 geschwindigkeit und qualität
 
 
-[3b, 1b]
+[3b,1b]
 ---
 
 ### DORA Metriken
@@ -598,11 +600,17 @@ STRIDE ist ein Model zur Klassifizierung von folgenden Bedrohungen:
 * Feature flags sind im Grunde Schalter die einen Code freischalten/einschalten 
 * Ein CI-Server ist eine Software die Builds und Tests verwaltet
 * Secrets Management ist das Verwalten von sensiblen Informationen(Passwörter, Zugangsdaten, etc...)
+
 ---
+
 # Zusammenfassung
 ***
-
-
+* CALMS ist ein konzeptioneller Rahmen für die Integration zwischen Deveop(Softwareentwickler und IT-Opertors)
+* SPACE ist ein framwork um die Effizienz der Softwareentwicklung zu messen und zu verbessern.
+* DevEx Framework steht für Developer Experience und umfasst die wahrnehmung der Entwickler.
+* DORA Metriken sind ein Versuch, die Effizienz zu messen und durch sie sie zu verbessern.
+* DevSecOps ist eine Praxis bei der man Sicherheits Test in jeden Entwicklungsschritt einbaut und früher in der Enticklung integriert.
+* Thread Modeling ist eine Prozess bei dem potentielle Bedrohungen für ein System indentifiziert und bewertet wird.
 
 ---
 class: center, middle
@@ -610,50 +618,56 @@ class: center, middle
 # Fragen?
 
 ---
+
 # Quellen
 ***
-
-[1a]  : https://de.wikipedia.org/wiki/DevOps
-[2a]  : https://www.atlassian.com/de/devops  
-[3a]  : https://www.ibm.com/de-de/topics/devops
-[4a]  : https://www.atlassian.com/de/devops/what-is-devops/devops-culture
-[5a]  : https://mindsquare.de/knowhow/devops/#vorteile
-[6a]  : https://weissenberg-group.de/was-ist-devops/#:~:text=Das%20ultimative%20Ziel%20einer%20DevOps,schneller%20und%20einfacher%20zu%20liefern.
-[7a]  : https://www.atlassian.com/de/devops/frameworks/team-structure#:~:text=DevOps%2DTeams%20bestehen%20normalerweise%20aus,der%20Verwaltung%20der%20Infrastruktur%20auskennen.
-[8a]  : https://www.objectivity.de/blog/aufbau-einer-effizienten-devops-teamstruktur/
-[9a]  : https://www.atlassian.com/de/devops/devops-tools/devops-pipeline#:~:text=Was%20ist%20die%20DevOps%2DPipeline,f%C3%BCr%20eine%20Produktionsumgebung%20arbeiten%20k%C3%B6nnen.
-[10a] : https://www.jetbrains.com/de-de/teamcity/ci-cd-guide/continuous-integration-vs-delivery-vs-deployment/
-[11a] : https://dakitec.de/software-entwicklung/deployment#:~:text=Das%20Deployment%20zielt%20darauf%20ab,dem%20Produktivsystem%20einer%20bestimmten%20Version.
-[12a] : https://chat.openai.com/c/65fcfde4-4f21-4912-bcd4-c5b175833b7c frage: was ist der unterschied zwischen release und deployment im DevOps bereich
+[1a]  : https://de.wikipedia.org/wiki/DevOps<br>
+[2a]  : https://www.atlassian.com/de/devops<br>
+[3a]  : https://www.ibm.com/de-de/topics/devops<br>
+[4a]  : https://www.atlassian.com/de/devops/what-is-devops/devops-culture<br>
+[5a]  : https://mindsquare.de/knowhow/devops/#vorteile<br>
+[6a]  : https://weissenberg-group.de/was-ist-devops/#:~:text=Das%20ultimative%20Ziel%20einer%20DevOps,schneller%20und%20einfacher%20zu%20liefern<br>
+[7a]  : https://www.atlassian.com/de/devops/frameworks/team-structure#:~:text=DevOps%2DTeams%20bestehen%20normalerweise%20aus,der%20Verwaltung%20der%20Infrastruktur%20auskennen<br>
+[8a]  : https://www.objectivity.de/blog/aufbau-einer-effizienten-devops-teamstruktur/<br>
+[9a]  : https://www.atlassian.com/de/devops/devops-tools/devops-pipeline#:~:text=Was%20ist%20die%20DevOps%2DPipeline,f%C3%BCr%20eine%20Produktionsumgebung%20arbeiten%20k%C3%B6nnen<br>
+[10a] : https://www.jetbrains.com/de-de/teamcity/ci-cd-guide/continuous-integration-vs-delivery-vs-deployment/<br>
+[11a] : https://dakitec.de/software-entwicklung/deployment#:~:text=Das%20Deployment%20zielt%20darauf%20ab,dem%20Produktivsystem%20einer%20bestimmten%20Version<br>
 
 ---
 
 # Quellen
 ***
-[13a] : https://semver.org/
-[14a] : https://www.plutora.com/blog/deployment-strategies-6-explained-in-depth
-[15a] : https://cloud.google.com/architecture/application-deployment-and-testing-strategies?hl=de
-[16a] : https://entwickler.de/devops/roadmap-einer-spannenden-reise
-[17a] : https://www.jetbrains.com/de-de/teamcity/ci-cd-guide/ci-cd-tools/#:~:text=Ein%20CI%2FCD%2DTool%20leistet,dem%20Ver%C3%B6ffentlichen%20von%20Artefakten%20und
-[18a] : https://docs.github.com/de/actions/automating-builds-and-tests/about-continuous-integration
-[19a] : https://www.jetbrains.com/de-de/teamcity/ci-cd-guide/ci-cd-tools/servers/#:~:text=Der%20CI%2DServer%20(oder%20Build,und%20Feedback%20sammelt%20und%20bereitstellt.
-[20a] : https://www.cyberark.com/de/what-is/secrets-management/#:~:text=Was%20ist%20Secrets%2DManagement%3F,Sicherheitsrichtlinien%20f%C3%BCr%20nicht%20menschliche%20Identit%C3%A4ten.
-[21a] : https://www.dev-insider.de/die-ideale-devops-teamstruktur-a-862217/
-[22a] : https://chat.openai.com/c/9ed09955-46c1-45b9-b032-ec8ee9756bab frage: was sind gängige DevOps team Strukturen?
-[23a] : https://kruschecompany.com/de/devops-guide/#DevOps_als_Prozesse_und_Praktiken
+[12a] : https://chat.openai.com/c/65fcfde4-4f21-4912-bcd4-c5b175833b7c<br>
+    frage: was ist der unterschied zwischen release und deployment im DevOps bereich<br>
+[13a] : https://semver.org/<br>
+[14a] : https://www.plutora.com/blog/deployment-strategies-6-explained-in-depth<br>
+[15a] : https://cloud.google.com/architecture/application-deployment-and-testing-strategies?hl=de<br>
+[16a] : https://entwickler.de/devops/roadmap-einer-spannenden-reise<br>
+[17a] : https://www.jetbrains.com/de-de/teamcity/ci-cd-guide/ci-cd-tools/#:~:text=Ein%20CI%2FCD%2DTool%20leistet,dem%20Ver%C3%B6ffentlichen%20von%20Artefakten%20und<br>
+[18a] : https://docs.github.com/de/actions/automating-builds-and-tests/about-continuous-integration<br>
+[19a] : https://www.jetbrains.com/de-de/teamcity/ci-cd-guide/ci-cd-tools/servers/#:~:text=Der%20CI%2DServer%20(oder%20Build,und%20Feedback%20sammelt%20und%20bereitstellt<br>
+[20a] : https://www.cyberark.com/de/what-is/secrets-management/#:~:text=Was%20ist%20Secrets%2DManagement%3F,Sicherheitsrichtlinien%20f%C3%BCr%20nicht%20menschliche%20Identit%C3%A4ten<br>
+[21a] : https://www.dev-insider.de/die-ideale-devops-teamstruktur-a-862217/<br>
 
 ---
 
 # Quellen
 ***
-[1b] :https://chat.openai.com/
-[2b] :https://blog.up bound.io/developers-and-operators-complicated-relationship
-[3b] :https://www.youtube.com/watch?v=hbeyCECbLhk
-[4b] : https://www.computerweekly.com/de/definition/CALMS#:~:text=CALMS%20ist%20ein%20konzeptioneller%20Rahmen,)%20und%20Sharing%20(Austausch).
-[5b] :https://www.swarmia.com/blog/space-framework/?utm_term=space%20framework&utm_campaign=SRH-SPACE-EU-EN&utm_source=adwords&utm_medium=ppc&hsa_acc=6644081770&hsa_cam=19643106124&hsa_grp=145044312719&hsa_ad=646821562962&hsa_src=g&hsa_tgt=kwd-567479290791&hsa_kw=space%20framework&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=Cj0KCQjwtJKqBhCaARIsAN_yS_lvUSBQFNwT_lFYrpV_pLv4g7HcPFGqhDenxk8YrhUgQVOY5uuql88aAvDAEALw_wcB
-[6b] :https://queue.acm.org/detail.cfm?id=3595878
-[7b] :https://aws.amazon.com/de/what-is/devsecops/#:~:text=building%20the%20software.-,What%20does%20DevSecOps%20stand%20for%3F,they%20are%20building%20software%20applications.
-[8b] :https://www.identible.de/glossar/sicherheitsziele.html
-[9b] :https://en.wikipedia.org/wiki/Threat_model
-[10b] :https://de.wikipedia.org/wiki/STRIDE_(IT-Sicherheit)
-[11b] :https://geballte-sicherheit.de/threat-modelling-bedrohungsanalyse-4-teil-ermittlung-und-einstufung-von-bedrohungen/
+[22a] : https://chat.openai.com/c/9ed09955-46c1-45b9-b032-ec8ee9756bab frage: was sind gängige DevOps team Strukturen?<br>
+[23a] : https://kruschecompany.com/de/devops-guide/#DevOps_als_Prozesse_und_Praktiken<br>
+
+---
+
+# Quellen
+***
+[1b] :https://chat.openai.com/<br>
+[2b] :https://blog.up bound.io/developers-and-operators-complicated-relationship<br>
+[3b] :https://www.youtube.com/watch?v=hbeyCECbLhk<br>
+[4b] : https://www.computerweekly.com/de/definition/CALMS#:~:text=CALMS%20ist%20ein%20konzeptioneller%20Rahmen,)%20und%20Sharing%20(Austausch)<br>
+[5b] :https://www.swarmia.com/blog/space-framework/?utm_term=space%20framework&utm_campaign=SRH-SPACE-EU-EN&utm_source=adwords&utm_medium=ppc&hsa_acc=6644081770&hsa_cam=19643106124&hsa_grp=145044312719&hsa_ad=646821562962&hsa_src=g&hsa_tgt=kwd-567479290791&hsa_kw=space%20framework&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=Cj0KCQjwtJKqBhCaARIsAN_yS_lvUSBQFNwT_lFYrpV_pLv4g7HcPFGqhDenxk8YrhUgQVOY5uuql88aAvDAEALw_wcB<br>
+[6b] :https://queue.acm.org/detail.cfm?id=3595878<br>
+[7b] :https://aws.amazon.com/de/what-is/devsecops/#:~:text=building%20the%20software.-,What%20does%20DevSecOps%20stand%20for%3F,they%20are%20building%20software%20applications<br>
+[8b] :https://www.identible.de/glossar/sicherheitsziele.html<br>
+[9b] :https://en.wikipedia.org/wiki/Threat_model<br>
+[10b] :https://de.wikipedia.org/wiki/STRIDE_(IT-Sicherheit)<br>
+[11b] :https://geballte-sicherheit.de/threat-modelling-bedrohungsanalyse-4-teil-ermittlung-und-einstufung-von-bedrohungen/<br>
