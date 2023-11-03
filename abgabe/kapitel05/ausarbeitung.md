@@ -19,7 +19,7 @@ und welche Risiken gibt es
 
 
 ## DevOps
-
+***
 Unter DevOps versteht man eine umfassende Praxis, die verschiedene Techniken, Werkzeuge und eine kulturelle Ausrichtung umfasst. Ziel ist die Automatisierung und nahtlose Integration der Abläufe zwischen den Teams, die Software entwickeln, und den Teams, die für die IT-Infrastruktur verantwortlich sind. Im Mittelpunkt dieses Ansatzes stehen die Befähigung der Teams, eine reibungslose Kommunikation und Zusammenarbeit über Teamgrenzen hinweg sowie die Automatisierung von technologischen Prozessen.
 
 Die DevOps-Bewegung nahm ihren Anfang etwa um das Jahr 2007. Sie entstand, als die Communities im Bereich Softwareentwicklung und IT-Betrieb Bedenken bezüglich des herkömmlichen Entwicklungsmodells äußerten. In diesem traditionellen Modell arbeiteten Entwickler, die den Code erstellten, isoliert von den Operations-Teams, die für die Bereitstellung und Unterstützung der Software zuständig waren. Der Begriff "DevOps," eine Zusammensetzung der Wörter "Development" und "Operations," spiegelt den Prozess der nahtlosen Integration beider Fachbereiche in einen fortlaufenden, kontinuierlichen Arbeitsprozess wider.
@@ -29,7 +29,7 @@ Die DevOps-Bewegung nahm ihren Anfang etwa um das Jahr 2007. Sie entstand, als d
 
 
 ### Kultur, Ziele, Vorteile, Praktiken
-
+***
 **Kultur** 
 
 In der organisatorischen Dimension erfordert DevOps eine kontinuierliche Kommunikation, Zusammenarbeit und eine geteilte Verantwortung aller Beteiligten im Software-Bereitstellungsprozess. Das schließt nicht nur die Teams für Softwareentwicklung und IT-Betrieb ein, sondern bezieht auch Sicherheits-, Compliance-, Governance-, Risiko- und Geschäftsleitungsteams mit ein. Ziel ist es, schnelle und fortlaufende Innovationen zu fördern und von Anfang an die Qualität der Software sicherzustellen.
@@ -39,6 +39,7 @@ In den meisten Fällen gelingt dies am besten, wenn bestehende Abteilungsbarrier
 Auf technischer Ebene erfordert DevOps ein starkes Engagement für die Automatisierung von Prozessen, die es ermöglicht, Projekte nahtlos innerhalb und zwischen den Arbeitsabläufen zu bewegen. Zusätzlich sind kontinuierliches Feedback und die Durchführung von Messungen unerlässlich. Diese Elemente ermöglichen es den Teams, ihre Entwicklungszyklen fortlaufend zu beschleunigen und die Qualität sowie Leistung der Software kontinuierlich zu verbessern.
 
 [3a] [4a]
+
 **Ziele**
 
 Das große Ziel einer DevOps-Pipeline ist die Schaffung eines wiederholbaren Systems, das die Automatisierung nutzt und kontinuierliche Verbesserungen ermöglicht, um qualitativ hochwertige Produkte schnell und einfach zu liefern.
@@ -69,17 +70,17 @@ Durch die Implementierung der DevOps-Methode können Teams ihre Produktivität s
 [23a]
 
 ### DevOps Teams
-
+***
 DevOps-Teams setzen in der Regel auf Mitglieder, die sowohl über Fachkenntnisse im Bereich Softwareentwicklung als auch im Operations-Bereich verfügen. Einige Teammitglieder mögen hervorragend in der Code-Erstellung sein, während andere ihre Stärken eher in der Betriebsführung und der Infrastrukturverwaltung haben. Dieses Spektrum kann auch Release-Manager umfassen, die die Koordination und Verwaltung von Anwendungen von der Entwicklung bis zur Produktion übernehmen, sowie Automatisierungsarchitekten, die für die Wartung und Automatisierung der Continuous Integration/Continuous Deployment (CI/CD)-Pipeline des Teams verantwortlich sind.
 
 Welche Qualifikationen sind erforderlich, um einem DevOps-Team beizutreten? Die Anforderungen für eine Tätigkeit in einem DevOps-Team entwickeln sich ständig weiter, bedingt durch neue Technologien und Methoden. Dennoch zeichnen sich kompetente DevOps-Profis immer durch ähnliche Eigenschaften aus. Solide technische Fähigkeiten, effektive Kommunikation, die Bereitschaft zur Teamarbeit und die Fähigkeit zur Anpassung sind einige der wichtigsten Merkmale, die fähige DevOps-Fachleute auszeichnen.
 [7a]
 
 #### Struktur, Rollen, Verantwortlichkeiten
-
+***
 
 **Struktur** 
-***
+
 Welche DevOps-Teamstruktur implementiert werden soll, hängt von zahlreichen Faktoren ab. Das sind beispielsweise die Anzahl der Produkte, an denen ein Unternehmen arbeitet, die technische Führung und die Fähigkeit von Entwicklungs- und Operations-Teams, Prozesse aufeinander abzustimmen.
 Es ist wichtig zu verstehen, dass nicht jedes Team dieselben Ziele verfolgt oder dieselben Praktiken und Tools verwendet. Selbst die Art und Weise, wie ein Team zusammengesetzt ist, sollte nicht standardisiert werden. Je nach den Umständen des Unternehmens und seinem Drang, sich zu verändern, benötigen verschiedene Teams unterschiedliche Strukturen. DevOps-Teams in zwei unterschiedlichen Unternehmen können sich massiv voneinander unterscheiden.
 
@@ -128,7 +129,7 @@ DevOps-Pipelines und Automation sind zentrale Konzepte in der DevOps-Methodik, d
 [9a]
 
 #### Continuous Integration, Delivery und Deployment
-
+***
 Continuous Integration, Continuous Delivery und Continuous Deployment sind Ansätze, die darauf abzielen, den Prozess der Software-Veröffentlichung zu beschleunigen, indem sie Feedback-Zyklen verkürzen und wiederkehrende Aufgaben automatisieren. Diese Methoden spielen eine zentrale Rolle bei der Umsetzung des agilen Prinzips, bei dem es darum geht, wertvolle und funktionsfähige Software in kurzen Intervallen bereitzustellen, um eine kontinuierliche Verbesserung zu ermöglichen.
 [10a]
 
@@ -166,8 +167,8 @@ Wenn ein Build alle vorangehenden Phasen der Pipeline erfolgreich durchläuft, w
 Auch wenn die automatisierte Bereitstellung von Software für die Produktion nicht für jedes Produkt und jede Organisation geeignet ist, lohnt es sich, die dazu erforderlichen Schritte zu betrachten, da jedes einzelne Element bereits für sich genommen wertvoll ist.
 [10a]
 
-##### Releasing vs Deployment
-
+#### Releasing vs Deployment
+***
 Das Deployment zielt darauf ab, die entwickelte Software auf dem Zielsystem zu installieren und lauffähig zu machen.
 Eine Software-Version ist ein Entwicklungsstand zu einem bestimmten Zeitpunkt. Ein Release ist ein Deployment auf dem Produktivsystem einer bestimmten Version.
 
@@ -194,7 +195,7 @@ Beteiligte: Die Freigabeentscheidung wird normalerweise von den Geschäftseinhei
 In Zusammenfassung bezieht sich Deployment auf die technische Aktion des Verteilens und Aktivierens von Code oder Anwendungen in bestimmten Umgebungen, während Release die geschäftliche Entscheidung darstellt, eine bestimmte Version der Software für die Verwendung freizugeben. Die Unterscheidung zwischen diesen beiden Konzepten ist wichtig, da sie die Planung, Koordination und Kommunikation zwischen den verschiedenen Teams und Stakeholdern in DevOps-Umgebungen beeinflusst.
 
 
-##### Semantic Versioning
+#### Semantic Versioning
 ***
 
 Semantic Versioning, ist ein Konzept zur Versionsverwaltung von Software, das darauf abzielt, die Bedeutung von Änderungen an der Software zu kommunizieren.
@@ -209,12 +210,12 @@ PATCH wird erhöht, wenn die Änderungen ausschließlich API-kompatible Bugfixes
 
 [13a]
 
-##### Deployment strategies
-
+#### Deployment strategies
+***
 Eine Bereitstellungsstrategie ist eine Methode, die von DevOps-Teams verwendet wird, um eine neue Version ihrer bereitgestellten Softwarelösung erfolgreich in Betrieb zu nehmen. Diese Strategien regeln, wie der Netzwerkverkehr in einer Produktionsumgebung von der alten Version auf die neue Version umgestellt wird. Je nach den spezifischen Anforderungen und Schwerpunkten eines Unternehmens kann die Wahl der Bereitstellungsstrategie erheblichen Einfluss auf Ausfallzeiten und Betriebskosten haben.
 [14a]
-###### Blue-Green( Rot/Schwarz)
-
+#### Blue-Green( Rot/Schwarz)
+***
 Bei der Blau/Grün-Bereitstellung läuft die neue Version der Software parallel zur alten Version. Nachdem die neue Version erfolgreich getestet und zertifiziert wurde, dass sie alle Anforderungen erfüllt, übernimmt ein Load Balancer automatisch den Datenverkehr von der älteren Version auf die neuere Version.
 
 Hauptvorteile:
@@ -230,8 +231,8 @@ Umstellung: Wenn Sie die aktuelle Version außer Betrieb nehmen möchten, wird e
 
 [14a] [15a]
 
-###### Canary
-
+#### Canary
+***
 Die Canary-Bereitstellung ist eine Strategie, bei der das Bereitstellungsteam die neue Version der Software einrichtet und schrittweise den Produktionsverkehr von der älteren Version auf die neuere Version umstellt. Während des Bereitstellungsprozesses kann zu einem bestimmten Zeitpunkt die ältere Version beispielsweise 90 % des gesamten Datenverkehrs für die Software bewältigen, während die neuere Version 10 % des Datenverkehrs hostet. Mit dieser Bereitstellungstechnik können die DevOps-Ingenieure die Stabilität der neuen Version testen, indem sie den Live-Datenverkehr einer ausgewählten Gruppe von Endbenutzern auf verschiedenen Ebenen verwenden, die sich im Laufe der Produktion verändern.
 
 Hauptvorteile:
@@ -247,7 +248,8 @@ Abwärtskompatibilität und Sitzungstreue: Wie bei Rolling Updates können auch 
 [14a] [15a]
 
 
-###### Feature flags
+#### Feature flags
+***
 Feature Toggles, auch als "Feature Flags" bezeichnet, sind eine Technik, um die Bereitstellung von Software von der Freigabe zu entkoppeln und bieten eine Alternative zu Feature Branches. Diese Methode beschleunigt die Entwicklung, da sie das Erstellen von Branches und das Zusammenführen von Code überflüssig macht. Dadurch können viele kleine inkrementelle Versionen einer Software bereitgestellt werden, da Entwicklern ermöglicht wird, neue oder unvollständige Funktionen zu verbergen, so dass sie in der Benutzeroberfläche nicht sichtbar sind. Dies wird oft als "In-Code Branching" bezeichnet.
 
 Es gibt Frameworks wie togglz [5], die eine benutzerfreundliche Oberfläche bieten, um alle Schalter zu verwalten, zu aktivieren oder zu deaktivieren, möglicherweise in Verbindung mit einer speziellen Freigabestrategie. Dabei ist es möglich, eine Funktion nur für ausgewählte Benutzer bereitzustellen, beispielsweise anhand von Kriterien wie Namen, IP-Adresse oder Standort, oder schrittweise mit einem kleinen Prozentsatz (ähnlich dem Canary Deployment). Mit diesem Ansatz kann A/B-Testing durchgeführt werden, bei dem eine Funktion nur für einen Teil der Benutzer aktiviert wird, um zu überprüfen, ob die Änderung akzeptiert wird. Wenn ein Feature Fehler verursacht oder nicht wie erwartet funktioniert, kann der Schalter deaktiviert werden, und die Entwickler können an einem neuen Inkrement für die Bereitstellung arbeiten. Dieses Verhalten wird als "fix forward" bezeichnet und bedeutet, dass es keine Notwendigkeit für Rollbacks gibt. Das kann viel Zeit sparen, da die Vorbereitung von Datenbankskripten, um auf die vorherige Version zurückzukehren, entfällt. Schließlich können Feature-Schalter auch verwendet werden, um eine Anwendung in den Wartungsmodus zu versetzen.
@@ -273,14 +275,14 @@ Es ist wichtig sicherzustellen, dass die Schalter entfernt werden, sobald sie ni
 
 [16a]
 
-##### CI/CD-Tools
-
+#### CI/CD-Tools
+***
 Ein CI/CD-Tool spielt eine entscheidende Rolle beim Management, der Koordination und der Automatisierung der verschiedenen Phasen in der Pipeline. Dies umfasst das Initiieren des Prozesses nach einem Commit, die Steuerung des Build-Vorgangs, die Durchführung automatisierter Tests, das Veröffentlichen von Artefakten und das Erfassen sowie Weiterleiten von Feedback.
 Die Auswahl des geeigneten Tools für Continuous Integration (CI) oder Continuous Development/Delivery (CD) ist ein entscheidender Schritt bei der Implementierung Ihrer CI/CD-Pipeline.
 [17a]
 
-###### CI Server (Jenkins, Github-Actions, etc.)
-
+#### CI Server (Jenkins, Github-Actions, etc.)
+***
 Der CI-Server ist in der Regel ein zentraler Bestandteil des Tools und spielt eine Schlüsselrolle bei der Koordination der kontinuierlichen Integration. Er gewährleistet, dass Code-Änderungen regelmäßig überwacht, getestet und bereitgestellt werden. Dies trägt dazu bei, die Softwarequalität zu verbessern und die Entwicklungsprozesse effizienter zu gestalten.
 
 Der CI-Server, auch als Build-Server bekannt, ist entscheidend für die Implementierung und Verwaltung des gesamten Prozesses. Er fungiert als Verbindungsglied zwischen den einzelnen Phasen der Pipeline, koordiniert automatisierte Aufgaben gemäß Ihrer Geschäftslogik und sammelt sowie liefert Feedback.
@@ -293,7 +295,7 @@ GitHub führt die CI-Tests durch und stellt die Ergebnisse im Pull Request berei
 [19a] [18a]
         
 #### Secrets management
-
+***
 Was sind Secrets?
 "Secrets" sind nicht-menschliche privilegierte Anmeldedaten, die im Wesentlichen als vertrauliche Informationen dienen und als Schlüssel fungieren, um auf geschützte Ressourcen oder sensible Daten in Tools, Anwendungen, Containern und in DevOps- sowie Cloud-nativen Umgebungen zuzugreifen.
 
