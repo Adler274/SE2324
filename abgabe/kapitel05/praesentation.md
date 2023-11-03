@@ -2,155 +2,189 @@ class: center, middle
 
 ## [Software Engineering](../../praesentationen.html)
 
-#### Kapitel x
+#### Kapitel 4
 
-# Kapitelüberschrift
-
-Max Mustermann
+Simon Fedrau, Sascha Hahn
 
 ---
-# Inhalt
+
+### CAMS, CALMS, CALMAS
+***
+CAMS, CAMLS und CALMAS sind konzeptionelle Rahmen für die Integration zwischen Deveop(Softwareentwickler und IT-Opertors)
+CALMS steht dabei für
+* Culture
+* Automation
+* Lean
+* Measurement
+* Agile
+* Sharing
+
+Die beiden anderen sind dabei Vorreiter von CALMAS bei denen die/der Aspekt/Aspekte Agile und Sharing nicht vorhanden sind.
+
+[4b]
+---
+
+### CAMS, CALMS, CALMAS
 ***
 
-1. Einführung
+* **Culture:** Unternehmensweite geltende Werte, Überzeugungen und Haltungen. Beschreiben das Handeln in Entwicklung und Betrieb.
 
-1. Standards
+* **Automation:** Alles was Automatisiert werden kann sollte auch Atomatisiert werden.
+    * Fehler reduzierung, und optimisierung 
 
-1. Softwaremessung
+* **Lean:** Überschuss reduzieren bei einhaltung der gewüschten Ergebnisse.
+    * Meetings veringern, Teams verkleinern, Werkzeuge auf ein Minimum reduzieren
 
-1. Zusammenfassung
+* **Measurement:** Messen der Effizienz und Qualität der Softwareentwicklung, durch Sammeln von Daten um Systeme und Ereignisse seinsehbar und transparent zu gestallten.
 
-1. Quellen
+* **Agile:** Agile Entwicklungsmethoden, wie Scrum, Kanban, XP, etc.
 
+* **Sharing:** Wissen und Informationen Abteilungs übergeifend teilen und weitergeben.
+
+[4b]
 ---
-# Einführung
 
-Softwaresysteme sollen "**_fit for purpose_**" sein.
+### SPACE Framework
+***
+SPACE ist ein framwork um die Effizienz der Softwareentwicklung zu messen und zu verbessern.
+Entwicklerinn dieser ist Nicole Forsgren, welche später nochmal bei dem Thema Dora Metriken vorkommt.
+"SPACE" steht bei für Folgende Aspekte der prduktivität:
 
-- **Effizient**
-- *Zuverlässig*
-- Fertigstellung innerhalb eines Zeit- und Kostenrahmens
-
-Die Techniken des Softwarequalitätsmanagements kommen ursprünglich aus der Fertigungsindustrie.
-
-**Qualitätssicherung** ist die Definition von Prozessen und Standards, die zu qualitativ hochwertigen Produkten führen, und die Einführung dieser Qualitätsprozesse in den Fertigungsprozess.
-
-**Qualitätslenkung** ist die Anwendung dieser Qualitätsprozesse, um Produkte auszusieben, die dem geforderten Qualitätsniveau nicht entsprechen.
-
+[5b]
 ---
-# Einführung
 
-Um die Prozesse in der Softwareentwicklung umzusetzen, stellen die Teams sicher, dass die zuvor festgelegten Standards und Ziele des Unternehmens mit dem Produkt übereinstimmen.
+### SPACE Framework
+***
+* ### Satisfaction and Well-being
+* ### Performance
+* ### Activity
+* ### Communication and Collaboration
+* ### Efficiency and Flow
 
-![:scale 20%](media/image.jpg)
-
-![](media/image.jpg)
-
-
+[5b] 
 ---
-# Standards
 
-Softwarestandards spielen eine wichtige Rolle im Qualitätsmanagement.
+### DevEx Framework
+***
 
-1. Standards kapseln Erfahrungen, die für das Unternehmen von großem Wert sind.
 
-2. Standards bieten einen Rahmen für die Definition, was "Qualität" innerhalb des Softwareentwicklungsprojektes bedeutet.
-
-3. Standards tragen zur Kontinuität bei, sodass alle Entwickler nach denselben Verfahren arbeiten.
 
 ---
 
-# Standards
+### DORA Metriken
+***
+**Def.: Metriken zur Messung der Effizienz bei Softwareentwicklung**
+* Menschen sind komplex, effizienz schwer zu messen
+* DORA Metriken sind ein Versuch, die Effizienz zu messen und 
+durch sie sie zu verbessern
+* DORA Metriken bieten kein nachteil zwischen zwischen
+geschwindigkeit und qualität
 
-Standards müssen sich immer positiv auf die Produktqualität auswirken.
 
-**Produktstandards** sollten dabei so entworfen werden, dass sie kosteneffizient angewendet und geprüft werden können.
-
-**Prozessstandards** sollten die Prozesse definieren, die prüfen, dass die Produktstandards eingehalten werden.  
-
-| Rolle | Aufgabe |
-|:------:|:----------:|
-| **Auftraggeber** | Erteilt den Auftrag und bezahlt das Projekt |
-| **Auftragnehmer** | Nimmt die Anforderungen an das Softwareprodukt entgegen|
-| **Benutzer** | Benutzen die Software. Manchmal mit Auftraggeber identisch |
-| **Manager** | Treffen während des Projekts organisatorische Entscheidungen |
-| **Berater** | Unterstützen den Kunden in der Definition der Anforderungen |
-| **Informatiker** | Definieren und entwickeln Software in verschiedenen Rollen mit unterschiedlichen Aufgaben aufgeteilt|
-
+[3b]
 ---
-# Softwareentwicklung
 
-Entwicklungsmethoden:
+### DORA Metriken
+***
+**Hintergrund:**
+* besten Daten der Praxis der Softwarebereitstellung wurden gesammelt und analysiert
+    * Ergebnisse waren bei weitem die gründlichste Untersuchung der 
+    Softwareentwicklung
+    State of DevOps Report
+* Nicole Forsgren, Jez Humble, Gene Kim entwickeln dadurch ein paar Jahre später die DORA Metriken
+    * man kann damit sicher sagen dass die DORA Metriken State of the Art sind
 
-- _Prüfen von Code, bevor er eingefügt wird:_  
-  Entwickler prüfen den Code ihrer Teammitglieder, bevor der Code in die aktuelle Version eingebracht wird.
+Im Folgenden kommen die Aspekte der DORA Metriken um effiektivität zu meßen
 
-- _Probleme beheben, sobald sie auftreten:_  
-  Probleme sollten sofort behoben werden, wenn sie entdeckt werden, auch wenn der Code von anderen Entwicklern stammt.
-
+[3b]
 ---
-# Softwaremessung
 
-Bei der Softwaremessung geht es darum, Merkmale eines Softwaresystems zu quantifizieren.
+#### Deployment Frequency
+***
+* Wie oft wird Software in Produktion gebracht oder veröffentlicht?
+* Misst die Kosten der Entwicklung in bezug auf Geld aber auch Zeit und Arbeitskraft
+* und auch die Rate in der neue Features veröffentlicht werden
 
-Code block:
-
-```javascript
-function add(a, b)
-  return a + b
-end
-```
-
+[3b]
 ---
-# Markdown
+#### Change Lead Time
+***
+* Wie lange dauert es zwischen dem Beginnen einer Änderung/Feature und der Erfolgreichen Nutzund in der Produktion?
+* Wie bei der Deployment Frequency werden auch hier die Kosten der Entwicklung gemessen
 
-## Paragraph
-
-Paragraph mit **strong**, *italic*, `code`.
-
-Links so [github](https://github.com/) oder so https://github.com/ .
-
-## Tabelle
-
-|ID|Name|Value|
-|--|----|-----|
-| 1|foo |   10|
-| 2|bar |   20|
-
-
+[3b]
 ---
-# Aufzählung
 
-1. Nummer 1
-    - bullet 1
-    - bullet 2
-2. Nummer 2
-    1. child 1
-    2. child 2
-3. Nummer 3
+#### Mean Time to Restore
+***
+* Wie lange dauert es ein Problem zu beheben, bzw. die Software wieder in einen funktionierenden Zustand zu bringen?
 
-## Enumeration 
+* Dieser Aspekt überprüft die Code Qualität, da durch einen sauberen und lesnaren code Fehler deutlich schneller erkannt und behoben werden können.
 
-* A
-* B
-
+[3b]
 ---
-# Zusammenfassung
 
-- Folien werden mit `---` voneinander abgetrennt (Achtung: kein Leerzeichen am Ende)
-- Bilder, Diagramme etc. im `media`-Unterverzeichnis speichern
-- Wird die Datei `remark-latest.min.js` heruntergeladen, können die Folien offline bearbeitet werden. Pfad im `script`-Tag anpassen.
-- [Remark.js](https://remarkjs.com/)
+#### Change Failure Rate
+***
+* Wie groß ist der Anteil an Software Änderungen/Ergänzugen, die später zu einem Problem/Ausfall führen? 
 
+* Auch hier hier wird die Code Qualität überprüft. Die **Change Failure Rate** beschreib nähmlich die Quantiät der ausfälle und die Mean Failure Rate die Qualität/Schwere der Ausfälle.
+
+[3b]
+---
+![](media/DORA Metrics Levels.png)
+
+[3b]
+---
+### Ziel
+***
+Die DORA Metriken sollen die Effizienz der Softwareentwicklung messen 
+und damit auf lange Sicht den Erfolg des Projektes steigern und nicht
+kurzfristig Features um Features zu veröffentlichen. 
+
+**Problem:**
+
+[3b]
+---
+
+class: center
+### Falsch Interpretation
+***
+# Menschen sind dumm
+
+[3b]
+---
+
+### Falsch Interpretation
+* Probleme mit allen Metiek ist jedoch, dass Menschen versuchen werden, sich nur aus Ansicht der Metriken zu verbessern und misinterpretieren die Metriken(Confirmation Bias)
+* **Beispiel:** Staibility kann einfach nur als BugCount gewertet werden
+* oder Throughput als Anzahl der Features.
+
+[3b]
+---
+
+
+## DevSecOps
+### "Shift left"-testing
+### Sicherheitsziele der Kryptographie
+#### Authentizität, Integrität, Verbindlichkeit, Vertraulichkeit, Verfügbarkeit, Autorisierung
+### Threat Modeling (Bedrohungsmodellierung)
+#### STRIDE
 ---
 class: center, middle
 
 # Fragen?
 
 ---
+
+
+
+---
+
 # Quellen
 ***
-
-- Kitchenham, B. (1990). Software Development Cost Models. 487-517.
-
-- Chidamber, S., and C. Kemerer. (1994). A Metrics Suite for Object-Oriented Design. 476-493.
+[1b] :https://chat.openai.com/
+[2b] :https://blog.up bound.io/developers-and-operators-complicated-relationship
+[3b] :https://www.youtube.com/watch?v=hbeyCECbLhk
+[4b] : https://www.computerweekly.com/de/definition/CALMS#:~:text=CALMS%20ist%20ein%20konzeptioneller%20Rahmen,)%20und%20Sharing%20(Austausch).
+[5b] :https://www.swarmia.com/blog/space-framework/?utm_term=space%20framework&utm_campaign=SRH-SPACE-EU-EN&utm_source=adwords&utm_medium=ppc&hsa_acc=6644081770&hsa_cam=19643106124&hsa_grp=145044312719&hsa_ad=646821562962&hsa_src=g&hsa_tgt=kwd-567479290791&hsa_kw=space%20framework&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=Cj0KCQjwtJKqBhCaARIsAN_yS_lvUSBQFNwT_lFYrpV_pLv4g7HcPFGqhDenxk8YrhUgQVOY5uuql88aAvDAEALw_wcB
