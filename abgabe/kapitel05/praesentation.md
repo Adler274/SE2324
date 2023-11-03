@@ -369,6 +369,7 @@ Schritte im Secrets Management:
 * Regelmäßige Rotation von Secrets und Anmeldedaten.
 * Automatisierung und konsistente Zugriffsrichtlinien.
 * Entfernung von Secrets aus Code und Konfigurationsdateien.
+
 [20a]
 ---
 # Zusammenfassung
