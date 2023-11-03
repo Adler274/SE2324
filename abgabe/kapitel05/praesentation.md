@@ -130,10 +130,9 @@ Das große Ziel von DevOps ist die Schaffung eines wiederholbaren Systems, das A
 * DevOps-Pipelines und Automation sind zentrale Konzepte in der DevOps-Methodik, die darauf abzielen, Softwareentwicklung und -bereitstellung zu automatisieren und zu optimieren. 
 * Eine DevOps-Pipeline ist eine Reihe von Automatisierungsprozessen, die den gesamten Lebenszyklus der Softwareentwicklung und -bereitstellung abdecken
 
-* Continuous Integration, Delivery und Deployment stellen Schlüsselstellen in der Pipeline dar
+* Continuous Integration, Delivery und Deployment stellen Schlüsselstellen in der Pipeline dar.
 
-![:scale 60%](media\devops_circle.png)
-
+![:scale 50%](media\devops_circle.png)
 [9a]
 ---
 ### Continuous Integration
@@ -147,7 +146,7 @@ Das große Ziel von DevOps ist die Schaffung eines wiederholbaren Systems, das A
 
 * Effiziente Problemlösung: Frühe Integration erleichtert die frühzeitige Fehlererkennung und effiziente Problembehebung.
 
-![:scale 60%](media\Coninous Inegration.png)
+![:scale 55%](media\Coninous Inegration.png)
 
 
 [10a]
@@ -258,9 +257,10 @@ Das große Ziel von DevOps ist die Schaffung eines wiederholbaren Systems, das A
 * Sofortiges Rollback: Schnelle Rückkehr zur alten Version bei Problemen.
 * Umgebungstrennung: Minimiert Risiko während der Bereitstellung.
 
-![:scale 60%](media\BlueGreenDeployment.png)
-
 [14a] [15a]
+
+![:scale 50%](media\BlueGreenDeployment.png)
+
 ---
 ### Canary
 ***
@@ -369,7 +369,6 @@ Schritte im Secrets Management:
 * Regelmäßige Rotation von Secrets und Anmeldedaten.
 * Automatisierung und konsistente Zugriffsrichtlinien.
 * Entfernung von Secrets aus Code und Konfigurationsdateien.
-
 [20a]
 ---
 # Zusammenfassung
