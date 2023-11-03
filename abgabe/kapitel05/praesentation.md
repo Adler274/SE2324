@@ -30,17 +30,22 @@ Sascha Hahn,Simon Fedrau
 
 DevOps ist eine Sammlung unterschiedlicher technischer Methoden und eine Kultur zur Zusammenarbeit zwischen Softwareentwicklung und IT-Betrieb.
 
+[1a] [2a]
 ---
 ### Kultur
 ***
 
 ![:scale 70%](media\DevOps_Culture.jpg)
+
+[3a] [4a] 
 ---
 ### Ziele
 ***
 Das große Ziel von DevOps ist die Schaffung eines wiederholbaren Systems, das Automatisierung nutzt und kontinuierliche Verbesserungen ermöglicht, um qualitativ hochwertige Produkte schnell und einfach zu liefern.
 
 ![:scale 60%](media\Titelbild-devops-tools-definition-best-practice.png)
+
+ [6a]
 ---
 ### Vorteile von DevOps
 ***
@@ -61,6 +66,8 @@ Das große Ziel von DevOps ist die Schaffung eines wiederholbaren Systems, das A
 
  - Anpassungsfähigkeit und agile Priorisierung            
 
+
+[5a]
 ---
 ### Praktiken
 ***
@@ -99,6 +106,7 @@ Das große Ziel von DevOps ist die Schaffung eines wiederholbaren Systems, das A
 
 * Anpassungsfähigkeit: Die Fähigkeit, sich an neue Technologien und Methoden anzupassen, ist entscheidend.
 
+[7a]
 ---
 ### Rollen 
 ***
@@ -114,6 +122,7 @@ Das große Ziel von DevOps ist die Schaffung eines wiederholbaren Systems, das A
 
 * UX-Ingenieur
 
+[8a]
 ---
 
 ### DevOps Pipelines und Automation
@@ -125,6 +134,7 @@ Das große Ziel von DevOps ist die Schaffung eines wiederholbaren Systems, das A
 
 ![:scale 60%](media\devops_circle.png)
 
+[9a]
 ---
 ### Continuous Integration
 ***
@@ -139,6 +149,8 @@ Das große Ziel von DevOps ist die Schaffung eines wiederholbaren Systems, das A
 
 ![:scale 60%](media\Coninous Inegration.png)
 
+
+[10a]
 ---
 ### Continuous Delivery
 ***
@@ -162,6 +174,8 @@ Das große Ziel von DevOps ist die Schaffung eines wiederholbaren Systems, das A
 
 * Steigerndes Vertrauen in Produktqualität
 
+
+[10a]
 ---
 
 ### Continuous Deployment
@@ -178,6 +192,7 @@ Das große Ziel von DevOps ist die Schaffung eines wiederholbaren Systems, das A
 * Früher Einblick in das Verhalten von Änderungen in der realen Welt.
 * Keine Kompromisse bei der Qualität.
 
+[10a]
 ---
 ### Releasing vs Deployment
 ***
@@ -200,6 +215,8 @@ Das große Ziel von DevOps ist die Schaffung eines wiederholbaren Systems, das A
 * Release ist eine geschäftliche Entscheidung.
 * Beeinflusst Planung, Koordination und Kommunikation in DevOps-Umgebungen.
 
+
+[11a] [12a]
 ---
 
 ### Semantic Versioning
@@ -212,6 +229,7 @@ Das große Ziel von DevOps ist die Schaffung eines wiederholbaren Systems, das A
 
 ![:scale 70%](media\semver.png)
 
+[13a]
 ---
 
 ### Deployment strategies
@@ -225,6 +243,7 @@ Das große Ziel von DevOps ist die Schaffung eines wiederholbaren Systems, das A
 
 * Beeinflussen Ausfallzeiten und Betriebskosten je nach spezifischen Anforderungen und Prioritäten.
 
+[14a]
 ---
 ### Blue-Green( Rot/Schwarz)
 
@@ -241,6 +260,7 @@ Das große Ziel von DevOps ist die Schaffung eines wiederholbaren Systems, das A
 
 ![:scale 60%](media\BlueGreenDeployment.png)
 
+[14a] [15a]
 ---
 ### Canary
 ***
@@ -256,6 +276,8 @@ Das große Ziel von DevOps ist die Schaffung eines wiederholbaren Systems, das A
 * Keine Ausfallzeiten: Live-Produktionstraffic ohne Unterbrechungen umleiten.
 
 ![:scale 30%](media\canary.jpeg)
+
+[14a] [15a]
 ---
 ### Feature flags(Feature Toggles)
 ***
@@ -280,6 +302,8 @@ else{
     }
 
 ```
+
+[16a]
 ---
 ### CI/CD-Tools
 ***
@@ -301,6 +325,7 @@ else{
 
 * AWS CodePipeline
 
+[17a]
 ---
 
 ### CI Server
@@ -321,6 +346,7 @@ GitHub Actions:
 * Integration in GitHub-Ereignisse (z.B., Code-Push, Webhooks).
 * Ergebnisse der CI-Tests direkt in Pull Requests sichtbar.
 
+[18a] [19a]
 ---
 ### Secrets management
 ***
@@ -344,6 +370,7 @@ Schritte im Secrets Management:
 * Automatisierung und konsistente Zugriffsrichtlinien.
 * Entfernung von Secrets aus Code und Konfigurationsdateien.
 
+[20a]
 ---
 # Zusammenfassung
 ***

@@ -32,6 +32,7 @@ In den meisten Fällen gelingt dies am besten, wenn bestehende Abteilungsbarrier
 Auf technischer Ebene erfordert DevOps ein starkes Engagement für die Automatisierung von Prozessen, die es ermöglicht, Projekte nahtlos innerhalb und zwischen den Arbeitsabläufen zu bewegen. Zusätzlich sind kontinuierliches Feedback und die Durchführung von Messungen unerlässlich. Diese Elemente ermöglichen es den Teams, ihre Entwicklungszyklen fortlaufend zu beschleunigen und die Qualität sowie Leistung der Software kontinuierlich zu verbessern.
 
 [3a] [4a]
+
 **Ziele**
 
 Das große Ziel einer DevOps-Pipeline ist die Schaffung eines wiederholbaren Systems, das die Automatisierung nutzt und kontinuierliche Verbesserungen ermöglicht, um qualitativ hochwertige Produkte schnell und einfach zu liefern.
