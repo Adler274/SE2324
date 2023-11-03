@@ -68,6 +68,17 @@ Das große Ziel von DevOps ist die Schaffung eines wiederholbaren Systems, das A
 * DevOps Praktiken sind meist eine Reihe von Aktionen, die in einer bestimmten Reiehnfolge ausgeführt werden.
 * DevOps Praktiken sind dafür gemacht, bestimmte Phasen innerhalb eines Prozesses zu beschleunigen
 
+* Erstellen von Code-Repositories
+* Quellcode-Kontrolle
+* Code-Validierungstests
+* Erstellung von Softwarepaketen
+* Kontinuierliche Tests
+* Kontinuierliche Integration (CI)
+* Kontinuierliche Delivery
+* Kontinuierliche Deployment
+
+[23a]
+
 ---
 ### DevOps Teams
 ***
@@ -384,3 +395,4 @@ class: center, middle
 [20a] : https://www.cyberark.com/de/what-is/secrets-management/#:~:text=Was%20ist%20Secrets%2DManagement%3F,Sicherheitsrichtlinien%20f%C3%BCr%20nicht%20menschliche%20Identit%C3%A4ten.
 [21a] : https://www.dev-insider.de/die-ideale-devops-teamstruktur-a-862217/
 [22a] : https://chat.openai.com/c/9ed09955-46c1-45b9-b032-ec8ee9756bab frage: was sind gängige DevOps team Strukturen?
+[23a] : https://kruschecompany.com/de/devops-guide/#DevOps_als_Prozesse_und_Praktiken
