@@ -337,3 +337,31 @@ Entfernung von Secrets aus Code, Konfigurationsdateien und anderen ungeschützte
 [21a] : https://www.dev-insider.de/die-ideale-devops-teamstruktur-a-862217/
 [22a] : https://chat.openai.com/c/9ed09955-46c1-45b9-b032-ec8ee9756bab frage: was sind gängige DevOps team Strukturen?
 [23a] : https://kruschecompany.com/de/devops-guide/#DevOps_als_Prozesse_und_Praktiken
+**Autor:** Simon Fedrau, Sascha Hahn
+
+## Lernziele
+
+
+### CAMS, CALMS, CALMAS
+
+
+### SPACE Framework
+
+
+### DevEx Framework
+### DORA Metriken
+#### Deployment Frequency
+#### Change Lead Time
+#### Change Failure Rate
+#### Mean Time to Restore
+## DevSecOps
+### "Shift left"-testing
+### Sicherheitsziele der Kryptographie
+#### Authentizität, Integrität, Verbindlichkeit, Vertraulichkeit, Verfügbarkeit, Autorisierung
+### Threat Modeling (Bedrohungsmodellierung)
+#### STRIDE
+
+## Referenzen
+
+[1b] :https://chat.openai.com/
+[2b] :https://blog.upbound.io/developers-and-operators-complicated-relationship
