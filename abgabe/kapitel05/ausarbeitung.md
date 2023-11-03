@@ -1,11 +1,13 @@
 # DevOps
 
-**Autor:** Simon Fedrau
+**Autor:** Sascha Hahn, Simon Fedrau
 
 
 ## Lernziele
 
-hier kommen die Lernziele hin
+* Warum DevOps so förderlich für die Softwareentwicklung ist
+* Was eine DevOps Pipeline ist
+* Was für Deployment strategies es gibt
 
 
 
@@ -300,12 +302,8 @@ Entfernung von Secrets aus Code, Konfigurationsdateien und anderen ungeschützte
 
 [20a]
 
-### Bilder
-
-![](media/image.jpg)
-
 ## Referenzen
-
+***
 [1a]  : https://de.wikipedia.org/wiki/DevOps
 [2a]  : https://www.atlassian.com/de/devops  
 [3a]  : https://www.ibm.com/de-de/topics/devops
