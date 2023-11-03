@@ -598,11 +598,17 @@ STRIDE ist ein Model zur Klassifizierung von folgenden Bedrohungen:
 * Feature flags sind im Grunde Schalter die einen Code freischalten/einschalten 
 * Ein CI-Server ist eine Software die Builds und Tests verwaltet
 * Secrets Management ist das Verwalten von sensiblen Informationen(Passwörter, Zugangsdaten, etc...)
+
 ---
+
 # Zusammenfassung
 ***
-
-
+* CALMS ist ein konzeptioneller Rahmen für die Integration zwischen Deveop(Softwareentwickler und IT-Opertors)
+* SPACE ist ein framwork um die Effizienz der Softwareentwicklung zu messen und zu verbessern.
+* DevEx Framework steht für Developer Experience und umfasst die wahrnehmung der Entwickler.
+* DORA Metriken sind ein Versuch, die Effizienz zu messen und durch sie sie zu verbessern.
+* DevSecOps ist eine Praxis bei der man Sicherheits Test in jeden Entwicklungsschritt einbaut und früher in der Enticklung integriert.
+* Thread Modeling ist eine Prozess bei dem potentielle Bedrohungen für ein System indentifiziert und bewertet wird.
 
 ---
 class: center, middle
