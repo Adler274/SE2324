@@ -66,9 +66,21 @@ Entwicklerinn dieser ist Nicole Forsgren, welche später nochmal bei dem Thema D
 
 ### DevEx Framework
 ***
+Das DevEx Framework steht für **Developer Experience** und umfasst die wahrnehmung der Entwickler bezüglich was sie über ihre Arbeit fühlen, denken und wie sie sie werten.
+DevEx besteht aus 3 Kern Punkten:
 
+* **Feedback Loops:** Schnelles Feedback, um die Effizienz zu steigern.
+    * verzögerung in veröffentlichung von Feature vermeiden
+    * reibungslose und schnelle Arbeit durch Kommunikation
 
+* **Cognitive Load:** mit der schnellen Entwicklung in der SoftwareEntwicklung wächst die komplexität und kognitive Belsatung der Entwickler
+    * höhere Belastung führt zu mehr Fehlern und langsamerer Entwicklung
 
+* **Flow State:** Mentaler Zustand in dem einer Person vollständig auf die Aktivität konzentriet ist.
+    * vermeidungen umgehen wie Unterbrechungen und Meetings
+    * unterstütung des Zustands durch Atomation und klare Ziele
+
+[6b]
 ---
 
 ### DORA Metriken
@@ -81,7 +93,7 @@ durch sie sie zu verbessern
 geschwindigkeit und qualität
 
 
-[3b]
+[3b, 1b]
 ---
 
 ### DORA Metriken
@@ -188,3 +200,4 @@ class: center, middle
 [3b] :https://www.youtube.com/watch?v=hbeyCECbLhk
 [4b] : https://www.computerweekly.com/de/definition/CALMS#:~:text=CALMS%20ist%20ein%20konzeptioneller%20Rahmen,)%20und%20Sharing%20(Austausch).
 [5b] :https://www.swarmia.com/blog/space-framework/?utm_term=space%20framework&utm_campaign=SRH-SPACE-EU-EN&utm_source=adwords&utm_medium=ppc&hsa_acc=6644081770&hsa_cam=19643106124&hsa_grp=145044312719&hsa_ad=646821562962&hsa_src=g&hsa_tgt=kwd-567479290791&hsa_kw=space%20framework&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=Cj0KCQjwtJKqBhCaARIsAN_yS_lvUSBQFNwT_lFYrpV_pLv4g7HcPFGqhDenxk8YrhUgQVOY5uuql88aAvDAEALw_wcB
+[6b] :https://queue.acm.org/detail.cfm?id=3595878
