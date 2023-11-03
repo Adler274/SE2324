@@ -47,7 +47,8 @@ Durch die Implementierung der DevOps-Methode können Teams ihre Produktivität s
 
 **Praktiken**
 
-MUSS NOCH GEMACHT WERDEN
+* DevOps Praktiken sind meist eine Reihe von Aktionen, die in einer bestimmten Reiehnfolge ausgeführt werden.
+* DevOps Praktiken sind dafür gemacht, bestimmte Phasen innerhalb eines Prozesses zu beschleunigen
 
 
 

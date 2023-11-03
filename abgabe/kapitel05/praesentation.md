@@ -38,14 +38,13 @@ DevOps ist eine Sammlung unterschiedlicher technischer Methoden und eine Kultur 
 ---
 ### Ziele
 ***
-Das große Ziel einer DevOps-Pipeline ist die Schaffung eines wiederholbaren Systems, das die Automatisierung nutzt und kontinuierliche Verbesserungen ermöglicht, um qualitativ hochwertige Produkte schnell und einfach zu liefern.
+Das große Ziel von DevOps ist die Schaffung eines wiederholbaren Systems, das Automatisierung nutzt und kontinuierliche Verbesserungen ermöglicht, um qualitativ hochwertige Produkte schnell und einfach zu liefern.
 
 ![:scale 60%](media\Titelbild-devops-tools-definition-best-practice.png)
 ---
 ### Vorteile von DevOps
 ***
 
-                                  
  - Verstärkte Zusammenarbeit und Vertrauensbildung  
 
  - Förderung klügerer und transparenterer Arbeitsweisen  
@@ -61,6 +60,13 @@ Das große Ziel einer DevOps-Pipeline ist die Schaffung eines wiederholbaren Sys
  - Verkürzter Feedbackprozess für schnellere Problembehebung 
 
  - Anpassungsfähigkeit und agile Priorisierung            
+
+---
+### Praktiken
+***
+
+* DevOps Praktiken sind meist eine Reihe von Aktionen, die in einer bestimmten Reiehnfolge ausgeführt werden.
+* DevOps Praktiken sind dafür gemacht, bestimmte Phasen innerhalb eines Prozesses zu beschleunigen
 
 ---
 ### DevOps Teams
@@ -120,6 +126,8 @@ Das große Ziel einer DevOps-Pipeline ist die Schaffung eines wiederholbaren Sys
 
 * Effiziente Problemlösung: Frühe Integration erleichtert die frühzeitige Fehlererkennung und effiziente Problembehebung.
 
+![:scale 60%](media\Coninous Inegration.png)
+
 ---
 ### Continuous Delivery
 ***
@@ -127,17 +135,20 @@ Das große Ziel einer DevOps-Pipeline ist die Schaffung eines wiederholbaren Sys
 **Was ist Continuous Delivery?**
 
 * Automatisiert Freigabeprozesse
+
 * Teamweit geteilte Verantwortung
 
 **Vorteile von Continuous Delivery**
 
 * Besseres Verständnis für geschäftliche Anforderungen
+
 * Integration von Softwareentwicklungsmethoden
 * Automatisierung und Stabilität
 
 **CD-Prozess**
 
 * Automatische Bereitstellung
+
 * Steigerndes Vertrauen in Produktqualität
 
 ---
@@ -147,10 +158,12 @@ Das große Ziel einer DevOps-Pipeline ist die Schaffung eines wiederholbaren Sys
 **Was ist Continuous Deployment?**
 
 * Automatische Übernahme von Builds in die Produktion.
+
 * Änderungen gelangen sofort zur Benutzergemeinschaft nach erfolgreichen Tests.
 
 **Vorteile von Continuous Deployment**
 * Verkürzte Feedback-Schleife.
+
 * Früher Einblick in das Verhalten von Änderungen in der realen Welt.
 * Keine Kompromisse bei der Qualität.
 
@@ -322,6 +335,22 @@ Schritte im Secrets Management:
 
 ---
 # Zusammenfassung
+***
+* DevOps fördert die Produktivität 
+* Continous Integration setzt darauf frühzeitig den Code zu intigrieren
+* Continuous Delivery stellt durch Automatisierung den Code jederzeit bereit
+* Continuous Deployment übergibt automatisiert den Code in die Produktionsumgebung
+* Korrekte Versionierung hilft uns allen
+* Blue-Green Deployment betreibt zwei identische Produktionsumgebungen, wobei eine als Rollback genutzt werden kann
+* Canary Deployment ist die Auslieferung von Features an eine begrenzte Gruppe
+* Feature flags sind im Grunde Schalter die einen Code freischalten/einschalten 
+* Ein CI-Server ist eine Software die Builds und Tests verwaltet
+* Secrets Management ist das Verwalten von sensiblen Informationen(Passwörter, Zugangsdaten, etc...)
+---
+# Zusammenfassung
+***
+
+
 
 
 ---
