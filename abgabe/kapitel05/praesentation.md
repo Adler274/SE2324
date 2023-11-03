@@ -423,6 +423,8 @@ DevEx besteht aus 3 Kern Punkten:
     * vermeidungen umgehen wie Unterbrechungen und Meetings
     * unterstütung des Zustands durch Atomation und klare Ziele
 
+
+
 [6b]
 ---
 

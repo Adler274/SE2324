@@ -312,6 +312,138 @@ Entfernung von Secrets aus Code, Konfigurationsdateien und anderen ungeschützte
 
 [20a]
 
+### CAMS, CALMS, CALMAS
+CAMS, CAMLS und CALMAS sind konzeptionelle Rahmen, die sich auf die Integration zwischen Entwicklern (Softwareentwicklern) und IT-Betriebsteams (IT-Operatoren) in der Softwareentwicklung konzentrieren.
+CALMAS ist eine erweiterte Version dieser Rahmen, die sechs Schlüsselaspekte hervorhebt:
+Kultur (Culture), Automatisierung (Automation), Schlankheit (Lean), Messung (Measurement), Agilität (Agile) und Teilen (Sharing). Diese Aspekte spielen eine entscheidende Rolle bei der Förderung der Zusammenarbeit, der Effizienz und der Qualität in der Softwareentwicklung.
+Während CAMS und CAMLS wichtige Grundlagen bieten, hebt CALMAS die Bedeutung von Agilität und Wissensaustausch hervor, um die Integration zwischen Entwicklung und Betrieb zu optimieren.
+Dieser ganzheitliche Ansatz zielt darauf ab, die Entwicklererfahrung zu verbessern und den Wertstrom in der Softwareentwicklung zu optimieren.
+
+* **Culture:** Unternehmensweite geltende Werte, Überzeugungen und Haltungen. Beschreiben das Handeln in Entwicklung und Betrieb.
+
+* **Automation:** Alles was Automatisiert werden kann sollte auch Atomatisiert werden.
+    * Fehler reduzierung, und optimisierung 
+
+* **Lean:** Überschuss reduzieren bei einhaltung der gewüschten Ergebnisse.
+    * Meetings veringern, Teams verkleinern, Werkzeuge auf ein Minimum reduzieren
+
+* **Measurement:** Messen der Effizienz und Qualität der Softwareentwicklung, durch Sammeln von Daten um Systeme und Ereignisse seinsehbar und transparent zu gestallten.
+
+* **Agile:** Agile Entwicklungsmethoden, wie Scrum, Kanban, XP, etc.
+
+* **Sharing:** Wissen und Informationen Abteilungs übergeifend teilen und weitergeben.
+
+### SPACE Framework
+"SPACE" ist ein Framework zur Verbesserung der Softwareentwicklungseffizienz.
+Es wurde von Nicole Forsgren entwickelt, die später bei den DORA-Metriken erneut auftaucht.
+"SPACE" steht für fünf Schlüsselaspekte der Produktivität: Zufriedenheit und Wohlbefinden, Leistung, Aktivität, Kommunikation und Zusammenarbeit, sowie Effizienz und Flow.
+Dieses Framework bietet eine umfassende Perspektive auf die Produktivität in der Softwareentwicklung und zielt darauf ab, Verbesserungen in diesen Bereichen zu fördern.
+
+### DevEx Framework
+Das DevEx Framework, abgekürzt für "Developer Experience" (Entwicklererfahrung), dreht sich um die Wahrnehmung der Entwickler hinsichtlich dessen, wie sie sich fühlen, was sie denken und wie sie ihre Arbeit bewerten.
+DevEx umfasst drei Kernpunkte:
+
+Feedback-Loops: Schnelles Feedback ist entscheidend, um die Effizienz zu steigern.
+Dies beinhaltet die Vermeidung von Verzögerungen bei der Veröffentlichung von Funktionen und die Förderung einer reibungslosen und schnellen Arbeitsweise durch effektive Kommunikation.
+
+Cognitive Load: Mit der raschen Entwicklung in der Softwareentwicklung ist die Komplexität und die kognitive Belastung der Entwickler gestiegen.
+Eine höhere kognitive Belastung führt zu mehr Fehlern und einer langsameren Entwicklung.
+
+Flow-State: Dies ist ein mentaler Zustand, in dem eine Person vollständig in eine Aktivität vertieft ist.
+Dies umfasst die Minimierung von Unterbrechungen und übermäßigen Besprechungen sowie die Unterstützung dieses Zustands durch Automatisierung und klare Zielsetzungen.
+
+### DORA Metriken
+Die DORA-Metriken sind Metriken zur Messung der Softwareentwicklungseffizienz.
+Menschen sind sehr aber sehr komplex, daher ist es schwierig, die Effizienz zu messen.
+DORA-Metriken sind ein Versuch, die Effizienz zu messen und durch sie zu verbessern. Sie bieten dabei keinen Nachteil zwischen Software  Geschwindigkeit und Qualität.
+
+
+Die DORA-Metriken sind enstanden, durch die sammlung und analyse von Daten der Praktiken der Softwarebereitstellung.
+Die Ergebisse dieser Analysen waren dabei die bei weitem gründlichste Untersuchung der Effinzienz und Qualität in der Softwareentwicklung.
+Dies waren die State of DevOps Reports.
+Ein paar Jahre später entwickelten Nicole Forsgren, Jez Humble und Gene Kim die DORA Metriken.
+Durch die State of DevOps Reports kann man sicher sagen dass die DORA Metriken State of the Art sind.
+Die DORA Metriken sind durch Folgende Aspekte charakterisiert:
+
+#### Deployment Frequency
+Deplyment Frequency ist ein Indikator für die Geschwindigkeit der Softwareentwicklung.
+Es misst die Kosten der Entwicklung in bezug auf Geld aber auch Zeit und Arbeitskraft.
+Besonders wird aber damit die Rate in der neue Features veröffentlicht werden gemessen.
+
+#### Change Lead Time
+Die Change Lead Time auch ein Indikator für die Geschwindigkeit der Softwareentwicklung.
+Es beinhlatet die Zeit zwischen dem Beginn einer Änderung und der erfolgreichen Nutzung in der Produktion.
+Auch her geht es um die Kosten der Entwicklung.
+
+#### Mean Time to Restore
+Die Mean Time to Restore gibt an wie lange es dauert ein Problem zu beheben, bzw. die Software wieder in einen funktionierenden Zustand zu bringen.
+Dieser Aspekt überprüft die Code Qualität, da durch einen sauberen und lesnaren code Fehler deutlich schneller erkannt und behoben werden können.
+
+#### Change Failure Rate
+Die Change Failure Rate ist ein auch Indikator für die Qualität der Softwareentwicklung.
+Sie misst die Anzahl der Änderungen/Features, die zu einem Problem oder Ausfall führen.
+Die Change Failure Rate beschreibt somit die Quantität der Ausfälle, während die Mean Failure die Qualität/Schwere der Ausfälle beschreibt.
+
+### Ziel
+Die DORA Metriken sollen die Effizienz der Softwareentwicklung messen 
+und damit auf lange Sicht den Erfolg des Projektes steigern und nicht kurzfristig Features um Features zu veröffentlichen.
+
+### Falsche Interpretation
+Die DORA Metriken werden oft falsch interpretiert, da der Mensch dazu neigt sich nur auf die Bewertung zu konzentrieren und verliert, damit das eigenetliche Ziel aus den Augen.
+Zum Beispiel gibt es Fälle in dennen Entwickler die Change Failure Rate einfach nur als BugCount gesehen haben und diesen dann einfach nur reduziert haben, indem die nur die wichtigsten Bugs bearbeitet wurden.
+
+## DevSecOps
+* DevSecOps steht für Development, Security und Operations.
+* DevSecOps ist eine Praxis bei der man Sicherheits Test in jeden Entwicklungsschritt einbaut.
+* fördert Zusammenarbeit zwischen Entwicklern, Sicherheitsspezialisten und Betriebsteams zu fördern.
+* Sicherheit wird hier zu einem früheren Zeitpunkt in den Entwicklungsprozess integriert.
+
+DevSecOps steht für Development, Security und Operations. Es ist eine Praxis, die darauf abzielt, Sicherheit in den gesamten Lebenszyklus der Anwendungsentwicklung zu integrieren. DevSecOps fördert die Zusammenarbeit zwischen Entwicklern, Sicherheitsspezialisten und Betriebsteams, um die Sicherheit zu verbessern. Es ist eine Erweiterung von DevOps, die Sicherheit zu einem früheren Zeitpunkt in den Entwicklungsprozess integriert.
+
+### "Shift left"-testing
+Shift Left Testing ist eine der Methoden von DevSecOps.
+Entwickler überprüfen ihre Software auf Sicherheitslücken, bevor sie in die Produktion geht. Das Antipatter dazu wäre "Shift right"-testing, bei dem die Software erst in der Produktion auf Sicherheitslücken überprüft wird oder schlimmer dass die Kunden die Sicherheitslücken erst entdecken.
+
+### Sicherheitsziele der Kryptographie
+Sicherheitsziele sind im Allgemeinene Richtilinien an ein System, um schtützenswerte Güter zu schützen.
+In der Computersicherheit sind das die Vertraulichkeit, Integrität und Verfügbarkeit von Daten.
+Gefährdung dieser geschieht meist bei der übertragung von Daten.
+Für die Meisten dieser Ziele schafft Kryptographie abhilfe.
+
+#### Authentizität, Integrität, Verbindlichkeit, Zurechenbarkeit, Vertraulichkeit, Verfügbarkeit
+***
+* **Authentizität:** Echtheit, Überprüfbarkeit und Vertrauenswürdigkeit von Daten
+* **Integrität:** Daten sind unverändert und unverfälscht
+* **Verbindlichkeit:** durchgeführte Handlungen können nicht abgestritten werden können. z.b. bei elekrtonischem Abschulss eines Vertrages(Signatur)
+* **Zurechenbarkeit:** Handlungen müssen eine Person zugerechnet werden können
+* **Vertraulichkeit:** Daten dürfen nur von Autorisitirten Personen eingesehen und verändert werden.
+* **Verfügbarkeit:** Vermeidung von Systemausfällen, Zugriff auf Daten muss gewährleistet sein.
+
+Sicherheitsziele können in einge unter Katogorien eingeteilt werden.
+
+* **Authentizität:** Echtheit, Überprüfbarkeit und Vertrauenswürdigkeit von Daten
+* **Integrität:** Daten sind unverändert und unverfälscht
+* **Verbindlichkeit:** durchgeführte Handlungen können nicht abgestritten werden können. z.b. bei elekrtonischem Abschulss eines Vertrages(Signatur)
+* **Zurechenbarkeit:** Handlungen müssen eine Person zugerechnet werden können
+* **Vertraulichkeit:** Daten dürfen nur von Autorisitirten Personen eingesehen und verändert werden.
+* **Verfügbarkeit:** Vermeidung von Systemausfällen, Zugriff auf Daten muss gewährleistet sein.
+
+### Threat Modeling (Bedrohungsmodellierung)
+Bedrohungmodellierung ist eine Prozess bei dem potentielle Bedrohungen für ein System indentifiziert und bewertet wird.
+Auch das Fehlen von entsprechender Schutmaßnahmen wird dabei berücksichtigt.
+Gegenmanßnahmen werden hiernach priorisiert und implementiert.
+
+#### STRIDE
+Einer der Mothden zur Bedrohungsmodellierung ist STRIDE.
+STRIDE ist ein Model zur Klassifizierung von folgenden Bedrohungen Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service und Elevation of Privilege.
+
+* **Spoofing:** Fälschung von Identitäten. Angriff auf Accont eines anderen Benutzers oder eigenene Identität fälschen. 
+* **Tampering:** Veränderung von Daten in einer Datenbank oder im Netzwerkverkehr.
+* **Repudiation:** Verschleiern von bösartigen Handlungen in einem System.
+* **Information Disclosure:** Unbefugter Zugriff auf Daten.
+* **Denial of Service:** Verhindern der Verfügbarkeit eines Systems, durch zum Beispiel überlastung(eher bekannt als DDos Attacke)
+* **Elevation of Privilege:** Unerlaubte erweiterung von Zufgriffsrechten.
+
 ## Referenzen
 ***
 [1a]  : https://de.wikipedia.org/wiki/DevOps
@@ -337,31 +469,15 @@ Entfernung von Secrets aus Code, Konfigurationsdateien und anderen ungeschützte
 [21a] : https://www.dev-insider.de/die-ideale-devops-teamstruktur-a-862217/
 [22a] : https://chat.openai.com/c/9ed09955-46c1-45b9-b032-ec8ee9756bab frage: was sind gängige DevOps team Strukturen?
 [23a] : https://kruschecompany.com/de/devops-guide/#DevOps_als_Prozesse_und_Praktiken
-**Autor:** Simon Fedrau, Sascha Hahn
-
-## Lernziele
-
-
-### CAMS, CALMS, CALMAS
-
-
-### SPACE Framework
-
-
-### DevEx Framework
-### DORA Metriken
-#### Deployment Frequency
-#### Change Lead Time
-#### Change Failure Rate
-#### Mean Time to Restore
-## DevSecOps
-### "Shift left"-testing
-### Sicherheitsziele der Kryptographie
-#### Authentizität, Integrität, Verbindlichkeit, Vertraulichkeit, Verfügbarkeit, Autorisierung
-### Threat Modeling (Bedrohungsmodellierung)
-#### STRIDE
-
-## Referenzen
 
 [1b] :https://chat.openai.com/
-[2b] :https://blog.upbound.io/developers-and-operators-complicated-relationship
+[2b] :https://blog.up bound.io/developers-and-operators-complicated-relationship
+[3b] :https://www.youtube.com/watch?v=hbeyCECbLhk
+[4b] : https://www.computerweekly.com/de/definition/CALMS#:~:text=CALMS%20ist%20ein%20konzeptioneller%20Rahmen,)%20und%20Sharing%20(Austausch).
+[5b] :https://www.swarmia.com/blog/space-framework/?utm_term=space%20framework&utm_campaign=SRH-SPACE-EU-EN&utm_source=adwords&utm_medium=ppc&hsa_acc=6644081770&hsa_cam=19643106124&hsa_grp=145044312719&hsa_ad=646821562962&hsa_src=g&hsa_tgt=kwd-567479290791&hsa_kw=space%20framework&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=Cj0KCQjwtJKqBhCaARIsAN_yS_lvUSBQFNwT_lFYrpV_pLv4g7HcPFGqhDenxk8YrhUgQVOY5uuql88aAvDAEALw_wcB
+[6b] :https://queue.acm.org/detail.cfm?id=3595878
+[7b] :https://aws.amazon.com/de/what-is/devsecops/#:~:text=building%20the%20software.-,What%20does%20DevSecOps%20stand%20for%3F,they%20are%20building%20software%20applications.
+[8b] :https://www.identible.de/glossar/sicherheitsziele.html
+[9b] :https://en.wikipedia.org/wiki/Threat_model
+[10b] :https://de.wikipedia.org/wiki/STRIDE_(IT-Sicherheit)
+[11b] :https://geballte-sicherheit.de/threat-modelling-bedrohungsanalyse-4-teil-ermittlung-und-einstufung-von-bedrohungen/
