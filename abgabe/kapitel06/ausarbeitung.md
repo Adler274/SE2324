@@ -5,10 +5,12 @@
 ## Lernziele
 
 
+
+
+
+
 ## Arten von Softwarelogik
 ***
-
-
 
 ### Domänenlogik (Domain logic)
 
@@ -104,6 +106,7 @@ Ereignisgesteuerte Logik: In ereignisgesteuerten Systemen regelt die Steuerungsl
 
 Die Steuerungslogik ist entscheidend für die ordnungsgemäße Funktionsweise einer Softwareanwendung. Sie sorgt dafür, dass die verschiedenen Komponenten der Anwendung miteinander interagieren und die gewünschten Ergebnisse produzieren. Bei gut gestalteter Steuerungslogik ist der Code lesbar, wartbar und effizient.
 [2a]
+
 ### Validierungslogik (Validation logic)
 
 Die Validierungslogik, auch als "Validation Logic" bezeichnet, ist ein wichtiger Aspekt der Softwarelogik, der sich darauf konzentriert sicherzustellen, dass die von der Software verarbeiteten Daten den erforderlichen Anforderungen entsprechen und konsistent sind. Diese Art von Logik wird häufig in Form von Validierungsregeln implementiert, die überprüfen, ob die eingegebenen Daten gültig und akzeptabel sind, bevor sie weiterverarbeitet oder gespeichert werden.
@@ -147,8 +150,156 @@ Die Infrastrukturlogik ist entscheidend, um sicherzustellen, dass die Software r
 
 
 
+### Beispiele
+
+**Validierungslogik**
+
+Angenommen, du hast ein Anmeldeformular für Benutzer, die sich auf einer Website registrieren möchten. Die Validierungslogik könnte folgende Regeln umfassen:
+
+Benutzername-Validierung:
+
+Der Benutzername darf nur Buchstaben und Zahlen enthalten.
+Die Länge des Benutzernamens muss zwischen 5 und 15 Zeichen liegen.
+E-Mail-Validierung:
+
+Die E-Mail-Adresse muss ein "@"-Zeichen enthalten.
+Die E-Mail-Adresse muss eine gültige Domain haben.
+Passwort-Validierung:
+
+Das Passwort muss mindestens 8 Zeichen lang sein.
+Es muss mindestens einen Großbuchstaben, einen Kleinbuchstaben und eine Zahl enthalten.
+Wenn ein Benutzer versucht, sich zu registrieren, würde die Validierungslogik diese Regeln prüfen, um sicherzustellen, dass die eingegebenen Informationen den Anforderungen entsprechen. Wenn beispielsweise der eingegebene Benutzername weniger als 5 Zeichen hat, wird eine Fehlermeldung angezeigt, die den Benutzer darüber informiert, dass der Benutzername zu kurz ist. Gleiches gilt für die anderen Validierungsregeln.
+
+Die Validierungslogik spielt eine wichtige Rolle, um sicherzustellen, dass die Daten, die von Benutzern eingegeben werden, korrekt und im erwarteten Format sind. Dies hilft, Datenintegrität zu gewährleisten und potenzielle Probleme oder Sicherheitslücken zu verhindern.
+
+
+**Steuerungslogik**
+
+Angenommen, du hast ein System für einen Online-Shop, und ein Kunde hat Produkte in seinen Warenkorb gelegt und möchte nun den Checkout-Prozess durchlaufen. Die Steuerungslogik könnte folgende Aufgaben umfassen:
+
+Verfügbarkeitsprüfung:
+
+Überprüfen, ob alle Produkte im Warenkorb noch auf Lager sind.
+Preisberechnung:
+
+Berechnen des Gesamtpreises der Produkte im Warenkorb, einschließlich etwaiger Rabatte oder Steuern.
+Zahlungsbearbeitung:
+
+Überprüfen der Zahlungsinformationen des Kunden, wie Kreditkartennummer und Gültigkeitsdatum.
+Auslösen einer Transaktion mit dem Zahlungsanbieter.
+Bestandsaktualisierung:
+
+Aktualisieren des Lagerbestands nach einer erfolgreichen Bestellung, um sicherzustellen, dass Produkte, die gekauft wurden, aus dem Bestand entfernt werden.
+Versandvorbereitung:
+
+Initiieren der Versandvorbereitung, einschließlich der Erstellung von Versandetiketten und Benachrichtigung des Versanddienstleisters.
+Bestätigung an den Kunden:
+
+Versenden einer Bestätigungs-E-Mail an den Kunden mit Details zur Bestellung und voraussichtlichem Lieferdatum.
+Die Steuerungslogik orchestriert also den gesamten Checkout-Prozess, indem sie sicherstellt, dass die notwendigen Schritte in der richtigen Reihenfolge durchgeführt werden. Sie prüft auch auf mögliche Fehlerbedingungen, wie eine abgelehnte Kreditkartenzahlung, und reagiert entsprechend, indem sie dem Benutzer eine Fehlermeldung anzeigt und den Bestellprozess stoppt.
+
+In einem komplexeren System könnte die Steuerungslogik auch die Benutzerführung durch verschiedene Phasen des Checkouts steuern und Entscheidungen basierend auf Benutzeraktionen treffen.
+
+**Domänenlogik**
+
+Angenommen, du entwickelst die Domänenlogik für die Funktion "Freunde hinzufügen" in einem sozialen Netzwerk. Die Domänenlogik könnte folgende Aspekte abdecken:
+
+Freundschaftsanfrage senden:
+
+Ein Benutzer A sendet eine Freundschaftsanfrage an Benutzer B.
+Freundschaftsanfrage akzeptieren/ablehnen:
+
+Benutzer B kann die Freundschaftsanfrage von Benutzer A akzeptieren oder ablehnen.
+Benachrichtigungen:
+
+Beide Benutzer erhalten Benachrichtigungen über den Status der Freundschaftsanfrage.
+Freunde anzeigen:
+
+Nachdem die Freundschaftsanfrage akzeptiert wurde, können Benutzer A und B nun die Aktivitäten des jeweils anderen sehen und als "Freunde" miteinander interagieren.
+Freunde entfernen:
+
+Benutzer A oder B können die Freundschaft auch wieder beenden, was bedeutet, dass sie nicht mehr als Freunde verbunden sind.
+Die Domänenlogik definiert also, wie die Interaktionen im Kontext von Freundschaften in diesem sozialen Netzwerk ablaufen. Sie könnte sicherstellen, dass Freundschaftsanfragen nur an gültige Benutzer gesendet werden können, dass Benutzer Benachrichtigungen über Freundschaftsanfragen erhalten und dass die Sichtbarkeit von Aktivitäten zwischen Freunden gemäß den Datenschutzeinstellungen gesteuert wird.
+
+Die Domänenlogik ermöglicht somit die korrekte und kohärente Verwaltung von Freundschaften im sozialen Netzwerk, wobei sie die spezifischen Regeln und Interaktionen im Kontext dieser Funktion definiert.
+
+
+**Präsentationslogik**
+
+Angenommen, du entwickelst die Präsentationslogik für eine To-Do-Liste-Anwendung. Die Präsentationslogik könnte folgende Aspekte abdecken:
+
+Anzeigen von Aufgaben:
+
+Die Präsentationslogik bestimmt, wie die Aufgaben in der Benutzeroberfläche dargestellt werden. Dies könnte eine Liste von Aufgaben mit Titel, Beschreibung und Fälligkeitsdatum sein.
+Hinzufügen neuer Aufgaben:
+
+Die Präsentationslogik steuert das Formular zum Hinzufügen neuer Aufgaben. Sie kann sicherstellen, dass alle erforderlichen Informationen eingegeben werden, bevor eine neue Aufgabe erstellt wird.
+Status der Aufgaben:
+
+Je nach Status einer Aufgabe (z. B. "In Bearbeitung", "Abgeschlossen") könnte die Präsentationslogik das Erscheinungsbild der Aufgabe anpassen. Abgeschlossene Aufgaben könnten beispielsweise durchgestrichen oder farblich hervorgehoben werden.
+Filter und Sortierung:
+
+Die Präsentationslogik ermöglicht es Benutzern, ihre Aufgaben nach verschiedenen Kriterien zu filtern (z. B. alle offenen Aufgaben, abgeschlossene Aufgaben) und sie nach verschiedenen Kriterien zu sortieren (z. B. nach Fälligkeitsdatum, nach Priorität).
+Benachrichtigungen:
+
+Die Präsentationslogik könnte Benachrichtigungen anzeigen, wenn eine Aufgabe bald fällig ist oder wenn eine Aufgabe abgeschlossen wurde.
+In diesem Beispiel steuert die Präsentationslogik, wie die Benutzeroberfläche der To-Do-Liste aussieht und wie Benutzer mit den Aufgaben interagieren können. Sie sorgt dafür, dass die Informationen klar und ansprechend präsentiert werden und dass Benutzer die benötigten Aktionen leicht durchführen können.
+
+
+
+
 #### Persistenz, Cache, Transaktion, Sicherheit, ...
 
+**Persistenz**
+Persistenz (von lateinisch persistere „verharren, stehen bleiben“) ist ein wesentlicher Begriff in der Informatik, der die Fähigkeit eines Systems beschreibt, den Zustand seiner Daten, Objektmodelle oder logischen Verbindungen über längere Zeiträume hinweg zu bewahren. Dies gilt insbesondere über geplante oder unvorhergesehene Programmabbrüche hinaus. Eine entscheidende Rolle dabei spielt die Erhaltung dieser Informationen auf nichtflüchtigen Speichermedien wie Festplatten, SSDs oder in Datenbanken.
+
+Die Persistenz hat ihren Ursprung in der Notwendigkeit, Datenbestände und Anwendungsstatus dauerhaft zu speichern, um Informationen über längere Zeiträume hinweg verfügbar zu halten. Dies ist insbesondere wichtig, um sicherzustellen, dass Informationen nicht verloren gehen, wenn ein Computerprogramm beendet oder ein System heruntergefahren wird.
+
+Es handelt sich hierbei um ein grundlegendes Konzept, das dazu beiträgt, die Kontinuität, Zuverlässigkeit und Verfügbarkeit von Informationen in der digitalen Welt zu gewährleisten. Es bildet die Grundlage für viele Anwendungen und Systeme, die über längere Zeiträume hinweg relevant bleiben müssen.
+[10a]
+
+**Cache** 
+Was ist der Cache?
+Ein Cache ist ein reservierter Speicherplatz, der temporäre Daten sammelt. Dieser wird entweder lokal auf Ihrem Computer, Smartphone oder anderen Medien erstellt, um Webseiten, Browser oder Apps schneller laden zu können. Greifen Sie bspw. regelmäßig auf eine Webseite zu, speichert Ihr Browser deren Inhalte im Cache ab. Für Sie als Nutzer ist dieser Zwischenspeicher nicht sichtbar und wird systemseitig angelegt. Rufen Sie die Seite nun erneut auf, werden die Inhalte schneller geladen.
+
+Der Cache ist also ein Speicher, der den erneuten Zugriff durch eine lokale Zwischenspeicherung auf Ihrem PC oder Smartphone erleichtert. Dadurch werden nicht alle Daten bei jedem Öffnen neu heruntergeladen, sondern schnell von der eigenen Festplatte gelesen.
+
+Caches bieten drei entscheidende Vorteile: Zunächst wird die Systemleistung verbessert, indem alles schneller lädt. Zweitens können Anwendungen teilweise offline arbeiten, falls Sie keinen Internetzugang haben, da wichtige Daten zwischengespeichert sind. Und drittens werden Daten zur späteren Verwendung gespeichert, damit ressourceneffizient die Daten nur einmal heruntergeladen werden müssen. Müssten Sie die Daten erneut laden, verbraucht das unnötig Akku bzw. Rechenpower. Trotz der Vorteile kann der Cache auch zu Problemen führen. Grund hierfür können fehlerhafte Daten im Cache sein oder dass der Cache einfach zu viel Speicherplatz einnimmt. Da hilft nur eins: Leeren Sie den Cache!
+
+Um besser zu verstehen, wo der Cache in alltäglichen Anwendungen vorkommt, stellen wir Ihnen im Folgenden die drei häufigsten Beispielfälle zusammen:
+
+Hardware
+Internetbrowser
+Apps
+
+[11a]
+**Transaktion**
+
+In der Infrastrukturlogik bezieht sich der Begriff "Transaktion" auf einen Satz von Aktionen, die als eine zusammenhängende und unteilbare Einheit betrachtet werden. Eine Transaktion in diesem Kontext ist oft mit Änderungen oder Aktualisierungen in einem System verbunden, und sie wird entweder vollständig ausgeführt oder gar nicht. Das bedeutet, dass, wenn ein Teil der Transaktion aus irgendeinem Grund fehlschlägt, alle durchgeführten Änderungen rückgängig gemacht werden, um die Konsistenz der Infrastruktur sicherzustellen.
+
+In der Welt der Datenbanken ist die Transaktionsverarbeitung weit verbreitet. Wenn beispielsweise eine Anwendung Daten in einer Datenbank ändert, könnten mehrere Datenbankoperationen als Teil einer Transaktion gruppiert werden. Wenn eine dieser Operationen scheitert, wird die gesamte Transaktion rückgängig gemacht, um sicherzustellen, dass die Datenbank in einem konsistenten Zustand bleibt.
+
+In der Infrastrukturlogik kann die Verwendung von Transaktionen dazu beitragen, die Integrität und Konsistenz von Änderungen oder Konfigurationen in einem System sicherzustellen.
+
+**Sicherheit**
+
+Sicherheit in Bezug auf Infrastrukturlogik bezieht sich auf die Maßnahmen und Vorkehrungen, die getroffen werden, um die Integrität, Vertraulichkeit und Verfügbarkeit der Infrastruktur sicherzustellen. Hier sind einige Aspekte der Sicherheit in der Infrastrukturlogik:
+
+Zugriffskontrolle: Die Verwaltung von Zugriffsrechten und -beschränkungen ist entscheidend, um sicherzustellen, dass nur autorisierte Personen oder Systeme auf kritische Teile der Infrastruktur zugreifen können.
+
+Verschlüsselung: Die Verschlüsselung von Daten, insbesondere während der Übertragung über Netzwerke, ist wichtig, um sicherzustellen, dass sensible Informationen vor unbefugtem Zugriff geschützt sind.
+
+Überwachung und Protokollierung: Das Überwachen von Aktivitäten in der Infrastruktur und das Protokollieren von Ereignissen helfen dabei, potenzielle Sicherheitsbedrohungen zu erkennen, zu verfolgen und darauf zu reagieren.
+
+Sicherheitsupdates und Patch-Management: Die regelmäßige Aktualisierung von Software und das Einspielen von Sicherheitspatches sind wesentliche Maßnahmen, um Sicherheitslücken zu schließen und die Infrastruktur vor bekannten Bedrohungen zu schützen.
+
+Firewalls und Netzwerksicherheit: Die Implementierung von Firewalls und anderen Netzwerksicherheitsmaßnahmen ist entscheidend, um unerwünschten Datenverkehr zu blockieren und die Integrität des Netzwerks zu gewährleisten.
+
+Physische Sicherheit: Die physische Sicherheit von Serverräumen, Rechenzentren und anderen Infrastrukturelementen ist ebenso wichtig, um unbefugten Zugriff oder physische Bedrohungen zu verhindern.
+
+Notfallwiederherstellung und Redundanz: Die Planung für Notfallsituationen und die Implementierung von Redundanzmechanismen helfen dabei, Ausfallzeiten zu minimieren und die Kontinuität der Infrastruktur sicherzustellen.
+
+Die Sicherheit in der Infrastrukturlogik ist ein umfassendes Konzept, das mehrere Ebenen und Aspekte berücksichtigt, um eine robuste und geschützte Umgebung zu gewährleisten.
 
 
 
@@ -157,85 +308,148 @@ Die Infrastrukturlogik ist entscheidend, um sicherzustellen, dass die Software r
 ## Abbildung der Softwarearchitektur auf die Systemarchitektur
 
 
-
 ### Multi-Tier Architekturen
 
-Multi-Tier-Architekturen sind eine Möglichkeit, Softwareanwendungen zu strukturieren. Stell sie dir wie einen Kuchen vor, der in verschiedene Schichten unterteilt ist. Jede Schicht erfüllt bestimmte Aufgaben und hat eine klare Schnittstelle zu den anderen Schichten.
-
-Die gängigsten Schichten in einer Multi-Tier-Architektur sind:
-
-Präsentationsschicht (Presentation Tier): Hier findet die Benutzeroberfläche statt, also das, was der Nutzer sieht und mit dem er interagiert.
-
-Anwendungsschicht (Application Tier): Diese Schicht enthält die Geschäftslogik der Anwendung. Sie verarbeitet Benutzereingaben, führt Operationen durch und koordiniert die Datenverarbeitung.
-
-Datenzugriffsschicht (Data Tier): Hier werden die Daten gespeichert und abgerufen. Datenbanken oder andere Datenspeicher liegen in dieser Schicht.
-
+Eine Multi-Tier-Architecture ist eine mehrgliedrige Schichtenarchitektur, die die Prinzipien zur Strukturierung von Software-Architekturen definiert. Die hierarchische Strukturierung mittels Schichten ist ein häufig angewendetes Architekturmuster. In diesen Zusammenhang sind die One-Tier-Architecture, die Two-Tier-Architecture und die Three-Tier-Architecture einzuordnen. Die genannten Architekturen werden häufig für Client-Server-Architekturen genutzt.
 Der Vorteil dieser Struktur liegt in der klaren Trennung von Verantwortlichkeiten. Änderungen in einer Schicht haben minimale Auswirkungen auf die anderen Schichten. Das erleichtert die Wartung, Erweiterung und Skalierbarkeit von Anwendungen.
+
+
+
+Schichtenarchitektur (auch Schichtenmodell oder Schichtenmuster) ist ein häufig angewandtes Strukturierungsprinzip für die Architektur von Softwaresystemen. Dabei werden einzelne Aspekte des Softwaresystems konzeptionell einer Schicht (engl. tier oder layer) zugeordnet. Die erlaubten Abhängigkeitsbeziehungen zwischen den Aspekten werden bei einer Schichtenarchitektur dahingehend eingeschränkt, dass Aspekte einer höheren Schicht nur solche tieferer Schichten verwenden dürfen. Ein System mit Schichtenarchitektur bezeichnet man auch als „mehrschichtig“.
+
+Die den Schichten zugeordneten Aspekte können dabei je nach Art des Systems oder Detaillierungsgrad der Betrachtung z. B. Funktionalitäten, Komponenten oder Klassen sein.
+[8a]
+
 
 
 #### Tiers vs. Layers (Stufen vs. Schichten)
 
+Tiers (Stufen):
 
+Definition: Tiers beziehen sich auf physisch getrennte Teile einer Anwendung, die auf verschiedenen Servern oder Hardware-Instanzen laufen können.
 
+Verantwortlichkeiten: Jedes Tier hat seine spezifische Rolle und Verantwortlichkeiten. Typischerweise gibt es drei Haupttiers: Präsentationstier, Anwendungstier und Datenzugriffstier.
 
+Physische Verteilung: Tiers implizieren eine physische Verteilung, was bedeutet, dass verschiedene Tiers auf unterschiedlichen Servern oder Hardware-Instanzen laufen können. Dies kann zur Verbesserung der Skalierbarkeit und Leistung beitragen.
+
+Layers (Schichten):
+
+Definition: Layers beziehen sich auf die logische Aufteilung einer Anwendung in verschiedene Schichten, wobei jede Schicht eine bestimmte Funktion oder Verantwortlichkeit hat.
+
+Verantwortlichkeiten: Jede Schicht hat eine klare und abgegrenzte Aufgabe. Typische Schichten sind Präsentationsschicht, Anwendungsschicht und Datenzugriffsschicht.
+
+Logische Struktur: Layers beschreiben die logische Struktur einer Anwendung. Diese Schichten sind auf demselben physischen Server implementiert und kommunizieren miteinander, um die Gesamtfunktionalität der Anwendung zu ermöglichen.
+
+Zusammenfassend:
+Tiers betonen die physische Verteilung und Trennung von Teilen einer Anwendung auf verschiedenen Servern, während Layers die logische Struktur einer Anwendung beschreiben, wobei verschiedene Schichten auf demselben Server implementiert sind. Es ist wichtig zu beachten, dass diese Begriffe in der Praxis oft miteinander verbunden sind, da eine Anwendung mehrere Schichten in einem Tier haben oder eine Schicht in mehreren Tiers verteilen kann.
+
+[9a]
 #### (Zwei|Drei|Vier)-Stufen-Architektur
 
+**Zwei-Schichten-Architektur**
+
+Die zweischichtige Architektur (englisch two tier architecture) besteht aus zwei Schichten. Da nur die höhere auf die niedrigere Schicht zugreifen darf, ist die niedrigere Schicht ein Dienstanbieter (englisch Server) der höheren. Man spricht daher auch oft von einer Client-Server-Architektur.
+
+Client-Server-Architekturen müssen nicht unbedingt mittels unterschiedlicher Rechner realisiert sein, vielmehr kann der Client auch als ein Software-Modul verstanden werden, das auf ein zweites Software-Modul auf demselben Rechner, meist innerhalb derselben Anwendung zugreift. Das in der Abbildung gegebene Beispiel greift jedoch auf eine rechnerseitige Client-Server-Architektur zurück.
+
+Bei Architekturen wie in der Abbildung gegeben, wird die Rechenkapazität weitestgehend auf die Client-Rechner ausgelagert, um den Server zu entlasten. Traditionell kommt ein Fat Client und ein Fat Server zum Einsatz. Auf dem Server läuft eine Datenbankanwendung. Die Clients übernehmen dabei die Logik und die Darstellung der Benutzerschnittstelle.
+[8a]
+
+**Drei-Schichten-Architektur**
 
 
 
+Die dreischichtige Architektur (englisch three tier architecture) ist eine Architektur, die softwareseitig drei Schichten hat. Im Gegensatz zur zweischichtigen Architektur gibt es bei der dreischichtigen Architektur noch eine zusätzliche Schicht, oftmals die Logikschicht, welche die Datenverarbeitung vornimmt.
 
-#### Anwendungsbeispiele
+Eine typische Drei-Schichten-Architektur besteht aus den folgenden Schichten:
 
+Präsentationsschicht (client tier) – Diese, auch Front-End bezeichnet, ist für die Repräsentation der Daten, Benutzereingaben und die Benutzerschnittstelle verantwortlich.
+Logikschicht (application-server tier, Businessschicht, Middle Tier oder Enterprise Tier) – Sie beinhaltet alle Verarbeitungsmechanismen. Hier ist die Anwendungslogik vereint.
+Datenhaltungsschicht (data-server tier, back end) – Sie enthält die Datenbank und ist verantwortlich für das Speichern und Laden von Daten.
+Drei-Schichten-Architekturen bei verteilten Systemen
 
+Mehrschichtige Systemarchitekturen wie die dreischichtige Architektur sind gut skalierbar, da die einzelnen Schichten logisch voneinander getrennt sind. So kann z. B. bei verteilten Systemarchitekturen die Datenschicht auf einem zentralen Datenbank-Server laufen, die Logikschicht auf Workgroup-Servern, und die Präsentationsschicht befindet sich auf der jeweiligen Workstation des Benutzers. Ein Beispiel für eine verteilte Drei-Schichten-Architektur ist Citrix: Interaktion: Client; Funktion: Citrix Server; Daten: Datenbankserver.
 
+Wie die Grafik zeigt, gibt es zwischen Client und Server verschiedene Möglichkeiten zur Verteilung der Schichten. Grundsätzlich gilt: Je höher (näher an der Präsentationsschicht) die Schicht ist, desto eher wird sie von einem Client bearbeitet. Je tiefer (näher an der Datenschicht) die Schicht ist, desto eher ist sie Aufgabe eines Servers.
 
+Drei-Schichten-Architekturen innerhalb von Software-Systemen
+Die Architektur lässt sich auch innerhalb eines Software-Systems umsetzen, indem die Software-Module, welche für Präsentation, Anwendungslogik und persistente Speicherung von Daten zuständig sind, den einzelnen Schichten zugeordnet werden und gemäß der Schichteneinteilung voneinander entkoppelt werden. Neben einer Strukturierung gemäß dem Model-View-Controller-Architekturmuster gilt eine solche Drei-Schichten-Architektur üblicherweise als das Mindestmaß architektonischer Strukturierung, sofern keine zwingenden Gründe für andere Architekturentscheidungen vorliegen.
+[8a]
 
+**Vier-Stufen-Architektur**
 
+Die Vier-Stufen-Architektur bezieht sich oft auf eine Struktur in Bezug auf Datenverarbeitung und -analyse. Hier sind die vier Stufen:
 
+Datenerfassung (Data Collection): In dieser Phase werden Daten aus verschiedenen Quellen gesammelt. Dies können Sensoren, Benutzerinteraktionen, externe Systeme oder andere Datenquellen sein.
 
+Datenverarbeitung (Data Processing): Die gesammelten Daten werden in dieser Stufe verarbeitet. Dies kann Filtern, Bereinigen, Transformieren und Aggregieren von Rohdaten umfassen. Ziel ist es, die Daten für die Analyse vorzubereiten.
 
+Datenpräsentation (Data Presentation): Hier werden die verarbeiteten Daten visualisiert oder präsentiert. Das kann in Form von Berichten, Dashboards oder anderen Arten von Benutzeroberflächen sein, um die Informationen leicht verständlich und zugänglich zu machen.
 
-![:scale 80%](media\Titelbild-devops-tools-definition-best-practice.png)
+Datenanalyse (Data Analysis): Die abschließende Stufe beinhaltet die eigentliche Analyse der Daten, um Muster, Trends oder Erkenntnisse zu identifizieren. Dies kann statistische Analysen, maschinelles Lernen oder andere Methoden umfassen, je nach den Zielen der Datenanalyse.
 
-### Tabelle
-
-| A          |     B       |           C               | 
-|:----------:|:-----------:|:-------------------------:|
-| Eins | Zwei | Drei |
-| Vier | Fünf | Sechs |
-
-## Links
-
-[Markdown] ist eine Sprache, die nach HTML konvertiert werden kann. 
-
-## Aufzählung
-
-Es unterteilt sich in:
-
-* A
-  * A1
-* B
-  * B1
-  * B2
-* C
+Diese Vier-Stufen-Architektur bietet eine strukturierte Herangehensweise an den gesamten Prozess der Datenverarbeitung, von der Erfassung bis zur Analyse und Präsentation von Informationen.
 
 
-### Code
 
-```javascript
-public class A {
-  Integer a;
-  public A() {
-    this.a = 1
-  }
-}
-```
+#### Anwendungsbeispiele zu den jeweiligen Architekturen
+
+**Zwei-Stufen-Architektur**
+ToDo-Liste-Anwendung:
+
+Datenerfassung (Stufe 1):
+
+Der Benutzer öffnet die ToDo-Liste-Anwendung und fügt einen neuen Aufgabeneintrag hinzu.
+Er gibt die Aufgabenbeschreibung, das Fälligkeitsdatum und andere relevante Informationen ein.
+
+Datenverarbeitung (Stufe 2):
+
+Die Anwendung nimmt die eingegebenen Daten, überprüft auf Vollständigkeit und Validität.
+Sie speichert dann den neuen Auftrag in der Datenbank und aktualisiert die Benutzeroberfläche, um die aktualisierte ToDo-Liste anzuzeigen.
+In diesem Beispiel besteht die erste Stufe darin, die Aufgabe und ihre Details zu erfassen. Die zweite Stufe umfasst die Verarbeitung dieser Informationen, einschließlich Validierung und Speicherung in einer Datenbank, gefolgt von der Aktualisierung der Benutzeroberfläche, um dem Benutzer die aktualisierte ToDo-Liste anzuzeigen.
 
 
-### Bilder
+**Drei-Stufen-Architektur**
 
-![](media/image.jpg)
 
+Online-Shop:
+
+Präsentationsschicht (Stufe 1):
+
+Der Benutzer besucht die Website des Online-Shops und durchsucht die Produkte.
+Er fügt ausgewählte Produkte zum Warenkorb hinzu und geht zur Kasse.
+Anwendungsschicht (Stufe 2):
+
+Die Anwendung verarbeitet die Auswahl des Benutzers, überprüft die Produktverfügbarkeit, berechnet den Gesamtpreis und verwaltet den Warenkorb.
+Sie authentifiziert den Benutzer, wenn erforderlich, und initiiert den Zahlungsvorgang.
+Datenzugriffsschicht (Stufe 3):
+
+Die Anwendung greift auf die Produktinformationen und Bestelldaten in der Datenbank zu, um die Produktdetails anzuzeigen und Bestellungen zu speichern.
+Transaktionsdaten wie Zahlungsinformationen werden sicher in der Datenbank gespeichert.
+In diesem Szenario repräsentiert die erste Stufe die Benutzeroberfläche des Online-Shops, wo der Benutzer Produkte durchsucht und auswählt. Die zweite Stufe ist die Anwendungsschicht, die die Geschäftslogik verwaltet, Produktverfügbarkeit überprüft und den Bestellprozess leitet. Die dritte Stufe ist die Datenzugriffsschicht, die auf die Datenbank zugreift, um Produktinformationen zu laden und Transaktionen zu speichern.
+
+
+**Vier-Stufen-Architektur**
+
+Social Media Plattform:
+
+Datenerfassung (Stufe 1):
+
+Benutzer erstellen Konten auf der Plattform und geben persönliche Informationen wie Name, Profilbild und Interessen ein.
+Benutzer veröffentlichen Beiträge, Fotos oder Videos.
+Datenverarbeitung (Stufe 2):
+
+Die Plattform verarbeitet die hochgeladenen Daten, überprüft auf Einhaltung der Nutzungsrichtlinien und führt eventuell automatisierte Moderation durch.
+Die Plattform analysiert auch Benutzerinteraktionen, um personalisierte Inhalte anzuzeigen und Freundschaftsvorschläge zu generieren.
+Datenpräsentation (Stufe 3):
+
+Die verarbeiteten Daten werden in der Benutzeroberfläche präsentiert. Benutzer sehen ihren personalisierten Feed, Freundesaktivitäten und relevante Werbung.
+Die Plattform bietet Funktionen zur Interaktion, wie das Liken, Kommentieren und Teilen von Beiträgen.
+Datenanalyse (Stufe 4):
+
+Die Plattform analysiert aggregierte Daten, um Trends im Benutzerverhalten zu identifizieren.
+Diese Analysen können zur Verbesserung der Benutzererfahrung, Anpassung von Werbung und Identifikation von aufkommenden Trends verwendet werden.
+In diesem Beispiel repräsentiert die erste Stufe die Datenerfassung durch Benutzeraktivitäten. Die zweite Stufe beinhaltet die Verarbeitung und Überprüfung dieser Daten. Die dritte Stufe präsentiert die verarbeiteten Daten in der Benutzeroberfläche, während die vierte Stufe Analysen durchführt, um Einblicke und Verbesserungen für die Plattform zu generieren.
 
 
 
@@ -248,11 +462,11 @@ public class A {
 [5a] : https://chat.openai.com/c/63c2b80e-a9dd-4735-8ea0-edad1bff8a7c frage :erkläre mir ausführlich was die Domänenlogik (Domain logic) ist
 [6a] :https://chat.openai.com/c/63c2b80e-a9dd-4735-8ea0-edad1bff8a7c frage: erkläre mir die Geschäftslogik (Business logic) ausführlich
 [7a] : https://chat.openai.com/c/63c2b80e-a9dd-4735-8ea0-edad1bff8a7c frage : erkläre mir ausführlich was die  Präsentationslogik (Presentation logic) ist
-
-
-
-
-
+[8a] : https://de.wikipedia.org/wiki/Schichtenarchitektur
+[9a] : https://saipawan.wordpress.com/2015/08/19/whats-the-difference-between-layers-and-tiers/
+[10a] : https://de.wikipedia.org/wiki/Persistenz_(Informatik)
+[11a] : https://www.heise.de/tipps-tricks/Was-ist-ein-Cache-4932006.html
+[12a] : https://chat.openai.com/?model=text-davinci-002-render-sha frage : was ist Sicherheit im Bezug auf Infrastrukturlogik 
 
 
 
