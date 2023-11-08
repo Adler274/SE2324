@@ -3,7 +3,11 @@
 **Autor:** Simon Fedrau, Sascha Hahn
 
 ## Lernziele
-
+***
+* Welche Arten von Softwarelogiken gibt es
+  * Wofür sind diese nützlich
+* Was sind Multi-Tier Architekturen
+  * Wofür werden diese Gebraucht
 
 
 
