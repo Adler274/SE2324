@@ -16,7 +16,7 @@
 
 Die Domänenlogik, auch als "Domain Logic" bezeichnet, ist ein zentraler Bestandteil der Softwarelogik, der sich auf die Umsetzung von Geschäftsregeln, -logik und -prozessen konzentriert. Sie bildet die Kernlogik einer Softwareanwendung und ist eng mit dem spezifischen Anwendungsbereich oder der "Domäne" verbunden, für die die Software entwickelt wird. Die Domänenlogik ist entscheidend, um sicherzustellen, dass die Software die Anforderungen und Geschäftsprozesse der jeweiligen Domäne korrekt und effektiv abbildet.
 
-Hier sind einige wichtige Aspekte der Domänenlogik:
+**Wichtige Aspekte der Domänenlogik:**
 
 Geschäftsregeln: Die Domänenlogik implementiert die spezifischen Geschäftsregeln, die für die Domäne relevant sind. Das können komplexe Berechnungen, Validierungen, Entscheidungen und Workflows sein, die das Verhalten der Software gemäß den Anforderungen der Geschäftsdomäne steuern.
 
@@ -35,18 +35,9 @@ Die Domänenlogik spielt eine Schlüsselrolle bei der Schaffung von Softwarelös
 
 ### Geschäftslogik (Business logic)
 
-Geschäftslogik (englisch business logic, auch Anwendungslogik) ist ein abstrakter Begriff in der Softwaretechnik, der eine Abgrenzung der durch die Aufgabenstellung selbst motivierten Logik eines Softwaresystems zu der notwendigen, technischen Logik zum Ziel hat. Allerdings ist der Begriff unscharf, da eine klare Trennung oft nicht möglich ist.
-
-Eingeführt wurde der Begriff in Verbindung mit Schichtenarchitekturen, vor allem mit Aufkommen von Client-Server-Architekturen. Kontextuell ist die Geschäftslogik dabei in der Mitte angesiedelt, „oberhalb“ einer Datenhaltungsschicht und „unterhalb“ der Präsentationsschicht, also zwischen Datenbank und Benutzerschnittstelle.
-
-Die Motivation bei Einführung des Begriffs liegt im Wesentlichen darin, dass man die Logik, die die eigentliche Problemstellung implementiert, von der Logik trennt, die die technischen Belange abdeckt. Dabei wird unterstellt, dass diese Anwendungsteile unterschiedlichen Änderungszyklen unterliegen und daher durch deren Trennung die Wartbarkeit des Softwaresystems verbessert wird.
-
-In Verbindung mit der Objektorientierung wurde der Gedanke der Geschäftslogik zu sogenannten Geschäftsobjekten erweitert. Beim Model-View-Controller-Paradigma wird sie von einigen zum Model gezählt.
-[1a]
-
 Die Geschäftslogik, auch als Business Logic bezeichnet, ist ein zentraler Bestandteil von Softwareanwendungen, der die Regeln und Prozesse definiert, die für die Verarbeitung von Geschäftsdaten und die Ausführung von Geschäftsfunktionen erforderlich sind. Sie bildet die Intelligenz hinter einer Anwendung und legt fest, wie bestimmte Aufgaben und Operationen im Kontext eines spezifischen Geschäftsbereichs durchgeführt werden sollen.
 
-Hier sind einige Schlüsselkonzepte, die die Geschäftslogik weiter erläutern:
+**wichtige Aspekte der Geschäftslogik:**
 
 Regelbasierte Verarbeitung: Die Geschäftslogik besteht oft aus einer Sammlung von Regeln oder Bedingungen, die definieren, wie bestimmte Geschäftsprozesse ablaufen sollen. Diese Regeln können einfache "Wenn-Dann"-Anweisungen oder komplexe Algorithmen sein, die die Logik der Anwendung steuern.
 
@@ -58,16 +49,14 @@ Entscheidungsfindung: Die Geschäftslogik spielt eine entscheidende Rolle bei de
 
 Unabhängigkeit von der Benutzeroberfläche: Die Geschäftslogik sollte idealerweise von der Benutzeroberfläche (UI) getrennt sein. Das bedeutet, dass die Regeln und Prozesse unabhängig von der Art und Weise, wie die Benutzer mit der Anwendung interagieren, definiert und ausgeführt werden können.
 
-Ein Beispiel für Geschäftslogik könnte in einem Online-Shopping-System liegen: Die Regel, dass ein Rabatt von 10% auf alle Artikel gewährt wird, wenn der Gesamtbetrag des Warenkorbs einen bestimmten Betrag übersteigt, repräsentiert einen Teil der Geschäftslogik.
-
 Insgesamt ist die Geschäftslogik entscheidend, um sicherzustellen, dass eine Softwareanwendung die Geschäftsanforderungen korrekt und effizient erfüllt.
-
+[1a]
 
 ### Präsentationslogik (Presentation logic)
 
 Die Präsentationslogik, auch als "Presentation Logic" bezeichnet, ist ein Bereich der Softwarelogik, der sich auf die Darstellung von Informationen für Benutzer konzentriert. Sie regelt die Art und Weise, wie Daten und Funktionen einer Software auf der Benutzeroberfläche präsentiert werden. Die Präsentationslogik spielt eine entscheidende Rolle für die Benutzererfahrung und das visuelle Design einer Anwendung.
 
-Hier sind einige wichtige Aspekte der Präsentationslogik:
+**wichtige Aspekte der Präsentationslogik:**
 
 Benutzeroberflächengestaltung: Die Präsentationslogik umfasst das Design und Layout der Benutzeroberfläche. Sie definiert, wie Informationen angezeigt werden, wo Benutzeroberflächenelemente platziert werden und wie der visuelle Fluss gestaltet ist.
 
@@ -90,7 +79,7 @@ Die Präsentationslogik arbeitet oft eng mit anderen Teilen der Softwarelogik, w
 
 Die Steuerungslogik, auch als "Control Logic" bezeichnet, ist ein entscheidender Bestandteil der Softwarelogik. Sie ist dafür verantwortlich, den Ablauf und die Kontrolle von Anweisungen in einer Softwareanwendung zu regeln. Die Hauptziele der Steuerungslogik sind die Festlegung der Reihenfolge von Operationen, die Kontrolle von Entscheidungen und die Verwaltung des Programmflusses.
 
-Hier sind einige Schlüsselaspekte der Steuerungslogik:
+**Wichtige Aspekte der Steuerungslogik:**
 
 Programmfluss: Die Steuerungslogik bestimmt die Reihenfolge, in der Anweisungen innerhalb eines Programms ausgeführt werden. Sie sorgt dafür, dass die Operationen in der richtigen Abfolge erfolgen, um die beabsichtigte Funktionalität zu gewährleisten.
 
@@ -111,7 +100,7 @@ Die Steuerungslogik ist entscheidend für die ordnungsgemäße Funktionsweise ei
 
 Die Validierungslogik, auch als "Validation Logic" bezeichnet, ist ein wichtiger Aspekt der Softwarelogik, der sich darauf konzentriert sicherzustellen, dass die von der Software verarbeiteten Daten den erforderlichen Anforderungen entsprechen und konsistent sind. Diese Art von Logik wird häufig in Form von Validierungsregeln implementiert, die überprüfen, ob die eingegebenen Daten gültig und akzeptabel sind, bevor sie weiterverarbeitet oder gespeichert werden.
 
-Hier sind einige Schlüsselaspekte der Validierungslogik:
+**Wichtige Aspekte der  Validierungslogik:**
 
 Dateneingabeüberprüfung: Die Validierungslogik prüft die Daten, die von Benutzern eingegeben oder aus anderen Quellen empfangen werden. Dies kann beinhalten, sicherzustellen, dass die Daten die richtigen Datentypen haben, bestimmte Längenbeschränkungen einhalten oder anderen vordefinierten Kriterien entsprechen.
 
@@ -132,7 +121,7 @@ Die Validierungslogik spielt eine entscheidende Rolle bei der Sicherstellung der
 
 Die Infrastrukturlogik, auch als "Infrastructure Logic" bezeichnet, bezieht sich auf den Teil der Softwarelogik, der für die Interaktion mit der zugrunde liegenden Infrastruktur und den externen Ressourcen verantwortlich ist. Diese Infrastruktur umfasst Dinge wie Datenbanken, Netzwerke, Dateisysteme und andere externe Dienste oder Systeme, die von der Software genutzt werden.
 
-Hier sind einige wichtige Aspekte der Infrastrukturlogik:
+**Wichtige Aspekte der Infrastrukturlogik:**
 
 Datenbankzugriff: Die Infrastrukturlogik enthält oft Code, der den Zugriff auf Datenbanken ermöglicht. Dies kann das Lesen, Schreiben, Aktualisieren und Löschen von Daten umfassen. Die Logik sorgt dafür, dass die Software effizient mit der Datenbank kommuniziert und die notwendigen Datenintegritäts- und Transaktionseigenschaften gewährleistet sind.
 
@@ -148,13 +137,11 @@ Ressourcenverwaltung: Die Infrastrukturlogik ist oft für die effiziente Verwalt
 
 Die Infrastrukturlogik ist entscheidend, um sicherzustellen, dass die Software reibungslos mit ihrer Umgebung interagiert und die erforderlichen Ressourcen effizient nutzt. Sie trägt dazu bei, die Trennung zwischen der eigentlichen Anwendungslogik und der zugrunde liegenden Infrastruktur aufrechtzuerhalten, was die Wartbarkeit und Skalierbarkeit der Software verbessert.
 
-
-
 ### Beispiele
 
 **Validierungslogik**
 
-Angenommen, du hast ein Anmeldeformular für Benutzer, die sich auf einer Website registrieren möchten. Die Validierungslogik könnte folgende Regeln umfassen:
+Angenommen, man hat ein Anmeldeformular für Benutzer, die sich auf einer Website registrieren möchten. Die Validierungslogik könnte folgende Regeln umfassen:
 
 Benutzername-Validierung:
 
@@ -175,7 +162,7 @@ Die Validierungslogik spielt eine wichtige Rolle, um sicherzustellen, dass die D
 
 **Steuerungslogik**
 
-Angenommen, du hast ein System für einen Online-Shop, und ein Kunde hat Produkte in seinen Warenkorb gelegt und möchte nun den Checkout-Prozess durchlaufen. Die Steuerungslogik könnte folgende Aufgaben umfassen:
+Angenommen, man hat ein System für einen Online-Shop, und ein Kunde hat Produkte in seinen Warenkorb gelegt und möchte nun den Checkout-Prozess durchlaufen. Die Steuerungslogik könnte folgende Aufgaben umfassen:
 
 Verfügbarkeitsprüfung:
 
@@ -202,7 +189,7 @@ In einem komplexeren System könnte die Steuerungslogik auch die Benutzerführun
 
 **Domänenlogik**
 
-Angenommen, du entwickelst die Domänenlogik für die Funktion "Freunde hinzufügen" in einem sozialen Netzwerk. Die Domänenlogik könnte folgende Aspekte abdecken:
+Angenommen, man hat eintwickelt die Domänenlogik für die Funktion "Freunde hinzufügen" in einem sozialen Netzwerk. Die Domänenlogik könnte folgende Aspekte abdecken:
 
 Freundschaftsanfrage senden:
 
@@ -226,7 +213,7 @@ Die Domänenlogik ermöglicht somit die korrekte und kohärente Verwaltung von F
 
 **Präsentationslogik**
 
-Angenommen, du entwickelst die Präsentationslogik für eine To-Do-Liste-Anwendung. Die Präsentationslogik könnte folgende Aspekte abdecken:
+Angenommen, man entwickelt die Präsentationslogik für eine To-Do-Liste-Anwendung. Die Präsentationslogik könnte folgende Aspekte abdecken:
 
 Anzeigen von Aufgaben:
 
@@ -244,8 +231,6 @@ Benachrichtigungen:
 
 Die Präsentationslogik könnte Benachrichtigungen anzeigen, wenn eine Aufgabe bald fällig ist oder wenn eine Aufgabe abgeschlossen wurde.
 In diesem Beispiel steuert die Präsentationslogik, wie die Benutzeroberfläche der To-Do-Liste aussieht und wie Benutzer mit den Aufgaben interagieren können. Sie sorgt dafür, dass die Informationen klar und ansprechend präsentiert werden und dass Benutzer die benötigten Aktionen leicht durchführen können.
-
-
 
 
 #### Persistenz, Cache, Transaktion, Sicherheit, ...
@@ -301,30 +286,19 @@ Notfallwiederherstellung und Redundanz: Die Planung für Notfallsituationen und 
 
 Die Sicherheit in der Infrastrukturlogik ist ein umfassendes Konzept, das mehrere Ebenen und Aspekte berücksichtigt, um eine robuste und geschützte Umgebung zu gewährleisten.
 
-
-
-
-
 ## Abbildung der Softwarearchitektur auf die Systemarchitektur
 
 
 ### Multi-Tier Architekturen
 
-Eine Multi-Tier-Architecture ist eine mehrgliedrige Schichtenarchitektur, die die Prinzipien zur Strukturierung von Software-Architekturen definiert. Die hierarchische Strukturierung mittels Schichten ist ein häufig angewendetes Architekturmuster. In diesen Zusammenhang sind die One-Tier-Architecture, die Two-Tier-Architecture und die Three-Tier-Architecture einzuordnen. Die genannten Architekturen werden häufig für Client-Server-Architekturen genutzt.
-Der Vorteil dieser Struktur liegt in der klaren Trennung von Verantwortlichkeiten. Änderungen in einer Schicht haben minimale Auswirkungen auf die anderen Schichten. Das erleichtert die Wartung, Erweiterung und Skalierbarkeit von Anwendungen.
-
-
-
+Eine Multi-Tier-Architecture ist eine mehrgliedrige Schichtenarchitektur, die die Prinzipien zur Strukturierung von Software-Architekturen definiert. Die hierarchische Strukturierung mittels Schichten ist ein häufig angewendetes Architekturmuster. 
 Schichtenarchitektur (auch Schichtenmodell oder Schichtenmuster) ist ein häufig angewandtes Strukturierungsprinzip für die Architektur von Softwaresystemen. Dabei werden einzelne Aspekte des Softwaresystems konzeptionell einer Schicht (engl. tier oder layer) zugeordnet. Die erlaubten Abhängigkeitsbeziehungen zwischen den Aspekten werden bei einer Schichtenarchitektur dahingehend eingeschränkt, dass Aspekte einer höheren Schicht nur solche tieferer Schichten verwenden dürfen. Ein System mit Schichtenarchitektur bezeichnet man auch als „mehrschichtig“.
-
 Die den Schichten zugeordneten Aspekte können dabei je nach Art des Systems oder Detaillierungsgrad der Betrachtung z. B. Funktionalitäten, Komponenten oder Klassen sein.
 [8a]
 
-
-
 #### Tiers vs. Layers (Stufen vs. Schichten)
 
-Tiers (Stufen):
+**Tiers (Stufen):**
 
 Definition: Tiers beziehen sich auf physisch getrennte Teile einer Anwendung, die auf verschiedenen Servern oder Hardware-Instanzen laufen können.
 
@@ -332,7 +306,7 @@ Verantwortlichkeiten: Jedes Tier hat seine spezifische Rolle und Verantwortlichk
 
 Physische Verteilung: Tiers implizieren eine physische Verteilung, was bedeutet, dass verschiedene Tiers auf unterschiedlichen Servern oder Hardware-Instanzen laufen können. Dies kann zur Verbesserung der Skalierbarkeit und Leistung beitragen.
 
-Layers (Schichten):
+**Layers (Schichten):**
 
 Definition: Layers beziehen sich auf die logische Aufteilung einer Anwendung in verschiedene Schichten, wobei jede Schicht eine bestimmte Funktion oder Verantwortlichkeit hat.
 
@@ -340,15 +314,16 @@ Verantwortlichkeiten: Jede Schicht hat eine klare und abgegrenzte Aufgabe. Typis
 
 Logische Struktur: Layers beschreiben die logische Struktur einer Anwendung. Diese Schichten sind auf demselben physischen Server implementiert und kommunizieren miteinander, um die Gesamtfunktionalität der Anwendung zu ermöglichen.
 
-Zusammenfassend:
+**Zusammenfassend:**
 Tiers betonen die physische Verteilung und Trennung von Teilen einer Anwendung auf verschiedenen Servern, während Layers die logische Struktur einer Anwendung beschreiben, wobei verschiedene Schichten auf demselben Server implementiert sind. Es ist wichtig zu beachten, dass diese Begriffe in der Praxis oft miteinander verbunden sind, da eine Anwendung mehrere Schichten in einem Tier haben oder eine Schicht in mehreren Tiers verteilen kann.
 
 [9a]
+
 #### (Zwei|Drei|Vier)-Stufen-Architektur
 
 **Zwei-Schichten-Architektur**
 
-Die zweischichtige Architektur (englisch two tier architecture) besteht aus zwei Schichten. Da nur die höhere auf die niedrigere Schicht zugreifen darf, ist die niedrigere Schicht ein Dienstanbieter (englisch Server) der höheren. Man spricht daher auch oft von einer Client-Server-Architektur.
+Die zweischichtige Architektur (englisch two tier architecture) besteht aus zwei Schichten. Da nur die höhere auf die niedrigere Schicht zugreifen darf, ist die niedrigere Schicht ein Dienstanbieter der höheren. Man spricht daher auch oft von einer Client-Server-Architektur.
 
 Client-Server-Architekturen müssen nicht unbedingt mittels unterschiedlicher Rechner realisiert sein, vielmehr kann der Client auch als ein Software-Modul verstanden werden, das auf ein zweites Software-Modul auf demselben Rechner, meist innerhalb derselben Anwendung zugreift. Das in der Abbildung gegebene Beispiel greift jedoch auf eine rechnerseitige Client-Server-Architektur zurück.
 
@@ -357,22 +332,18 @@ Bei Architekturen wie in der Abbildung gegeben, wird die Rechenkapazität weites
 
 **Drei-Schichten-Architektur**
 
-
-
-Die dreischichtige Architektur (englisch three tier architecture) ist eine Architektur, die softwareseitig drei Schichten hat. Im Gegensatz zur zweischichtigen Architektur gibt es bei der dreischichtigen Architektur noch eine zusätzliche Schicht, oftmals die Logikschicht, welche die Datenverarbeitung vornimmt.
+Die dreischichtige Architektur ist eine Architektur, die softwareseitig drei Schichten hat. Im Gegensatz zur zweischichtigen Architektur gibt es bei der dreischichtigen Architektur noch eine zusätzliche Schicht, oftmals die Logikschicht, welche die Datenverarbeitung vornimmt.
 
 Eine typische Drei-Schichten-Architektur besteht aus den folgenden Schichten:
 
-Präsentationsschicht (client tier) – Diese, auch Front-End bezeichnet, ist für die Repräsentation der Daten, Benutzereingaben und die Benutzerschnittstelle verantwortlich.
+Präsentationsschicht: Auch Front-End bezeichnet, ist für die Repräsentation der Daten, Benutzereingaben und die Benutzerschnittstelle verantwortlich.
 Logikschicht (application-server tier, Businessschicht, Middle Tier oder Enterprise Tier) – Sie beinhaltet alle Verarbeitungsmechanismen. Hier ist die Anwendungslogik vereint.
 Datenhaltungsschicht (data-server tier, back end) – Sie enthält die Datenbank und ist verantwortlich für das Speichern und Laden von Daten.
 Drei-Schichten-Architekturen bei verteilten Systemen
 
-Mehrschichtige Systemarchitekturen wie die dreischichtige Architektur sind gut skalierbar, da die einzelnen Schichten logisch voneinander getrennt sind. So kann z. B. bei verteilten Systemarchitekturen die Datenschicht auf einem zentralen Datenbank-Server laufen, die Logikschicht auf Workgroup-Servern, und die Präsentationsschicht befindet sich auf der jeweiligen Workstation des Benutzers. Ein Beispiel für eine verteilte Drei-Schichten-Architektur ist Citrix: Interaktion: Client; Funktion: Citrix Server; Daten: Datenbankserver.
+Mehrschichtige Systemarchitekturen wie die dreischichtige Architektur sind gut skalierbar, da die einzelnen Schichten logisch voneinander getrennt sind. So kann z.B bei verteilten Systemarchitekturen die Datenschicht auf einem zentralen Datenbank-Server laufen, die Logikschicht auf Workgroup-Servern, und die Präsentationsschicht befindet sich auf der jeweiligen Workstation des Benutzers.
 
-Wie die Grafik zeigt, gibt es zwischen Client und Server verschiedene Möglichkeiten zur Verteilung der Schichten. Grundsätzlich gilt: Je höher (näher an der Präsentationsschicht) die Schicht ist, desto eher wird sie von einem Client bearbeitet. Je tiefer (näher an der Datenschicht) die Schicht ist, desto eher ist sie Aufgabe eines Servers.
-
-Drei-Schichten-Architekturen innerhalb von Software-Systemen
+Drei-Schichten-Architekturen innerhalb von Software-Systemen:
 Die Architektur lässt sich auch innerhalb eines Software-Systems umsetzen, indem die Software-Module, welche für Präsentation, Anwendungslogik und persistente Speicherung von Daten zuständig sind, den einzelnen Schichten zugeordnet werden und gemäß der Schichteneinteilung voneinander entkoppelt werden. Neben einer Strukturierung gemäß dem Model-View-Controller-Architekturmuster gilt eine solche Drei-Schichten-Architektur üblicherweise als das Mindestmaß architektonischer Strukturierung, sofern keine zwingenden Gründe für andere Architekturentscheidungen vorliegen.
 [8a]
 
@@ -390,7 +361,7 @@ Datenanalyse (Data Analysis): Die abschließende Stufe beinhaltet die eigentlich
 
 Diese Vier-Stufen-Architektur bietet eine strukturierte Herangehensweise an den gesamten Prozess der Datenverarbeitung, von der Erfassung bis zur Analyse und Präsentation von Informationen.
 
-
+[13a]
 
 #### Anwendungsbeispiele zu den jeweiligen Architekturen
 
@@ -467,7 +438,7 @@ In diesem Beispiel repräsentiert die erste Stufe die Datenerfassung durch Benut
 [10a] : https://de.wikipedia.org/wiki/Persistenz_(Informatik)
 [11a] : https://www.heise.de/tipps-tricks/Was-ist-ein-Cache-4932006.html
 [12a] : https://chat.openai.com/?model=text-davinci-002-render-sha frage : was ist Sicherheit im Bezug auf Infrastrukturlogik 
-
+[13a] : https://chat.openai.com/c/63c2b80e-a9dd-4735-8ea0-edad1bff8a7c : was ist eine vier stufen Archtiketur
 
 
 
