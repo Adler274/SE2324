@@ -10,9 +10,6 @@
   * Wofür werden diese Gebraucht
 
 
-
-
-
 ## Arten von Softwarelogik
 ***
 
@@ -28,14 +25,11 @@ Objektmodellierung: Die Domänenlogik umfasst oft die Modellierung von Objekten,
 
 Geschäftsprozesse: Die Domänenlogik beschreibt die Abläufe und Prozesse, die in der Geschäftsdomäne stattfinden. Dies kann den Lebenszyklus von Entitäten, den Workflow von Transaktionen oder andere geschäftsrelevante Prozesse umfassen.
 
-Validierung: Während die Validierungslogik sicherstellt, dass die Daten den technischen Anforderungen entsprechen, kümmert sich die Domänenlogik um die Validierung im geschäftlichen Kontext. Sie überprüft, ob die Daten den Geschäftsregeln entsprechen und für die Verarbeitung oder Speicherung geeignet sind.
-
 Entkopplung von Infrastrukturdetails: Die Domänenlogik ist so gestaltet, dass sie weitgehend unabhängig von den technischen Details der zugrunde liegenden Infrastruktur ist. Dies ermöglicht eine bessere Wartbarkeit und Flexibilität, da Änderungen in der Infrastruktur die Domänenlogik nicht wesentlich beeinflussen sollten.
 
-Testbarkeit: Durch die klare Definition von Geschäftsregeln und Prozessen ist die Domänenlogik gut testbar. Dies erleichtert die Entwicklung von Testfällen, um sicherzustellen, dass die Software gemäß den Geschäftsanforderungen funktioniert.
 
 Die Domänenlogik spielt eine Schlüsselrolle bei der Schaffung von Softwarelösungen, die den Geschäftszweck präzise widerspiegeln. Sie fördert eine saubere Trennung von Verantwortlichkeiten und ermöglicht eine klare Strukturierung der Software, was zu wartbaren, erweiterbaren und robusten Anwendungen führt.
-[5a]
+[5a] [14a]
 
 ### Geschäftslogik (Business logic)
 
@@ -141,6 +135,63 @@ Ressourcenverwaltung: Die Infrastrukturlogik ist oft für die effiziente Verwalt
 
 Die Infrastrukturlogik ist entscheidend, um sicherzustellen, dass die Software reibungslos mit ihrer Umgebung interagiert und die erforderlichen Ressourcen effizient nutzt. Sie trägt dazu bei, die Trennung zwischen der eigentlichen Anwendungslogik und der zugrunde liegenden Infrastruktur aufrechtzuerhalten, was die Wartbarkeit und Skalierbarkeit der Software verbessert.
 
+#### Persistenz, Cache, Transaktion, Sicherheit, ...
+
+**Persistenz**
+Persistenz (von lateinisch persistere „verharren, stehen bleiben“) ist ein wesentlicher Begriff in der Informatik, der die Fähigkeit eines Systems beschreibt, den Zustand seiner Daten, Objektmodelle oder logischen Verbindungen über längere Zeiträume hinweg zu bewahren. Dies gilt insbesondere über geplante oder unvorhergesehene Programmabbrüche hinaus. Eine entscheidende Rolle dabei spielt die Erhaltung dieser Informationen auf nichtflüchtigen Speichermedien wie Festplatten, SSDs oder in Datenbanken.
+
+Die Persistenz hat ihren Ursprung in der Notwendigkeit, Datenbestände und Anwendungsstatus dauerhaft zu speichern, um Informationen über längere Zeiträume hinweg verfügbar zu halten. Dies ist insbesondere wichtig, um sicherzustellen, dass Informationen nicht verloren gehen, wenn ein Computerprogramm beendet oder ein System heruntergefahren wird.
+
+Es handelt sich hierbei um ein grundlegendes Konzept, das dazu beiträgt, die Kontinuität, Zuverlässigkeit und Verfügbarkeit von Informationen in der digitalen Welt zu gewährleisten. Es bildet die Grundlage für viele Anwendungen und Systeme, die über längere Zeiträume hinweg relevant bleiben müssen.
+[10a]
+
+**Cache** 
+Was ist der Cache?
+Ein Cache ist ein reservierter Speicherplatz, der temporäre Daten sammelt. Dieser wird entweder lokal auf Ihrem Computer, Smartphone oder anderen Medien erstellt, um Webseiten, Browser oder Apps schneller laden zu können. Greifen Sie bspw. regelmäßig auf eine Webseite zu, speichert Ihr Browser deren Inhalte im Cache ab. Für Sie als Nutzer ist dieser Zwischenspeicher nicht sichtbar und wird systemseitig angelegt. Rufen Sie die Seite nun erneut auf, werden die Inhalte schneller geladen.
+
+Der Cache ist also ein Speicher, der den erneuten Zugriff durch eine lokale Zwischenspeicherung auf Ihrem PC oder Smartphone erleichtert. Dadurch werden nicht alle Daten bei jedem Öffnen neu heruntergeladen, sondern schnell von der eigenen Festplatte gelesen.
+
+Caches bieten drei entscheidende Vorteile: Zunächst wird die Systemleistung verbessert, indem alles schneller lädt. Zweitens können Anwendungen teilweise offline arbeiten, falls Sie keinen Internetzugang haben, da wichtige Daten zwischengespeichert sind. Und drittens werden Daten zur späteren Verwendung gespeichert, damit ressourceneffizient die Daten nur einmal heruntergeladen werden müssen. Müssten Sie die Daten erneut laden, verbraucht das unnötig Akku bzw. Rechenpower. Trotz der Vorteile kann der Cache auch zu Problemen führen. Grund hierfür können fehlerhafte Daten im Cache sein oder dass der Cache einfach zu viel Speicherplatz einnimmt. Da hilft nur eins: Leeren Sie den Cache!
+
+Um besser zu verstehen, wo der Cache in alltäglichen Anwendungen vorkommt, stellen wir Ihnen im Folgenden die drei häufigsten Beispielfälle zusammen:
+
+Hardware
+Internetbrowser
+Apps
+
+[11a]
+**Transaktion**
+
+In der Infrastrukturlogik bezieht sich der Begriff "Transaktion" auf einen Satz von Aktionen, die als eine zusammenhängende und unteilbare Einheit betrachtet werden. Eine Transaktion in diesem Kontext ist oft mit Änderungen oder Aktualisierungen in einem System verbunden, und sie wird entweder vollständig ausgeführt oder gar nicht. Das bedeutet, dass, wenn ein Teil der Transaktion aus irgendeinem Grund fehlschlägt, alle durchgeführten Änderungen rückgängig gemacht werden, um die Konsistenz der Infrastruktur sicherzustellen.
+
+In der Welt der Datenbanken ist die Transaktionsverarbeitung weit verbreitet. Wenn beispielsweise eine Anwendung Daten in einer Datenbank ändert, könnten mehrere Datenbankoperationen als Teil einer Transaktion gruppiert werden. Wenn eine dieser Operationen scheitert, wird die gesamte Transaktion rückgängig gemacht, um sicherzustellen, dass die Datenbank in einem konsistenten Zustand bleibt.
+
+In der Infrastrukturlogik kann die Verwendung von Transaktionen dazu beitragen, die Integrität und Konsistenz von Änderungen oder Konfigurationen in einem System sicherzustellen.
+
+**Sicherheit**
+
+Sicherheit in Bezug auf Infrastrukturlogik bezieht sich auf die Maßnahmen und Vorkehrungen, die getroffen werden, um die Integrität, Vertraulichkeit und Verfügbarkeit der Infrastruktur sicherzustellen. Hier sind einige Aspekte der Sicherheit in der Infrastrukturlogik:
+
+Zugriffskontrolle: Die Verwaltung von Zugriffsrechten und -beschränkungen ist entscheidend, um sicherzustellen, dass nur autorisierte Personen oder Systeme auf kritische Teile der Infrastruktur zugreifen können.
+
+Verschlüsselung: Die Verschlüsselung von Daten, insbesondere während der Übertragung über Netzwerke, ist wichtig, um sicherzustellen, dass sensible Informationen vor unbefugtem Zugriff geschützt sind.
+
+Überwachung und Protokollierung: Das Überwachen von Aktivitäten in der Infrastruktur und das Protokollieren von Ereignissen helfen dabei, potenzielle Sicherheitsbedrohungen zu erkennen, zu verfolgen und darauf zu reagieren.
+
+Sicherheitsupdates und Patch-Management: Die regelmäßige Aktualisierung von Software und das Einspielen von Sicherheitspatches sind wesentliche Maßnahmen, um Sicherheitslücken zu schließen und die Infrastruktur vor bekannten Bedrohungen zu schützen.
+
+Firewalls und Netzwerksicherheit: Die Implementierung von Firewalls und anderen Netzwerksicherheitsmaßnahmen ist entscheidend, um unerwünschten Datenverkehr zu blockieren und die Integrität des Netzwerks zu gewährleisten.
+
+Physische Sicherheit: Die physische Sicherheit von Serverräumen, Rechenzentren und anderen Infrastrukturelementen ist ebenso wichtig, um unbefugten Zugriff oder physische Bedrohungen zu verhindern.
+
+Notfallwiederherstellung und Redundanz: Die Planung für Notfallsituationen und die Implementierung von Redundanzmechanismen helfen dabei, Ausfallzeiten zu minimieren und die Kontinuität der Infrastruktur sicherzustellen.
+
+Die Sicherheit in der Infrastrukturlogik ist ein umfassendes Konzept, das mehrere Ebenen und Aspekte berücksichtigt, um eine robuste und geschützte Umgebung zu gewährleisten.
+
+
+
+
+
 ### Beispiele
 
 **Validierungslogik**
@@ -237,58 +288,7 @@ Die Präsentationslogik könnte Benachrichtigungen anzeigen, wenn eine Aufgabe b
 In diesem Beispiel steuert die Präsentationslogik, wie die Benutzeroberfläche der To-Do-Liste aussieht und wie Benutzer mit den Aufgaben interagieren können. Sie sorgt dafür, dass die Informationen klar und ansprechend präsentiert werden und dass Benutzer die benötigten Aktionen leicht durchführen können.
 
 
-#### Persistenz, Cache, Transaktion, Sicherheit, ...
 
-**Persistenz**
-Persistenz (von lateinisch persistere „verharren, stehen bleiben“) ist ein wesentlicher Begriff in der Informatik, der die Fähigkeit eines Systems beschreibt, den Zustand seiner Daten, Objektmodelle oder logischen Verbindungen über längere Zeiträume hinweg zu bewahren. Dies gilt insbesondere über geplante oder unvorhergesehene Programmabbrüche hinaus. Eine entscheidende Rolle dabei spielt die Erhaltung dieser Informationen auf nichtflüchtigen Speichermedien wie Festplatten, SSDs oder in Datenbanken.
-
-Die Persistenz hat ihren Ursprung in der Notwendigkeit, Datenbestände und Anwendungsstatus dauerhaft zu speichern, um Informationen über längere Zeiträume hinweg verfügbar zu halten. Dies ist insbesondere wichtig, um sicherzustellen, dass Informationen nicht verloren gehen, wenn ein Computerprogramm beendet oder ein System heruntergefahren wird.
-
-Es handelt sich hierbei um ein grundlegendes Konzept, das dazu beiträgt, die Kontinuität, Zuverlässigkeit und Verfügbarkeit von Informationen in der digitalen Welt zu gewährleisten. Es bildet die Grundlage für viele Anwendungen und Systeme, die über längere Zeiträume hinweg relevant bleiben müssen.
-[10a]
-
-**Cache** 
-Was ist der Cache?
-Ein Cache ist ein reservierter Speicherplatz, der temporäre Daten sammelt. Dieser wird entweder lokal auf Ihrem Computer, Smartphone oder anderen Medien erstellt, um Webseiten, Browser oder Apps schneller laden zu können. Greifen Sie bspw. regelmäßig auf eine Webseite zu, speichert Ihr Browser deren Inhalte im Cache ab. Für Sie als Nutzer ist dieser Zwischenspeicher nicht sichtbar und wird systemseitig angelegt. Rufen Sie die Seite nun erneut auf, werden die Inhalte schneller geladen.
-
-Der Cache ist also ein Speicher, der den erneuten Zugriff durch eine lokale Zwischenspeicherung auf Ihrem PC oder Smartphone erleichtert. Dadurch werden nicht alle Daten bei jedem Öffnen neu heruntergeladen, sondern schnell von der eigenen Festplatte gelesen.
-
-Caches bieten drei entscheidende Vorteile: Zunächst wird die Systemleistung verbessert, indem alles schneller lädt. Zweitens können Anwendungen teilweise offline arbeiten, falls Sie keinen Internetzugang haben, da wichtige Daten zwischengespeichert sind. Und drittens werden Daten zur späteren Verwendung gespeichert, damit ressourceneffizient die Daten nur einmal heruntergeladen werden müssen. Müssten Sie die Daten erneut laden, verbraucht das unnötig Akku bzw. Rechenpower. Trotz der Vorteile kann der Cache auch zu Problemen führen. Grund hierfür können fehlerhafte Daten im Cache sein oder dass der Cache einfach zu viel Speicherplatz einnimmt. Da hilft nur eins: Leeren Sie den Cache!
-
-Um besser zu verstehen, wo der Cache in alltäglichen Anwendungen vorkommt, stellen wir Ihnen im Folgenden die drei häufigsten Beispielfälle zusammen:
-
-Hardware
-Internetbrowser
-Apps
-
-[11a]
-**Transaktion**
-
-In der Infrastrukturlogik bezieht sich der Begriff "Transaktion" auf einen Satz von Aktionen, die als eine zusammenhängende und unteilbare Einheit betrachtet werden. Eine Transaktion in diesem Kontext ist oft mit Änderungen oder Aktualisierungen in einem System verbunden, und sie wird entweder vollständig ausgeführt oder gar nicht. Das bedeutet, dass, wenn ein Teil der Transaktion aus irgendeinem Grund fehlschlägt, alle durchgeführten Änderungen rückgängig gemacht werden, um die Konsistenz der Infrastruktur sicherzustellen.
-
-In der Welt der Datenbanken ist die Transaktionsverarbeitung weit verbreitet. Wenn beispielsweise eine Anwendung Daten in einer Datenbank ändert, könnten mehrere Datenbankoperationen als Teil einer Transaktion gruppiert werden. Wenn eine dieser Operationen scheitert, wird die gesamte Transaktion rückgängig gemacht, um sicherzustellen, dass die Datenbank in einem konsistenten Zustand bleibt.
-
-In der Infrastrukturlogik kann die Verwendung von Transaktionen dazu beitragen, die Integrität und Konsistenz von Änderungen oder Konfigurationen in einem System sicherzustellen.
-
-**Sicherheit**
-
-Sicherheit in Bezug auf Infrastrukturlogik bezieht sich auf die Maßnahmen und Vorkehrungen, die getroffen werden, um die Integrität, Vertraulichkeit und Verfügbarkeit der Infrastruktur sicherzustellen. Hier sind einige Aspekte der Sicherheit in der Infrastrukturlogik:
-
-Zugriffskontrolle: Die Verwaltung von Zugriffsrechten und -beschränkungen ist entscheidend, um sicherzustellen, dass nur autorisierte Personen oder Systeme auf kritische Teile der Infrastruktur zugreifen können.
-
-Verschlüsselung: Die Verschlüsselung von Daten, insbesondere während der Übertragung über Netzwerke, ist wichtig, um sicherzustellen, dass sensible Informationen vor unbefugtem Zugriff geschützt sind.
-
-Überwachung und Protokollierung: Das Überwachen von Aktivitäten in der Infrastruktur und das Protokollieren von Ereignissen helfen dabei, potenzielle Sicherheitsbedrohungen zu erkennen, zu verfolgen und darauf zu reagieren.
-
-Sicherheitsupdates und Patch-Management: Die regelmäßige Aktualisierung von Software und das Einspielen von Sicherheitspatches sind wesentliche Maßnahmen, um Sicherheitslücken zu schließen und die Infrastruktur vor bekannten Bedrohungen zu schützen.
-
-Firewalls und Netzwerksicherheit: Die Implementierung von Firewalls und anderen Netzwerksicherheitsmaßnahmen ist entscheidend, um unerwünschten Datenverkehr zu blockieren und die Integrität des Netzwerks zu gewährleisten.
-
-Physische Sicherheit: Die physische Sicherheit von Serverräumen, Rechenzentren und anderen Infrastrukturelementen ist ebenso wichtig, um unbefugten Zugriff oder physische Bedrohungen zu verhindern.
-
-Notfallwiederherstellung und Redundanz: Die Planung für Notfallsituationen und die Implementierung von Redundanzmechanismen helfen dabei, Ausfallzeiten zu minimieren und die Kontinuität der Infrastruktur sicherzustellen.
-
-Die Sicherheit in der Infrastrukturlogik ist ein umfassendes Konzept, das mehrere Ebenen und Aspekte berücksichtigt, um eine robuste und geschützte Umgebung zu gewährleisten.
 
 ## Abbildung der Softwarearchitektur auf die Systemarchitektur
 
@@ -443,7 +443,7 @@ In diesem Beispiel repräsentiert die erste Stufe die Datenerfassung durch Benut
 [11a] : https://www.heise.de/tipps-tricks/Was-ist-ein-Cache-4932006.html
 [12a] : https://chat.openai.com/?model=text-davinci-002-render-sha frage : was ist Sicherheit im Bezug auf Infrastrukturlogik 
 [13a] : https://chat.openai.com/c/63c2b80e-a9dd-4735-8ea0-edad1bff8a7c : was ist eine vier stufen Archtiketur
-
+[14a] : https://books.google.de/books?id=QCwgBAAAQBAJ&pg=PA388&lpg=PA388&dq=Dom%C3%A4nenlogik&source=bl&ots=QltYgvCEo1&sig=ACfU3U3Rv0MK78S1RoblZXifT6o8YxevtQ&hl=de&sa=X&ved=2ahUKEwi2pLvr87aCAxXjgv0HHUU9AeQQ6AF6BAgvEAM#v=onepage&q=Dom%C3%A4nenlogik&f=false
 
 
 
