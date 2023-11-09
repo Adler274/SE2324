@@ -391,10 +391,9 @@ Die erste Stufe erfasst die Aufgabe und ihre Details, während die zweite Stufe 
 
 ---
 
-#### Vier-Stufen-Architektur
-***
+#### Vier-Stufen-Architektur Anwendungsbeispiel
 
-**Social Media Plattform:**
+Social Media Plattform:
 
 1. **Datenerfassung (Stufe 1):**
    - Benutzer erstellen Konten und geben persönliche Informationen ein.
@@ -410,36 +409,45 @@ Die erste Stufe erfasst die Aufgabe und ihre Details, während die zweite Stufe 
 
 4. **Datenanalyse (Stufe 4):**
    - Analyse aggregierter Daten, um Trends im Benutzerverhalten zu identifizieren.
-   - Verwendung von Analysen zur Verbesserung der Benutzererfahrung, Anpassung von Werbung und Identifikation von Trends.
-
-*Beispiel:*
-Die erste Stufe repräsentiert die Datenerfassung durch Benutzeraktivitäten. Die zweite Stufe beinhaltet die Verarbeitung und Überprüfung dieser Daten. Die dritte Stufe präsentiert die verarbeiteten Daten in der Benutzeroberfläche, während die vierte Stufe Analysen durchführt, um Einblicke und Verbesserungen für die Plattform zu generieren.
-
-
-
-
-
-
-
-
-
----
-# Zusammenfassung
-
-- Folien werden mit `---` voneinander abgetrennt (Achtung: kein Leerzeichen am Ende)
-- Bilder, Diagramme etc. im `media`-Unterverzeichnis speichern
-- Wird die Datei `remark-latest.min.js` heruntergeladen, können die Folien offline bearbeitet werden. Pfad im `script`-Tag anpassen.
-- [Remark.js](https://remarkjs.com/)
-
+   
 ---
 class: center, middle
 
 # Fragen?
 
 ---
-# Quellen
+#### Quellen
+***
+[1a] : https://de.wikipedia.org/wiki/Gesch%C3%A4ftslogik
+
+[2a] : https://chat.openai.com/c/63c2b80e-a9dd-4735-8ea0-edad1bff8a7c frage : erkläre mir ausführlich die Steuerungslogik
+
+[3a] : https://chat.openai.com/c/63c2b80e-a9dd-4735-8ea0-edad1bff8a7c frage : erkläre mir ausführlich was die Validierungslogik (Validation logic) ist
+
+[4a] : https://chat.openai.com/c/63c2b80e-a9dd-4735-8ea0-edad1bff8a7c frage :erkläre mir ausführlich was Infrastrukturlogik (Infrastructure logic) ist
+
+[5a] : https://chat.openai.com/c/63c2b80e-a9dd-4735-8ea0-edad1bff8a7c frage :erkläre mir ausführlich was die Domänenlogik (Domain logic) ist
+
+[6a] :https://chat.openai.com/c/63c2b80e-a9dd-4735-8ea0-edad1bff8a7c frage: erkläre mir die Geschäftslogik (Business logic) ausführlich
+
+[7a] : https://chat.openai.com/c/63c2b80e-a9dd-4735-8ea0-edad1bff8a7c frage : erkläre mir ausführlich was die  Präsentationslogik (Presentation logic) ist
+
+---
+#### Quellen
 ***
 
-- Kitchenham, B. (1990). Software Development Cost Models. 487-517.
+[8a] : https://de.wikipedia.org/wiki/Schichtenarchitektur
 
-- Chidamber, S., and C. Kemerer. (1994). A Metrics Suite for Object-Oriented Design. 476-493.
+[9a] : https://saipawan.wordpress.com/2015/08/19/whats-the-difference-between-layers-and-tiers/
+
+[10a] : https://de.wikipedia.org/wiki/Persistenz_(Informatik)
+
+[11a] : https://www.heise.de/tipps-tricks/Was-ist-ein-Cache-4932006.html
+
+[12a] : https://chat.openai.com/?model=text-davinci-002-render-sha frage : was ist Sicherheit im Bezug auf Infrastrukturlogik 
+
+[13a] : https://chat.openai.com/c/63c2b80e-a9dd-4735-8ea0-edad1bff8a7c : was ist eine vier stufen Archtiketur
+
+[14a] : https://books.google.de/books?id=QCwgBAAAQBAJ&pg=PA388&lpg=PA388&dq=Dom%C3%A4nenlogik&source=bl&ots=QltYgvCEo1&sig=ACfU3U3Rv0MK78S1RoblZXifT6o8YxevtQ&hl=de&sa=X&ved=2ahUKEwi2pLvr87aCAxXjgv0HHUU9AeQQ6AF6BAgvEAM#v=onepage&q=Dom%C3%A4nenlogik&f=false
+
+
