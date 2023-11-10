@@ -311,86 +311,132 @@ Angenommen, man entwickelt die Präsentationslogik für eine To-Do-Liste-Anwendu
 
 ### Schichtenarchitektur (Layered Architektur)
 ***
-
 Eine Schichtenarchitektur besteht aus mehreren Schichten, welche jeweils eine bestimmte Aufgabe erfüllen.
-Meist werden 3 Grundlegende Schichten verwendet, die GUI-Schicht, Fachkonzeptschicht, und die Datenhaltungsschicht.
-Die GUI-Schicht ist für die **Darstellung und Manipultion** der Daten zuständig, sie ist die Schnittstelle zwischen Benutzer und Fachkonzeptschicht.
-die Fachkonzeptschicht ist für die **Verwaltung** der Daten zuständig und die Datenhaltungsschicht ist für die **Speicherung** der Daten.
-Dieses Konzept kann man auch als Client, Server und Datenbank sehen. Diees ist aus Software sicht gesehen kann aber auch in bezug auf Hardware so aufgeteilt sind(verteiles Softwaresystem).
+Meist werden 3 Grundlegende Schichten verwendet.
+
+**GUI-Schicht:** Zuständig für die **Darstellung und Manipultion** der Daten, Schnittstelle zwischen Benutzer und Fachkonzeptschicht.
+
+**Fachkonzeptschicht:** Zuständig für die **Verwaltung** der Daten
+**Datenhaltungsschicht:** **Speicherung** der Daten
+
+<br>
+
+**(Server, Client, Datenbank)**
 
 [3b]
 
+---
+
 #### Azyklische Abhängigkeiten
-Azyklische Abhängigkeiten sind das gegenteil von zyklischen Abhängigkeiten, also das vermiden von diesen.
-Zyklische Abghängigkeiten sind nämlich Abhängigkeiten bei denen mehrere Komponenten in einem zyklus/kries abhängig sind.
-Das kann zu einem großen Problem führen, wenn eine dieser Komponenten ausfallen, da dann alle anderen ausfallen.
-Das Ziel von Azyklischen bhängigkeiten ist, so wenig bzw. einfachste Abhängigkeiten zu haben, um die Wartbarkeit und Erweiterbarkeit zu verbessern.
+***
+* Vermeiden von zyklischen Abhängigkeiten
+* Zyklische Abhängigkeiten führen zu Problemen
+ * abhänigkeiten im Kries -> Ausfall einer Komponente führt zum Ausfall aller anderen
+
+* #### Ziel: so wenig bzw. einfachste Abhängigkeiten
 
 [4b]
 
+---
+
 ### Domänenzentrische Software-Architekturen
-Domain-driven Design(DDD) ist eine Ansatz der Softwareentwicklung, bei dem die Probleme der Geschätsbereiche in den Vordergrund gestellt werden, um sie besser zu verstehen und zu Lösen.
-Dies wird umgesetzt durch die verwendung einer einheitlichen Sprache (Fachbegiffe) unter den verschiedenen Geschäftsbereichen.
+***
+Domain-driven Design(DDD) ist eine Ansatz der Softwareentwicklung, bei dem die Probleme der Geschätsbereiche in den Vordergrund gestellt werden, um sie besser zu verstehen und zu Lösen.<br>
+
+Dies wird umgesetzt durch die verwendung einer einheitlichen Sprache (Fachbegiffe) unter den verschiedenen Geschäftsbereichen.<br>
+
 Mit DDD wird die Geschäftslogik klar in der Software representiert, um die Zusammenarbeit zu fördern.
 
 [5b]
 
+---
+
 #### Onion Architecture
-Bei der Onion Architecture werden bestimmte Kompontenten der Architektur in konzentrische Ringe gegliedert.
-Kompontenten eines äußeren Ringes darf dabei nur auf innere Ringe zugreifen, aber nicht anders herum.
-Innere Ringe sind dabei die Kernkomponenten, welche die Geschäftslogik enthalten.
-Das Ziel ist die Trennung zwischen der Geschäftslogikl(Infrastuktur) und der Anwendungslogik.
-Die Geschäftslogik ist dabei im inneren Ring da man meist davon ausgeht, dass diese am stabilsten ist und sich am wenigsten ändert.
+***
+* Komponenten sind in konzentrische Ringe gegliedert.
+* äußere Ringe greifen nur auf innere zu
+* innerer Ring enthält die Geschäftslogik(kernkomponente)
+
+Trennung zwischen Geschäftslogik und Anwendungslogik.
+Liegt im innersten, da sie sich am wenigstens ändert.
 
 [6b]
+
+---
+
 #### Ports And Adapters Architecture (Hexagonale Architektur)
-Die Ports and Adapters Architecture, teilt das System in lose gekoppelte Komponenten wie Geschäftslogik, Datenbank, TestProgramme und andere Interfaces auf. Bei dieser Architektur ist der Kern(Geschätslogik) in der Mitte und ist verbunden mit den anderen Komponenten durch eine Schicht von Adaptern.
+***
+Das System ist in los gekoppelte Komponenten aufgeteilt.
+Kern ist in der Mitte und ist mit den anderen Komponenten durch eine Schicht von Adaptern verbunden.
 
 ##### Core logic
-Die Kern Logik ist hierbei getrennt von den äußeren Komponenten, was die felxible änderung der Datenquelle ermöglicht,
-ohne dass dabei viel geändert werden muss, oder der code umgeschrieben werden muss.
-Die Geschäftslogik weiß also praktisch nichts über die die äußeren Komponenten.
+***
+* Kern ist getrennt von den äußeren Komponenten
+ * flexible änderung der Datenquelle
+* Geschäftslogik weiß nichts über äußere Komponenten
+
+[7b]
+---
 
 ##### Ports
-Ports sind die Schnittstellen mit denen der Kern mit den äußeren Komponenten intergiert.
+***
+Ports sind die Schnittstellen mit denen der Kern mit den äußeren Komponenten intergiert.<br>
+
 Die Ports erlauben Daten in den Kern zu schreiben und aus dem Kern zu lesen und sind somit bi-direktional.
 
-###### Inbound, Outbound
-Mit Inbound Ports(driving Port) kann der Kern die funktionalitäten den äußeren Komponenten zur verfügung stellen.
-mit den Outboud Ports(driven Port) kann der Kern auf die äußeren Komnponenten zugreifen, wie zum Beispiel Daten von einer Datenbank lesen.
+**Inbound:** Ports mit denen der Kern funktionalitätet den äuußeren Freigibt.<br>
 
-##### Adapters
-Die Adapter bilden eine Schicht um den funktions Kern. Diese sind nicht ein Teil des Kernes aber ineragieren mit diesem.
-Dabei gibt es zwei Arten von Adptern, die Primären und die Sekundären.
-
-###### Driving (primary) Adapters
-Die Primären Adapter benutzen die Inbound Ports um zum Beispiel ein Event auszulösen wenn z.B ein Knopf gedrückt wird.
-Dir Primären Adapter sind mit Komponenten wie z.B. API-UI, Konsole oder Test Scripts.
-
-###### Driven (secondary) Adapters
-Die sekundären Adapter werden von den Outbound Ports benutzt um Events zu verarbeiten.
-Sie greifen auf Komponenten wie Datenbanken, Dateisysteme oder andere APIs zu.
+**Outbound:** Ports mit denen der Kern Daten an die äußeren Komponenten sendet.
+ * (lesen von Datenbanken)
 
 [7b]
 
+---
+
+##### Adapters
+***
+Die Adapter bilden eine Schicht um den funktions Kern.<br>
+Diese sind nicht ein Teil des Kernes aber ineragieren mit diesem.<br>
+Dabei gibt es zwei Arten von Adptern
+
+**Driving (primary) Adapters** benutzen Inbound Ports um Events auszulösen.<br>
+ * z.B. Knopfdruck
+ * sind Komponenten wie API-UI, Konsole oder Test Scripts
+
+**Driven (secondary) Adapters** benutzen Outbound Ports um Events zu verarbeiten.<br>
+ * greifen auf Datenbanken, Dateisysteme oder andere APIs zu.
+
+[7b]
+
+---
+
 #### Clean Architecture als Realisierung der hexagonalen Architektur
+***
 Clean Architecture iset eine spezifische Realisiereung der hexagonalen Architektur.
-Dabei werden die Geschäftslogik, Anwendungslogik und die externe Infrastruktur noch klarer getrennt.
-Die Geschäftslogik ist dabei im inneren Ring, die Anwendungslogik im mittleren Ring und die externe Infrastruktur im äußeren Ring.
-zwischen dem äußeren und mittleren Ring gibt es noch einen weiteren Rind,der die Schnittstelle/Adapter zwischen den beiden darstellt.
-Wie bei der Onion Architecture, darf die Anwendungslogik nur auf die Geschäftslogik zugreifen und die Geschätslogik liegt im inneren Ring, da diese am stabilsten ist und sich am wenigsten ändert.
-Die Anwendungslogik ist im mittleren Ring imolementiert die Use-Cases (User Aktionen an das System) der Anwendung. 
+
+* Geschäftslogik, Anwendungslogik und externe Infrastruktur klar getrennt.
+ * Geschäftslogik im inneren Ring
+ * Anwendungslogik im mittleren Ring
+ * Externe Infrastruktur im äußeren Ring
+  * mittlerer und äußerer Ring durch Adapter/Schnittstellen-Ring verbunden
+* Abhängigkeiten nur von außen nach innen,<br>
+Geschänftslogik am stabilsten(Onion Ring)
 
 [6b]
 
-### Vergleich der Ansätze, Vorteile, Nachteile
-Der Vorteil aller Ansätze ist, dass sie die Software in verschiedene Komponenten aufteilen, um die Wartbarkeit, Erweiterbarkeit und Wiederverwendbarkeit zu verbessern.
-Das System ist dadurch robuster da einzelnen ausfälle nicht das gesamte System zum absturz bringen.
-Auch Abhängigkeiten sind klar definiert, um zum Beispiel zyklische Agbhängigkeiten zu vermeiden.
-Alle Ansätze Zielen auch darauf ab, das System flexibel zu gestllten und einfach testbar zu machen.
+---
 
-Ein klarer Vorteil bei der hexagonalen Architektur ist natürlich dass die abhängigkeiten durch bestimmte Arten von Adaptern/Ports bestimmt sind.
+### Vergleich der Ansätze, Vorteile, Nachteile
+***
+Der Vorteil aller Ansätze ist, dass sie die Software in verschiedene Komponenten aufteilen, um die Wartbarkeit, Erweiterbarkeit und Wiederverwendbarkeit zu verbessern.<br>
+Das System ist dadurch robuster da einzelnen ausfälle nicht das gesamte System zum absturz bringen.<br>
+Auch Abhängigkeiten sind klar definiert, um zum Beispiel zyklische Agbhängigkeiten zu vermeiden.<br>
+Alle Ansätze Zielen auch darauf ab, das System flexibel zu gestllten und einfach testbar zu machen.<br>
+
+
+Ein klarer Vorteil bei der hexagonalen Architektur ist natürlich dass die abhängigkeiten durch bestimmte Arten von Adaptern/Ports bestimmt sind.<br>
 Dafür hat die Onion Ring Architektur den Vorteil, dass die Kommunikation nur von außen nach innen geschehen kann, was die Komplexität reduziert und die Komponenten, mit dem größten risiko der Änderung, auch am einfachsten ist zu ändern.
+
 ---
 
 #### Multi-Tier Architekturen
