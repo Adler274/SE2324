@@ -583,13 +583,6 @@ In diesem Beispiel repräsentiert die erste Stufe die Datenerfassung durch Benut
 
   * Beschreibt die Anzahl der Ebenen, die Daten durchlaufen, von der Benutzeroberfläche zur Datenbank.
 
-
-
-
-
-
-
-
 ## Referenzen
 
 [1a] : https://de.wikipedia.org/wiki/Gesch%C3%A4ftslogik
