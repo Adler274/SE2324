@@ -161,6 +161,7 @@ Die **Infrastrukturlogik**, auch als "Infrastructure Logic" bezeichnet, befasst 
 
 Die Infrastrukturlogik ist entscheidend für eine reibungslose Interaktion der Software mit ihrer Umgebung. Sie trägt dazu bei, die Trennung zwischen Anwendungslogik und Infrastruktur aufrechtzuerhalten, was die Wartbarkeit und Skalierbarkeit der Software verbessert.
 
+[4a]
 ---
 ### Persistenz und Cache
 ***

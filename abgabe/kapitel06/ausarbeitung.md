@@ -139,6 +139,7 @@ Ressourcenverwaltung: Die Infrastrukturlogik ist oft für die effiziente Verwalt
 
 Die Infrastrukturlogik ist entscheidend, um sicherzustellen, dass die Software reibungslos mit ihrer Umgebung interagiert und die erforderlichen Ressourcen effizient nutzt. Sie trägt dazu bei, die Trennung zwischen der eigentlichen Anwendungslogik und der zugrunde liegenden Infrastruktur aufrechtzuerhalten, was die Wartbarkeit und Skalierbarkeit der Software verbessert.
 
+[4a]
 #### Persistenz, Cache, Transaktion, Sicherheit, ...
 
 **Persistenz**
@@ -532,6 +533,62 @@ Datenanalyse (Stufe 4):
 Die Plattform analysiert aggregierte Daten, um Trends im Benutzerverhalten zu identifizieren.
 Diese Analysen können zur Verbesserung der Benutzererfahrung, Anpassung von Werbung und Identifikation von aufkommenden Trends verwendet werden.
 In diesem Beispiel repräsentiert die erste Stufe die Datenerfassung durch Benutzeraktivitäten. Die zweite Stufe beinhaltet die Verarbeitung und Überprüfung dieser Daten. Die dritte Stufe präsentiert die verarbeiteten Daten in der Benutzeroberfläche, während die vierte Stufe Analysen durchführt, um Einblicke und Verbesserungen für die Plattform zu generieren.
+
+### Zusammenfassung
+
+**Domänenlogik (Domain Logic):**
+
+  * Definiert die Kernfunktionalitäten einer Anwendung basierend auf spezifischem Fachwissen.
+  * Konzentriert sich darauf, wie Daten in einem bestimmten Bereich verarbeitet werden sollen.
+  
+**Geschäftslogik (Business Logic):**
+
+  * Legt die Regeln und Prozesse fest, die die Umsetzung der Domänenlogik in die Geschäftsziele ermöglichen.
+  * Fokussiert sich auf die Logik, die direkt mit den unternehmerischen Anforderungen verbunden ist.
+
+**Präsentationslogik (Presentation Logic):**
+
+  * Verantwortlich für die Gestaltung der Benutzeroberfläche und die Darstellung von Daten für die Benutzerinteraktion.
+  * Steuert, wie Informationen dem Benutzer präsentiert und von ihm empfangen werden.
+
+**Steuerungslogik (Control Logic):**
+
+  * Koordiniert den Datenfluss und die Interaktion zwischen verschiedenen Komponenten einer Softwareanwendung.
+  * Regelt den Ablauf der Anwendungslogik und stellt sicher, dass Operationen ordnungsgemäß ausgeführt werden.
+
+**Validierungslogik (Validation Logic):**
+
+  * Überprüft die Richtigkeit und Konsistenz von Benutzereingaben und Daten gemäß definierten Regeln.
+  * Gewährleistet die Integrität der Daten, indem sie sicherstellt, dass sie den vorgegebenen Anforderungen entsprechen.
+
+**Infrastrukturlogik (Infrastructure Logic):**
+
+  * Persistenzlogik kümmert sich um die dauerhafte Speicherung von Daten in der Datenbank.
+  * Cache-Logik optimiert die Performance durch temporäre Speicherung häufig verwendeter Daten.
+  * Transaktions- und Sicherheitslogik gewährleisten die Datenkonsistenz und schützen vor unbefugtem Zugriff.
+
+
+**Softwarearchitektur auf Systemarchitektur:**
+  * Strukturierung von Softwarekomponenten in der Systemarchitektur.
+
+**Multi-Tier Architekturen:**
+
+  * Unterscheidung zwischen Tiers (logische Aufteilung) und Layers (technische Schichten).
+
+**Tiers vs. Layers (Stufen vs. Schichten):**
+
+  * Tiers repräsentieren logische Aufteilungen, während Layers technische Schichten beschreiben.
+
+**(Zwei/Drei/Vier)-Stufen-Architektur:**
+
+  * Beschreibt die Anzahl der Ebenen, die Daten durchlaufen, von der Benutzeroberfläche zur Datenbank.
+
+
+
+
+
+
+
 
 ## Referenzen
 
