@@ -3,7 +3,6 @@
 **Autor:** Simon Fedrau, Sascha Hahn
 
 ## Lernziele
-***
 * Welche Arten von Softwarelogiken gibt es
   * Wofür sind diese nützlich
 * Was sind Multi-Tier Architekturen
@@ -17,7 +16,6 @@
 
 
 ## Arten von Softwarelogik
-***
 
 ### Domänenlogik (Domain logic)
 
@@ -535,30 +533,50 @@ Die Plattform analysiert aggregierte Daten, um Trends im Benutzerverhalten zu id
 Diese Analysen können zur Verbesserung der Benutzererfahrung, Anpassung von Werbung und Identifikation von aufkommenden Trends verwendet werden.
 In diesem Beispiel repräsentiert die erste Stufe die Datenerfassung durch Benutzeraktivitäten. Die zweite Stufe beinhaltet die Verarbeitung und Überprüfung dieser Daten. Die dritte Stufe präsentiert die verarbeiteten Daten in der Benutzeroberfläche, während die vierte Stufe Analysen durchführt, um Einblicke und Verbesserungen für die Plattform zu generieren.
 
-
-
 ## Referenzen
 
 [1a] : https://de.wikipedia.org/wiki/Gesch%C3%A4ftslogik
+
 [2a] : https://chat.openai.com/c/63c2b80e-a9dd-4735-8ea0-edad1bff8a7c frage : erkläre mir ausführlich die Steuerungslogik
+
 [3a] : https://chat.openai.com/c/63c2b80e-a9dd-4735-8ea0-edad1bff8a7c frage : erkläre mir ausführlich was die Validierungslogik (Validation logic) ist
+
 [4a] : https://chat.openai.com/c/63c2b80e-a9dd-4735-8ea0-edad1bff8a7c frage :erkläre mir ausführlich was Infrastrukturlogik (Infrastructure logic) ist
+
 [5a] : https://chat.openai.com/c/63c2b80e-a9dd-4735-8ea0-edad1bff8a7c frage :erkläre mir ausführlich was die Domänenlogik (Domain logic) ist
+
 [6a] :https://chat.openai.com/c/63c2b80e-a9dd-4735-8ea0-edad1bff8a7c frage: erkläre mir die Geschäftslogik (Business logic) ausführlich
+
 [7a] : https://chat.openai.com/c/63c2b80e-a9dd-4735-8ea0-edad1bff8a7c frage : erkläre mir ausführlich was die  Präsentationslogik (Presentation logic) ist
+
 [8a] : https://de.wikipedia.org/wiki/Schichtenarchitektur
+
 [9a] : https://saipawan.wordpress.com/2015/08/19/whats-the-difference-between-layers-and-tiers/
+
 [10a] : https://de.wikipedia.org/wiki/Persistenz_(Informatik)
+
 [11a] : https://www.heise.de/tipps-tricks/Was-ist-ein-Cache-4932006.html
+
 [12a] : https://chat.openai.com/?model=text-davinci-002-render-sha frage : was ist Sicherheit im Bezug auf Infrastrukturlogik 
+
 [13a] : https://chat.openai.com/c/63c2b80e-a9dd-4735-8ea0-edad1bff8a7c : was ist eine vier stufen Archtiketur
+
 [14a] : https://books.google.de/books?id=QCwgBAAAQBAJ&pg=PA388&lpg=PA388&dq=Dom%C3%A4nenlogik&source=bl&ots=QltYgvCEo1&sig=ACfU3U3Rv0MK78S1RoblZXifT6o8YxevtQ&hl=de&sa=X&ved=2ahUKEwi2pLvr87aCAxXjgv0HHUU9AeQQ6AF6BAgvEAM#v=onepage&q=Dom%C3%A4nenlogik&f=false
 
+
+
 [1b] :https://gi.de/informatiklexikon/software-architektur
+
 [2b] :https://chat.openai.com/: Was sind Vor und Nachteile von Softwarearchitektur
+
 [3b] :https://studyflix.de/informatik/schichtenarchitektur-i-604
+
 [4b] :https://www.heise.de/blog/Zyklische-Abhaengigkeiten-eine-Architektur-Todsuende-4061803.html
+
 [5b] :https://entwickler.de/ddd/einfuhrung-in-die-konzepte-von-domain-driven-design-001
+
 [6b] :https://www.innoq.com/de/blog/2018/02/ddd-mit-onion-architecture-umsetzen/
+
 [7b] :https://medium.com/idealo-tech-blog/hexagonal-ports-adapters-architecture-e3617bcf00a0
+
 [8b] :https://dev.to/dyarleniber/hexagonal-architecture-and-clean-architecture-with-examples-48oi

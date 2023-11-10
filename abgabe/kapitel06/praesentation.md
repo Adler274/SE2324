@@ -22,16 +22,22 @@ Simon Fedrau, Sascha Hahn
 
   1. Anwendungsbeispiele 
 
+1. Softwarearchitekturen
+
+  1. Vorteile, Nachtile, Motivtion
+
+  1. Domänenzentrische Architektur
+    
+    1. Onion Architecture
+
+    1. Hexagonale Architektur
+
 1. Zusammenfassung
 
 1. Quellen
 
 ---
 ## Arten von Softwarelogik
-
-
-
-
 
 ---
 
@@ -271,6 +277,120 @@ Angenommen, man entwickelt die Präsentationslogik für eine To-Do-Liste-Anwendu
   * Die Präsentationslogik ermöglicht es Benutzern, ihre Aufgaben nach Kriterien zu filtern z.B  abgeschlossene Aufgaben
 
 ---
+## Softwarearchitekturen
+***
+* Architektur eines Softwaresystems
+* grober Zusammenhang/Verbindung zwischen Komponenten
+* keine Details, grobe Struktur um Anforderungen zu erfüllen
+
+[1b]
+
+---
+
+### Vergleich, Vorteile, Nachteile, Motivation
+***
+* **Vorteile:**<br>
+ * klare Strukutur
+ * Leicht zu verstehen -> einfache Kommunikation über Probleme und Features
+ * Dokumentation
+ * Einfachere Erweiterbarkeit und Wiederverwendbarkeit
+
+* **Nachteile:**<br>
+ * Hoher initaler Zeitaufwand
+ * Bei häufiger anforderungs Änderung, ist starre Struktur von Nachteil
+ * unnötiger Aufwand bei zu komplizierter Architektur
+
+* **Ziel:**<br>
+    Struktuierung dess Sysems um übersicht zu behalten.
+    Wartbarkeit, Erweiterbarkeit und Wiederverwendbarkeit verbessern. 
+
+[1b,2b]
+
+---
+
+### Schichtenarchitektur (Layered Architektur)
+***
+
+Eine Schichtenarchitektur besteht aus mehreren Schichten, welche jeweils eine bestimmte Aufgabe erfüllen.
+Meist werden 3 Grundlegende Schichten verwendet, die GUI-Schicht, Fachkonzeptschicht, und die Datenhaltungsschicht.
+Die GUI-Schicht ist für die **Darstellung und Manipultion** der Daten zuständig, sie ist die Schnittstelle zwischen Benutzer und Fachkonzeptschicht.
+die Fachkonzeptschicht ist für die **Verwaltung** der Daten zuständig und die Datenhaltungsschicht ist für die **Speicherung** der Daten.
+Dieses Konzept kann man auch als Client, Server und Datenbank sehen. Diees ist aus Software sicht gesehen kann aber auch in bezug auf Hardware so aufgeteilt sind(verteiles Softwaresystem).
+
+[3b]
+
+#### Azyklische Abhängigkeiten
+Azyklische Abhängigkeiten sind das gegenteil von zyklischen Abhängigkeiten, also das vermiden von diesen.
+Zyklische Abghängigkeiten sind nämlich Abhängigkeiten bei denen mehrere Komponenten in einem zyklus/kries abhängig sind.
+Das kann zu einem großen Problem führen, wenn eine dieser Komponenten ausfallen, da dann alle anderen ausfallen.
+Das Ziel von Azyklischen bhängigkeiten ist, so wenig bzw. einfachste Abhängigkeiten zu haben, um die Wartbarkeit und Erweiterbarkeit zu verbessern.
+
+[4b]
+
+### Domänenzentrische Software-Architekturen
+Domain-driven Design(DDD) ist eine Ansatz der Softwareentwicklung, bei dem die Probleme der Geschätsbereiche in den Vordergrund gestellt werden, um sie besser zu verstehen und zu Lösen.
+Dies wird umgesetzt durch die verwendung einer einheitlichen Sprache (Fachbegiffe) unter den verschiedenen Geschäftsbereichen.
+Mit DDD wird die Geschäftslogik klar in der Software representiert, um die Zusammenarbeit zu fördern.
+
+[5b]
+
+#### Onion Architecture
+Bei der Onion Architecture werden bestimmte Kompontenten der Architektur in konzentrische Ringe gegliedert.
+Kompontenten eines äußeren Ringes darf dabei nur auf innere Ringe zugreifen, aber nicht anders herum.
+Innere Ringe sind dabei die Kernkomponenten, welche die Geschäftslogik enthalten.
+Das Ziel ist die Trennung zwischen der Geschäftslogikl(Infrastuktur) und der Anwendungslogik.
+Die Geschäftslogik ist dabei im inneren Ring da man meist davon ausgeht, dass diese am stabilsten ist und sich am wenigsten ändert.
+
+[6b]
+#### Ports And Adapters Architecture (Hexagonale Architektur)
+Die Ports and Adapters Architecture, teilt das System in lose gekoppelte Komponenten wie Geschäftslogik, Datenbank, TestProgramme und andere Interfaces auf. Bei dieser Architektur ist der Kern(Geschätslogik) in der Mitte und ist verbunden mit den anderen Komponenten durch eine Schicht von Adaptern.
+
+##### Core logic
+Die Kern Logik ist hierbei getrennt von den äußeren Komponenten, was die felxible änderung der Datenquelle ermöglicht,
+ohne dass dabei viel geändert werden muss, oder der code umgeschrieben werden muss.
+Die Geschäftslogik weiß also praktisch nichts über die die äußeren Komponenten.
+
+##### Ports
+Ports sind die Schnittstellen mit denen der Kern mit den äußeren Komponenten intergiert.
+Die Ports erlauben Daten in den Kern zu schreiben und aus dem Kern zu lesen und sind somit bi-direktional.
+
+###### Inbound, Outbound
+Mit Inbound Ports(driving Port) kann der Kern die funktionalitäten den äußeren Komponenten zur verfügung stellen.
+mit den Outboud Ports(driven Port) kann der Kern auf die äußeren Komnponenten zugreifen, wie zum Beispiel Daten von einer Datenbank lesen.
+
+##### Adapters
+Die Adapter bilden eine Schicht um den funktions Kern. Diese sind nicht ein Teil des Kernes aber ineragieren mit diesem.
+Dabei gibt es zwei Arten von Adptern, die Primären und die Sekundären.
+
+###### Driving (primary) Adapters
+Die Primären Adapter benutzen die Inbound Ports um zum Beispiel ein Event auszulösen wenn z.B ein Knopf gedrückt wird.
+Dir Primären Adapter sind mit Komponenten wie z.B. API-UI, Konsole oder Test Scripts.
+
+###### Driven (secondary) Adapters
+Die sekundären Adapter werden von den Outbound Ports benutzt um Events zu verarbeiten.
+Sie greifen auf Komponenten wie Datenbanken, Dateisysteme oder andere APIs zu.
+
+[7b]
+
+#### Clean Architecture als Realisierung der hexagonalen Architektur
+Clean Architecture iset eine spezifische Realisiereung der hexagonalen Architektur.
+Dabei werden die Geschäftslogik, Anwendungslogik und die externe Infrastruktur noch klarer getrennt.
+Die Geschäftslogik ist dabei im inneren Ring, die Anwendungslogik im mittleren Ring und die externe Infrastruktur im äußeren Ring.
+zwischen dem äußeren und mittleren Ring gibt es noch einen weiteren Rind,der die Schnittstelle/Adapter zwischen den beiden darstellt.
+Wie bei der Onion Architecture, darf die Anwendungslogik nur auf die Geschäftslogik zugreifen und die Geschätslogik liegt im inneren Ring, da diese am stabilsten ist und sich am wenigsten ändert.
+Die Anwendungslogik ist im mittleren Ring imolementiert die Use-Cases (User Aktionen an das System) der Anwendung. 
+
+[6b]
+
+### Vergleich der Ansätze, Vorteile, Nachteile
+Der Vorteil aller Ansätze ist, dass sie die Software in verschiedene Komponenten aufteilen, um die Wartbarkeit, Erweiterbarkeit und Wiederverwendbarkeit zu verbessern.
+Das System ist dadurch robuster da einzelnen ausfälle nicht das gesamte System zum absturz bringen.
+Auch Abhängigkeiten sind klar definiert, um zum Beispiel zyklische Agbhängigkeiten zu vermeiden.
+Alle Ansätze Zielen auch darauf ab, das System flexibel zu gestllten und einfach testbar zu machen.
+
+Ein klarer Vorteil bei der hexagonalen Architektur ist natürlich dass die abhängigkeiten durch bestimmte Arten von Adaptern/Ports bestimmt sind.
+Dafür hat die Onion Ring Architektur den Vorteil, dass die Kommunikation nur von außen nach innen geschehen kann, was die Komplexität reduziert und die Komponenten, mit dem größten risiko der Änderung, auch am einfachsten ist zu ändern.
+---
 
 #### Multi-Tier Architekturen
 ***
@@ -416,7 +536,7 @@ class: center, middle
 # Fragen?
 
 ---
-#### Quellen
+# Quellen
 ***
 [1a] : https://de.wikipedia.org/wiki/Gesch%C3%A4ftslogik
 
@@ -430,11 +550,12 @@ class: center, middle
 
 [6a] :https://chat.openai.com/c/63c2b80e-a9dd-4735-8ea0-edad1bff8a7c frage: erkläre mir die Geschäftslogik (Business logic) ausführlich
 
-[7a] : https://chat.openai.com/c/63c2b80e-a9dd-4735-8ea0-edad1bff8a7c frage : erkläre mir ausführlich was die  Präsentationslogik (Presentation logic) ist
-
 ---
-#### Quellen
+
+# Quellen
 ***
+
+[7a] : https://chat.openai.com/c/63c2b80e-a9dd-4735-8ea0-edad1bff8a7c frage : erkläre mir ausführlich was die  Präsentationslogik (Presentation logic) ist
 
 [8a] : https://de.wikipedia.org/wiki/Schichtenarchitektur
 
@@ -450,4 +571,22 @@ class: center, middle
 
 [14a] : https://books.google.de/books?id=QCwgBAAAQBAJ&pg=PA388&lpg=PA388&dq=Dom%C3%A4nenlogik&source=bl&ots=QltYgvCEo1&sig=ACfU3U3Rv0MK78S1RoblZXifT6o8YxevtQ&hl=de&sa=X&ved=2ahUKEwi2pLvr87aCAxXjgv0HHUU9AeQQ6AF6BAgvEAM#v=onepage&q=Dom%C3%A4nenlogik&f=false
 
+---
 
+# Quellen
+***
+[1b] :https://gi.de/informatiklexikon/software-architektur
+
+[2b] :https://chat.openai.com/: Was sind Vor und Nachteile von Softwarearchitektur
+
+[3b] :https://studyflix.de/informatik/schichtenarchitektur-i-604
+
+[4b] :https://www.heise.de/blog/Zyklische-Abhaengigkeiten-eine-Architektur-Todsuende-4061803.html
+
+[5b] :https://entwickler.de/ddd/einfuhrung-in-die-konzepte-von-domain-driven-design-001
+
+[6b] :https://www.innoq.com/de/blog/2018/02/ddd-mit-onion-architecture-umsetzen/
+
+[7b] :https://medium.com/idealo-tech-blog/hexagonal-ports-adapters-architecture-e3617bcf00a0
+
+[8b] :https://dev.to/dyarleniber/hexagonal-architecture-and-clean-architecture-with-examples-48oi
