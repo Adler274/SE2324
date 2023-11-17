@@ -359,10 +359,185 @@ es sollen nur noch Abhängigkeiten zu Interfaces bestehen (beidseitig). Interfac
 
 ### Jeweils Implementierungsbeispiel
 
+Abstraktion:
+
+Abstraktion kann durch die Verwendung von Klassen und Methoden erreicht werden. Hier ist ein einfaches Beispiel:
+
+```python
+class Shape:
+    def area(self):
+        pass
+
+class Circle(Shape):
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return 3.14 * self.radius * self.radius
+
+class Square(Shape):
+    def __init__(self, side):
+        self.side = side
+
+    def area(self):
+        return self.side * self.side
+```
 
 
+Modularität:
+
+Modularität kann durch die Aufteilung des Codes in unabhängige Module erreicht werden. Hier ist ein Beispiel mit zwei Modulen:
 
 
+```python
+
+def add(x, y):
+    return x + y
+```
+
+
+```python
+def multiply(x, y):
+    return x * y
+```
+
+```python
+from module1 import add
+from module2 import multiply
+
+result_add = add(3, 4)
+result_multiply = multiply(2, 5)
+
+print("Addition result:", result_add)
+print("Multiplication result:", result_multiply)
+```
+
+Law of Demeter:
+Das Law of Demeter kann durch Lockerung von Kopplungen erreicht werden. Hier ist ein Beispiel:
+
+
+```python
+class Engine:
+    def start(self):
+        print("Engine started")
+
+class Car:
+    def __init__(self):
+        self.engine = Engine()
+
+    def start(self):
+        print("Car is starting")
+        self.engine.start()
+
+# Verwendung:
+my_car = Car()
+my_car.start()
+```
+
+
+Dependency Injection, Inversion of Control:
+Dependency Injection und Inversion of Control können durch die Verwendung von DI-Containern erreicht werden. Hier ist ein einfaches Beispiel ohne Container:
+
+```python
+class Engine:
+    def start(self):
+        print("Engine started")
+
+class Car:
+    def __init__(self, engine):
+        self.engine = engine
+
+    def start(self):
+        print("Car is starting")
+        self.engine.start()
+
+# Verwendung:
+my_engine = Engine()
+my_car = Car(my_engine)
+my_car.start()
+
+```
+
+Separation of Concerns
+Separation of Concerns kann durch die Trennung von Geschäftslogik und Präsentation erreicht werden. Hier ist ein einfaches Beispiel:
+
+```python
+class Calculator:
+    def add(self, x, y):
+        return x + y
+
+class CalculatorPresenter:
+    def present_result(self, result):
+        print("Result:", result)
+
+# Verwendung:
+calculator = Calculator()
+presenter = CalculatorPresenter()
+
+result = calculator.add(3, 4)
+presenter.present_result(result)
+```
+
+
+Keep It Stupid Simple (KISS)
+KISS kann durch die Verwendung einfacher und klarer Implementierungen erreicht werden. Hier ist ein einfaches Beispiel:
+
+```python
+def add(x, y):
+    return x + y
+
+result = add(3, 4)
+print("Result:", result)
+```
+
+You Ain’t Gonna Need It (YAGNI)
+YAGNI kann durch das Vermeiden von unnötigen Funktionen erreicht werden. Hier ist ein Beispiel:
+
+```python
+# Nicht benötigt
+def unnecessary_feature():
+    print("This feature is not needed")
+```
+
+Don't Repeat Yourself (DRY)
+DRY kann durch die Vermeidung von redundantem Code erreicht werden. Hier ist ein Beispiel:
+
+```python
+# Redundanter Code
+def calculate_area(radius):
+    return 3.14 * radius * radius
+
+def calculate_volume(radius, height):
+    return 3.14 * radius * radius * height
+```
+
+Verbesserter Ansatz:
+
+```python
+# DRY
+def calculate_area(radius):
+    return 3.14 * radius * radius
+
+def calculate_volume(radius, height):
+    return calculate_area(radius) * height
+```
+
+Composition Over Inheritance
+Composition Over Inheritance kann durch die Kombination von Klassen anstelle von Vererbung erreicht werden. Hier ist ein Beispiel:
+
+```python
+class Engine:
+    def start(self):
+        print("Engine started")
+
+class Car:
+    def __init__(self):
+        self.engine = Engine()
+
+    def start(self):
+        print("Car is starting")
+        self.engine.start()
+```
 
 
 ## Entwurfsmuster (Design Patterns)
