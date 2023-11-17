@@ -114,13 +114,18 @@ Damit viele unabhängige Teile eins Systems miteinander kommunizieren können wi
 Hierbei werden Elemente in die zentralle Ablgage abgelegt und auch wieder von anderen herausgeholt.<br>
 Beispiele für solche Ablagen sind Datenbanken Hypertextsysteme oder auch Dateisysteme.
 
+[2b,3b,4b]
+
 ---
 
 ### Repository-Pattern
 ***
-![UML](media/Reposity-Patter_UML.png)
+![:scale 100%](media/Reposity-Patter_UML.png)
+
+[2b,3b,4b]
 
 ---
+
 ### Repository-Pattern
 ***
 
@@ -129,6 +134,8 @@ Mehrere Teile des Systems müssen auf eine große Menge an verscheidenen Produkt
 Die UI des OnlineShops braucht die Daten der Produkte die sie anzeigen soll, die bestell Software muss den Preis
 und verfügbarkeit der Produkte wissen, und Mitarbeiter in der Logistik brauchen auch gewisse Daten.<br>
 Damit alle Teile des Systems die gleichen und fehlerfreie Daten haben, macht es Sinn diese an einer zerntrallen Stelle zu speichern,auf die alle Zugreifen können.
+
+[2b,3b,4b]
 
 ---
 
@@ -139,11 +146,15 @@ Bei dem Plugin-Pattern wird die Schnittstelle einer Klasse an eine andere Klasse
 Zwischen diesen liegt die Plugin-Schnittstelle, die die Kommunikation ermöglicht.<br>
 Vorteil hierbei ist, dass die bereits funktionierenden bestehenden Klasse sind refactored werden müssen.<br>
 
+[2b,3b,4b]
+
 ---
 
 ### Plugin-Pattern
 ***
-![UML](media/Adapter-Pattern_UML.png)
+![:scale 100%](media/Adapter-Pattern_UML.png)
+
+[2b,3b,4b]
 
 ---
 
@@ -157,11 +168,15 @@ Diese vererbt bereits schon an die "Linie" Klasse.<br>
 Um jetzt Text einfügen zu können brauche wir eine weitere Klasse "Text" welche die Methoden von "GrafischesObjekt" implementiert.<br>
 die Klasse verwendet die Methoden der Bibliotheck aber von aussen kann man mit den gewohnten methoden arbeiten.<br>
 
+[2b,3b,4b]
+
 ---
 
 ### Plugin-Pattern
 ***
 ![BSP](media/Adapter-Pattern_UML_Beispiel.png)
+
+[2b,3b,4b]
 
 ---
 
@@ -174,10 +189,14 @@ Das Problem ist dass er sehr unübersichtlich werden kann wenn man die Schnittst
 Hierfür wird die erweiterung der Schnitsstelle durch weitere Schnitstellen die erbene ermöglicht.<br>
 Die Hauptimplementation implementiert dann von der Hauptschnittstelle und weitere Klassen erben dann von dieser.<br>
 
+[2b,3b,4b]
+
 ---
 ### Bridge-Pattern
 ***
-![UML](media/Bridge-Pattern_UML.png)
+![:scale 90%](media/Bridge-Pattern_UML.png)
+
+[2b,3b,4b]
 
 ---
 
@@ -192,11 +211,15 @@ Dazu benutzen wir das Bridge Pattern um die Methoden in einer Schnittstelle zu d
 Wir erstellen Interfaces die von Fenster erben und die verschiedenen unterkategorien an Fenster darstellen.<br>
 Alle implentierungen voin Fenster können jetzt trotzdem von der Haupt Implementierung erben.<br>
 
+[2b,3b,4b]
+
 ---
 
 ### Bridge-Pattern
 ***
 ![BSP](media/Bridge-Pattern_UML_Beispiel.png)
+
+[2b,3b,4b]
 
 ---
 
@@ -205,6 +228,8 @@ Alle implentierungen voin Fenster können jetzt trotzdem von der Haupt Implement
 ***
 Das Visitor Pattern wird verwendet wenn mehrere nicht verwandte Objekte gleiche Operationen/Berechnungen ausführen müssen.<br>
 Hierfür wird eine Besucher Klasse bereitgestellt auf die alle unabghängig voneinander zugreifen können.<br>
+
+[2b,3b,4b]
 
 ---
 ### Visitor-Pattern
@@ -272,7 +297,10 @@ Sie repräsentieren eher Werte oder Konzepte.<br>
 Die Gleichheiten von Value Objects werden durch ihre Attribute definiert.<br>
 z.B: Koordinaten als Objekt mit den Attributen x und y.<br>
 
+[5b,6b]
+
 ---
+
 #### Entities, value objects, aggregates, services, factories
 ***
 
@@ -383,6 +411,8 @@ Im folgenden werden einige Schritte angezeigt um diese Aspekte zu erfüllen.<br>
 * Verbindung zwischen Interaktionen und UI
 * Darstellung der Struktur der "Screens" und Verbindungen zwischen diesen
 
+[6b,9b]
+
 ---
 
 #### Wireframe vs Storyboard vs Wireflow vs Mockup vs Prototyping
@@ -412,13 +442,17 @@ Die Begriffe Usability, User Experience (UX) und Customer Experience (CX) sind a
 * **Usability:**<br>
 Usability bezieht sich auf die Benutzerfreundlichkeit oder Gebrauchstauglichkeit der Software.<br>
 Es misst und konzentriet sich darauf, wie effektiv, effizient und zufriedenstellend Benutzer bestimmte Aufgaben mit einem Produkt ausführen können.<br>
+
 **z.B.:** Ein einfach zu bediendendes Formular mit klaren Anweisungen und Struktur die angibt wo was einzutragen ist.<br>
+
+[6b,10b]
 
 ---
 
 * **User Experience (UX):**<br>
 Die User Experience umfasst alle Aspekte der Wechselwirkung eines Benutzers mit der Software, einschließlich seiner Wahrnehmungen, Emotionen und Reaktionen während und nach der Interaktion.<br>
 Es bezieht sich auf die gesamte Erfahrung des Benutzers mit dem Produkt, es umfast also auch sowas wie Design und Ästhetik.<br>
+
 **z.B.:** Wenn unser Formular zwar sehr einfach zu Bedienen ist, aber das Design ein sehr schlichtes grelles neon grün ist, wird die UX nicht so gut sein.<br>
 
 * **Customer Experience (CX):**<br>
@@ -440,6 +474,8 @@ Nielsen's 10 Usability Heuristic Prinzipien sind 10 Prinzipien die bei der Erste
 1. User machen Fehler. Das System sollte darauf ausgelegt sein, dass Fehler passieren und die möglichkeite bieten diese rückgängig zu machen.
 1. Einheitliches Design und Strutur sollte eingehalten werden.
 1. Noch besser als Fehlerrückgängig machen ist die Fehler eines Users komplett zu vermieden. Das System sollte so gestaltet sein, dass Fehler nur schwer passieren können.
+
+[11b]
 
 ---
 
