@@ -12,6 +12,10 @@ Simon Fedrau, Sascha Hahn
 
 # Inhalt
 ***
+1. Softwareentwurf
+  1. Entwurfsprinzipien
+
+  1. Jeweils Implementierungsbeispiel
 1. Entwurfsmuster (Design Patterns)
 
 1. Entwurf des Datenmodells
@@ -1136,13 +1140,20 @@ class: center, middle
 ***
 
 [1a] : https://t2informatik.de/wissen-kompakt/softwareentwurf/
+
 [2a] : https://www.dev-insider.de/was-ist-ein-software-entwurf-a-ac9e018da98039bb8e4744beaa9a126f/
+
 [3a] : https://esb-dev.github.io/mat/swt-entwurf-l.pdf
-[4a] : https://chat.openai.com/c/e5ef4299-1f76-491e-b216-d702c8ec98ae frage: was ist was ist Orthogonalität im Entwurfsziel?
+[4a] : https://chat.openai.com/c/e5ef4299-1f76-491e-b216-d702c8ec98ae frage: was ist was ist 
+Orthogonalität im Entwurfsziel?
+
 [5a] : https://www.isf.cs.tu-bs.de/cms/teaching/2012w/se1/VL5.pdf 
+
 [6a] : https://beckassets.blob.core.windows.net/product/readingsample/23641827/23641827_leseprobe.pdf
 [7a] : https://de.wikipedia.org/wiki/Abstraktion_(Informatik)
+
 [8a] : https://de.wikipedia.org/wiki/Modularit%C3%A4t#Funktionsprinzipien
+
 [9a] : https://de.wikipedia.org/wiki/Gesetz_von_Demeter#:~:text=Das%20Gesetz%20von%20Demeter%20(englisch,ihrer%20unmittelbaren%20Umgebung%20kommunizieren%20sollen.
 
 ---
@@ -1150,12 +1161,18 @@ class: center, middle
 # Quellen
 ***
 [10a] : https://www.dev-insider.de/was-bedeutet-inversion-of-control-a-1110688/
+
 [11a] : https://it-talents.de/it-wissen/was-ist-dependency-injection/
 [12a] : http://www.scalingbits.com/java/javakurs1/oop/architektur
+
 [13a] : https://t2informatik.de/wissen-kompakt/kiss-prinzip/
+
 [14a] : Entwurfsprinzipien und Konstruktionskonzepte der Softwaretechnik : Link zum Buch : https://link.springer.com/chapter/10.1007/978-3-658-20055-8_3
+
 [15a] : https://t2informatik.de/wissen-kompakt/yagni-prinzip/ 
+
 [16a] : https://learn.microsoft.com/de-de/dotnet/architecture/modern-web-apps-azure/architectural-principles
+
 [17a] : https://de.wikipedia.org/wiki/Don%E2%80%99t_repeat_yourself
 
 ---
@@ -1163,10 +1180,13 @@ class: center, middle
 # Quellen
 ***
 [18a] : https://de.wikipedia.org/wiki/Komposition_an_Stelle_von_Vererbung
+
 [19a] : https://www.microconsult.de/blog/2019/05/fl_solid-prinzipien/
 [20a] : https://it-talents.de/it-wissen/prozedurale-vs-objektorientierte-programmierung/
+
 [21a] : https://chat.openai.com/c/e5ef4299-1f76-491e-b216-d702c8ec98ae frage: was ist prozedural und objektorientiert Kopplung
 [22a] : https://de.wikipedia.org/wiki/Komposition_an_Stelle_von_Vererbung
+
 [23a] : https://chat.openai.com/c/d2358263-c323-47b3-a0a7-43b1be51bf85 Frage: Gib mir Beispiele zu * Abstraktion, Modularität, Law of demeter, Dependency Injection, Inversion of Control, Separation of Concerns, Keep It Stupid Simple, You Ain’t Gonna Need It, Don't repeat yourself, Composition Over Inheritance
 
 ---
