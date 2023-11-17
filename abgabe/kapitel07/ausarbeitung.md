@@ -105,8 +105,6 @@ Niedrige Kopplung:
 
 * Niedrige Kopplung = Einzelne Struktureinheiten sollen möglichst unabhängig voneinander sein.
 
-**Bsp:**
-
 **Niedrige Kopplung:**
 
     Es muss möglich sein, Subsystem A
