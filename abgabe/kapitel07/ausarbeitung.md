@@ -252,13 +252,43 @@ Mit dem Prototyp kann man die Benutzererfahrung testen und Aspekte wie die Benut
 [6b,9b]
 
 ### Usability vs. User experience (UX) vs. Customer experience (CX)
-### Nielsen's 10 Usability Heuristic Prinzipien für das UI-Design
-### Shneidermans's 8 Golden Rules
-### Norman's 7 Principles
+Die Begriffe Usability, User Experience (UX) und Customer Experience (CX) sind alle eng miteinander verbunden, beziehen sich jedoch auf unterschiedliche Aspekte und Perspektiven im Kontext von Design und Kundeninteraktion. Hier sind die Unterschiede zwischen ihnen:
 
+* **Usability:**<br>
+Usability bezieht sich auf die Benutzerfreundlichkeit oder Gebrauchstauglichkeit der Software.
+Es misst und konzentriet sich darauf, wie effektiv, effizient und zufriedenstellend Benutzer bestimmte Aufgaben mit einem Produkt ausführen können.
+z.B.: Ein einfach zu bediendendes Formular mit klaren Anweisungen und Struktur die angibt wo was einzutragen ist.
+
+* **User Experience (UX):**<br>
+Die User Experience umfasst alle Aspekte der Wechselwirkung eines Benutzers mit der Software, einschließlich seiner Wahrnehmungen, Emotionen und Reaktionen während und nach der Interaktion.
+Es bezieht sich auf die gesamte Erfahrung des Benutzers mit dem Produkt, es umfast also auch sowas wie Design und Ästhetik.
+z.B.: Wenn unser Formular zwar sehr einfach zu Bedienen ist, aber das Design ein sehr schlichtes grelles neon grün ist, wird die UX nicht so gut sein.
+
+* **Customer Experience (CX):**<br>
+Die Customoer Experience geht noch einen Schritt weiter.
+Es umfasst nicht nur die Erfahrung mit der UI sondern auch generell die Erfahrung, die ein Kunde mit einem Unternehmen macht.
+Es betont die gesammte Reise/Interktion die ein Kunde mit dem Unternehmen macht, vom ersten Kontakt bis zum Kauf und darüber hinaus.
+
+z.B Ein Kunde hat unser Formular für eine bestellung ausgeführt, aber die Lieferung hat lange gedauert und der Kundenservice war schlecht.
+
+[6b,10b]
+
+### Nielsen's 10 Usability Heuristic Prinzipien für das UI-Design
+Nielsen's 10 Usability Heuristic Prinzipien sind 10 Prinzipien die bei der Erstellung einer UI beachtet werden sollten.
+1. Das System sollte User mittels Feedback darüber informieren, was gerade passiert.
+1. Gemeinsamkeit zwischen dem System und der realen Welt. Die Anweundung sollte die Sprache des Benuters sprechen. Dieser kann wahrscheinlich nicht mit Programierspezifischen Begriffen umgehen.
+1. User machen Fehler. Das System sollte darauf ausgelegt sein, dass Fehler passieren und die möglichkeite bieten diese rückgängig zu machen.
+1. Einheitliches Design und Strutur sollte eingehalten werden.
+1. Noch besser als Fehlerrückgängig machen ist die Fehler eines Users komplett zu vermieden. Das System sollte so gestaltet sein, dass Fehler nur schwer passieren können.
+1. Einfache Anleitung und sichtbare Informationen
+1. Flexibilität und Effektivität. Der User sollte die Möglichkeit haben abkürzungen zu benutzen was die UI auch für erfahrenen benutzer effektiv macht.
+1. Die UI sollte minimalistisch designed sein. Es sollten nur die nötigsten Informationen angezeigt werden.
+1. Die UI sollte dem User auch helfen Fehler zu erkene und zu vermeiden, um zukünfitge Fehler zu vermeiden.
+1. Hilfe und Dokumentation. Die UI sollte dem User die Möglichkeit geben sich zu informieren und Hilfe zu holen.
+
+[11b]
 
 ## Zusammenfassung
-
 
 ## Referenzen
 
@@ -269,16 +299,17 @@ Mit dem Prototyp kann man die Benutzererfahrung testen und Aspekte wie die Benut
 [3b] :https://de.wikipedia.org/wiki/Besucher_(Entwurfsmuster)#:~:text=Der%20Besucher%20(englisch%20visitor%20oder,dient%20der%20Kapselung%20von%20Operationen
 
 [4b] : https://www.hsbi.de/elearning/data/FH-Bielefeld/lm_data/lm_1359639/pattern/visitor.html
+
 [5b] : https://de.wikipedia.org/wiki/Datenmodell
+
 [6b] : https://chat.openai.com/
+
 [7b] : https://martinfowler.com/bliki/AnemicDomainModel.html
+
 [8b] : https://de.wikipedia.org/wiki/Schnittstelle
+
 [9b] : https://en.wikipedia.org/wiki/User_interface_modeling
-[10b] :
-[11b] :
-[12b] :
-[13b] :
-[14b] :
-[15b] :
-[16b] :
-[17b] :
+
+[10b] : https://usabilitygeek.com/confuse-user-experience-customer-experience/#:~:text=UXers%20tend%20to%20be%20aware,a%20particular%20app%20or%20website.
+
+[11b] : https://usersnap.com/de/blog/usability-nielsen/
