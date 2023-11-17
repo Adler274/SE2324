@@ -596,7 +596,7 @@ class Car:
 [20a] : https://it-talents.de/it-wissen/prozedurale-vs-objektorientierte-programmierung/
 [21a] : https://chat.openai.com/c/e5ef4299-1f76-491e-b216-d702c8ec98ae frage: was ist prozedural und objektorientiert Kopplung
 [22a] : https://de.wikipedia.org/wiki/Komposition_an_Stelle_von_Vererbung
-
+[23a] : https://chat.openai.com/c/d2358263-c323-47b3-a0a7-43b1be51bf85 Frage: Gib mir Beispiele zu * Abstraktion, Modularität, Law of demeter, Dependency Injection, Inversion of Control, Separation of Concerns, Keep It Stupid Simple, You Ain’t Gonna Need It, Don't repeat yourself, Composition Over Inheritance
 
 
 

@@ -490,14 +490,199 @@ Vorteile von KISS:
 
 [19a]
 ---
-### Jeweils Implementierungsbeispiel
+### Implementierungsbeispiel Abstraktion
 
+Abstraktion kann durch die Verwendung von Klassen und Methoden erreicht werden. Hier ist ein einfaches Beispiel:
 
+```python
+class Shape:
+    def area(self):
+        pass
 
+class Circle(Shape):
+    def __init__(self, radius):
+        self.radius = radius
 
+    def area(self):
+        return 3.14 * self.radius * self.radius
 
+class Square(Shape):
+    def __init__(self, side):
+        self.side = side
 
+    def area(self):
+        return self.side * self.side
+```
+[23a]
 ---
+### Implementierungsbeispiel Modularität
+
+Modularität kann durch die Aufteilung des Codes in unabhängige Module erreicht werden. Hier ist ein Beispiel mit zwei Modulen:
+
+
+```python
+
+def add(x, y):
+    return x + y
+```
+
+
+```python
+def multiply(x, y):
+    return x * y
+```
+[23a]
+
+```python
+from module1 import add
+from module2 import multiply
+
+result_add = add(3, 4)
+result_multiply = multiply(2, 5)
+
+print("Addition result:", result_add)
+print("Multiplication result:", result_multiply)
+```
+[23a]
+---
+
+### Law of Demeter
+Das Law of Demeter kann durch Lockerung von Kopplungen erreicht werden. Hier ist ein Beispiel:
+
+
+```python
+class Engine:
+    def start(self):
+        print("Engine started")
+
+class Car:
+    def __init__(self):
+        self.engine = Engine()
+
+    def start(self):
+        print("Car is starting")
+        self.engine.start()
+
+# Verwendung:
+my_car = Car()
+my_car.start()
+```
+[23a]
+---
+### Dependency Injection, Inversion of Control
+Dependency Injection und Inversion of Control können durch die Verwendung von DI-Containern erreicht werden. Hier ist ein einfaches Beispiel ohne Container:
+
+```python
+class Engine:
+    def start(self):
+        print("Engine started")
+
+class Car:
+    def __init__(self, engine):
+        self.engine = engine
+
+    def start(self):
+        print("Car is starting")
+        self.engine.start()
+
+# Verwendung:
+my_engine = Engine()
+my_car = Car(my_engine)
+my_car.start()
+
+```
+[23a]
+---
+
+### Separation of Concerns
+Separation of Concerns kann durch die Trennung von Geschäftslogik und Präsentation erreicht werden. Hier ist ein einfaches Beispiel:
+
+```python
+class Calculator:
+    def add(self, x, y):
+        return x + y
+
+class CalculatorPresenter:
+    def present_result(self, result):
+        print("Result:", result)
+
+# Verwendung:
+calculator = Calculator()
+presenter = CalculatorPresenter()
+
+result = calculator.add(3, 4)
+presenter.present_result(result)
+```
+[23a]
+---
+
+### Keep It Stupid Simple (KISS)
+KISS kann durch die Verwendung einfacher und klarer Implementierungen erreicht werden. Hier ist ein einfaches Beispiel:
+
+```python
+def add(x, y):
+    return x + y
+
+result = add(3, 4)
+print("Result:", result)
+```
+
+You Ain’t Gonna Need It (YAGNI)
+YAGNI kann durch das Vermeiden von unnötigen Funktionen erreicht werden. Hier ist ein Beispiel:
+
+```python
+# Nicht benötigt
+def unnecessary_feature():
+    print("This feature is not needed")
+```
+[23a]
+---
+
+### Don't Repeat Yourself 
+DRY kann durch die Vermeidung von redundantem Code erreicht werden. Hier ist ein Beispiel:
+
+```python
+# Redundanter Code
+def calculate_area(radius):
+    return 3.14 * radius * radius
+
+def calculate_volume(radius, height):
+    return 3.14 * radius * radius * height
+```
+
+Verbesserter Ansatz:
+
+```python
+# DRY
+def calculate_area(radius):
+    return 3.14 * radius * radius
+
+def calculate_volume(radius, height):
+    return calculate_area(radius) * height
+```
+[23a]
+---
+
+### Composition Over Inheritance
+Composition Over Inheritance kann durch die Kombination von Klassen anstelle von Vererbung erreicht werden. Hier ist ein Beispiel:
+
+```python
+class Engine:
+    def start(self):
+        print("Engine started")
+
+class Car:
+    def __init__(self):
+        self.engine = Engine()
+
+    def start(self):
+        print("Car is starting")
+        self.engine.start()
+```
+
+[23a]
+---
+
 ## Entwurfsmuster (Design Patterns)
 ### Vergleich von Mustern, Algorithmen und Frameworks
 ### Entkopplungsmuster
@@ -533,3 +718,28 @@ class: center, middle
 ---
 # Quellen
 ***
+
+[1a] : https://t2informatik.de/wissen-kompakt/softwareentwurf/
+[2a] : https://www.dev-insider.de/was-ist-ein-software-entwurf-a-ac9e018da98039bb8e4744beaa9a126f/
+[3a] : https://esb-dev.github.io/mat/swt-entwurf-l.pdf
+[4a] : https://chat.openai.com/c/e5ef4299-1f76-491e-b216-d702c8ec98ae frage: was ist was ist Orthogonalität im Entwurfsziel?
+[5a] : https://www.isf.cs.tu-bs.de/cms/teaching/2012w/se1/VL5.pdf 
+[6a] : https://beckassets.blob.core.windows.net/product/readingsample/23641827/23641827_leseprobe.pdf
+[7a] : https://de.wikipedia.org/wiki/Abstraktion_(Informatik)
+[8a] : https://de.wikipedia.org/wiki/Modularit%C3%A4t#Funktionsprinzipien
+[9a] : https://de.wikipedia.org/wiki/Gesetz_von_Demeter#:~:text=Das%20Gesetz%20von%20Demeter%20(englisch,ihrer%20unmittelbaren%20Umgebung%20kommunizieren%20sollen.
+
+[10a] : https://www.dev-insider.de/was-bedeutet-inversion-of-control-a-1110688/
+[11a] : https://it-talents.de/it-wissen/was-ist-dependency-injection/
+[12a] : http://www.scalingbits.com/java/javakurs1/oop/architektur
+[13a] : https://t2informatik.de/wissen-kompakt/kiss-prinzip/
+[14a] : Entwurfsprinzipien und Konstruktionskonzepte der Softwaretechnik : Link zum Buch : https://link.springer.com/chapter/10.1007/978-3-658-20055-8_3
+[15a] : https://t2informatik.de/wissen-kompakt/yagni-prinzip/ 
+[16a] : https://learn.microsoft.com/de-de/dotnet/architecture/modern-web-apps-azure/architectural-principles
+[17a] : https://de.wikipedia.org/wiki/Don%E2%80%99t_repeat_yourself
+[18a] : https://de.wikipedia.org/wiki/Komposition_an_Stelle_von_Vererbung
+[19a] : https://www.microconsult.de/blog/2019/05/fl_solid-prinzipien/
+[20a] : https://it-talents.de/it-wissen/prozedurale-vs-objektorientierte-programmierung/
+[21a] : https://chat.openai.com/c/e5ef4299-1f76-491e-b216-d702c8ec98ae frage: was ist prozedural und objektorientiert Kopplung
+[22a] : https://de.wikipedia.org/wiki/Komposition_an_Stelle_von_Vererbung
+[23a] : https://chat.openai.com/c/d2358263-c323-47b3-a0a7-43b1be51bf85 Frage: Gib mir Beispiele zu * Abstraktion, Modularität, Law of demeter, Dependency Injection, Inversion of Control, Separation of Concerns, Keep It Stupid Simple, You Ain’t Gonna Need It, Don't repeat yourself, Composition Over Inheritance
