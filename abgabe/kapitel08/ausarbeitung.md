@@ -287,46 +287,23 @@
 
 ## **Quellenverzeichnis**
 
-[1]  : https://www.microtool.de/wissen-online/was-ist-ein-use-case-diagramm/
-[2]  : https://t2informatik.de/wissen-kompakt/use-case-diagramm/
-[3]  : https://chat.openai.com/c/f8ca6995-a5d5-47ff-ba20-c3cb31905501 frage : was sind Formulierungsfehler, die zu vagen ("schlechten") User Stories führen
-[4]  : https://www.usability.gov/how-to-and-tools/methods/use-cases.html.
-[5]  : https://t2informatik.de/wissen-kompakt/systemkontext/.
-[6]  : https://www.fhnw.ch/plattformen/iwi/2020/06/17/homeoffice-und-onlinekonferenzen-4-9-2-3-2-7/.
-[7]  : https://www.microtool.de/wissen-online/was-ist-der-systemkontext/.
-[8]  : https://www.microtool.de/wissen-online/was-ist-ein-use-case-diagramm/.
-[9]  : https://www.visual-paradigm.com/scrum/theme-epic-user-story-task/.
-[10] : https://www.brainformatik.com/blog/user-story/
-[11] : https://t2informatik.de/wissen-kompakt/akzeptanzkriterien/.
-[12] : https://www.me-company.de/magazin/akzeptanzkriterien/#:~:text=Akzeptanzkriterien%20sollten%20einfach%20zu%20verstehen,wie%20die%20Kund*innen%20hat.
-[13] :  https://produktwerker.de/herausforderung/gute-user-stories-schreiben-formulieren/#:~:text=Zu%20den%20wichtigsten%20Eigenschaften%20einer,die%20Prinzipien%20des%20Akronyms%20INVEST.
-[14] : https://bbv-software.de/user-stories/.
-[15] : https://blog.seibert-media.net/blog/2011/03/09/user-story-scrum-card-conversation-confirmation/.
-[16] : https://www.visual-paradigm.com/guide/agile-software-development/user-story-vs-use-case/.
-[17] : https://www.software-quality-lab.com/wissen/blog/blogeintrag/user-story-oder-use-case-was-denn-nun/.
-[18] : https://en.wikipedia.org/wiki/Misuse_case#From_use_to_misuse_case
-[19] : https://karrierebibel.de/priorisierung/.
-[20] : https://www.it-agile.de/agiles-wissen/agiles-produktmanagement/story-mapping/.
-
-
-
-- t2informatik GmbH. (2023, 8. Juni). Was ist der Systemkontext? - Wissen kompakt - T2Informatik. https://t2informatik.de/wissen-kompakt/systemkontext/.
-- kathrin.hubli@fhnw.ch. (2020, 18. Juni). Systemgrenzen und Modellierung von Systemen - Wirtschaftsinformatik reloaded. Wirtschaftsinformatik reloaded. https://www.fhnw.ch/plattformen/iwi/2020/06/17/homeoffice-und-onlinekonferenzen-4-9-2-3-2-7/.
-- Was ist der Systemkontext? (2023, 31. Oktober). microTOOL. https://www.microtool.de/wissen-online/was-ist-der-systemkontext/.
-- Was ist ein Use Case-Diagramm? (2023, 31. Oktober). microTOOL. https://www.microtool.de/wissen-online/was-ist-ein-use-case-diagramm/.
-- Theme vs Epic vs user story vs task. (o. D.). https://www.visual-paradigm.com/scrum/theme-epic-user-story-task/.
-- Krieger, F. (2023, 3. April). User Story - Definition, Aufbau und Beispiele. https://www.brainformatik.com/blog/user-story/
-- t2informatik GmbH. (2023b, September 11). Was sind akzeptanzkriterien? - Wissen kompakt - T2Informatik. https://t2informatik.de/wissen-kompakt/akzeptanzkriterien/.
-- Wynhoven, D. (2023, 12. Mai). Akzeptanzkriterien: So erfüllen Sie Kundenanforderungen. Me & Company. https://www.me-company.de/magazin/akzeptanzkriterien/#:~:text=Akzeptanzkriterien%20sollten%20einfach%20zu%20verstehen,wie%20die%20Kund*innen%20hat.
-- Die Produktwerker. (2023, 30. August). Gute User Stories schreiben bzw. formulieren - die Produktwerker. https://produktwerker.de/herausforderung/gute-user-stories-schreiben-formulieren/#:~:text=Zu%20den%20wichtigsten%20Eigenschaften%20einer,die%20Prinzipien%20des%20Akronyms%20INVEST.
-- Was macht eine schlechte User Story aus?.https://bbv-software.de/user-stories/.
-- Von Bittenfeld, P. H. (2011, 9. März). Die drei CS einer User Story: card, conversation, confirmation. Nachrichten, Tipps & Anleitungen für Agile, Entwicklung, Atlassian-Software (JIRA, Confluence, Bitbucket, . . .) und Google Cloud. https://blog.seibert-media.net/blog/2011/03/09/user-story-scrum-card-conversation-confirmation/.
-- User story vs use case for agile software development. (o. D.). https://www.visual-paradigm.com/guide/agile-software-development/user-story-vs-use-case/.
-- User story oder Use case? Was denn nun? (o. D.). Software Quality Lab. https://www.software-quality-lab.com/wissen/blog/blogeintrag/user-story-oder-use-case-was-denn-nun/.
-- Wikipedia contributors. (2023c, November 1). Misuse case. Wikipedia. https://en.wikipedia.org/wiki/Misuse_case#From_use_to_misuse_case
-- Rassek, A. (2020, 30. Oktober). Priorisierung: so einfach ist das mit Prioritäten! karrierebibel.de. https://karrierebibel.de/priorisierung/.
-- Was ist Agiles Schätzen? (2023, 29. Juni). it-agile GmbH. https://www.it-agile.de/agiles-wissen/agile-teams/was-ist-agiles-schaetzen/.
-- Story mapping. (2023, 29. Juni). it-agile GmbH. https://www.it-agile.de/agiles-wissen/agiles-produktmanagement/story-mapping/.
-
-
-
+[1a]  : https://www.microtool.de/wissen-online/was-ist-ein-use-case-diagramm/
+[2a]  : https://t2informatik.de/wissen-kompakt/use-case-diagramm/
+[3a]  : https://chat.openai.com/c/f8ca6995-a5d5-47ff-ba20-c3cb31905501 frage : was sind Formulierungsfehler, die zu vagen ("schlechten") User Stories führen
+[4a]  : https://www.usability.gov/how-to-and-tools/methods/use-cases.html.
+[5a]  : https://t2informatik.de/wissen-kompakt/systemkontext/.
+[6a]  : https://www.fhnw.ch/plattformen/iwi/2020/06/17/homeoffice-und-onlinekonferenzen-4-9-2-3-2-7/.
+[7a]  : https://www.microtool.de/wissen-online/was-ist-der-systemkontext/.
+[8a]  : https://www.microtool.de/wissen-online/was-ist-ein-use-case-diagramm/.
+[9a]  : https://www.visual-paradigm.com/scrum/theme-epic-user-story-task/.
+[10a] : https://www.brainformatik.com/blog/user-story/
+[11a] : https://t2informatik.de/wissen-kompakt/akzeptanzkriterien/.
+[12a] : https://www.me-company.de/magazin/akzeptanzkriterien/#:~:text=Akzeptanzkriterien%20sollten%20einfach%20zu%20verstehen,wie%20die%20Kund*innen%20hat.
+[13a] :  https://produktwerker.de/herausforderung/gute-user-stories-schreiben-formulieren/#:~:text=Zu%20den%20wichtigsten%20Eigenschaften%20einer,die%20Prinzipien%20des%20Akronyms%20INVEST.
+[14a] : https://bbv-software.de/user-stories/.
+[15a] : https://blog.seibert-media.net/blog/2011/03/09/user-story-scrum-card-conversation-confirmation/.
+[16a] : https://www.visual-paradigm.com/guide/agile-software-development/user-story-vs-use-case/.
+[17a] : https://www.software-quality-lab.com/wissen/blog/blogeintrag/user-story-oder-use-case-was-denn-nun/.
+[18a] : https://en.wikipedia.org/wiki/Misuse_case#From_use_to_misuse_case
+[19a] : https://karrierebibel.de/priorisierung/.
+[20a] : https://www.it-agile.de/agiles-wissen/agiles-produktmanagement/story-mapping/.

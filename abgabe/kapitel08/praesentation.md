@@ -3,7 +3,7 @@ class: center, middle
 ## [Software Engineering](../../praesentationen.html)
 
 #### Kapitel 8
-Wael Eskeif, Angelo Mavridis
+Simon Fedrau
 ---
 
 # Inhalt
@@ -13,6 +13,7 @@ Wael Eskeif, Angelo Mavridis
  * User Stories
 
 ---
+
 # Use Cases
 ***
 
@@ -20,6 +21,7 @@ Wael Eskeif, Angelo Mavridis
 
 ![](media/use-cases.jpeg)
 
+[1]
 ---
 
 ### Der Unterschied zwischen Systemkontext und Systemgrenze
@@ -32,6 +34,7 @@ Wael Eskeif, Angelo Mavridis
 |                 | externen Systemen.                                                         | klar abzugrenzen und nicht beeinflussbare Umgebungsaspekte               |
 |                 |                                                                            | auszuschließen.                                                          |
 
+[7a] [5a]
 ---
 ### Szenario
  ---
@@ -47,8 +50,10 @@ Wael Eskeif, Angelo Mavridis
 ![:scale 90%](media/szenario.jpg)
 
 ---
+
 ### Spezifikation
- ---
+***
+
 - Kontextanalyse
 
 - Schnittstellen
@@ -68,20 +73,24 @@ Wael Eskeif, Angelo Mavridis
 ![:scale 80%](media/storiesVScase.png)
 
 ---
-### Persona vs Theme vs Epic vs User Story vs Task
- ---
 
- - **Persona**: Fiktive Darstellung eines typischen Nutzers, hilft, Nutzerbedürfnisse zu verstehen.
-     
- - **Theme**: Hochrangiges Ziel oder Fokus, das verschiedene Aspekte des Projekts umfasst.
-     
- - **Epic**: Große, breite Anforderung, die in kleinere Teile aufgeteilt wird, oft über mehrere Sprints hinweg.
-     
- - **User Story**: Detaillierte Anforderung aus Nutzerperspektive, spezifisch und mit klaren Erfolgskriterien.
-     
- - **Task**: Konkrete Arbeitsschritte innerhalb einer User Story, sehr spezifisch und ausführungsorientiert.
+### Persona vs Theme vs Epic vs User Story vs Task
+***
+
+* **Persona**: Fiktive Darstellung eines typischen Nutzers, hilft, Nutzerbedürfnisse zu verstehen.
+    
+* **Theme**: Hochrangiges Ziel oder Fokus, das verschiedene Aspekte des Projekts umfasst.
+    
+* **Epic**: Große, breite Anforderung, die in kleinere Teile aufgeteilt wird, oft über mehrere Sprints hinweg.
+    
+* **User Story**: Detaillierte Anforderung aus Nutzerperspektive, spezifisch und mit klaren Erfolgskriterien.
+    
+* **Task**: Konkrete Arbeitsschritte innerhalb einer User Story, sehr spezifisch und ausführungsorientiert.
+
+[9a] [14a]
 
 ---
+
 ### Functional User Story vs. Technical User Story
  ---
 | Aspekt                 | Funktionale User Story                      | Technische User Story                       |
@@ -93,7 +102,8 @@ Wael Eskeif, Angelo Mavridis
 ---
 
 ### Bestandteile einer User Story
- ---
+***
+
 1. Rolle (Wer):
   * späterer Nutzer der zu entwickelnden Lösung.
 
@@ -103,11 +113,29 @@ Wael Eskeif, Angelo Mavridis
 3. Nutzen (Warum)
   * späterer Mehrwert der zu entwickelnden Lösung.
 
-
 ![:scale 60%](media/User-Stories-SoMe.jpg)
+
+[10a]
+
+---
+### Akzeptanzkriterien mit Beispielen
+***
+  Sind bestimmte Voraussetzungen, die ein Arbeitsergebnis erfüllen muss, damit es von Kund*innen akzeptiert und abgenommen wird.
+
+  Bsp:
+    User Story: "Als Besucher eines Online Shops möchte ich die angebotenen Waren nach Kategorien filtern können, um nicht alle Produkte durchzugucken, sondern will schnell meine Produkte finden."
+    
+  * Akzeptanzkriterien:
+    * Produkte können nach Kategorien wie 'Bekleidung', 'Musik' und 'Wohnen' gefiltert werden.
+    * Die Filterung zeigt sofort die relevanten Produkte an.
+    * Filtereinstellungen bleiben während der  Browsersession erhalten.
+
+[11a]
+
 
 ---
 ### Der Unterschied zwischen Ready und Done
+***
  ---
 | Kriterium      | Definition of Ready                           | Definition of Done      |
 |----------------|-------------------------------------------------------|-----------------------------------------------------|
@@ -116,9 +144,11 @@ Wael Eskeif, Angelo Mavridis
 |                | Stakeholder-Zustimmung.                               | finale Integration und Dokumentation.              |
 | **Wichtigkeit**| Vermeidet Arbeitsbeginn an unzureichend vorbereiteten Aufgaben. | Sichert Qualität und Klarheit über die Fertigstellung von Aufgaben.|                              
 
+
+
 ---
 ### Prinzipien für effektive ("gute") User Stories
- ---
+***
 - Spezifisch und Verständlich
 - Benutzerzentriert
 - Kurz
@@ -128,9 +158,12 @@ Wael Eskeif, Angelo Mavridis
 - Priorisiert
 - Verhandelbar
 - Unabhängig
+
+[22a]
 ---
 ### Formulierungsfehler, die zu vagen ("schlechten") User Stories führen
- ---
+***
+
 - Vermeiden von zu großem Umfang
 - Klarheit des Problems
 - Unabhängigkeit von Anforderungsdokumenten
@@ -138,7 +171,7 @@ Wael Eskeif, Angelo Mavridis
 - Vermeidung konkreter Lösungswege
 ---
 ### Card, Conversation, Confirmation
- ---
+***
 
 | Three C's         | Beschreibung                                                               |
 |-------------------|----------------------------------------------------------------------------|
@@ -171,35 +204,43 @@ Wael Eskeif, Angelo Mavridis
 | Einsatz  | In agilen Methoden wie Scrum, Kanban.                        | In traditionellen Ansätzen wie dem Wasserfallmodell.   |
 | Ziel     | Schnelle, iterative Entwicklung, Benutzerbedürfnisse.       | Klare Definition von Systemanforderungen und -abläufen. |
 
+[17a]
 ---
 ### Was ist Misuse Stories?
 ***
 
  Sind kurze narrative Szenarien, die potenzielle Missbrauchs- und Angriffswege in einem Softwaresystem beschreiben. Sie dienen dazu, Sicherheitsrisiken und Schwachstellen zu identifizieren, um präventive Maßnahmen in der Softwareentwicklung zu ergreifen.
 
+[18a]
 ---
 ### Was ist Priorisierung?
 ***
 
 Bestimmt die Reihenfolge, in der Aufgaben, Features oder User Stories bearbeitet werden.
 
+[19a]
 ---
 ### Was ist Schätzung?
 ***
 
 
-Bezieht sich die Schätzung auf den Prozess der Bewertung des Aufwands und der Zeit, die benötigt werden, um bestimmte Aufgaben, Features oder User Stories zu implementieren.
+**Bezieht sich die Schätzung auf den Prozess der Bewertung des Aufwands und der Zeit, die benötigt werden, um bestimmte Aufgaben, Features oder User Stories zu implementieren.**
 
 ---
 ### Aspekte der Schätzung
 ***
 
-- Team-Basiert
-- Relative Schätzung
-- Planungspoker
-- Historische Daten
-- Iterative Anpassung
-- Transparenz und Kommunikation
+* Team-Basiert
+
+* Relative Schätzung
+
+* Planungspoker
+
+* Historische Daten
+
+* Iterative Anpassung
+
+* Transparenz und Kommunikation
 ---
 ### Story Mapping
 ***
@@ -213,34 +254,52 @@ class: center, middle
 
 ---
 
-# Quellen
+## Quellen
 ***
 
-- Department of Health and Human Services. (o. D.). Use cases | Usability.gov. https://www.usability.gov/how-to-and-tools/methods/use-cases.html.
-- t2informatik GmbH. (2023, 8. Juni). Was ist der Systemkontext? - Wissen kompakt - T2Informatik. https://t2informatik.de/wissen-kompakt/systemkontext/.
-- kathrin.hubli@fhnw.ch. (2020, 18. Juni). Systemgrenzen und Modellierung von Systemen - Wirtschaftsinformatik reloaded. Wirtschaftsinformatik reloaded. https://www.fhnw.ch/plattformen/iwi/2020/06/17/homeoffice-und-onlinekonferenzen-4-9-2-3-2-7/.
-- Was ist der Systemkontext? (2023, 31. Oktober). microTOOL. https://www.microtool.de/wissen-online/was-ist-der-systemkontext/.
-- Was ist ein Use Case-Diagramm? (2023, 31. Oktober). microTOOL. https://www.microtool.de/wissen-online/was-ist-ein-use-case-diagramm/.
-- Theme vs Epic vs user story vs task. (o. D.). https://www.visual-paradigm.com/scrum/theme-epic-user-story-task/.
-- Krieger, F. (2023, 3. April). User Story - Definition, Aufbau und Beispiele. https://www.brainformatik.com/blog/user-story/
+[1a]  : https://www.microtool.de/wissen-online/was-ist-ein-use-case-diagramm/
+
+[2a]  : https://t2informatik.de/wissen-kompakt/use-case-diagramm/
+
+[3a]  : https://chat.openai.com/c/f8ca6995-a5d5-47ff-ba20-c3cb31905501 frage : was sind Formulierungsfehler, die zu vagen ("schlechten") User Stories führen
+
+[4a]  : https://www.usability.gov/how-to-and-tools/methods/use-cases.html.
+
+[5a]  : https://t2informatik.de/wissen-kompakt/systemkontext/.
+
+[6a]  : https://www.fhnw.ch/plattformen/iwi/2020/06/17/homeoffice-und-onlinekonferenzen-4-9-2-3-2-7/.
+
+[7a]  : https://www.microtool.de/wissen-online/was-ist-der-systemkontext/.
+
+[8a]  : https://www.microtool.de/wissen-online/was-ist-ein-use-case-diagramm/.
 
 ---
-- t2informatik GmbH. (2023b, September 11). Was sind akzeptanzkriterien? - Wissen kompakt - T2Informatik. https://t2informatik.de/wissen-kompakt/akzeptanzkriterien/.
-- Wynhoven, D. (2023, 12. Mai). Akzeptanzkriterien: So erfüllen Sie Kundenanforderungen. Me & Company. https://www.me-company.de/magazin/akzeptanzkriterien/#:~:text=Akzeptanzkriterien%20sollten%20einfach%20zu%20verstehen,wie%20die%20Kund*innen%20hat.
-- Die Produktwerker. (2023, 30. August). Gute User Stories schreiben bzw. formulieren - die Produktwerker. https://produktwerker.de/herausforderung/gute-user-stories-schreiben-formulieren/#:~:text=Zu%20den%20wichtigsten%20Eigenschaften%20einer,die%20Prinzipien%20des%20Akronyms%20INVEST.
-- Was macht eine schlechte User Story aus?.https://bbv-software.de/user-stories/.
-- Von Bittenfeld, P. H. (2011, 9. März). Die drei CS einer User Story: card, conversation, confirmation. Nachrichten, Tipps & Anleitungen für Agile, Entwicklung, Atlassian-Software (JIRA, Confluence, Bitbucket, . . .) und Google Cloud. https://blog.seibert-media.net/blog/2011/03/09/user-story-scrum-card-conversation-confirmation/.
-- User story vs use case for agile software development. (o. D.). https://www.visual-paradigm.com/guide/agile-software-development/user-story-vs-use-case/.
-- User story oder Use case? Was denn nun? (o. D.). Software Quality Lab. https://www.software-quality-lab.com/wissen/blog/blogeintrag/user-story-oder-use-case-was-denn-nun/.
+[9a]  : https://www.visual-paradigm.com/scrum/theme-epic-user-story-task/.
+
+[10a] : https://www.brainformatik.com/blog/user-story/
+
+[11a] : https://t2informatik.de/wissen-kompakt/akzeptanzkriterien/.
+
+[12a] : https://www.me-company.de/magazin/akzeptanzkriterien/#:~:text=Akzeptanzkriterien%20sollten%20einfach%20zu%20verstehen,wie%20die%20Kund*innen%20hat.
+
+[13a] :  https://produktwerker.de/herausforderung/gute-user-stories-schreiben-formulieren/#:~:text=Zu%20den%20wichtigsten%20Eigenschaften%20einer,die%20Prinzipien%20des%20Akronyms%20INVEST.
+
+[14a] : https://bbv-software.de/user-stories/.
+
+[15a] : https://blog.seibert-media.net/blog/2011/03/09/user-story-scrum-card-conversation-confirmation/.
+
+[16a] : https://www.visual-paradigm.com/guide/agile-software-development/user-story-vs-use-case/.
+
+[17a] : https://www.software-quality-lab.com/wissen/blog/blogeintrag/user-story-oder-use-case-was-denn-nun/.
+
+[18a] : https://en.wikipedia.org/wiki/Misuse_case#From_use_to_misuse_case
 
 ---
+[19a] : https://karrierebibel.de/priorisierung/.
 
-- Wikipedia contributors. (2023c, November 1). Misuse case. Wikipedia. https://en.wikipedia.org/wiki/Misuse_case#From_use_to_misuse_case
-- Rassek, A. (2020, 30. Oktober). Priorisierung: so einfach ist das mit Prioritäten! karrierebibel.de. https://karrierebibel.de/priorisierung/.
-- Was ist Agiles Schätzen? (2023, 29. Juni). it-agile GmbH. https://www.it-agile.de/agiles-wissen/agile-teams/was-ist-agiles-schaetzen/.
-- Story mapping. (2023, 29. Juni). it-agile GmbH. https://www.it-agile.de/agiles-wissen/agiles-produktmanagement/story-mapping/.
+[20a] : https://www.it-agile.de/agiles-wissen/agiles-produktmanagement/story-mapping/.
 
+[21a] : https://en.wikipedia.org/wiki/Use_case
+
+[22a] : https://asana.com/de/resources/user-stories#:~:text=Independent%20(Unabh%C3%A4ngig)%3A%20Eine%20User,sie%20l%C3%A4sst%20Spielraum%20f%C3%BCr%20Diskussionen.
 ---
-
-
-![](media/use-cases.jpeg)
