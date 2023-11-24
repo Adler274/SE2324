@@ -596,6 +596,51 @@ class: center, middle
 ## Quellen
 ***
 
+[1a] :https://academy.technikum-wien.at/ratgeber/was-ist-requirements-engineering/
+
+[2a] :https://chat.openai.com/: Definition von Anforderung in bezug auf Requirements Engineering
+
+[3a] :https://cdn.vector.com/cms/content/consulting/publications/RequirementsEngineering_WhitePaper_DE_2017.pdf
+
+[4a] :https://www.johner-institut.de/blog/iec-62304-medizinische-software/funktionale-und-nicht-funktionale-anforderungen/#:~:text=Funktionale%20Anforderungen%20sind%20Anforderungen%20mit,die%20Zuverl%C3%A4ssigkeit%20und%20das%20Zeitverhalten.
+
+[5a] :https://visuresolutions.com/de/blog/high-quality-requirements-attributes/
+
+[6a] :https://visuresolutions.com/de/blog/high-quality-requirements-attributes/
+
+[7a] :https://www.microtech.de/blog/anforderungsanalyse/#:~:text=Das%20Ziel%20einer%20Anforderungsanalyse%20ist,zudem%20in%20einem%20Lastenheft%20festhalten.
+
+---
+
+## Quellen
+***
+[8a] :https://visuresolutions.com/de/requirements-management-traceability-guide/biggest-challenges-of-requirements-management/
+
+[9a] :https://www.projektmagazin.de/glossarterm/stakeholder
+
+[10a] : https://projekte-leicht-gemacht.de/blog/methoden/projektziele/die-smart-formel/
+
+[11a] :https://chat.openai.com/ : Anforderungsquellen und Ermittlungstechniken
+
+[12a] :https://www.qz-online.de/a/grundlagenartikel/kundenanforderungen-kano-modell-309690
+
+[13a] :https://www.applus-erp.de/ressourcen/blog/lastenheft-und-pflichtenheft-was-ist-der-unterschied/#:~:text=Aus%20Sicht%20des%20Kunden%20dokumentiert,des%20abgeschlossenen%20Vertrags%20erbringen%20muss.
+
+[14a] :https://document360.com/blog/business-requirement-document/#:~:text=Business%20Requirement%20Documents%20(BRD)%20are,RFP)%20for%20a%20new%20project.
+
+---
+
+## Quellen
+***
+[15a] :https://www.jamasoftware.com/requirements-management-guide/writing-requirements/functional-requirements-examples-and-templates
+
+[16a] :https://www.perforce.com/blog/alm/how-write-software-requirements-specification-srs-document#:~:text=Tool%20for%20SRS-,What%20Is%20a%20Software%20Requirements%20Specification%20(SRS)%20Document%3F,stakeholders%20(business%2C%20users).
+
+---
+
+## Quellen
+***
+
 [1b]  : https://www.microtool.de/wissen-online/was-ist-ein-use-case-diagramm/
 
 [2b]  : https://t2informatik.de/wissen-kompakt/use-case-diagramm/
@@ -613,6 +658,9 @@ class: center, middle
 [8b]  : https://www.microtool.de/wissen-online/was-ist-ein-use-case-diagramm/.
 
 ---
+
+## Quellen
+***
 [9b]  : https://www.visual-paradigm.com/scrum/theme-epic-user-story-task/.
 
 [10b] : https://www.brainformatik.com/blog/user-story/
@@ -634,6 +682,8 @@ class: center, middle
 [18b] : https://en.wikipedia.org/wiki/Misuse_case#From_use_to_misuse_case
 
 ---
+## Quellen
+***
 [19b] : https://karrierebibel.de/priorisierung/.
 
 [20b] : https://www.it-agile.de/agiles-wissen/agiles-produktmanagement/story-mapping/.
@@ -643,4 +693,3 @@ class: center, middle
 [22b] : https://asana.com/de/resources/user-stories#:~:text=Independent%20(Unabh%C3%A4ngig)%3A%20Eine%20User,sie%20l%C3%A4sst%20Spielraum%20f%C3%BCr%20Diskussionen.
 
 [23b] : https://asana.com/de/resources/story-points
----
