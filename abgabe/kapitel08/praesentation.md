@@ -180,77 +180,129 @@ So können sich neue Projektzyklen ergeben, die neue Anforderungen mit sich brin
 ---
 
 ##### Motivation (Warum macht man das überhaupt?)
+***
 Ziel einer Anfordereungsanalyse ist es, diese in ein durchfürhbares Projekt umzuwandeln.
+
 Sie werden konkretisiert, strukturiert und geprüft um die sicherzustellen, dass es keine Wiedersprüche enstehen,
 die Anforderungen umsetzbar sind und die Anforderungen vollständig sind.
+
 Andernfalls kann es dazu führen, dass in Mitten der Entwicklung neue Anforderungen auftauchen
 oder Anforderungen rausgeworfen werden, da sie als nicht umsetzbar erachtet werden,
 was den Projektvortschritt zurückwerfen kann.
+
 [7a]
 
+---
+
 ##### Herausforderungen und Probleme bei der Anforderungsanalyse
-Wenn wichtige Stakeholder nicht ausreichend in den Analyseprozess eingebunden sind, besteht die Gefahr, dass wichtige Anforderungen übersehen oder falsch verstanden werden.
-Außerdem können Stakeholder notwendige Änderungen der Anforderungen nicht annehmen oder akzeptieren, wenn sie nicht ausreichend in den Prozess eingebunden sind oder das Know-How haben.
+***
+* Wenn wichtige Stakeholder nicht ausreichend in den Analyseprozess eingebunden sind, besteht die Gefahr, dass wichtige Anforderungen übersehen oder falsch verstanden werden.
 
-Ach Fehlende Fachkentnisse innerhalb des Entwicklungs-Teams können zu Missverständnissen und Fehlinterpretationen führen, was zu falschen Anforderungen und einer schlechten Umsetzung führen kann.
+* Außerdem können Stakeholder notwendige Änderungen der Anforderungen nicht annehmen oder akzeptieren, wenn sie nicht ausreichend in den Prozess eingebunden sind oder das Know-How haben.
 
-Eine Erfolgreiche Anforderungsanalyse erfodert eine gute, reibungslose Kommunikation zwischen allen Stakeholdern und dem Entwicklungsteam. Auch kontinuierliches Feedback sind ein Schlüsselaspekt.
+* Ach Fehlende Fachkentnisse innerhalb des Entwicklungs-Teams können zu Missverständnissen und Fehlinterpretationen führen, was zu falschen Anforderungen und einer schlechten Umsetzung führen kann.
+
+* Eine Erfolgreiche Anforderungsanalyse erfodert eine gute, reibungslose Kommunikation zwischen allen Stakeholdern und dem Entwicklungsteam. Auch kontinuierliches Feedback sind ein Schlüsselaspekt.
+
 [8a]
 
+---
+
 ##### Stakeholder
+***
 In den letzten Kapiteln wurde bereits mehrmals der Begriff "Stakeholder" erwähnt, welcher Die Anfoderungen an ein Projekt stellt, aber wer sind eigentlich Stakeholder?
+
 Stakeholder sind Personen oder Organistionen die von dem Ergebniss eines Projekts betroffen sind oder einen Einfluss auf das Projekt haben. Sie verfolgen individuelle Interessen und versuchen die Projektleitung zu ihrem vorteil zu "beeinflussen".
-Stakeholder sind können z.B Kunden, Geschäftsführer, Entwickler, Tester, Marketing, Vertrieb, etc. sein.
+
+ Stakeholder sind z.B Kunden, Geschäftsführer, Entwickler, Tester, Marketing, Vertrieb, etc. sein.
+
 Das heißt im Umkehrschluss, dass jeder ein Stakeholder sein kann, der von dem Projekt betroffen ist.
+
 Stakeholder ist einfach nur ein allgemeiner Begriff der nicht eine bestimmmte Role in der Entwicklung beschreibt.
+
 [9a]
 
+---
+
 ##### SMART-Ziele
+***
 SMART ist ein Akronym für die Kriterien, die ein Ziel erfüllen sollte, um effektiv zu sein.
 Es besteht aus folgenden Kriterien:
 
-Die Ziele sollten **Spezifisch** sein, das heißt sie sollten klar und konkret formuliert sein.
-Sie sollten **Messbar** sein und zuordenbar **"Assignable"** sein. Es muss also für jede Anforderung einen klaren Verantwortlichen geben.
-Die Ziele sollten **Realistisch** sein, sie müssen mit den Mitteln, Randbedingungen und der Zeit erreichbar sein.
-Als letzten sollten sie **Terminiert** (Time-related) sein, das heißt sie sollten einen klaren Zeitrahmen und Deaadline haben.
+* **Spezifisch:** Das Ziel sollte klar und konkret formuliert sein.
+
+* **Messbar:** Das Ziel sollte messbar sein und zuordenbar sein.
+
+* **Assignable:** Es muss einen klaren Verantwortlichen geben.
+
+* **Realistisch:** Das Ziel muss mit den Mitteln, Randbedingungen und der Zeit erreichbar sein.
+
+* **Terminiert:** Das Ziel sollte einen klaren Zeitrahmen und Deaadline haben.
+
 [10a]
 
+---
+
 ##### Anforderungsquellen und Ermittlungstechniken
+***
 Anforderunungsquellen und Ermittlungstechniken beschreiben woher oder von wem die Anforderungen überhaupt erstellt werden.
+
 Anforderungen können aus verschiedenen Quellen stammen, wie z.B. aus dem Kunden, dem Entwicklerteam, Berechtgen, Interviews, 
 generell Beobachtungen, Brainstorming oder auch aus der Konkurrenz (Wettbewerbsanalyse).
 
 Techniken um an Anforderungen zu kommen sind z.B. Use-Case Analysen, Storybording, Prototyping, Fragebogen oder andere Kreativitätstechniken.
 
 [11a]
+
+---
+
 ##### Anforderungskategorien nach Kano
+***
 Kategorien von Anforderungen wurden bereits erklärt, nun soll es aber um die Kategorien nach Kano geheb,
 welche besonders die Anforderungen der Kunden umfassen.
+
 Bei dem Kano modell geht es nähmlich um den Zusammenhang zwischen der Zufriedenheit des Kunden und der Erfüllung derer Anforderungen.
+
 Das hört sich etwas redundant an, es geht aber im Grunde darum, dass zum Beispiel Anforderungen, die der Kunde als selbstverständlich erachtet noch nicht zu seiner Zufriedenheit führen müssen. Anders gesagt die beseitigung von Buggs führt nicht zu einer höheren Zufriedenheit.
+
 Man muss also eine gute Mitte finden die bestimmte grund Erwartungen erfüllen aber auch eigene mit einbringen, die den Kunden positiv überraschen.
 
 [12a]
 
-##### Phasen und Haupttätigkeiten
-Die Anforderungsanalyse kann in mehrere Phasen und Haupttätigkeiten unterteilt werden.
-Als erstes werden die relevanten Stakeholder identifiziert und Ziele der Anforderungsanalyse festgelegt.
-Als nächstes werden Zeit und Recourcen des Projektes geplannt, um Anforderungen richtig bewerten zu können.
-Jetzt werden auch tatsächlich die Anforderungen erfasst. Dies geschieht durch die wie bereits aufgeführten Techniken und Quellen.
-Auch werden bereits vorhandene Dokumente und Prjekte analysiert, um allgemeine Anforderungen festzulegen.
-Dannach werden Anforderungsdokumente erstellt, die alle gesammelten Anforderungen strukturiert und verständlich darstellen.
-Dabei werden auch Anwendungsfälle und Use-Cases mit eingebracht.
-Die Anforderungen werden anschließend priorisiert und spezifiziert, sowie validiert und verifiziert.
-Als letztes wird Feedback der Stakeholder eingholt und die Anfoderungen freigegeben.
+---
 
+##### Phasen und Haupttätigkeiten
+***
+Die Anforderungsanalyse kann in mehrere Phasen und Haupttätigkeiten unterteilt werden:
+
+1. Als erstes werden die relevanten Stakeholder identifiziert und Ziele der Anforderungsanalyse festgelegt.
+
+1. Als nächstes werden Zeit und Recourcen des Projektes geplannt, um Anforderungen richtig bewerten zu können.
+
+1. Jetzt werden auch tatsächlich die Anforderungen erfasst. Dies geschieht durch die wie bereits aufgeführten Techniken und Quellen.
+    Auch werden bereits vorhandene Dokumente und Prjekte analysiert, um allgemeine Anforderungen festzulegen.
+
+1. Dannach werden Anforderungsdokumente erstellt, die alle gesammelten Anforderungen strukturiert und verständlich darstellen.
+    Dabei werden auch Anwendungsfälle und Use-Cases mit eingebracht.
+
+1. Die Anforderungen werden anschließend priorisiert und spezifiziert, sowie validiert und verifiziert.
+
+1. Als letztes wird Feedback der Stakeholder eingholt und die Anfoderungen freigegeben.
 [4a]
 
+---
+
 #### Dokumentation und Spezifikation von Anforderungen
+***
 Im folgenden werden Aspekte der Dokumentation und Spezifikation von Anforderungen erläutert.
+
 Dabei werden verschiedene Methoden und Techniken vorgestellt die Anforderungen zu kathegorisieren, sturkturieren
 und zu verwalten.
 
+---
+
 ##### Lastenheft und Pflichtenheft
+***
 Lastenheft und Pflichtenheft sind Dokumente, die die Anforderungen an ein System oder eine Software beschreiben.
 Als erstes wird hierbei das Lastenheft erstellt.
 Diese wird hauptsächlich vom Kunden erstellt und beschreibt die rohen Anforderungen aus Sicht des Kunden.
@@ -264,17 +316,28 @@ Es stellt sozusgen die Funktionen und Eigenschaften des Systems für den Kunden 
 
 [13a]
 
-##### Business Requirement Document (BRD) vs
+---
+
+##### Business Requirement Document (BRD)
+***
 Bei dem Business Requirement Document werden Informationen wie der Projekthintergrund, die Ziele, der Umfang, die beteiligten Stakeholder und ihre spezifischen Anforderungen, funktionale und nicht-funktionale Aspekte, Risiken, Annahmen, der Zeitplan, das Budget und andere relevante Details festgehalten.
+
 Das BRD dient als zentrales Referenzdokument für alle Projektbeteiligten und bildet die Grundlage für die Planung, Umsetzung und Überwachung des Projekts.
 Es unterstützt auch das Änderungsmanagement, indem es einen Prozess für die Handhabung von Anpassungen oder Ergänzungen zu den Anforderungen bereitstellt.
+
 Anders als beim Lasten- und  Pflichtenheft konzentriert sich das BRD darauf warum das Projekt durchgeführt wird, welche Probleme es lösen soll und welche Chancen es bietet.
 [14a]
 
-##### Functional Requirement Document (FRD) vs
+---
+
+##### Functional Requirement Document (FRD)
+***
 Das FRD beschreibt die spezifische funktionale Anforderungen an ein Projekt oder System . Anders als das Business Requirement Document (BRD), das die geschäftlichen Anforderungen und Ziele eines Projekts im Allgemeinen abdeckt, konzentriert sich das FRD auf die konkreten Funktionen und Features, die das Endprodukt bereitstellen soll.
+
 Im Detail beschreibt es die funktionalen Anforderungen, die detailierten spezifikationen der Funktionen und die Testanforderungen.
 [15a]
+
+---
 
 ##### Software Requirement Specification (SRS)
 Das SRS dient als formale Referenz für alle Beteiligten im Softwareentwicklungsprozess, einschließlich Entwicklern, Designern, Testern und anderen Stakeholdern. Es beinhaltet alle Anforderungen, sowie die Zielsetzung und Probleme die das System lösen soll,
@@ -282,8 +345,10 @@ die Anforderungen an die Benutzeroberfläche, die Systemarchitektur, die Datenba
 
 Bei dem SRS werden also alle Aspekte des Prjekts beschrieben und richtet sich demnach auch an alle beteiligten,
 wie Entwickler, Tester, Designer, Stakeholder, etc.
-[16a] 
+[16a]
+
 ---
+
 # Use Cases
 ***
 
