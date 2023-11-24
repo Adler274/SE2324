@@ -185,6 +185,7 @@ Simon Fedrau
 |                   | - Oft durch Akzeptanzkriterien definiert.                                  |
 |                   | - Stellt sicher, dass alle Parteien ein gemeinsames Verständnis haben.     |
 
+[15a]
 ---
 ### INVEST-Kriterien
 ***
@@ -220,9 +221,9 @@ Bestimmt die Reihenfolge, in der Aufgaben, Features oder User Stories bearbeitet
 
 [19a]
 ---
+
 ### Was ist Schätzung?
 ***
-
 
 **Bezieht sich die Schätzung auf den Prozess der Bewertung des Aufwands und der Zeit, die benötigt werden, um bestimmte Aufgaben, Features oder User Stories zu implementieren.**
 
@@ -241,6 +242,9 @@ Bestimmt die Reihenfolge, in der Aufgaben, Features oder User Stories bearbeitet
 * Iterative Anpassung
 
 * Transparenz und Kommunikation
+
+
+[23a]
 ---
 ### Story Mapping
 ***
@@ -302,4 +306,6 @@ class: center, middle
 [21a] : https://en.wikipedia.org/wiki/Use_case
 
 [22a] : https://asana.com/de/resources/user-stories#:~:text=Independent%20(Unabh%C3%A4ngig)%3A%20Eine%20User,sie%20l%C3%A4sst%20Spielraum%20f%C3%BCr%20Diskussionen.
+
+[23a] : https://asana.com/de/resources/story-points
 ---

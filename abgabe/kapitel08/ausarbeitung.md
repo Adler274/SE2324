@@ -12,6 +12,7 @@
 
  **Es handelt sich um eine schriftliche Anleitung, die erklärt, wie Benutzer Aufgaben auf Ihrer Website durchführen können**
 
+[1]
 
 ## Systemkontext und Systemgrenze
 
@@ -23,16 +24,22 @@
 ![](media/System.png)
 
 
-### Ziele
-
 |            |Systemkontext |Systemgrenze |
 |---         |---           | ----        |
 |       |  Definiert, welche Funktionen das System bereitstellen soll, sowie die Schnittstellen zu externen Systemen       |     Isoliert das geplante System von seiner Umgebung, wodurch der anpassbare Teil der Entwicklung von Aspekten in der Umgebung abgegrenzt wird, die durch den Entwicklungsprozess nicht verändert werden.        |
 
+[7a] [5a]
+
+### Ziele
 
 
- ### Szenario
- 
+
+
+
+
+### Szenario
+***
+
 * **Kontextanalyse:**
   Es wird untersucht wie das System mit der Umgebung interagiert. Zu betrachten sind auch externe Faktoren wie andere Systeme, Benutzer oder auch Umwelteinflüssen
 
@@ -45,7 +52,7 @@
 * **Risikobewertung:** 
   Analyse möglicher Risiken sowohl innerhalb als auch außerhalb des Systems. Dies beinhaltet technische, betriebliche und organisatorische Risiken.
 
-
+![:scale 90%](media/szenario.jpg)
 
 
 ### Spezifikation
@@ -89,9 +96,7 @@
   
   * Task: Konkrete Arbeitsschritte innerhalb einer User Story, sehr spezifisch und  ausführungsorientiert.
 
- 
-
-
+[9a] [14a] 
 
 ### Functional User Story vs. Technical User Story
     
@@ -115,6 +120,7 @@
   * Nutzen (Warum): Der spätere Mehrwert der zu entwickelnden Lösung.
 
 
+[10a]
 
 ### Definition of ready vs Definition of Done
 
@@ -127,7 +133,8 @@
   |         Wichtigkeit           |        Stellt sicher, dass die Teams nicht mit unklaren oder unvollständigen Anforderungen arbeiten, was zu Verzögerungen oder Qualitätsproblemen führen könnte.              |           Stellt die Qualität und Vollständigkeit der gelieferten Arbeit sicher und verhindert, dass unvollendete Features in späteren Phasen des Projekts Probleme verursachen.           |
 
 
-   ### Akzeptanzkriterien mit Beispielen
+
+### Akzeptanzkriterien mit Beispielen
 
   Sind bestimmte Voraussetzungen, die ein Arbeitsergebnis erfüllen muss, damit es von Kund*innen akzeptiert und abgenommen wird.
 
@@ -139,6 +146,7 @@
     * Die Filterung zeigt sofort die relevanten Produkte an.
     * Filtereinstellungen bleiben während der  Browsersession erhalten.
 
+[11a]
 
 ### Prinzipien für effektive ("gute") User Stories
 
@@ -165,6 +173,7 @@
   * Unabhängig: 
   Möglichst unabhängig von anderen Stories, um einzeln entwickelt werden zu können.
 
+[22a]
 
 ### Formulierungsfehler, die zu vagen ("schlechten") User Stories führen
 
@@ -208,17 +217,16 @@
   * **Confirmation:** 
     * Für jede User Story werden verbindliche Akzeptanzkriterien definiert, die vor Beginn der  Umsetzung festgelegt werden. Diese Kriterien dienen als Basis für die Abnahme der implementierten Story, wobei Akzeptanztests zur Überprüfung der Erfüllung dieser Kriterien nützlich sind.
 
-  * **INVEST-Kriterien**
+[15a]
+
+### INVEST-Kriterien
     
-  //Bild heraussuchen
-  
-     ![](media/Invest.png)
 
+  ![](media/Invest.png)
 
+[13a]
 
-   ### User-Stories vs. Use Case
-
-
+### User-Stories vs. Use Case
 
   |             |      User Stories    |      Use Cases    |
   |    ---      |    ---               |     ---           | 
@@ -229,15 +237,20 @@
   |           **Einsatz**              |           Häufig in agilen Entwicklungsmethoden verwendet, wie Scrum oder Kanban.               |          Oft in traditionelleren, plangetriebenen Entwicklungsansätzen wie dem Wasserfallmodell.           |
   |              **Ziel**           |         Schnelle, iterative Entwicklung mit Fokus auf Benutzerbedürfnissen.                |      Klare Definition der Systemanforderungen und -abläufe.               |
 
-     
+
+  [17a]
+
   #### Misuse Stories
 
   Sind kurze narrative Szenarien, die potenzielle Missbrauchs- und Angriffswege in einem Softwaresystem beschreiben. Sie dienen dazu, Sicherheitsrisiken und Schwachstellen zu identifizieren, um präventive Maßnahmen in der Softwareentwicklung zu ergreifen.
+
+[18a]
 
   #### Priorisierung
 
   Bestimmt die Reihenfolge, in der Aufgaben, Features oder User Stories bearbeitet werden. Sie basiert auf Faktoren wie dem geschäftlichen Wert, Kundenbedürfnissen, Abhängigkeiten zwischen Aufgaben, Risiken, Kosten-Nutzen-Analyse, Dringlichkeit, Teamkapazität und Stakeholder-Input. Effektive Priorisierung sorgt dafür, dass wichtige und wertvolle Aspekte des Projekts zuerst angegangen werden. 
 
+[19a]
   #### Schätzung
 
   Bezieht sich die Schätzung auf den Prozess der Bewertung des Aufwands und der Zeit, die benötigt werden, um bestimmte Aufgaben, Features oder User Stories zu implementieren.
@@ -267,7 +280,7 @@
     
      ![](media/StoryMapping.png)
 
-
+[23a]
 ---
 
 ### Wiederholungsfragen
