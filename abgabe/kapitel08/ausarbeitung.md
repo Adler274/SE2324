@@ -3,9 +3,13 @@
 
 ## Lernziele:
 
-- Lernen, was Use Cases ist und welche Ziele er hat.
-- Wissen, was hinter INVEST steckt.
-- Unterscheiden zwischen einen guten und schlechten User Storys
+* Lernen, was Use Cases ist und welche Ziele er hat.
+* Wissen, was hinter INVEST steckt.
+* Unterscheiden zwischen einen guten und schlechten User Storys
+* Welche Methoden gibt es bei Requirements Engineering
+* Welche Anforderungen gibt es
+* Wie macht man eine gute Anforderungsanalyse
+* Welche Arten der Dokumentation der Anforderungen gibt es
 
 ## Requirements Engineering
 Bei Requirements Engineering handelt es sich um einen Prozess, der die Anforderungen an ein System oder eine Software erfasst, analysiert, dokumentiert und verwaltet.
