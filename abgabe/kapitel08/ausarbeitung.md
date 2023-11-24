@@ -12,7 +12,7 @@
 
  **Es handelt sich um eine schriftliche Anleitung, die erklärt, wie Benutzer Aufgaben auf Ihrer Website durchführen können**
 
-[1]
+[1b]
 
 ## Systemkontext und Systemgrenze
 
@@ -28,7 +28,7 @@
 |---         |---           | ----        |
 |       |  Definiert, welche Funktionen das System bereitstellen soll, sowie die Schnittstellen zu externen Systemen       |     Isoliert das geplante System von seiner Umgebung, wodurch der anpassbare Teil der Entwicklung von Aspekten in der Umgebung abgegrenzt wird, die durch den Entwicklungsprozess nicht verändert werden.        |
 
-[7a] [5a]
+[7b] [5b]
 
 ### Ziele
 
@@ -73,7 +73,7 @@
 ### Use Case Diagramm
 
   Ein Use Case-Diagramm (auch Anwendungsfalldiagramm genannt) ist ein Verhaltensdiagramm und visualisiert die von außen sichtbare Interaktion von Akteuren mit dem zu entwickelnden System. Das Diagramm besteht aus dem System, zugehörigen Anwendungsfällen und Akteuren und setzt diese miteinander in Beziehung:
- [1]
+ [1b]
 
 
 ![](media/User-Story.PNG)
@@ -96,7 +96,7 @@
   
   * Task: Konkrete Arbeitsschritte innerhalb einer User Story, sehr spezifisch und  ausführungsorientiert.
 
-[9a] [14a] 
+[9b] [14b] 
 
 ### Functional User Story vs. Technical User Story
     
@@ -120,7 +120,7 @@
   * Nutzen (Warum): Der spätere Mehrwert der zu entwickelnden Lösung.
 
 
-[10a]
+[10b]
 
 ### Definition of ready vs Definition of Done
 
@@ -146,7 +146,7 @@
     * Die Filterung zeigt sofort die relevanten Produkte an.
     * Filtereinstellungen bleiben während der  Browsersession erhalten.
 
-[11a]
+[11b]
 
 ### Prinzipien für effektive ("gute") User Stories
 
@@ -173,7 +173,7 @@
   * Unabhängig: 
   Möglichst unabhängig von anderen Stories, um einzeln entwickelt werden zu können.
 
-[22a]
+[22b]
 
 ### Formulierungsfehler, die zu vagen ("schlechten") User Stories führen
 
@@ -204,7 +204,7 @@
 * Vage Zeitvorgaben:
     * Fehler: "Implementiere Funktion X schnell."
 
-[3] 
+[3b] 
 
 ### Card, Conversation, Confirmation
     
@@ -217,14 +217,14 @@
   * **Confirmation:** 
     * Für jede User Story werden verbindliche Akzeptanzkriterien definiert, die vor Beginn der  Umsetzung festgelegt werden. Diese Kriterien dienen als Basis für die Abnahme der implementierten Story, wobei Akzeptanztests zur Überprüfung der Erfüllung dieser Kriterien nützlich sind.
 
-[15a]
+[15b]
 
 ### INVEST-Kriterien
     
 
   ![](media/Invest.png)
 
-[13a]
+[13b]
 
 ### User-Stories vs. Use Case
 
@@ -238,19 +238,19 @@
   |              **Ziel**           |         Schnelle, iterative Entwicklung mit Fokus auf Benutzerbedürfnissen.                |      Klare Definition der Systemanforderungen und -abläufe.               |
 
 
-  [17a]
+  [17b]
 
   #### Misuse Stories
 
   Sind kurze narrative Szenarien, die potenzielle Missbrauchs- und Angriffswege in einem Softwaresystem beschreiben. Sie dienen dazu, Sicherheitsrisiken und Schwachstellen zu identifizieren, um präventive Maßnahmen in der Softwareentwicklung zu ergreifen.
 
-[18a]
+[18b]
 
   #### Priorisierung
 
   Bestimmt die Reihenfolge, in der Aufgaben, Features oder User Stories bearbeitet werden. Sie basiert auf Faktoren wie dem geschäftlichen Wert, Kundenbedürfnissen, Abhängigkeiten zwischen Aufgaben, Risiken, Kosten-Nutzen-Analyse, Dringlichkeit, Teamkapazität und Stakeholder-Input. Effektive Priorisierung sorgt dafür, dass wichtige und wertvolle Aspekte des Projekts zuerst angegangen werden. 
 
-[19a]
+[19b]
   #### Schätzung
 
   Bezieht sich die Schätzung auf den Prozess der Bewertung des Aufwands und der Zeit, die benötigt werden, um bestimmte Aufgaben, Features oder User Stories zu implementieren.
@@ -280,7 +280,7 @@
     
      ![](media/StoryMapping.png)
 
-[23a]
+[23b]
 ---
 
 ### Wiederholungsfragen
@@ -300,23 +300,42 @@
 
 ## **Quellenverzeichnis**
 
-[1a]  : https://www.microtool.de/wissen-online/was-ist-ein-use-case-diagramm/
-[2a]  : https://t2informatik.de/wissen-kompakt/use-case-diagramm/
-[3a]  : https://chat.openai.com/c/f8ca6995-a5d5-47ff-ba20-c3cb31905501 frage : was sind Formulierungsfehler, die zu vagen ("schlechten") User Stories führen
-[4a]  : https://www.usability.gov/how-to-and-tools/methods/use-cases.html.
-[5a]  : https://t2informatik.de/wissen-kompakt/systemkontext/.
-[6a]  : https://www.fhnw.ch/plattformen/iwi/2020/06/17/homeoffice-und-onlinekonferenzen-4-9-2-3-2-7/.
-[7a]  : https://www.microtool.de/wissen-online/was-ist-der-systemkontext/.
-[8a]  : https://www.microtool.de/wissen-online/was-ist-ein-use-case-diagramm/.
-[9a]  : https://www.visual-paradigm.com/scrum/theme-epic-user-story-task/.
-[10a] : https://www.brainformatik.com/blog/user-story/
-[11a] : https://t2informatik.de/wissen-kompakt/akzeptanzkriterien/.
-[12a] : https://www.me-company.de/magazin/akzeptanzkriterien/#:~:text=Akzeptanzkriterien%20sollten%20einfach%20zu%20verstehen,wie%20die%20Kund*innen%20hat.
-[13a] :  https://produktwerker.de/herausforderung/gute-user-stories-schreiben-formulieren/#:~:text=Zu%20den%20wichtigsten%20Eigenschaften%20einer,die%20Prinzipien%20des%20Akronyms%20INVEST.
-[14a] : https://bbv-software.de/user-stories/.
-[15a] : https://blog.seibert-media.net/blog/2011/03/09/user-story-scrum-card-conversation-confirmation/.
-[16a] : https://www.visual-paradigm.com/guide/agile-software-development/user-story-vs-use-case/.
-[17a] : https://www.software-quality-lab.com/wissen/blog/blogeintrag/user-story-oder-use-case-was-denn-nun/.
-[18a] : https://en.wikipedia.org/wiki/Misuse_case#From_use_to_misuse_case
-[19a] : https://karrierebibel.de/priorisierung/.
-[20a] : https://www.it-agile.de/agiles-wissen/agiles-produktmanagement/story-mapping/.
+[1b]  : https://www.microtool.de/wissen-online/was-ist-ein-use-case-diagramm/
+
+[2b]  : https://t2informatik.de/wissen-kompakt/use-case-diagramm/
+
+[3b]  : https://chat.openai.com/c/f8ca6995-a5d5-47ff-ba20-c3cb31905501 frage : was sind Formulierungsfehler, die zu vagen ("schlechten") User Stories führen
+
+[4b]  : https://www.usability.gov/how-to-and-tools/methods/use-cases.html.
+
+[5b]  : https://t2informatik.de/wissen-kompakt/systemkontext/.
+
+[6b]  : https://www.fhnw.ch/plattformen/iwi/2020/06/17/homeoffice-und-onlinekonferenzen-4-9-2-3-2-7/.
+
+[7b]  : https://www.microtool.de/wissen-online/was-ist-der-systemkontext/.
+
+[8b]  : https://www.microtool.de/wissen-online/was-ist-ein-use-case-diagramm/.
+
+[9b]  : https://www.visual-paradigm.com/scrum/theme-epic-user-story-task/.
+
+[10b] : https://www.brainformatik.com/blog/user-story/
+
+[11b] : https://t2informatik.de/wissen-kompakt/akzeptanzkriterien/.
+
+[12b] : https://www.me-company.de/magazin/akzeptanzkriterien/#:~:text=Akzeptanzkriterien%20sollten%20einfach%20zu%20verstehen,wie%20die%20Kund*innen%20hat.
+
+[13b] :  https://produktwerker.de/herausforderung/gute-user-stories-schreiben-formulieren/#:~:text=Zu%20den%20wichtigsten%20Eigenschaften%20einer,
+die%20Prinzipien%20des%20Akronyms%20INVEST.
+[14b] : https://bbv-software.de/user-stories/.
+
+[15b] : https://blog.seibert-media.net/blog/2011/03/09/user-story-scrum-card-conversation-confirmation/.
+
+[16b] : https://www.visual-paradigm.com/guide/agile-software-development/user-story-vs-use-case/.
+
+[17b] : https://www.software-quality-lab.com/wissen/blog/blogeintrag/user-story-oder-use-case-was-denn-nun/.
+
+[18b] : https://en.wikipedia.org/wiki/Misuse_case#From_use_to_misuse_case
+
+[19b] : https://karrierebibel.de/priorisierung/.
+
+[20b] : https://www.it-agile.de/agiles-wissen/agiles-produktmanagement/story-mapping/.

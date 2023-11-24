@@ -21,7 +21,7 @@ Simon Fedrau
 
 ![](media/use-cases.jpeg)
 
-[1]
+[1b]
 ---
 
 ### Der Unterschied zwischen Systemkontext und Systemgrenze
@@ -34,7 +34,7 @@ Simon Fedrau
 |                 | externen Systemen.                                                         | klar abzugrenzen und nicht beeinflussbare Umgebungsaspekte               |
 |                 |                                                                            | auszuschließen.                                                          |
 
-[7a] [5a]
+[7b] [5b]
 ---
 ### Szenario
  ---
@@ -87,7 +87,7 @@ Simon Fedrau
     
 * **Task**: Konkrete Arbeitsschritte innerhalb einer User Story, sehr spezifisch und ausführungsorientiert.
 
-[9a] [14a]
+[9b] [14b]
 
 ---
 
@@ -115,7 +115,7 @@ Simon Fedrau
 
 ![:scale 60%](media/User-Stories-SoMe.jpg)
 
-[10a]
+[10b]
 
 ---
 ### Akzeptanzkriterien mit Beispielen
@@ -130,7 +130,7 @@ Simon Fedrau
     * Die Filterung zeigt sofort die relevanten Produkte an.
     * Filtereinstellungen bleiben während der  Browsersession erhalten.
 
-[11a]
+[11b]
 
 
 ---
@@ -159,7 +159,7 @@ Simon Fedrau
 - Verhandelbar
 - Unabhängig
 
-[22a]
+[22b]
 ---
 ### Formulierungsfehler, die zu vagen ("schlechten") User Stories führen
 ***
@@ -185,7 +185,7 @@ Simon Fedrau
 |                   | - Oft durch Akzeptanzkriterien definiert.                                  |
 |                   | - Stellt sicher, dass alle Parteien ein gemeinsames Verständnis haben.     |
 
-[15a]
+[15b]
 ---
 ### INVEST-Kriterien
 ***
@@ -205,21 +205,21 @@ Simon Fedrau
 | Einsatz  | In agilen Methoden wie Scrum, Kanban.                        | In traditionellen Ansätzen wie dem Wasserfallmodell.   |
 | Ziel     | Schnelle, iterative Entwicklung, Benutzerbedürfnisse.       | Klare Definition von Systemanforderungen und -abläufen. |
 
-[17a]
+[17b]
 ---
 ### Was ist Misuse Stories?
 ***
 
  Sind kurze narrative Szenarien, die potenzielle Missbrauchs- und Angriffswege in einem Softwaresystem beschreiben. Sie dienen dazu, Sicherheitsrisiken und Schwachstellen zu identifizieren, um präventive Maßnahmen in der Softwareentwicklung zu ergreifen.
 
-[18a]
+[18b]
 ---
 ### Was ist Priorisierung?
 ***
 
 Bestimmt die Reihenfolge, in der Aufgaben, Features oder User Stories bearbeitet werden.
 
-[19a]
+[19b]
 ---
 
 ### Was ist Schätzung?
@@ -244,7 +244,7 @@ Bestimmt die Reihenfolge, in der Aufgaben, Features oder User Stories bearbeitet
 * Transparenz und Kommunikation
 
 
-[23a]
+[23b]
 ---
 ### Story Mapping
 ***
@@ -261,51 +261,51 @@ class: center, middle
 ## Quellen
 ***
 
-[1a]  : https://www.microtool.de/wissen-online/was-ist-ein-use-case-diagramm/
+[1b]  : https://www.microtool.de/wissen-online/was-ist-ein-use-case-diagramm/
 
-[2a]  : https://t2informatik.de/wissen-kompakt/use-case-diagramm/
+[2b]  : https://t2informatik.de/wissen-kompakt/use-case-diagramm/
 
-[3a]  : https://chat.openai.com/c/f8ca6995-a5d5-47ff-ba20-c3cb31905501 frage : was sind Formulierungsfehler, die zu vagen ("schlechten") User Stories führen
+[3b]  : https://chat.openai.com/c/f8ca6995-a5d5-47ff-ba20-c3cb31905501 frage : was sind Formulierungsfehler, die zu vagen ("schlechten") User Stories führen
 
-[4a]  : https://www.usability.gov/how-to-and-tools/methods/use-cases.html.
+[4b]  : https://www.usability.gov/how-to-and-tools/methods/use-cases.html.
 
-[5a]  : https://t2informatik.de/wissen-kompakt/systemkontext/.
+[5b]  : https://t2informatik.de/wissen-kompakt/systemkontext/.
 
-[6a]  : https://www.fhnw.ch/plattformen/iwi/2020/06/17/homeoffice-und-onlinekonferenzen-4-9-2-3-2-7/.
+[6b]  : https://www.fhnw.ch/plattformen/iwi/2020/06/17/homeoffice-und-onlinekonferenzen-4-9-2-3-2-7/.
 
-[7a]  : https://www.microtool.de/wissen-online/was-ist-der-systemkontext/.
+[7b]  : https://www.microtool.de/wissen-online/was-ist-der-systemkontext/.
 
-[8a]  : https://www.microtool.de/wissen-online/was-ist-ein-use-case-diagramm/.
-
----
-[9a]  : https://www.visual-paradigm.com/scrum/theme-epic-user-story-task/.
-
-[10a] : https://www.brainformatik.com/blog/user-story/
-
-[11a] : https://t2informatik.de/wissen-kompakt/akzeptanzkriterien/.
-
-[12a] : https://www.me-company.de/magazin/akzeptanzkriterien/#:~:text=Akzeptanzkriterien%20sollten%20einfach%20zu%20verstehen,wie%20die%20Kund*innen%20hat.
-
-[13a] :  https://produktwerker.de/herausforderung/gute-user-stories-schreiben-formulieren/#:~:text=Zu%20den%20wichtigsten%20Eigenschaften%20einer,die%20Prinzipien%20des%20Akronyms%20INVEST.
-
-[14a] : https://bbv-software.de/user-stories/.
-
-[15a] : https://blog.seibert-media.net/blog/2011/03/09/user-story-scrum-card-conversation-confirmation/.
-
-[16a] : https://www.visual-paradigm.com/guide/agile-software-development/user-story-vs-use-case/.
-
-[17a] : https://www.software-quality-lab.com/wissen/blog/blogeintrag/user-story-oder-use-case-was-denn-nun/.
-
-[18a] : https://en.wikipedia.org/wiki/Misuse_case#From_use_to_misuse_case
+[8b]  : https://www.microtool.de/wissen-online/was-ist-ein-use-case-diagramm/.
 
 ---
-[19a] : https://karrierebibel.de/priorisierung/.
+[9b]  : https://www.visual-paradigm.com/scrum/theme-epic-user-story-task/.
 
-[20a] : https://www.it-agile.de/agiles-wissen/agiles-produktmanagement/story-mapping/.
+[10b] : https://www.brainformatik.com/blog/user-story/
 
-[21a] : https://en.wikipedia.org/wiki/Use_case
+[11b] : https://t2informatik.de/wissen-kompakt/akzeptanzkriterien/.
 
-[22a] : https://asana.com/de/resources/user-stories#:~:text=Independent%20(Unabh%C3%A4ngig)%3A%20Eine%20User,sie%20l%C3%A4sst%20Spielraum%20f%C3%BCr%20Diskussionen.
+[12b] : https://www.me-company.de/magazin/akzeptanzkriterien/#:~:text=Akzeptanzkriterien%20sollten%20einfach%20zu%20verstehen,wie%20die%20Kund*innen%20hat.
 
-[23a] : https://asana.com/de/resources/story-points
+[13b] :  https://produktwerker.de/herausforderung/gute-user-stories-schreiben-formulieren/#:~:text=Zu%20den%20wichtigsten%20Eigenschaften%20einer,die%20Prinzipien%20des%20Akronyms%20INVEST.
+
+[14b] : https://bbv-software.de/user-stories/.
+
+[15b] : https://blog.seibert-media.net/blog/2011/03/09/user-story-scrum-card-conversation-confirmation/.
+
+[16b] : https://www.visual-paradigm.com/guide/agile-software-development/user-story-vs-use-case/.
+
+[17b] : https://www.software-quality-lab.com/wissen/blog/blogeintrag/user-story-oder-use-case-was-denn-nun/.
+
+[18b] : https://en.wikipedia.org/wiki/Misuse_case#From_use_to_misuse_case
+
+---
+[19b] : https://karrierebibel.de/priorisierung/.
+
+[20b] : https://www.it-agile.de/agiles-wissen/agiles-produktmanagement/story-mapping/.
+
+[21b] : https://en.wikipedia.org/wiki/Use_case
+
+[22b] : https://asana.com/de/resources/user-stories#:~:text=Independent%20(Unabh%C3%A4ngig)%3A%20Eine%20User,sie%20l%C3%A4sst%20Spielraum%20f%C3%BCr%20Diskussionen.
+
+[23b] : https://asana.com/de/resources/story-points
 ---
