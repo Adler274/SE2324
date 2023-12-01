@@ -853,7 +853,7 @@ Verteilungsdiagramme in der UML bieten eine grafische Darstellung der physischen
 
 [1b,27b]
 
-##### Verhaltensmodelle
+##### Verhaltensmodele
 Verhaltensmodelle in der UML beschreiben das dynamische Verhalten eines Systems. Hierzu gehören Aktivitätsdiagramme, die den Ablauf von Aktivitäten und Workflows zeigen. Zustandsdiagramme modellieren den Lebenszyklus eines Objekts mit verschiedenen Zuständen und Übergängen. Use-Case-Diagramme definieren die Interaktionen zwischen einem System und seinen Benutzern. Diese Modelle bieten eine ganzheitliche Sicht auf das Verhalten und die Funktionalität eines Software- oder Informationssystems.
 Im Folgenden werden einige arten im detail beschrieben.
 

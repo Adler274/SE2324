@@ -749,19 +749,250 @@ Deskriptive Modelle bieten mehr Spielraum für Kreativität und Exploration, wä
 ---
 
 #### UML
+***
+UML-Diagramme (Unified Modeling Language) sind eine standardisierte Methode zur grafischen Darstellung von Software-Designkonzepten.
+
+Sie bieten eine visuelle Sprache, um Struktur, Verhalten und Interaktionen von Systemen zu beschreiben.
+
+UML umfasst verschiedene Diagrammtypen, wie Klassendiagramme für Klassenstrukturen, Aktivitätsdiagramme für Abläufe und Use Case-Diagramme für Interaktionen mit Benutzern.
+
+[1b,20b]
+
+---
+
 #### Statische und dynamische Diagrammtypen
+***
+Statische Diagrammtypen in UML repräsentieren die Struktur eines Systems und umfassen Klassendiagramme, Objektdiagramme und Paketdiagramme.
+
+Sie zeigen Entitäten und ihre Beziehungen im System.
+
+Dynamische Diagrammtypen hingegen beschreiben den Verhaltensaspekt eines Systems. Hierzu gehören Aktivitätsdiagramme, Zustandsdiagramme und Sequenzdiagramme.
+
+Sie zeigen, wie Objekte interagieren und wie sich der Systemzustand im Laufe der Zeit ändert.
+
+[1b,21b]
+
+---
+
 #### Zuordnung der UML-Diagrammtypen zu Phasen der Softwareentwicklung
+***
+UML-Diagrammtypen können verschiedenen Phasen der Softwareentwicklung zugeordnet werden:
+
+* **Anforderungsanalyse und Konzeptualisierung:**
+*Klassendiagramme:* Modellieren statische Strukturen, wie Klassen und ihre Beziehungen.
+
+* **Entwurf:**
+*Aktivitätsdiagramme:* Visualisieren den Ablauf von Aktivitäten und Prozessen.
+
+*Zustandsdiagramme:* Beschreiben den Lebenszyklus eines Objekts in Reaktion auf Ereignisse.
+
+* **Implementierung:**
+*Klassendiagramme:* Werden weiter verfeinert, um die Details der Klassen, Methoden und Attribute zu zeigen.
+
+*Komponentendiagramme:* Zeigen die physischen Module des Systems und deren Abhängigkeiten.
+
+[22b]
+
+---
+
+#### Zuordnung der UML-Diagrammtypen zu Phasen der Softwareentwicklung
+***
+* **Testen:**
+*Sequenzdiagramme:* Visualisieren die Interaktionen zwischen Objekten über die Zeit.
+
+*Kommunikationsdiagramme:* Ähnlich wie Sequenzdiagramme, zeigen aber andere Perspektiven der Kommunikation.
+
+* **Wartung und Weiterentwicklung:**
+*Klassendiagramme und Sequenzdiagramme:* Werden aktualisiert, um Änderungen im System zu reflektieren.
+
+*Paketdiagramme:* Zeigen die Organisation von Paketen und ihre Abhängigkeiten.
+
+[22b]
+
+---
+
 #### Funktionale Modelle
+***
+In der Softwareentwicklung bezieht sich der Begriff "funktionale Module" auf unabhängige, abgeschlossene Einheiten oder Komponenten einer Software, die spezifische Funktionen oder Aufgaben ausführen.
+
+Hier sind einige wichtige Aspekte funktionaler Module:
+
+* **Aufgabenspezifisch:**
+* **Unabhängigkeit:**
+* **Kapselung:**
+* **Wiederverwendbarkeit:**
+* **Testbarkeit:**
+* **Skalierbarkeit:**
+
+[1b,23b]
+
+---
+
 ##### Use Case Diagramme
+***
+Use Case-Diagramme sind eine Art von UML-Diagrammen (Unified Modeling Language), die dazu verwendet werden, die Interaktionen zwischen einem System und seinen Benutzern oder anderen Systemen zu modellieren.
+
+* **Akteure (Actors):**
+Akteure sind externe Entitäten, sei es Benutzer oder andere Systeme, die mit dem System interagieren.
+
+* **Anwendungsfälle (Use Cases):**
+Ein Anwendungsfall repräsentiert eine spezifische Funktionalität oder eine Interaktion zwischen einem Akteur und dem System.
+
+* **Beziehungen:**
+Die Beziehungen zwischen Akteuren und Anwendungsfällen werden durch Linien dargestellt.
+
+* **Inklusion und Erweiterung:**
+Use Case-Diagramme können auch die Beziehungen zwischen verschiedenen Anwendungsfällen darstellen. "Inklusion" zeigt an, dass ein Anwendungsfall einen anderen einschließt, während "Erweiterung" darauf hinweist, dass ein Anwendungsfall optional erweitert werden kann.
+
+[1b,24b]
+
+---
+
 #### Strukturmodelle
+***
+Strukturmodelle in der Softwareentwicklung beschreiben die statischen Aspekte eines Systems, insbesondere die Organisation seiner Komponenten oder Module sowie deren Beziehungen zueinander.
+
+Diese Modelle helfen, die Architektur und Struktur eines Softwareprojekts zu verstehen.
+Hier sind einige wichtige Arten:
+
+* **Klassendiagramme:**
+* **Paketdiagramme:**
+* **Objektdiagramme:**
+* **Komponentendiagramme:**
+* **Deployment-Diagramme:**
+
+[1b,25b]
+
+---
+
 ##### Klassendiagramme
+***
+Ein Klassendiagramm in der UML ist eine grafische Darstellung der statischen Struktur eines Systems, das die Klassen, ihre Attribute, Methoden, Beziehungen und Vererbungshierarchien zeigt.
+
+Klassen repräsentieren Baupläne für Objekte, Attribute sind Eigenschaften dieser Klassen, und Methoden sind die Funktionen, die sie ausführen können.
+
+Assoziationen zeigen die Beziehungen zwischen Klassen, während Vererbung die Hierarchie und den Austausch von Eigenschaften zwischen Klassen darstellt.
+
+Klassendiagramme sind ein grundlegendes Werkzeug für die objektorientierte Modellierung und bieten eine visuelle Übersicht über die Struktur eines Systems.
+
+[1b,26b]
+
+---
+
 ##### Verteilungsdiagramme
-#### Verhaltensmodelle
+***
+Verteilungsdiagramme in der UML bieten eine grafische Darstellung der physischen Verteilung von Softwarekomponenten in einem Netzwerk.
+
+Sie zeigen Knoten, die Hardware oder Softwareumgebungen repräsentieren, und Artefakte, die die physischen Implementierungen von Komponenten darstellen.
+
+Verbindungen zwischen Knoten zeigen Netzwerkkommunikation oder Abhängigkeiten an.
+
+Verteilungsdiagramme ermöglichen es, die Architektur und den Einsatz von Software in verschiedenen Umgebungen zu planen und zu visualisieren.
+
+[1b,27b]
+
+---
+
+#### Verhaltensmodele
+***
+Verhaltensmodelle in der UML beschreiben das dynamische Verhalten eines Systems.
+
+Hierzu gehören Aktivitätsdiagramme, die den Ablauf von Aktivitäten und Workflows zeigen.
+
+Zustandsdiagramme modellieren den Lebenszyklus eines Objekts mit verschiedenen Zuständen und Übergängen.
+
+Use-Case-Diagramme definieren die Interaktionen zwischen einem System und seinen Benutzern.
+
+Diese Modelle bieten eine ganzheitliche Sicht auf das Verhalten und die Funktionalität eines Software- oder Informationssystems.
+
+Im Folgenden werden einige arten im detail beschrieben.
+
+[1b,28b]
+
+---
+
 ##### Zustandsdiagramme
+***
+Zustandsdiagramme in der UML bieten eine visuelle Darstellung des Verhaltens von Systemen und Entitäten über verschiedene Zustände.
+
+* **Zustände**
+* **Übergänge**
+* **Ereignisse**
+* **Aktionen**
+* **Start- und Endzustände**
+* **Hierarchie**
+* **Nebenläufigkeit**
+* **Bedingungen**
+
+[1b,29b]
+
+---
+
 ##### Aktivitätsdiagramme
+Aktivitätsdiagramme in der UML sind dazu da, den Ablauf von Aktivitäten oder Geschäftsprozessen zu modellieren.
+
+* **Aktivitäten**
+* **Aktionen**
+* **Entscheidungen**
+* **Verbindungen**
+* **Start- und Endpunkte**
+* **Gabelungen und Zusammenführungen**
+* **Schleifen**
+* **Objekte und Ressourcen**
+* **Flusssteuerung**
+* **Aktionsflüsse**
+
+[1b,30b]
+
+---
+
 ##### Sequenzdiagramme
+Sequenzdiagramme in der UML dienen dazu, Interaktionen zwischen Objekten zeitlich geordnet darzustellen.
+
+* **Lebenslinien**
+* **Nachrichten**
+* **Aktivierungsboxen**
+* **Fragmente**
+* **Rückgaben**
+* **Zusammenfassungen**
+* **Objekte**
+* **Aktionsauslöser**
+* **Dauer**
+* **Systemgrenzen**
+
+[1b,31b]
+
+---
+
 #### Software Architecture Documentation
+Die Dokumentation von Softwarearchitekturen ist entscheidend, um ein umfassendes Verständnis für die Struktur und das Design eines Software-Systems zu vermitteln.
+
+Einige wichtige Punkte die Inhalt der Softwarearchitekturdokumentation sein sollten:
+
+* **Architekturbeschreibung**
+* **Architekturdiagramme**
+* **Schnittstellen**
+* **Qualitätsattribute**
+* **Entscheidungslogik**
+* **Muster und Best Practices**
+* **Komponentenübersicht**
+* **Abhängigkeiten**
+* **Änderungshistorie**
+* **Deployment-Strategien**
+
+[1b,32b]
+
+---
+
 #### arc42
+***
+Das arc42-Template ist ein bewährtes Dokumentationsformat für Softwarearchitekturen.
+
+Es strukturiert Architekturdokumente in 42 Kapiteln, die Aspekte von Anforderungen über Systemstruktur bis zu Qualitätsattributen abdecken.
+
+Durch diese klare Gliederung erleichtert es die umfassende und systematische Dokumentation von Softwarearchitekturen, fördert die Kommunikation im Entwicklungsteam und unterstützt die langfristige Wartbarkeit und Weiterentwicklung von Softwareprojekten.
+
+Es ist sowohl flexibel als auch umfassend und eignet sich für verschiedene Arten von Projekten und Architekturstilen.
 
 ---
 
@@ -792,6 +1023,8 @@ class: center, middle
 
 ---
 
+# Quellen
+***
 [10a] : https://de.wikipedia.org/wiki/Dynamisches_System_(Systemtheorie)
 
 [11a] : https://de.wikipedia.org/wiki/Selektivit%C3%A4t_(Informatik)
@@ -810,8 +1043,10 @@ class: center, middle
 
 [18a] : https://de.wikipedia.org/wiki/Informationssystem
 
-[19a] : https://chat.openai.com/c/23fa7c63-18e6-482b-a003-11dc4140cbba frage: was sind Softwaresystembausteine zb System, Subsystem, Modul, Paket, Komponente, Klasse, Interface, Funktion, etc.
 ---
+# Quellen
+***
+[19a] : https://chat.openai.com/c/23fa7c63-18e6-482b-a003-11dc4140cbba frage: was sind Softwaresystembausteine zb System, Subsystem, Modul, Paket, Komponente, Klasse, Interface, Funktion, etc.
 
 [20a] : https://ambient.digital/wissen/blog/qualitaet-softwareentwicklung/#:~:text=Zum%20einen%20kann%20man%20Qualit%C3%A4t,die%20jeweils%20eigene%20Anforderungen%20haben.
 
@@ -827,5 +1062,91 @@ class: center, middle
 
 [26a] : https://innovative-trends.de/2014/12/28/no-silver-bullet-interessanter-historischer-software-engineering-artikel/
 
+---
+
+# Quellen
+***
 [27a] : https://www.ssoar.info/ssoar/bitstream/handle/document/63101/ssoar-2019-hellige-Software_Manufaktur_-_Software_Engineering.pdf;jsessionid=B600AE3A5E0E1A51AC944719BFD498B8?sequence=1
 
+---
+
+# Quellen
+***
+[1b] :https://chat.openai.com/
+
+[2b] :https://de.wikipedia.org/wiki/Wartbarkeit
+
+[3b] :https://www.elastic.co/de/what-is/observability
+
+[4b] :https://inztitut.de/blog/glossar/availability/
+
+[5b] :https://www.iks.fraunhofer.de/de/forschung/resilient-software-systems.html
+
+[6b] :https://www.datacenter-insider.de/was-ist-performance-in-der-it-a-735949/
+
+[7b] :https://www.microconsult.de/386-0-Qualitaet-und-Sicherheit.html
+
+[8b] :https://chat.openai.com/: Nenne mir aspekte von reliability in softwaresystemen
+
+[9b] :https://www.dev-insider.de/was-sind-softwaremetriken-a-813487/
+
+[10b] :https://de.wikipedia.org/wiki/McCabe-Metrik
+
+---
+
+# Quellen
+***
+[11b] :https://www.dev-insider.de/was-ist-zyklomatische-komplexitaet-a-7fa40c670052685ff1c56d8169a79481/
+
+[12b] :https://de.wikipedia.org/wiki/Kontrollflussgraph
+
+[13b] :https://dewiki.de/Lexikon/Kontrollflussgraph
+
+[14b] :https://www.itwissen.info/Objektorientierte-Software-Metrik.html
+
+[15b] :https://www.itwissen.info/en/lack-of-cohesion-in-methods-LCOM-122383.html#gsc.tab=0
+
+[16b] :https://chat.openai.com/: Gib mir ei grobes Beispiel ffür zur objektorientierten Metrik
+
+[17b] :https://chat.openai.com/: Was für Modelle zur visualisierung von softwaresystemene gibt es?
+
+[18b] :https://en.wikipedia.org/wiki/Rule-based_modeling
+
+[19b] :https://www.sciencedirect.com/topics/computer-science/descriptive-model
+
+---
+
+# Quellen
+***
+[20b] :https://www.ibm.com/docs/de/rational-soft-arch/9.7.0?topic=diagrams-uml-models
+
+[21b] :https://www.lucidchart.com/blog/de/typen-von-uml-diagrammen
+
+[22b] :https://chat.openai.com/: Zuordnung der UML-Diagrammtypen zu Phasen der Softwareentwicklung
+
+[23b] :http://gsb.download.bva.bund.de/BIT/V-Modell_XT_Bund/V-Modell%20XT%20Bund%20HTML/136ee1253ccddb89.html
+
+[24b] :https://www.lucidchart.com/pages/de/uml-anwendungsfalldiagramm
+
+[25b] :https://www.ibm.com/docs/de/engineering-lifecycle-management-suite/design-rhapsody/9.0.1?topic=rhapsody-structural-model
+
+[26b] :https://de.wikipedia.org/wiki/Klassendiagramm
+
+---
+
+# Quellen
+***
+[27b] :https://www.google.com/search?q=UML+verteilunsdiagramme&rlz=1C1GCEA_enDE1022DE1022&oq=UML+verteilunsdiagramme&
+gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDU0OTNqMGo0qAIAsAIA&sourceid=chrome&ie=UTF-8&safe=active&ssui=on
+
+[28b] :https://www.tutorialspoint.com/de/object_oriented_analysis_design/ooad_uml_behavioural_diagrams.htm
+
+[29b] :https://de.wikipedia.org/wiki/Zustandsdiagramm_(UML)
+
+[30b] :https://www.lucidchart.com/pages/de/uml-aktivitatsdiagramme
+
+[31b] :https://www.lucidchart.com/pages/de/uml-sequenzdiagramme
+
+[32b] :https://www.johner-institut.de/blog/iec-62304-medizinische-software/software-architektur-dokumentation/
+
+[33b] :https://www.arc42.de/overview/
