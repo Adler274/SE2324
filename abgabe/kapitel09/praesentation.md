@@ -473,6 +473,137 @@ Das Cynefin-Framework ist ein Wissensmanagement-Modell mit der Aufgabe Probleme,
 ![:scale 50%](media\Cynefin_framework,_September_2006.png)
 
 [25a]
+
+---
+
+##### Maintainability
+***
+* **Klarer Code**
+* **Modularität**
+* **Dokumentation**
+* **Wiederverwendbarkeit**
+* **Testbarkeit**
+* **Versionskontrolle**
+* **Technologische Aktualisierungen**
+
+[1b,2b]
+
+---
+
+#### Observability
+***
+Observability in Software-Systemen bezieht sich darauf, wie gut Entwickler und Betreiber den internen Zustand und das Verhalten eines Systems verstehen können. Hier sind einige Aspekte von Observability:
+
+* **Logging**
+* **Ereignisverarbeitung (Event Processing)**
+* **Debugging-Möglichkeiten**
+* **Visualisierung**
+* **Dokumentation**
+
+[1b,2b]
+
+---
+
+#### Reliability
+***
+**Fehlertoleranz:**
+Die Fähigkeit eines Systems, trotz Fehlern oder Ausfällen in einem oder mehreren seiner Komponenten weiterhin zu funktionieren.
+
+**Wiederherstellbarkeit (Recoverability):**
+Die Fähigkeit, nach einem Fehlerzustand in einen normalen Betriebszustand zurückzukehren, ohne dabei Datenverlust oder andere negative Auswirkungen zu erleiden.
+
+**Fehlererkennung und -überwachung:**
+Systeme sollten Mechanismen zur kontinuierlichen Überwachung auf Fehler und ungewöhnliches Verhalten implementieren, um frühzeitig auf potenzielle Probleme aufmerksam zu werden.
+
+**Skalierbarkeit:**
+Ein zuverlässiges System sollte in der Lage sein, mit steigender Last oder wachsenden Anforderungen umzugehen, ohne dass dies zu Ausfällen oder Beeinträchtigungen führt.
+
+**Monitoring und Alarme:**
+Kontinuierliches Monitoring ermöglicht die frühzeitige Erkennung von Abweichungen im Systemverhalten. Alarme sollten ausgelöst werden, wenn kritische Parameter außerhalb vordefinierter Schwellenwerte liegen.
+
+[8b]
+
+---
+
+#### Availability
+***
+* **Uptime**
+* **Lastenausgleich (Load Balancing)**
+* **Redundanz**
+* **Failover-Mechanismen**
+* **Schnelle Wiederherstellung (Rapid Recovery)**
+* **Datenreplikation**
+
+[1b,4b]
+
+---
+
+#### Resilience
+***
+Resilienz in Software-Systemen bezieht sich darauf, wie gut ein System mit unerwarteten Fehlern oder Störungen umgehen kann, ohne dabei den gesamten Betrieb zu beeinträchtigen.
+Das dieser Aspekt der Reliance sehr ähnlich ist hier die wichtigsten Punkte:
+
+* **Fehlerisolierung**
+* **Robuste Kommunikation**
+* **Monitoring und Telemetrie:** Anomalien erkennen
+
+[1b,5b]
+
+---
+
+#### Performance
+***
+* **Reaktionszeit**
+* **Skalierbarkeit**
+* **Ressourcennutzung**
+* **Datenbankleistung**
+* **Lasttests und Optimierung**
+
+[1b,6b]
+
+---
+
+#### Security und Safety
+***
+* **Fehler- und Ausnahmebehandlung:** Erkennung, Behalung und Protokolierung von Fehlern und Ausnahmen
+
+* **Datenschutz und Vertraulichkeit:** Schutz sensibler Daten vor unbefugtem Zugriff
+
+* **Robuste Architektur und Redundanz:** Erhöhung der Wiederstandsfähigkeit gegenüber Fehlern, Ausfällen oder Angriffen
+
+* **Sicherheitsüberprüfungen und Audits:** Regelmäßige Überprüfungen, Audits und Penetrationstests um Sicherheitslücken zu identifizieren
+
+[1b,7b]
+
+---
+
+### Metriken zur Messung von Softwarequalität
+#### Konventionelle Metriken
+##### McCabe-Metrik
+##### Zyklomatische Komplexität
+##### Kontrollflussgraph
+#### Objektorientierte Metriken
+##### Lack of Cohesion in Methods
+#### Weitere Metriken, die Sie als relevant erachten
+#### Beispiele
+### Modellierung und Visualisierung von Softwaresystemen
+#### Modelle
+##### Descriptive vs rule-based modeling
+#### UML
+#### Statische und dynamische Diagrammtypen
+#### Zuordnung der UML-Diagrammtypen zu Phasen der Softwareentwicklung
+#### Funktionale Modelle
+##### Use Case Diagramme
+#### Strukturmodelle
+##### Klassendiagramme
+##### Verteilungsdiagramme
+#### Verhaltensmodelle
+##### Zustandsdiagramme
+##### Aktivitätsdiagramme
+##### Sequenzdiagramme
+#### Software Architecture Documentation
+#### arc42
+
 ---
 
 class: center, middle
