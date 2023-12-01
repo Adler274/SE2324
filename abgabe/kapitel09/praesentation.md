@@ -20,7 +20,13 @@ Simon Fedrau, Sascha Hahn
   * Softwaresysteme
   * Qualitätsmerkmale von Softwaresystemen
 
-1. 
+1. Modelierung/Visualisierung von Softwaresystemen
+
+    1. UML
+
+    1. Strukturmodelle
+
+    1. Verhaltensmodelle
 
 1. Quellen
 
