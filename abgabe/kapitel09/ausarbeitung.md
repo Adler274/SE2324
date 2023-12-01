@@ -454,6 +454,40 @@ Das Cynefin-Framework ist ein Wissensmanagement-Modell mit der Aufgabe Probleme,
 
 [25a]
 
+#### Maintainability
+#### Observability
+#### Reliability
+#### Availability
+#### Resilience
+#### Performance
+#### Security und Safety
+#### Weitere Qualitätsmerkmale, die Sie für relevant erachten
+### Metriken zur Messung von Softwarequalität
+#### Konventionelle Metriken
+##### McCabe-Metrik
+##### Zyklomatische Komplexität
+##### Kontrollflussgraph
+#### Objektorientierte Metriken
+##### Lack of Cohesion in Methods
+#### Weitere Metriken, die Sie als relevant erachten
+#### Beispiele
+### Modellierung und Visualisierung von Softwaresystemen
+#### Modelle
+##### Descriptive vs rule-based modeling
+#### UML
+#### Statische und dynamische Diagrammtypen
+#### Zuordnung der UML-Diagrammtypen zu Phasen der Softwareentwicklung
+#### Funktionale Modelle
+##### Use Case Diagramme
+#### Strukturmodelle
+##### Klassendiagramme
+##### Verteilungsdiagramme
+#### Verhaltensmodelle
+##### Zustandsdiagramme
+##### Aktivitätsdiagramme
+##### Sequenzdiagramme
+#### Software Architecture Documentation
+#### arc42
 
 ## Referenzen
 
