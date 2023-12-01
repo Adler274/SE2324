@@ -591,31 +591,174 @@ Regelmäßige Überprüfungen, Audits und Penetrationstests sind notwendig, um p
 [1b,7b]
 
 ### Metriken zur Messung von Softwarequalität
+Metriken zur Messung von Softwarequalität sind quantitative Maße, die dazu dienen, verschiedene Aspekte der Softwareentwicklung und -wartung zu bewerten.
+Diese Metriken ermöglichen es Entwicklern, Managern und anderen Stakeholdern, die Qualität von Softwareprodukten zu überwachen, zu analysieren und zu verbessern.
+Sie können sich auf verschiedene Dimensionen der Softwarequalität beziehen, darunter Code-Qualität, Leistung, Sicherheit, Wartbarkeit und mehr.
+Metriken bieten eine objektive Grundlage für Entscheidungen im Entwicklungsprozess und tragen dazu bei, die Effizienz, Zuverlässigkeit und Benutzerfreundlichkeit von Softwareprodukten sicherzustellen.
+
+[1b,9b]
+
 #### Konventionelle Metriken
+Konventionelle Metriken sind standardisierte Messgrößen, die in der Softwareentwicklung verwendet werden, um verschiedene Aspekte der Softwarequalität zu bewerten. Diese Metriken folgen oft anerkannten Standards und Vorgehensweisen.
+
+**Zeilenanzahl (LOC - Lines of Code):**
+Die Anzahl der Codezeilen in einem Programm. Diese Metrik kann auf verschiedene Weisen interpretiert werden, einschließlich der Codekomplexität.
+
+**Zyklomatische Komplexität:**
+Ein Maß für die Komplexität des Quellcodes, das auf der Anzahl der unabhängigen Pfade durch den Code basiert. Hohe zyklomatische Komplexität kann auf schwer zu verstehenden oder fehleranfälligen Code hinweisen.
+
+**Testabdeckung:**
+Der Prozentsatz des Codes, der während der Ausführung von Tests abgedeckt wird. Eine höhere Testabdeckung kann auf eine umfassendere Teststrategie hinweisen.
+
+**Fehlerdichte:**
+Die Anzahl der Fehler pro Zeile Code. Eine niedrige Fehlerdichte deutet auf einen stabilen und zuverlässigen Code hin.
+
+**Durchschnittliche Zeit bis zum Fehler (MTTF - Mean Time To Failure):**
+Die durchschnittliche Zeit zwischen dem Start der Software und dem Auftreten des ersten Fehlers.
+
+**Durchschnittliche Wiederherstellungszeit (MTTR - Mean Time To Recovery):**
+Die durchschnittliche Zeit, die benötigt wird, um die Software nach einem Fehler wiederherzustellen.
+
+**Benutzerzufriedenheit:**
+Bewertungen und Feedback der Benutzer zur Benutzerfreundlichkeit und Leistung der Software.
+
+**Wartbarkeitsmetriken:**
+Dazu gehören Metriken wie die durchschnittliche Zeit zur Behebung von Fehlern und die durchschnittliche Zeit zur Implementierung neuer Funktionen.
+
+Viele dieser Metriken überschneiden sich auch mit denen eder DORA-Metriken zur Messung der Effizienz Softwareentwicklung,
+da sich die Effizienz direkt auf die Qualität auswirkt.
+
+[1b,9b]
+
 ##### McCabe-Metrik
+Die McCabe-Metrik, auch als zyklomatische Komplexität bekannt, ist eine Softwaremetrik, die dazu dient, die Komplexität eines Software-Moduls zu messen. Diese Module können Funktionen, Prozeduren oder allgemein Code-Abschnitte sein.
+
+Die Grundidee hinter dieser Software-Metrik ist, dass ein Modul ab einer bestimmten Komplexität für Menschen schwer verständlich wird. Die cyclomatic complexity wird als die Anzahl der linear unabhängigen Pfade auf dem Kontrollflussgraphen eines Moduls definiert. Diese Zahl stellt eine obere Schranke für die minimale Anzahl der Testfälle dar, die erforderlich sind, um eine vollständige Zweigabdeckung des Kontrollflussgraphen zu erreichen.
+
+Über die Begriffe Zyklomatische Komplexität und Kontrollflussgraphen wird im Folgenden noch genauer eingegangen.
+
+[10b]
+
 ##### Zyklomatische Komplexität
+Die zyklomatische Komplexität eines Moduls wird durch die Anzahl der linear unabhängigen Pfade in seinem Kontrollflussgraphen bestimmt.
+
+Der Kontrollflussgraph stellt die verschiedenen Wege dar, die der Programmfluss während der Ausführung des Codes nehmen kann. Die zyklomatische Komplexität misst im Wesentlichen, wie viele Entscheidungen (Verzweigungen, Schleifen, etc.) es im Code gibt. Je mehr Entscheidungen es gibt, desto höher ist die zyklomatische Komplexität.
+
+Die zyklomatische Komplexität kann dazu verwendet werden, die Testbarkeit eines Softwaremoduls einzuschätzen. Hohe zyklomatische Komplexität kann darauf hinweisen, dass ein Modul schwieriger zu verstehen und zu testen ist. Es wird empfohlen, die zyklomatische Komplexität während des Softwareentwicklungsprozesses zu überwachen, um die Wartbarkeit und Qualität des Codes zu verbessern.
+
+[11b]
+
 ##### Kontrollflussgraph
+Ein Kontrollflussgraph ist ein gerichteter Graph, der dazu dient, den Prorgrammablauf eines Programms zu beschreiben.
+Dieser besteht wie üblich aus Knoten und Kanten.
+Die Knoten stellen dabei die Grundblöcke der Programms dar und die Kanten die übergänge zu weiteren Blöcken darstellen, wie z.B Schleifen oder Verzweigungen.
+
+![:scale 80%](media\Kontrollflussgraph.png)
+
+[12b,13b]
+
 #### Objektorientierte Metriken
+Die Objektorientierten Metriken berücksichten bei der Messung von der Software die Zusammenfassung von Datensturkturen und den dazugehörigen Methoden in Objekten.
+Auch die Beziehungen zu anderen Objekten, sowie de Strukturmerkmale der Programmierung, wie die Kapselung, Vererbung, usw werden geprüft.
+Die Messung der Qualität bezieht sich dann auf vier Bereiche:
+Die Methoden, die Klassen, Vererbungshierarchie und die Aggregationsherarchien.
+
+[14b]
+
 ##### Lack of Cohesion in Methods
-#### Weitere Metriken, die Sie als relevant erachten
+"Lack of Cohesion in Methods" (LCOM) ist teil der objektorientierten Metrik zur Bewertung der Kohäsion in einem Softwaremodul oder einer Klasse. Hohe Kohäsion bedeutet, dass die Methoden in einer Klasse eng miteinander verbunden sind und gemeinsam an einem Ziel arbeiten. LCOM bewertet, wie stark die Methoden in einer Klasse miteinander interagieren. Niedrige LCOM-Werte zeigen eine starke Kohäsion an, während hohe Werte auf eine geringe Kohäsion und damit potenzielle Probleme bei Wartung und Verständnis des Codes hinweisen. In der Softwareentwicklung strebt man nach Klassen mit hoher Kohäsion für einen besseren, wartbaren Code.
+
+[15b]
 #### Beispiele
+Hier ein Beispiel zur Lack of Cohesion:
+Wir haben eine Klasse "OnlineShop" in denen es die Methoden BezahlungVerarbeiten, BestandUpdate und sendBestätigungsemail gibt.
+Wenn die Lack of Cohesion analyse einen hohen LCOM Werte aufweißt, beduetet das, dass die Methoden nicht stark mit einander verbunden sind und man diese in verschiedene Klassen aufteilen sollte.
+Außerdem würde dadurch die durchschnittliche Anzahl der Methoden pro Klasse (NOM) sinken, was auch ein Qualitätsmerkmal ist, da es komplexität verringert.
+
+[16b]
+
 ### Modellierung und Visualisierung von Softwaresystemen
+Zur Moduellierung und Visualisierung von Softwaresystemen gibt es verschiedene Modele
+und Vorgehensweisen die im Folgenden Thematisiert werden.
+
 #### Modelle
+Ein Modell ist eine vereinfachte Darstellung eines Systems, das dazu dient, bestimmte Aspekte des Systems zu verstehen und zu analysieren. Modelle können verwendet werden, um die Struktur, das Verhalten und die Interaktionen eines Systems zu beschreiben. Sie können auch verwendet werden, um die Auswirkungen von Änderungen zu simulieren und zu verstehen.
+
+**UML-Diagramme:**
+Klassendiagramme, Aktivitätsdiagramme und Sequenzdiagramme sind sehr nützlich, um die Struktur und das Verhalten eines Systems zu verstehen. Sie bieten eine umfassende Sicht auf die Softwarearchitektur.
+
+**Architekturdiagramme:**
+Die Visualisierung der Systemarchitektur ist entscheidend, um eine klare Vorstellung von Komponenten, Schnittstellen und Abhängigkeiten zu vermitteln.
+
+**Use-Case-Diagramme:**
+Sie sind wichtig, um die Interaktionen zwischen dem System und den Benutzern zu verstehen und die funktionalen Anforderungen zu klären.
+
+**Komponentendiagramme:**
+Zeigen, wie verschiedene Teile des Systems zusammenarbeiten, und sind daher besonders für Entwickler und Architekten relevant.
+
+**Zustandsdiagramme:**
+Sind wichtig, um das Verhalten von Objekten in verschiedenen Zuständen zu verstehen, was besonders für Systeme mit komplexen Zustandsübergängen relevant ist.
+
+**ER-Diagramme:**
+In Datenbankanwendungen sind sie entscheidend, um die Beziehungen zwischen verschiedenen Datenentitäten zu klären.
+
+[17b]
+
 ##### Descriptive vs rule-based modeling
+**Deskriptive Modellierung:**
+
+**Beschreibend:**
+Deskriptive Modelle beschreiben das System, wie es ist, ohne dabei Einschränkungen oder Regeln vorzugeben.
+
+**Flexibilität:**
+Sie sind flexibel und können verschiedene Aspekte des Systems auf unterschiedliche Weisen darstellen.
+
+**Visualisierung:**
+Oft werden graphische Modelle verwendet, um komplexe Strukturen und Beziehungen leicht verständlich zu machen.
+
+**Exploration:**
+Gut geeignet für die Erkundung von Ideen, Konzepten und Strukturen, ohne sich von vornherein auf bestimmte Regeln festzulegen.
+
+**Beispiele:**
+Mind Maps, Concept Maps und Diagramme in der frühen Phase eines Projekts.
+
+
+**Regelbasierte Modellierung:**
+
+**Festgelegte Regeln:**
+Regelbasierte Modelle legen spezifische Regeln, Einschränkungen oder Verhaltensmuster für das System fest.
+
+**Strukturiert:**
+Sie bieten eine strukturierte Herangehensweise, bei der klare Regeln und Anweisungen befolgt werden müssen.
+
+**Automatisierung:**
+Gut geeignet für die Automatisierung von Prozessen, da die Regeln in der Regel maschinenlesbar sind.
+
+**Fehlervermeidung:**
+Reduziert Spielraum für Interpretation und minimiert potenzielle Fehler, da die Modelle auf klaren Regeln basieren.
+
+
+Beide Ansätze haben ihren Platz in der Modellierung, wobei deskriptive Modelle oft in frühen Phasen für die Ideenfindung verwendet werden, während regelbasierte Modelle in späteren Phasen eingesetzt werden, um spezifische Verhaltensweisen festzulegen.
+Deskriptive Modelle bieten mehr Spielraum für Kreativität und Exploration, während regelbasierte Modelle Struktur und Klarheit bieten.
+
+[1b,18b,19b]
+
 #### UML
-#### Statische und dynamische Diagrammtypen
-#### Zuordnung der UML-Diagrammtypen zu Phasen der Softwareentwicklung
-#### Funktionale Modelle
-##### Use Case Diagramme
-#### Strukturmodelle
-##### Klassendiagramme
-##### Verteilungsdiagramme
-#### Verhaltensmodelle
-##### Zustandsdiagramme
-##### Aktivitätsdiagramme
-##### Sequenzdiagramme
+UML steht für Unified Modelling language und
+
+##### Statische und dynamische Diagrammtypen
+##### Zuordnung der UML-Diagrammtypen zu Phasen der Softwareentwicklung
+##### Funktionale Modelle
+###### Use Case Diagramme
+##### Strukturmodelle
+###### Klassendiagramme
+###### Verteilungsdiagramme
+##### Verhaltensmodelle
+###### Zustandsdiagramme
+###### Aktivitätsdiagramme
+###### Sequenzdiagramme
 #### Software Architecture Documentation
-#### arc42
+##### arc42
 
 ## Referenzen
 
@@ -681,18 +824,18 @@ Regelmäßige Überprüfungen, Audits und Penetrationstests sind notwendig, um p
 [6b] :https://www.datacenter-insider.de/was-ist-performance-in-der-it-a-735949/
 [7b] :https://www.microconsult.de/386-0-Qualitaet-und-Sicherheit.html
 [8b] :https://chat.openai.com/: Nenne mir aspekte von reliability in softwaresystemen
-[9b]
-[10b]
-[11b]
-[12b]
-[13b]
-[14b]
-[15b]
-[16b]
-[17b]
-[18b]
-[19b]
-[20b]
+[9b] :https://www.dev-insider.de/was-sind-softwaremetriken-a-813487/
+[10b] :https://de.wikipedia.org/wiki/McCabe-Metrik
+[11b] :https://www.dev-insider.de/was-ist-zyklomatische-komplexitaet-a-7fa40c670052685ff1c56d8169a79481/
+[12b] :https://de.wikipedia.org/wiki/Kontrollflussgraph
+[13b] :https://dewiki.de/Lexikon/Kontrollflussgraph
+[14b] :https://www.itwissen.info/Objektorientierte-Software-Metrik.html
+[15b] :https://www.itwissen.info/en/lack-of-cohesion-in-methods-LCOM-122383.html#gsc.tab=0
+[16b] :https://chat.openai.com/: Gib mir ei grobes Beispiel ffür zur objektorientierten Metrik
+[17b] :https://chat.openai.com/: Was für Modelle zur visualisierung von softwaresystemene gibt es?
+[18b] :https://en.wikipedia.org/wiki/Rule-based_modeling
+[19b] :https://www.sciencedirect.com/topics/computer-science/descriptive-model
+[20b] :https://www.ibm.com/docs/de/rational-soft-arch/9.7.0?topic=diagrams-uml-models
 [21b]
 [22b]
 [23b]
