@@ -123,7 +123,7 @@ Unter den Systemeigenschaften versteht man einen Satz von Eigenschaften, die fü
 
 [6a]
 ---
-### Komplizierte vs. komplexe Systeme
+#### Komplizierte vs. komplexe Systeme
 ***
 *  Komplizierte Systeme
 
@@ -242,6 +242,7 @@ Der "Kontext" in einer Systemstruktur bezieht sich auf die Umgebung oder den Rah
 
 * **Ausgabe**: Ausgabe bezieht sich auf alle Informationen, Daten oder Signale, die vom System an seine Umgebung oder an andere Systeme weitergegeben werden. Dies können Berechnungsergebnisse, Statusberichte, Benachrichtigungen, Steuersignale oder andere Arten von Informationen sein.
 
+[13a]
 ---
 
 ### Systems-Thinking (Systemdenken)
@@ -367,7 +368,7 @@ Zum einen kann man Qualität von Software aus zwei Perspektiven betrachten: von 
 
 ![:scale 50%](media\teufelsquadrat-auswirkungen.jpg)
 
-
+[21a]
 ---
 
 ### Qualitätsmodelle
@@ -474,14 +475,6 @@ Das Cynefin-Framework ist ein Wissensmanagement-Modell mit der Aufgabe Probleme,
 [25a]
 ---
 
-## Zusammenfassung
-***
-
-
-
-
-
----
 class: center, middle
 
 # Fragen?
