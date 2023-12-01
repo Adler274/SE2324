@@ -458,35 +458,56 @@ Das Cynefin-Framework ist ein Wissensmanagement-Modell mit der Aufgabe Probleme,
 ## Referenzen
 
 [1a]  : https://de.wikipedia.org/wiki/Softwaresystem
+
 [2a]  : https://www.oec.uzh.ch/de/academic-programs/bachelor/it/ioe.html
+
 [3a]  : https://de.itpedia.nl/2018/10/23/applicatie-systeem-tool-of-software-wat-is-wat/
+
 [4a]  : https://www.christian-rehn.de/2010/11/12/se1-technische-systeme/
+
 [5a]  : https://dimeb.informatik.uni-bremen.de/index.php?id=74&tx_ttnews[tt_news]=14&cHash=afede150dd
 
 [6a]  : https://dewiki.de/Lexikon/Systemeigenschaften
+
 [7a]  : https://www.managerseminare.de/Trainerkoffer/Tipps/Was-ist-kompliziert-was-ist-komplex-und-wie-erklaere-ich-das,4405
 
 [8a]  : https://www.fh-muenster.de/eti/personen/professoren/wulff/adap-main.php
+
 [9a]  : https://de.wikipedia.org/wiki/Lernendes_System
+
 [10a] : https://de.wikipedia.org/wiki/Dynamisches_System_(Systemtheorie)
+
 [11a] : https://de.wikipedia.org/wiki/Selektivit%C3%A4t_(Informatik)
+
 [12a] : https://www.enzyklo.de/Begriff/Systemstruktur
+
 [13a] : https://de.wikipedia.org/wiki/System
+
 [14a] : https://digitaleneuordnung.de/blog/system-thinking/
+
 [15a] : https://de.wikipedia.org/wiki/Systemdenken_(Systemtheorie)
+
 [16a] : https://gfse.de/systemdenken-erklaert/prinzipien-des-systemdenkens.html
+
 [17a] : https://chat.openai.com/c/c07d7810-1d5d-4510-ba84-2da6a5ae1401 frage: was sind intelligente softwaresysteme?
 
 [18a] : https://de.wikipedia.org/wiki/Informationssystem
+
 [19a] : https://chat.openai.com/c/23fa7c63-18e6-482b-a003-11dc4140cbba frage: was sind Softwaresystembausteine zb System, Subsystem, Modul, Paket, Komponente, Klasse, Interface, Funktion, etc.
 [20a] : https://ambient.digital/wissen/blog/qualitaet-softwareentwicklung/#:~:text=Zum%20einen%20kann%20man%20Qualit%C3%A4t,die%20jeweils%20eigene%20Anforderungen%20haben.
+
 [21a] : https://interim-cio.biz/artikel-projektsteuerung-teufelsquadrat
+
 [22a] : https://inztitut.de/blog/glossar/iso-25010/
+
 [23a] : https://de.wikipedia.org/wiki/FURPS
+
 [24a] : https://de.wikipedia.org/wiki/Softwarequalit%C3%A4t
+
 [25a] : https://de.wikipedia.org/wiki/Cynefin-Framework#:~:text=Das%20Cynefin%2DFramework%20%5Bk%C9%99',Erkl%C3%A4rungen%20oder%20L%C3%B6sungen%20zutreffen%20k%C3%B6nnten.
 
 [26a] : https://innovative-trends.de/2014/12/28/no-silver-bullet-interessanter-historischer-software-engineering-artikel/
+
 [27a] : https://www.ssoar.info/ssoar/bitstream/handle/document/63101/ssoar-2019-hellige-Software_Manufaktur_-_Software_Engineering.pdf;jsessionid=B600AE3A5E0E1A51AC944719BFD498B8?sequence=1
 
 

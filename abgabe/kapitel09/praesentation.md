@@ -22,8 +22,6 @@ Simon Fedrau, Sascha Hahn
 
 1. 
 
-1. Zusammenfassung
-
 1. Quellen
 
 ---
