@@ -1,155 +1,297 @@
-# Kapitelüberschrift
+# Kapitel 10
 
-**Autor:** Max Mustermann
+**Autor:** Simon Fedrau, Sascha Hahn
 
-# Headings
+## Lernziele
+* Softwareprüfung
+  * Bug vs Issue vs Flaw vs Fault vs Failure vs Error vs Defect
+  * Continuous Testing vs. Shift-left-testing vs Shift-right-testing vs Testing-in-production
+  * Testing Anti Patterns
+  * Validierung vs formale Verifikation
+  * Statischer Test von Software
+  * Dynamischer Test von Software
 
-* Überschrift H1: `# Überschrift`
-
-# Überschrift
-
-* Überschrift H2: `## Überschrift`
-
-## Überschrift
-
-*  Überschrift H3: `### Überschrift`
-
-### Überschrift
-
-*  Überschrift H4: `#### Überschrift`
-
-#### Überschrift
-
-* Überschrift H5: `##### Überschrift`
-
-##### Überschrift
-
-*  Überschrift H6: `###### Überschrift`
-
-###### Überschrift
-
-# Paragraphs
-
-* Paragraphen werden durch eine oder mehrere leere Zeilen von einander getrennt:
-
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
-# Emphasis
-
-* kursiv: `_dieser Text wird kursiv_`
-
-_dieser Text wird kursiv_
-
-* fett: `**dieser Text wird fett**`
-
-**dieser Text wird fett**
-
-* durchgestrichen: `~~dieser Text wird durchgestrichen~~`
-
-~~dieser Text wird durchgestrichen~~
-
-# Listen
-
-* ungeordnete Liste: `* Element 1 und nächste Zeile Tab * untergeordnetes Element 2`
-
-* Element 1
-  * untergeordnetes Element 2
-
--- geordnete Liste: `1. Element, 2. Element ...`
-
-1. Element
-2. Element
-
-## Unterkapitel
-
-* **Softwaresystem**:
-  Die *innere* Sicht des Informatikers nimmt Software als Softwaresystem wahr.
-* **Softwareprodukt**: Die *äußere* Sicht eines Auftraggeber nimmt ein Softwaresystem als Softwareprodukt wahr. 
-
-### Tabelle
-
-| A          |     B       |           C               | 
-|:----------:|:-----------:|:-------------------------:|
-| Eins | Zwei | Drei |
-| Vier | Fünf | Sechs |
-
-## Links
-
-[Markdown] ist eine Sprache, die nach HTML konvertiert werden kann. 
-
-[Markdown]: http://daringfireball.net/projects/markdown/
-
-## Aufzählung
-
-Es unterteilt sich in:
-
-* A
-  * A1
-* B
-  * B1
-  * B2
-* C
+### Softwareprüfung
 
 
-# Überschrift
+#### Bug vs Issue vs Flaw vs Fault vs Failure vs Error vs Defect
 
-"...the **go to** statement should be abolished..." [1].
+* **Bug:**
+  Ein Bug bezieht sich auf einen Fehler im Code oder im Design einer Software, der unerwünschtes Verhalten verursacht. Bugs können verschiedene Arten von Fehlern repräsentieren.
 
-Dieser Link führt intern zu einem anderen [Thema](qualitaet/README)
 
-Dieser Link führt extern zu [Youtube](https://www.youtube.com/)
+* **Issue:**
+  Der Begriff "Issue" ist allgemeiner und kann sowohl Bugs als auch andere Probleme, wie Aufgaben, Verbesserungsvorschläge oder allgemeine Anfragen, umfassen. Es ist ein allgemeinerer Begriff, der alles, was die Entwicklung oder den Betrieb einer Software beeinflusst, beschreiben kann.
 
-> Dieser Text ist völlig sinnlos, aber steht trotzdem hier. Dieser Text geht über mehrere Zeilen, wenn der Text lang genug ist, um über mehrere Zeilen zu passen.
 
-## Unterüberschrift
+* **Flaw:**
+  Ein Flaw deutet auf einen Fehler oder eine Schwäche in einem System oder Prozess hin. Es kann sich auf Designfehler, Implementierungsfehler oder andere Mängel beziehen, die die Qualität oder Leistung beeinträchtigen.
 
-* Eins
-  * eins.eins
-  * eins.zwei
-* Zwei
-  * Zwei.zwei
-* Drei
 
-### Code
+* **Fault:**
+  Ein Fault ist ein Fehler in der Implementierung oder im Code, der zu einem Defekt führen kann. Ein Fault liegt vor, wenn ein Entwickler einen Fehler macht, der zu unerwünschtem Verhalten führen kann.
 
-```javascript
-public class A {
-  Integer a;
-  public A() {
-    this.a = 1
-  }
-}
-```
 
-Syntax Highlighting für Javascript. Weitere Sprachen müssen in 'index.html' konfiguriert werden.
+* **Failure:**
+  Ein Failure tritt auf, wenn das System oder die Software nicht mehr wie erwartet funktioniert und die Anforderungen nicht erfüllt. Failures sind das sichtbare Ergebnis von Defekten oder Fehlern und können durch Bugs oder andere Probleme verursacht werden.
 
-### Mermaid
+* **Error:**
+  Ein Error ist ein menschliches Handeln, das zu einem Defekt führt. Dies könnte ein Schreibfehler im Code, ein Algorithmusfehler oder ein Verständnisfehler bei den Anforderungen sein.
 
-```mermaid
-graph LR
-    A --- B
-    B-->C[fa:fa-ban forbidden]
-    B-->D(fa:fa-spinner);
-```
+* **Defect:**
+  Ein Defect ist ein Mangel oder Fehler im Code oder Design, der zu einem unerwünschten Ergebnis führen kann. Defekte können die Ursache von Bugs, Failures oder anderen Problemen sein.
 
-```mermaid
-stateDiagram-v2
-    [*] --> Still
-    Still --> [*]
+[1a] [2a]
+ 
+#### Continuous Testing vs. Shift-left-testing vs Shift-right-testing vs Testing-in-production
 
-    Still --> Moving
-    Moving --> Still
-    Moving --> Crash
-    Crash --> [*]
-```
+* **Continuous Testing:** 
+  Continuous Testing ist ein Ansatz, bei dem Tests automatisiert und kontinuierlich während des gesamten Entwicklungs- und Bereitstellungsprozesses durchgeführt werden. Das Ziel besteht darin, frühzeitig Feedback über mögliche Defekte oder Probleme zu erhalten und die Qualität der Software kontinuierlich sicherzustellen. Continuous Testing ist integraler Bestandteil von Continuous Integration und Continuous Delivery (CI/CD)-Pipelines.
 
-### Bilder
+[4a]
 
-![](media/image.jpg)
+* **Shift-left-testing:**
+  Shift-left-testing bezieht sich auf den Trend, Softwaretests so früh wie möglich im Entwicklungsprozess zu integrieren. Statt Tests erst am Ende des Entwicklungszyklus durchzuführen, werden sie in den früheren Phasen, wie dem Schreiben von Code oder dem Entwurf, eingebettet. Das Ziel ist es, Probleme frühzeitig zu identifizieren, was zu schnelleren Feedbackschleifen und einer verbesserten Qualität führt.
+
+
+* **Shift-right-testing**
+  Im Gegensatz zu Shift-left-testing bezieht sich Shift-right-testing darauf, Tests und Qualitätssicherungsaktivitäten in spätere Phasen des Softwareentwicklungszyklus zu verschieben, insbesondere in die Produktionsumgebung. Das bedeutet, dass Tests nach der Bereitstellung in der Produktion weitergeführt werden, um reale Benutzererfahrungen zu überwachen, Leistungsdaten zu sammeln und unerwartete Probleme zu identifizieren. Dieser Ansatz ermöglicht eine schnellere Anpassung an die tatsächlichen Nutzungsbedingungen.
+
+
+* **Testing-in-production**
+  Testing-in-production bezieht sich darauf, Tests direkt in der Produktionsumgebung durchzuführen, während Benutzer auf das System zugreifen. Dies ermöglicht es, reale Nutzungsbedingungen zu simulieren und echtes Feedback zu erhalten. Dieser Ansatz kann jedoch risikoreich sein, da Fehler oder Probleme Auswirkungen auf echte Benutzer haben können. Daher erfordert Testing-in-production eine sorgfältige Planung und Strategien, um negative Auswirkungen zu minimieren.
+
+
+[3a] 
+
+
+#### Testing Anti Patterns
+
+Testing Anti-Patterns beziehen sich auf wiederkehrende Fehlermuster oder schlechte Praktiken im Bereich Softwaretests. Diese Muster führen oft zu ineffizienten, unzuverlässigen oder unangemessenen Testprozessen, die die Qualität der Software beeinträchtigen können. Beispiele für Anti-Patterns sind:
+
+
+* Fehlende Teststrategie:
+
+  Wenn ein Projekt keine klare Teststrategie hat, können wichtige Aspekte der Anwendung übersehen werden. Dies führt zu unvollständigen Testabdeckungen und einem erhöhten Risiko, dass kritische Fehler nicht erkannt werden.
+
+* Später Beginn von Tests (Testing Too Late):
+
+  Wenn Tests erst in späteren Phasen des Softwareentwicklungszyklus durchgeführt werden, steigt die Wahrscheinlichkeit, dass Fehler spät erkannt werden. Dies führt zu höheren Kosten und erschwert die Fehlerbehebung
+
+* Unzureichende Testdaten:
+
+  Mangelnde Vielfalt und Qualität der Testdaten können dazu führen, dass bestimmte Szenarien und Randfälle nicht ausreichend getestet werden. Dies kann dazu führen, dass wichtige Fehler unentdeckt bleiben.
+
+* Ignorieren von Automatisierungsmöglichkeiten:
+
+  Wenn Automatisierungsmöglichkeiten für Testsignifikante Anwendungsfälle ignoriert oder nicht ausreichend genutzt werden, kann dies zu ineffizienten Testprozessen führen. Automatisierung kann dazu beitragen, Tests schneller und zuverlässiger durchzuführen.
+
+* Statisches Testen vernachlässigen:
+
+  Statisches Testen, einschließlich Code-Reviews und statischer Code-Analyse, wird oft vernachlässigt. Dies führt dazu, dass Fehler im Code nicht frühzeitig erkannt werden, was zu höheren Kosten und Problemen in späteren Phasen führen kann.
+
+[5a]
+
+#### Validierung vs formale Verifikation
+
+Validierung und formale Verifikation sind zwei verschiedene Ansätze, um sicherzustellen, dass ein System oder eine Software die erforderlichen Anforderungen erfüllt. Hier sind die grundlegenden Unterschiede zwischen Validierung und formaler Verifikation:
+
+
+* Validierung:
+    Validierung bezieht sich darauf, sicherzustellen, dass das entwickelte System oder die Software den tatsächlichen Bedürfnissen und Anforderungen des Benutzers entspricht. Es ist ein dynamischer Prozess, der oft durch Tests, Reviews und Benutzerfeedback durchgeführt wird. Die Validierung überprüft, ob das System das Richtige tut und ob es im realen Einsatzumfeld funktioniert.
+
+* Formale Verifikation (Korrektheitsbeweis):
+    Formale Verifikation ist ein statischer Ansatz, der mathematische Modelle und Methoden verwendet, um sicherzustellen, dass ein System oder eine Software bestimmte Eigenschaften erfüllt. Diese Eigenschaften können formale Spezifikationen, Sicherheitseigenschaften oder andere mathematisch beschreibbare Kriterien sein. Formal Methods können mathematische Beweise oder Model Checking verwenden, um zu zeigen, dass ein System bestimmte Sicherheits- oder Funktionsanforderungen erfüllt.
+
+[6a] [7a]
+
+#### Statischer Test von Software
+
+Statische Tests von Software beziehen sich auf Verfahren, bei denen der Quellcode, das Design oder andere Artefakte der Software ohne deren tatsächliche Ausführung überprüft werden. Im Gegensatz zu dynamischen Tests, die die Software während der Laufzeit ausführen, analysieren statische Tests die statischen Eigenschaften des Codes, um Fehler, Mängel oder Verbesserungsmöglichkeiten zu identifizieren. Hier sind einige gängige Formen von statischen Tests:
+
+* Code Reviews:
+    Entwickler überprüfen den Quellcode, um sicherzustellen, dass er den Coding-Standards entspricht, gut strukturiert ist und keine offensichtlichen Fehler enthält. Code Reviews können formell oder informell sein und helfen, Qualitätsprobleme frühzeitig zu identifizieren.
+
+* Statische Code-Analyse:
+    Tools werden verwendet, um den Quellcode statisch zu analysieren und Muster zu identifizieren, die auf mögliche Fehler, Sicherheitslücken oder Code-Stil-Verstöße hinweisen könnten. Diese Werkzeuge können automatisiert in den Entwicklungsprozess integriert werden.
+
+* Dokumentenüberprüfungen:
+    Statische Tests können auch Dokumente, wie Spezifikationen, Design-Dokumente oder Anforderungen, einschließen. Ziel ist es sicherzustellen, dass die Dokumentation konsistent, vollständig und verständlich ist.
+
+* Datenflussanalyse:
+    Die Überprüfung des Datenflusses im Code kann dazu beitragen, unerwartete Abhängigkeiten oder mögliche Fehlerquellen zu identifizieren.
+
+* Software-Metriken:
+    Metriken wie Code-Komplexität, Anzahl der Codezeilen oder Anzahl der Methoden können statisch analysiert werden, um Hinweise auf die Qualität und Wartbarkeit des Codes zu geben.
+
+* Walkthrough:
+  Ein Walkthrough bezieht sich auf eine informelle Überprüfung oder Inspektion von Software-Artefakten. Es handelt sich um eine Art informelles Treffen, bei dem ein Entwickler oder Tester das Softwareprodukt, den Code oder andere Entwicklungsartefakte Schritt für Schritt mit anderen Teammitgliedern oder relevanten Stakeholdern durchgeht. Ziel eines Walkthroughs ist es, mögliche Fehler, Unklarheiten oder Verbesserungsmöglichkeiten zu identifizieren und frühzeitig im Entwicklungsprozess zu adressieren.
+
+
+Statische Tests sind besonders nützlich, um Probleme frühzeitig im Entwicklungsprozess zu erkennen, bevor die Software in die Test- oder Produktionsumgebung übergeht. Durch die Integration von statischen Tests können Entwicklerteams die Qualität verbessern, die Wartbarkeit erhöhen und die Kosten für die Fehlerbehebung reduzieren.
+
+[8a] [9a] [10a]
+
+#### Relevante Werkzeuge  
+
+Es gibt eine Vielzahl von Werkzeugen, die für das Statische Testen von Software eingesetzt werden können. Diese Werkzeuge automatisieren oft den Prozess der Statischen Analyse und unterstützen Entwickler und Tester dabei, potenzielle Probleme im Quellcode zu identifizieren. Hier sind einige relevante Werkzeuge:
+
+  * Statische Code-Analysewerkzeuge:
+      Beispiele sind SonarQube, ESLint, PMD, Checkstyle und FindBugs. Diese Werkzeuge scannen den Quellcode nach festgelegten Regeln und identifizieren mögliche Fehler, Sicherheitslücken, Coding-Standards-Verstöße und andere Probleme.
+
+  * Code Review-Tools:
+      Plattformen wie GitHub, GitLab oder Bitbucket bieten integrierte Funktionen für Code-Reviews. Sie ermöglichen Teams, den Quellcode gemeinsam zu überprüfen, Kommentare zu hinterlassen und Diskussionen zu führen.
+
+  * Dokumentenprüfungstools:
+      Werkzeuge wie Collaborator, Atlassian Confluence oder Microsoft Teams unterstützen Teams bei der Überprüfung von Dokumentation, Anforderungsspezifikationen oder anderen schriftlichen Artefakten.
+
+  * Statische Analysewerkzeuge für Sicherheit:
+      Werkzeuge wie OWASP Dependency-Check oder Fortify SCA können Schwachstellen in externen Bibliotheken und Abhängigkeiten identifizieren, um die Sicherheit von Software zu verbessern.
+
+  * Formale Methoden und Verifikationstools:
+      Für anspruchsvollere Anwendungen, insbesondere in sicherheitskritischen Bereichen, können formale Verifikationswerkzeuge wie Alloy Analyzer oder SPIN verwendet werden, um mathematische Modelle auf Korrektheit zu prüfen.
+
+  * Metrikanalysewerkzeuge:
+      Werkzeuge wie SonarQube können nicht nur potenzielle Fehler identifizieren, sondern auch Metriken zur Codequalität bereitstellen, wie z. B. Code-Komplexität, Testabdeckung und Duplikate.
+
+  * Abhängigkeitsanalysewerkzeuge:
+      Werkzeuge wie Dependency-Check oder Snyk können Abhängigkeiten und Bibliotheken auf bekannte Schwachstellen und Sicherheitsprobleme überprüfen.
+
+  * Code-Duplikationswerkzeuge:
+      Werkzeuge wie Clone Detective for Visual Studio oder Simian für Java können Duplikate im Quellcode identifizieren, was die Wartbarkeit verbessern kann.
+
+  * Modellprüfungstools:
+      Model Checking-Tools wie SPIN oder NuSMV können dazu verwendet werden, formale Modelle auf bestimmte Eigenschaften oder Fehlerzustände zu überprüfen.
+
+Es ist wichtig zu beachten, dass die Auswahl der Werkzeuge von den spezifischen Anforderungen des Projekts, der Art der Anwendung und den verfügbaren Ressourcen abhängt. Die Integration mehrerer Werkzeuge in den Entwicklungsprozess kann dazu beitragen, die Qualität und Sicherheit der Software zu verbessern.
+
+[11a]
+
+#### Dynamischer Test von Software
+
+Dynamische Tests von Software beziehen sich auf den Prozess, bei dem die Software während ihrer Ausführung überprüft wird. Im Gegensatz zu statischen Tests, die den Quellcode oder andere Artefakte ohne Ausführung analysieren, testen dynamische Tests die Software, während sie in einer Laufzeitumgebung läuft. Ziel ist es, das tatsächliche Verhalten der Software zu überprüfen, Fehler zu finden und sicherzustellen, dass sie den spezifizierten Anforderungen entspricht.
+
+
+
+
+[12a]
+#### Dynamische Testarten
+
+
+#### Unittest
+
+Diese Tests überprüfen einzelne Einheiten des Quellcodes, normalerweise einzelne Funktionen oder Methoden, um sicherzustellen, dass sie korrekt funktionieren. Unit Tests sind automatisierte Tests, die häufig im Entwicklungsprozess integriert werden.
+
+#### Integrationstest
+
+Integrationstests überprüfen, wie verschiedene Teile einer Anwendung zusammenarbeiten. Sie testen die Schnittstellen und Interaktionen zwischen verschiedenen Modulen, um sicherzustellen, dass sie ordnungsgemäß integriert sind.
+
+#### E2E-Test
+
+E2E-Tests simulieren typische Benutzerinteraktionen von Anfang bis Ende, um sicherzustellen, dass die gesamte Anwendung ordnungsgemäß funktioniert. Sie prüfen die Software aus Sicht des Endbenutzers.
+
+
+#### Systemtest
+
+Der Systemtest überprüft die vollständige und integrierte Software, um sicherzustellen, dass sie die festgelegten Anforderungen erfüllt. Er umfasst alle Aspekte der Anwendung, einschließlich Benutzeroberfläche, Datenbanken und externe Systeme.
+
+
+#### Regressiontest
+
+Bei Regressionstests wird die Softwareanwendung getestet, nachdem Änderungen, Fehlerbehebungen oder Aktualisierungen vorgenommen worden sind. Damit soll sichergestellt werden, dass die Änderungen an der Anwendung keine negativen Auswirkungen auf die bestehende Funktionalität haben oder neue Probleme verursachen. Regressionstests tragen dazu bei, die Softwarequalität und -zuverlässigkeit während des gesamten Entwicklungsprozesses aufrechtzuerhalten, indem sie sicherstellen, dass Änderungen oder Erweiterungen die Stabilität der Anwendung und die Benutzerfreundlichkeit nicht beeinträchtigen.
+
+
+#### Loadtest
+
+Load Testing (auch Belastungstest genannt) ist eine Art von Performance-Test, der darauf abzielt, die Reaktion und Stabilität einer Softwareanwendung unter einer bestimmten Last zu überprüfen. Dabei wird die Anwendung mit einer bestimmten Menge von Benutzern, Transaktionen oder Anfragen konfrontiert, um ihre Leistungsfähigkeit und Zuverlässigkeit unter realen oder simulierten Nutzungsbedingungen zu bewerten.
+
+
+#### Performancetest
+
+Diese Tests bewerten die Leistung der Software unter verschiedenen Bedingungen, einschließlich der Belastungstests, die die Reaktion der Software auf eine hohe Last simulieren, und der Skalierbarkeitstests, die die Fähigkeit der Software zur Bewältigung wachsender Benutzerzahlen überprüfen.
+
+
+#### UI-Test
+
+UI-Tests überprüfen die Benutzeroberfläche einer Anwendung, um sicherzustellen, dass sie korrekt funktioniert und die Benutzererfahrung den Erwartungen entspricht.
+
+#### Mutation testing
+
+Mutation Testing bezieht sich auf das Einführen kleiner Änderungen (Mutationen) in den Quellcode, um zu prüfen, ob die vorhandenen Tests diese Änderungen erkennen. Es dient dazu, die Robustheit der Testabdeckung zu bewerten.
+
+#### Property based test
+
+Property Based Tests verwenden zufällig generierte Eingaben, um sicherzustellen, dass bestimmte Eigenschaften oder Invarianten eines Systems immer erfüllt sind.
+
+
+#### Alpha and Beta testing
+
+Alpha Testing erfolgt in der Regel durch interne Teams, während Beta Testing externe Benutzer einbezieht. Beide Tests überprüfen die Software in realen Umgebungen vor der offiziellen Veröffentlichung.
+
+#### A/B Testing
+
+A/B Testing ist eine Methode, bei der zwei oder mehr Varianten einer Anwendung mit unterschiedlichen Funktionen oder Designs erstellt werden. Es wird verwendet, um die Leistung und Benutzerpräferenzen zu vergleichen und zu entscheiden, welche Variante beibehalten wird.
+
+
+
+[13a] [14a] [15a] [16a] [17a] [18a]
+
 
 ## Referenzen
 
-[1]: Dijkstra, E. W. (1968). Go to statement considered harmful. 
-Communications of the ACM, 11(3), 147-148.
+[1a]  : https://farhan-labib.medium.com/the-confusion-error-vs-fault-vs-bug-vs-defect-vs-failure-c557af04726b
+
+[2a]  : https://www.geeksforgeeks.org/software-testing-bug-vs-defect-vs-error-vs-fault-vs-failure/
+
+[3a]  : https://katalon.com/resources-center/blog/shift-right-testing
+
+[4a]  : https://www.ibm.com/de-de/topics/continuous-testing 
+
+[5a]  : https://www.testenvironmentmanagement.com/software-testing-anti-patterns/
+
+[6a]  : https://de.wikipedia.org/wiki/Verifizierung_und_Validierung
+
+[7a]  : https://files.ifi.uzh.ch/rerg/amadeus/teaching/courses/software_engineering_hs09/folien/Kapitel_07_V_V.pdf
+
+[8a]  : https://istqb-glossary.page/de/statischer-test/
+
+[9a]  : https://de.wikipedia.org/wiki/Statisches_Software-Testverfahren
+
+[10a] : https://t2informatik.de/wissen-kompakt/walkthrough/
+
+[11a] :https://chat.openai.com/ frage: was ist die Statische Analyse in einem  statischen Test von Software
+
+[12a] : https://de.wikipedia.org/wiki/Dynamisches_Software-Testverfahren
+
+[13a] : https://appmaster.io/de/blog/arten-von-softwaretests#unit-tests
+
+[14a] : https://en.wikipedia.org/wiki/Load_testing
+
+[15a] : https://www.zaptest.com/de/was-ist-das-testen-von-ui-software-tiefes-eintauchen-in-die-typen-verfahren-werkzeuge-und-umsetzung
+
+[16a] : https://de.wikipedia.org/wiki/A/B-Test
+
+[17a] : https://www.geeksforgeeks.org/difference-between-alpha-and-beta-testing/
+
+[18a] : https://medium.com/criteo-engineering/introduction-to-property-based-testing-f5236229d237
+
+[19a] : 
+
+[20a] : 
+
+[21a] :
+
+[22a] : 
+
+[23a] : 
+
+[24a] : 
+
+[25a] : 
+
+[26a] : 
+
+[27a] : 
+
+
+
