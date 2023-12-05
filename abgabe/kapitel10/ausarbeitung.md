@@ -13,6 +13,8 @@
 
 ### Softwareprüfung
 
+Beim Softwaretest wird evaluiert und überprüft, ob ein Softwareprodukt oder eine Anwendung das tut, was sie tun soll. Gute Tests ermöglichen die Vermeidung von Fehlern, die Reduzierung der Entwicklungskosten und die Verbesserung der Leistung.
+
 
 #### Bug vs Issue vs Flaw vs Fault vs Failure vs Error vs Defect
 
@@ -102,6 +104,9 @@ Validierung und formale Verifikation sind zwei verschiedene Ansätze, um sicherz
 
 * Formale Verifikation (Korrektheitsbeweis):
     Formale Verifikation ist ein statischer Ansatz, der mathematische Modelle und Methoden verwendet, um sicherzustellen, dass ein System oder eine Software bestimmte Eigenschaften erfüllt. Diese Eigenschaften können formale Spezifikationen, Sicherheitseigenschaften oder andere mathematisch beschreibbare Kriterien sein. Formal Methods können mathematische Beweise oder Model Checking verwenden, um zu zeigen, dass ein System bestimmte Sicherheits- oder Funktionsanforderungen erfüllt.
+
+
+![:scale 60%](media\fehler.png)
 
 [6a] [7a]
 
