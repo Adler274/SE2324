@@ -11,12 +11,12 @@
   * Statischer Test von Software
   * Dynamischer Test von Software
 
-### Softwareprüfung
+## Softwareprüfung
 
 Beim Softwaretest wird evaluiert und überprüft, ob ein Softwareprodukt oder eine Anwendung das tut, was sie tun soll. Gute Tests ermöglichen die Vermeidung von Fehlern, die Reduzierung der Entwicklungskosten und die Verbesserung der Leistung.
 
 
-#### Bug vs Issue vs Flaw vs Fault vs Failure vs Error vs Defect
+### Bug vs Issue vs Flaw vs Fault vs Failure vs Error vs Defect
 
 * **Bug:**
   Ein Bug bezieht sich auf einen Fehler im Code oder im Design einer Software, der unerwünschtes Verhalten verursacht. Bugs können verschiedene Arten von Fehlern repräsentieren.
@@ -45,7 +45,7 @@ Beim Softwaretest wird evaluiert und überprüft, ob ein Softwareprodukt oder ei
 
 [1a] [2a]
  
-#### Continuous Testing vs. Shift-left-testing vs Shift-right-testing vs Testing-in-production
+### Continuous Testing vs. Shift-left-testing vs Shift-right-testing vs Testing-in-production
 
 * **Continuous Testing:** 
   Continuous Testing ist ein Ansatz, bei dem Tests automatisiert und kontinuierlich während des gesamten Entwicklungs- und Bereitstellungsprozesses durchgeführt werden. Das Ziel besteht darin, frühzeitig Feedback über mögliche Defekte oder Probleme zu erhalten und die Qualität der Software kontinuierlich sicherzustellen. Continuous Testing ist integraler Bestandteil von Continuous Integration und Continuous Delivery (CI/CD)-Pipelines.
@@ -67,7 +67,7 @@ Beim Softwaretest wird evaluiert und überprüft, ob ein Softwareprodukt oder ei
 [3a] 
 
 
-#### Testing Anti Patterns
+### Testing Anti Patterns
 
 Testing Anti-Patterns beziehen sich auf wiederkehrende Fehlermuster oder schlechte Praktiken im Bereich Softwaretests. Diese Muster führen oft zu ineffizienten, unzuverlässigen oder unangemessenen Testprozessen, die die Qualität der Software beeinträchtigen können. Beispiele für Anti-Patterns sind:
 
@@ -94,7 +94,7 @@ Testing Anti-Patterns beziehen sich auf wiederkehrende Fehlermuster oder schlech
 
 [5a]
 
-#### Validierung vs formale Verifikation
+### Validierung vs formale Verifikation
 
 Validierung und formale Verifikation sind zwei verschiedene Ansätze, um sicherzustellen, dass ein System oder eine Software die erforderlichen Anforderungen erfüllt. Hier sind die grundlegenden Unterschiede zwischen Validierung und formaler Verifikation:
 
@@ -110,7 +110,7 @@ Validierung und formale Verifikation sind zwei verschiedene Ansätze, um sicherz
 
 [6a] [7a]
 
-#### Statischer Test von Software
+### Statischer Test von Software
 
 Statische Tests von Software beziehen sich auf Verfahren, bei denen der Quellcode, das Design oder andere Artefakte der Software ohne deren tatsächliche Ausführung überprüft werden. Im Gegensatz zu dynamischen Tests, die die Software während der Laufzeit ausführen, analysieren statische Tests die statischen Eigenschaften des Codes, um Fehler, Mängel oder Verbesserungsmöglichkeiten zu identifizieren. Hier sind einige gängige Formen von statischen Tests:
 
@@ -172,7 +172,7 @@ Es ist wichtig zu beachten, dass die Auswahl der Werkzeuge von den spezifischen 
 
 [11a]
 
-#### Dynamischer Test von Software
+### Dynamischer Test von Software
 
 Dynamische Tests von Software beziehen sich auf den Prozess, bei dem die Software während ihrer Ausführung überprüft wird. Im Gegensatz zu statischen Tests, die den Quellcode oder andere Artefakte ohne Ausführung analysieren, testen dynamische Tests die Software, während sie in einer Laufzeitumgebung läuft. Ziel ist es, das tatsächliche Verhalten der Software zu überprüfen, Fehler zu finden und sicherzustellen, dass sie den spezifizierten Anforderungen entspricht.
 
@@ -279,24 +279,4 @@ A/B Testing ist eine Methode, bei der zwei oder mehr Varianten einer Anwendung m
 [17a] : https://www.geeksforgeeks.org/difference-between-alpha-and-beta-testing/
 
 [18a] : https://medium.com/criteo-engineering/introduction-to-property-based-testing-f5236229d237
-
-[19a] : 
-
-[20a] : 
-
-[21a] :
-
-[22a] : 
-
-[23a] : 
-
-[24a] : 
-
-[25a] : 
-
-[26a] : 
-
-[27a] : 
-
-
 
