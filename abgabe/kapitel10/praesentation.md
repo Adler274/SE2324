@@ -221,6 +221,128 @@ Dynamische Tests von Software beziehen sich auf den Prozess, bei dem die Softwar
 
 ---
 
+
+#### Sicherheitstest
+***
+
+---
+
+#### Sicherheitslücke (Vulnerability) vs Schwachstelle (Weakness)
+***
+
+---
+
+#### Penetrationstest
+***
+
+---
+
+#### Static Application Security Testing (SAST)
+***
+
+---
+
+#### Dynamic Application Security Testing (DAST)
+***
+
+---
+
+#### etc.
+***
+
+---
+
+### Relevante Werkzeuge
+***
+
+---
+
+#### Testautomatisierung
+***
+
+---
+
+#### Test data generation
+***
+
+---
+
+### Flaky Tests
+***
+
+---
+
+### Funktionsorientierter Test (Black Box Test)
+***
+
+---
+
+#### Definition
+***
+
+---
+
+#### Verfahren zur Testfallermittlung
+***
+
+---
+
+##### Äquivalenzklassenbildung
+***
+
+---
+
+##### Grenzwertanalyse
+***
+
+---
+
+##### Beispiele
+***
+
+---
+
+### Strukturorientierter Test (White-Box-Test)
+***
+
+---
+
+#### Definition
+***
+
+---
+
+#### Verfahren zur Testfallermittlung
+***
+
+---
+
+##### Statement Coverage
+***
+
+---
+
+##### Branch Coverage
+***
+
+---
+
+##### Path Coverage
+***
+
+---
+
+##### Condition Coverage
+***
+
+---
+
+##### Beispiele
+***
+
+---
+
+
 # Zusammenfassung
 
 
