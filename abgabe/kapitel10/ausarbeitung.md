@@ -242,7 +242,7 @@ A/B Testing ist eine Methode, bei der zwei oder mehr Varianten einer Anwendung m
 #### Sicherheitstest
 Eine besondere Art von dynamischen Tests sind Sicherheitstests, die darauf abzielen, Schwachstellen und Sicherheitslücken in der Software zu identifizieren. Sie können manuell oder automatisiert durchgeführt werden und umfassen verschiedene Arten von Tests, die im Folgenden beschrieben werden.
 
-Sicherheitstest sind auch in dem Aspekt anders, dass sie nicht nicht den Nachweis erbringen. dass eine Software eine Funktion enthält, sondern dass sie eine Funktion nicht enthält.
+Sicherheitstest sind auch in dem Aspekt anders, dass sie nicht nicht den Nachweis erbringen, dass eine Software eine Funktion enthält, sondern dass sie eine Funktion nicht enthält.
 
 [2b]
 
@@ -376,6 +376,7 @@ Ein White-Box-Test bezeichnet eine Methode des Software-Tests, bei der die Tests
 Im Gegensatz zum Black-Box-Test ist für diesen Test also ein Blick in den Quellcode gestattet. D.h., es wird am Code geprüft.
 
 [13b]
+
 #### Verfahren zur Testfallermittlung
 Um Testfälle zu erstellen, werden verschiedene Techniken verwendet, um die Testabdeckung zu maximieren und sicherzustellen, dass alle Anforderungen erfüllt sind.
 
@@ -387,6 +388,7 @@ Es ist jedoch wichtig zu beachten, dass eine hohe Statement Coverage nicht zwang
 Daher sollte Statement Coverage in Verbindung mit anderen Testmetriken verwendet werden, um eine umfassendere Qualitätssicherung sicherzustellen.
 
 [1b,14b]
+
 ##### Branch Coverage
 Branch Coverage ist eine Metrik im Softwaretest, die angibt, wie viele der Verzweigungen oder Entscheidungspunkte im Quellcode während der Testausführung durchlaufen wurden.
 Diese Metrik misst, inwieweit die unterschiedlichen Pfade innerhalb von Bedingungen oder Schleifen durch die Testfälle abgedeckt wurden.
