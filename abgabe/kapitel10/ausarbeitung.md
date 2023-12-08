@@ -237,6 +237,8 @@ Alpha Testing erfolgt in der Regel durch interne Teams, während Beta Testing ex
 
 A/B Testing ist eine Methode, bei der zwei oder mehr Varianten einer Anwendung mit unterschiedlichen Funktionen oder Designs erstellt werden. Es wird verwendet, um die Leistung und Benutzerpräferenzen zu vergleichen und zu entscheiden, welche Variante beibehalten wird.
 
+[13a] [14a] [15a] [16a] [17a] [18a]
+
 #### Sicherheitstest
 Eine besondere Art von dynamischen Tests sind Sicherheitstests, die darauf abzielen, Schwachstellen und Sicherheitslücken in der Software zu identifizieren. Sie können manuell oder automatisiert durchgeführt werden und umfassen verschiedene Arten von Tests, die im Folgenden beschrieben werden.
 
@@ -375,16 +377,39 @@ Im Gegensatz zum Black-Box-Test ist für diesen Test also ein Blick in den Quell
 
 [13b]
 #### Verfahren zur Testfallermittlung
+Um Testfälle zu erstellen, werden verschiedene Techniken verwendet, um die Testabdeckung zu maximieren und sicherzustellen, dass alle Anforderungen erfüllt sind.
 
 ##### Statement Coverage
+Die Statement Coverage ist eine Metrik im Bereich des Softwaretestens, die den Prozentsatz der ausgeführten Anweisungen im Quellcode während der Testausführung misst.
+Sie gibt an, welche Teile des Codes durch die Testfälle erreicht und ausgeführt wurden.
+Eine höhere Statement Coverage deutet darauf hin, dass mehr Codezeilen während der Tests durchlaufen wurden.
+Es ist jedoch wichtig zu beachten, dass eine hohe Statement Coverage nicht zwangsläufig bedeutet, dass alle möglichen Szenarien oder Verzweigungen im Code getestet wurden, da sie lediglich die erreichten Codezeilen berücksichtigt.
+Daher sollte Statement Coverage in Verbindung mit anderen Testmetriken verwendet werden, um eine umfassendere Qualitätssicherung sicherzustellen.
+
+[1b,14b]
 ##### Branch Coverage
+Branch Coverage ist eine Metrik im Softwaretest, die angibt, wie viele der Verzweigungen oder Entscheidungspunkte im Quellcode während der Testausführung durchlaufen wurden.
+Diese Metrik misst, inwieweit die unterschiedlichen Pfade innerhalb von Bedingungen oder Schleifen durch die Testfälle abgedeckt wurden.
+Eine höhere Branch Coverage deutet darauf hin, dass verschiedene Entscheidungsszenarien getestet wurden.
+Es ist wichtig zu beachten, dass 100%ige Branch Coverage nicht unbedingt bedeutet, dass alle möglichen Kombinationen von Bedingungen getestet wurden, sondern nur, dass jede Entscheidungsverzweigung mindestens einmal durchlaufen wurde.
+
+[1b,15b]
+
 ##### Path Coverage
+Path Coverage ist eine Metrik im Softwaretest, die die Anzahl der durchlaufenden Pfade im Quellcode während der Testausführung misst.
+Ein Pfad repräsentiert eine spezifische Abfolge von Anweisungen, die innerhalb des Programms durchlaufen werden können.
+Path Coverage ist eine anspruchsvollere Metrik im Vergleich zu Statement Coverage oder Branch Coverage, da sie die Berücksichtigung aller möglichen Ausführungspfade erfordert.
+Eine höhere Path Coverage zeigt an, dass eine umfassendere Testabdeckung erreicht wurde und mehr Kombinationen von Anweisungen getestet wurden.
+Es ist jedoch oft schwierig, 100%ige Path Coverage zu erreichen, da die Anzahl der möglichen Pfade exponentiell mit der Anzahl der Entscheidungspunkte im Code wächst.
+Daher wird Path Coverage in der Regel in Verbindung mit anderen Testmetriken verwendet, um eine umfassende Qualitätssicherung zu gewährleisten.
+
+[1b,16b]
+
 ##### Condition Coverage
-##### Beispiele
+Condition Coverage ist eine Testmetrik im Bereich Softwaretesting, die angibt, wie viele Bedingungen im Quellcode während der Testausführung evaluiert wurden.
+Diese Metrik betrachtet die Anzahl der untersuchten Bedingungen im Verhältnis zur Gesamtanzahl der Bedingungen im Code. Eine höhere Condition Coverage zeigt an, dass eine größere Anzahl von logischen Bedingungen während der Tests berücksichtigt wurde.
 
-
-[13a] [14a] [15a] [16a] [17a] [18a]
-
+[1b,17b]
 
 ## Referenzen
 
@@ -469,40 +494,10 @@ Im Gegensatz zum Black-Box-Test ist für diesen Test also ein Blick in den Quell
 
 [13b] :https://de.wikipedia.org/wiki/White-Box-Test
 
-[14b] :
+[14b] :https://www.zyxware.com/articles/4161/what-is-statement-coverage-in-testing
 
-[15b] :
+[15b] :https://linearb.io/blog/what-is-branch-coverage
 
-[16b] :
+[16b] :https://www.techslang.com/definition/what-is-path-coverage-testing/#:~:text=Path%20coverage%20testing%20is%20a,cases%20to%20exercise%20each%20path.
 
-[17b] :
-
-[18b] :
-
-[19b] :
-
-[20b] :
-
-[21b] :
-
-[22b] :
-
-[23b] :
-
-[24b] :
-
-[25b] :
-
-[26b] :
-
-[27b] :
-
-[28b] :
-
-[29b] :
-
-[30b] :
-
-
-
-
+[17b] :https://www.educative.io/answers/what-is-condition-coverage-testing
