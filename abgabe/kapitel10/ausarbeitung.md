@@ -237,6 +237,30 @@ Alpha Testing erfolgt in der Regel durch interne Teams, während Beta Testing ex
 
 A/B Testing ist eine Methode, bei der zwei oder mehr Varianten einer Anwendung mit unterschiedlichen Funktionen oder Designs erstellt werden. Es wird verwendet, um die Leistung und Benutzerpräferenzen zu vergleichen und zu entscheiden, welche Variante beibehalten wird.
 
+#### Sicherheitstest
+#### Sicherheitslücke (Vulnerability) vs Schwachstelle (Weakness)
+#### Penetrationstest
+#### Static Application Security Testing (SAST)
+#### Dynamic Application Security Testing (DAST)
+#### etc.
+### Relevante Werkzeuge
+#### Testautomatisierung
+#### Test data generation
+### Flaky Tests
+### Funktionsorientierter Test (Black Box Test)
+#### Definition
+#### Verfahren zur Testfallermittlung
+##### Äquivalenzklassenbildung
+##### Grenzwertanalyse
+##### Beispiele
+### Strukturorientierter Test (White-Box-Test)
+#### Definition
+#### Verfahren zur Testfallermittlung
+##### Statement Coverage
+##### Branch Coverage
+##### Path Coverage
+##### Condition Coverage
+##### Beispiele
 
 
 [13a] [14a] [15a] [16a] [17a] [18a]
