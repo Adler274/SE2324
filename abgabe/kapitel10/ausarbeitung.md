@@ -10,6 +10,13 @@
   * Validierung vs formale Verifikation
   * Statischer Test von Software
   * Dynamischer Test von Software
+  * Sicherheitstest Arten und Bedrohungen
+* Funktionsorientierter Test (Black Box Test)
+  * Definition
+  * Verfahren zur Testfallermittlung
+* Strukturorientierter Test (White-Box-Test)
+  * Definition
+  * Verfahren zur Testfallermittlung
 
 ## Softwareprüfung
 
