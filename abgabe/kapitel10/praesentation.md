@@ -19,25 +19,29 @@ Simon Fedrau, Sascha Hahn
   * Validierung vs formale Verifikation
   * Statischer Test von Software
   * Dynamischer Test von Software
+  * Sicherheitstest
 
-1. Softwaremessung
+1. Relevante Werkzeuge
+
+1. Funktionenorientierter Test (Black Box Test)
+
+1. Strukturorientierter Test (White-Box-Test)
 
 1. Zusammenfassung
 
 1. Quellen
 
 ---
+
 ### Softwareprüfung
-
-
+***
 Beim Softwaretest wird evaluiert und überprüft, ob ein Softwareprodukt oder eine Anwendung das tut, was sie tun soll. Gute Tests ermöglichen die Vermeidung von Fehlern, die Reduzierung der Entwicklungskosten und die Verbesserung der Leistung.
 
 
 ---
+
 ### Bug vs Issue vs Flaw vs Fault vs Failure vs Error vs Defect
-
-
-
+***
 | Fehler | Beschreibung |
 |:------:|:----------:|
 | **Bug** | Ein Bug bezieht sich auf einen Fehler im Code oder im Design einer Software, der unerwünschtes Verhalten verursacht. Bugs können verschiedene Arten von Fehlern repräsentieren |
@@ -45,10 +49,11 @@ Beim Softwaretest wird evaluiert und überprüft, ob ein Softwareprodukt oder ei
 | **Flaw** | Ein Flaw deutet auf einen Fehler oder eine Schwäche in einem System oder Prozess hin. Es kann sich auf Designfehler, Implementierungsfehler oder andere Mängel beziehen, die die Qualität oder Leistung beeinträchtigen |
 
 [1a] [2a]
+
 ---
+
 ### Bug vs Issue vs Flaw vs Fault vs Failure vs Error vs Defect
-
-
+***
 | Fehler | Beschreibung |
 |:------:|:----------:|
 | **Fault** | Ein Fault ist ein Fehler in der Implementierung oder im Code, der zu einem Defekt führen kann. Ein Fault liegt vor, wenn ein Entwickler einen Fehler macht, der zu unerwünschtem Verhalten führen kann |
@@ -59,8 +64,9 @@ Beim Softwaretest wird evaluiert und überprüft, ob ein Softwareprodukt oder ei
 [1a] [2a]
 
 ---
-### Continuous Testing vs. Shift-left-testing vs Shift-right-testing vs Testing-in-production
 
+### Continuous Testing vs. Shift-left-testing vs Shift-right-testing vs Testing-in-production
+***
 ![:scale 60%](media\shift-left-right-continuous-testing.png)
 
 **Continuous Testing:** 
@@ -70,8 +76,9 @@ Beim Softwaretest wird evaluiert und überprüft, ob ein Softwareprodukt oder ei
 [4a]
 
 ---
-### Continuous Testing vs. Shift-left-testing vs Shift-right-testing vs Testing-in-production
 
+### Continuous Testing vs. Shift-left-testing vs Shift-right-testing vs Testing-in-production
+***
 ![:scale 60%](media\shift-left-right-continuous-testing.png)
 
 
@@ -79,26 +86,31 @@ Beim Softwaretest wird evaluiert und überprüft, ob ein Softwareprodukt oder ei
   Shift-left-testing bezieht sich auf den Trend, Softwaretests so früh wie möglich im Entwicklungsprozess zu integrieren. Statt Tests erst am Ende des Entwicklungszyklus durchzuführen, werden sie in den früheren Phasen, wie dem Schreiben von Code oder dem Entwurf, eingebettet. Das Ziel ist es, Probleme frühzeitig zu identifizieren, was zu schnelleren Feedbackschleifen und einer verbesserten Qualität führt.
 
 [3a] 
----
-### Continuous Testing vs. Shift-left-testing vs Shift-right-testing vs Testing-in-production
 
+---
+
+### Continuous Testing vs. Shift-left-testing vs Shift-right-testing vs Testing-in-production
+***
 ![:scale 60%](media\shift-left-right-continuous-testing.png)
 
 **Shift-right-testing**
   Im Gegensatz zu Shift-left-testing bezieht sich Shift-right-testing darauf, Tests und Qualitätssicherungsaktivitäten in spätere Phasen des Softwareentwicklungszyklus zu verschieben, insbesondere in die Produktionsumgebung. Das bedeutet, dass Tests nach der Bereitstellung in der Produktion weitergeführt werden, um reale Benutzererfahrungen zu überwachen, Leistungsdaten zu sammeln und unerwartete Probleme zu identifizieren. Dieser Ansatz ermöglicht eine schnellere Anpassung an die tatsächlichen Nutzungsbedingungen.
 
 [3a] 
----
-### Continuous Testing vs. Shift-left-testing vs Shift-right-testing vs Testing-in-production
 
+---
+
+### Continuous Testing vs. Shift-left-testing vs Shift-right-testing vs Testing-in-production
+***
 **Testing-in-production**
   Testing-in-production bezieht sich darauf, Tests direkt in der Produktionsumgebung durchzuführen, während Benutzer auf das System zugreifen. Dies ermöglicht es, reale Nutzungsbedingungen zu simulieren und echtes Feedback zu erhalten. Dieser Ansatz kann jedoch risikoreich sein, da Fehler oder Probleme Auswirkungen auf echte Benutzer haben können. Daher erfordert Testing-in-production eine sorgfältige Planung und Strategien, um negative Auswirkungen zu minimieren.
 
 [3a]
+
 ---
 
 ### Testing Anti Patterns
-
+***
 Testing Anti-Patterns beziehen sich auf wiederkehrende Fehlermuster oder schlechte Praktiken im Bereich Softwaretests. Diese Muster führen oft zu ineffizienten, unzuverlässigen oder unangemessenen Testprozessen, die die Qualität der Software beeinträchtigen können.
 
 * Fehlende Teststrategie
@@ -113,14 +125,21 @@ Testing Anti-Patterns beziehen sich auf wiederkehrende Fehlermuster oder schlech
 
 
 [5a]
----
-### Validierung vs formale Verifikation
 
+---
+
+### Validierung vs formale Verifikation
+***
 **Validierung:**
 
   Validierung bezieht sich darauf, sicherzustellen, dass das entwickelte System oder die Software den tatsächlichen Bedürfnissen und Anforderungen des Benutzers entspricht. Es ist ein dynamischer Prozess, der oft durch Tests, Reviews und Benutzerfeedback durchgeführt wird. Die Validierung überprüft, ob das System das Richtige tut und ob es im realen Einsatzumfeld funktioniert.
 
+[6a] [7a]
 
+---
+
+### Validierung vs formale Verifikation
+***
 **Formale Verifikation (Korrektheitsbeweis):**
 
   Formale Verifikation ist ein statischer Ansatz, der mathematische Modelle und Methoden verwendet, um sicherzustellen, dass ein System oder eine Software bestimmte Eigenschaften erfüllt. Diese Eigenschaften können formale Spezifikationen, Sicherheitseigenschaften oder andere mathematisch beschreibbare Kriterien sein. Formal Methods können mathematische Beweise oder Model Checking verwenden, um zu zeigen, dass ein System bestimmte Sicherheits- oder Funktionsanforderungen erfüllt.
@@ -128,12 +147,12 @@ Testing Anti-Patterns beziehen sich auf wiederkehrende Fehlermuster oder schlech
 
 ![:scale 60%](media\fehler.png)
 
-
 [6a] [7a]
 
 ---
-### Statischer Test von Software
 
+### Statischer Test von Software
+***
 Statische Tests von Software beziehen sich auf Verfahren, bei denen der Quellcode, das Design oder andere Artefakte der Software ohne deren tatsächliche Ausführung überprüft werden.
 
 * Code Reviews
@@ -150,9 +169,11 @@ Statische Tests von Software beziehen sich auf Verfahren, bei denen der Quellcod
 
 
 [8a] [9a] [10a]
----
-### Relevante Werkzeuge 
 
+---
+
+### Relevante Werkzeuge 
+***
 Es gibt eine Vielzahl von Werkzeugen, die für das Statische Testen von Software eingesetzt werden können. Diese Werkzeuge automatisieren oft den Prozess der Statischen Analyse und unterstützen Entwickler und Tester dabei, potenzielle Probleme im Quellcode zu identifizieren. 
 
 * Statische Code-Analysewerkzeuge
@@ -174,10 +195,11 @@ Es gibt eine Vielzahl von Werkzeugen, die für das Statische Testen von Software
 * Modellprüfungstools
 
 [11a]
+
 ---
 
 ### Dynamischer Test von Software
-
+***
 Dynamische Tests von Software beziehen sich auf den Prozess, bei dem die Software während ihrer Ausführung überprüft wird. Im Gegensatz zu statischen Tests, die den Quellcode oder andere Artefakte ohne Ausführung analysieren, testen dynamische Tests die Software, während sie in einer Laufzeitumgebung läuft. Ziel ist es, das tatsächliche Verhalten der Software zu überprüfen, Fehler zu finden und sicherzustellen, dass sie den spezifizierten Anforderungen entspricht.
 
 [12a]
@@ -185,7 +207,7 @@ Dynamische Tests von Software beziehen sich auf den Prozess, bei dem die Softwar
 ---
 
 ### Dynamische Testarten
-
+***
 * Unittest
 
 * Integrationstest
@@ -207,8 +229,6 @@ Dynamische Tests von Software beziehen sich auf den Prozess, bei dem die Softwar
 * Property based test
 
 * Alpha and Beta testing
-
-* A/B Testing
 
 [13a] [14a] [15a] [16a] [17a] [18a]
 
@@ -494,11 +514,13 @@ Eine höhere Condition Coverage zeigt an, dass eine größere Anzahl von logisch
 # Zusammenfassung
 
 ---
+
 class: center, middle
 
 # Fragen?
 
 ---
+
 # Quellen
 ***
 
