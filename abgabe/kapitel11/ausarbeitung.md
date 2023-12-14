@@ -230,9 +230,27 @@ Softwareentwicklung beschreibt. Das Agile Manifest wurde im Jahr 2001 von einer 
 #### Anti patterns
 ***
 
-# **Muss noch gemacht werden**
+* Planungsverweigerung
+
+* Alles für den Kunden
+
+* Konkurrierende Kräfte
+
+* Sprechender Code ist genügend Dokumentation
+
+* Allzeit änderungsbereit
+
+* Unzuverlässigkeitsformel: Spontanität = Agilität
+
+* I believe in Miracles
+
+* Der „agile Ad-hoc-Prozess“
 
 
+![:scale 20%](media\antipattern.jpg)
+
+
+[22a]
 
 #### XP, Scrum, Kanban (jeweils kurze Darstellung)
 ***
@@ -306,14 +324,27 @@ Beim evolutionären Prototyping wird die Anwendung nach und nach erweitert. Dabe
 #### Empfehlungen, unter welchen Bedingungen welches Vorgehensmodell sinnvoll ist
 ***
 
+* Klassische (sequenzielle) Vorgehensmodelle:
 
-# **Muss noch gemacht werden**
+    Bedingungen:
+        Stabile Anforderungen: Wenn die Anforderungen gut verstanden und stabil sind, eignet sich ein sequenzielles Modell.
+        Geringe oder keine Änderungserwartung: Wenn nicht erwartet wird, dass sich die Anforderungen während des Entwicklungsprozesses erheblich ändern.
+
+* Agile Vorgehensmodelle:
+
+    Bedingungen:
+        Dynamische Anforderungen: Wenn die Anforderungen sich ändern oder nicht vollständig vor Projektbeginn bekannt sind.
+        Kundeninteraktion und -beteiligung: Wenn eine enge Zusammenarbeit mit dem Kunden und schnelle Anpassungen wichtig sind.
+        Inkrementelle Entwicklung: Wenn die schrittweise Bereitstellung von Funktionen bevorzugt wird.
+
+* Evolutionäre Vorgehensmodelle:
+
+    Bedingungen:
+        Komplexe Projekte: Bei komplexen Projekten mit unsicheren Anforderungen, bei denen eine schrittweise Entwicklung bevorzugt wird.
+        Forschung und Entwicklung: In Fällen, in denen die Entwicklung als Forschungsprozess betrachtet wird und iterative Prototypen wichtig sind.
 
 
-
-
-
-
+[23a]
 
 ## Wartung von Software (Software Maintainance)
 ***
@@ -359,18 +390,52 @@ Software-Evolution ist ein Begriff aus der Softwaretechnik, im Speziellen aus de
 #### Ursachen für Änderungen an Software
 ***
 
+  * Fehlerkorrektur (Bugfixing): Software enthält oft Fehler, die während oder nach der Entwicklung entdeckt werden. Änderungen sind erforderlich, um diese Fehler zu beheben und die Software zu stabilisieren.
 
+  * Neue Anforderungen: Kunden oder Benutzer können neue Anforderungen oder Funktionen an die Software stellen. Entwickler müssen die Software aktualisieren, um diesen neuen Anforderungen gerecht zu werden.
+
+  * Verbesserungen und Optimierungen: Auch wenn die Software funktioniert, können Entwickler Verbesserungen vornehmen, um die Leistung, Effizienz oder Benutzerfreundlichkeit zu steigern.
+
+  * Sicherheitsaktualisierungen: Wenn Sicherheitslücken entdeckt werden, müssen Softwareentwickler entsprechende Aktualisierungen bereitstellen, um die Software vor möglichen Angriffen zu schützen.
+
+  * Technologischer Fortschritt: Neue Technologien oder Plattformen können verfügbar werden, und die Software muss möglicherweise angepasst werden, um mit den neuesten Entwicklungen Schritt zu halten.
+
+  * Gesetzliche Anforderungen: Änderungen an Software können notwendig sein, um gesetzlichen Bestimmungen oder regulatorischen Anforderungen zu entsprechen.
+
+  * Hardwareänderungen: Wenn sich die zugrunde liegende Hardware ändert, kann es erforderlich sein, die Software anzupassen, um weiterhin kompatibel zu bleiben.
+
+  * Benutzerfeedback: Rückmeldungen von Benutzern können dazu führen, dass Entwickler Änderungen vornehmen, um die Benutzererfahrung zu verbessern oder auf bestimmte Bedürfnisse einzugehen.
+
+  * Lebenszyklus-Management: Software unterliegt einem Lebenszyklus, der Wartung, Unterstützung und schließlich die Ablösung durch eine neue Version oder ein neues Produkt umfassen kann.
+
+[20a]
 
 #### Arten von Änderungen an Software
 ***
+Die Klassifizierung von Softwareänderungen nach ihrer Art erfolgt oft anhand von vier Haupttypen, korrektive, präventive, perfektionierende und adaptive Änderungen. 
 
 
 
 ##### Korrektive, präventive, perfektionierende, adaptive Änderungen
 ***
 
+  * Korrektive Änderungen:
+      Ziel: Behebung von Fehlern oder Bugs in der Software.
+      Warum: Diese Änderungen werden vorgenommen, um Probleme zu lösen, die während der Entwicklung oder nach der Bereitstellung entdeckt wurden.
 
+  * Präventive Änderungen:
+      Ziel: Vermeidung potenzieller zukünftiger Probleme oder Risiken.
+      Warum: Diese Änderungen werden durchgeführt, um mögliche Fehler oder Schwachstellen zu identifizieren und zu beheben, bevor sie zu ernsthaften Problemen führen.
 
+  * Perfektionierende Änderungen:
+      Ziel: Verbesserung der Leistung, Benutzerfreundlichkeit oder anderer Aspekte der Software, die nicht unbedingt mit Fehlern zusammenhängen.
+      Warum: Dies kann aufgrund von Benutzerfeedback, neuen Designprinzipien oder dem Wunsch nach kontinuierlicher Verbesserung geschehen.
+
+  * Adaptive Änderungen:
+      Ziel: Anpassung der Software an veränderte Umgebungen, Plattformen oder Anforderungen.
+      Warum: Änderungen sind erforderlich, um die Software mit neuen Technologien, Betriebssystemversionen oder sich ändernden Anforderungen in Einklang zu bringen.
+
+[21a]
 
 ## Referenzen
 
@@ -412,8 +477,10 @@ Software-Evolution ist ein Begriff aus der Softwaretechnik, im Speziellen aus de
 
 [19a] : https://de.wikipedia.org/wiki/Software-Evolution#:~:text=Software%2DEvolution%20ist%20ein%20Begriff,und%20alte%20Anforderungen%20ver%C3%A4ndern%20sich.
 
-[20a] : 
+[20a] :  https://chat.openai.com/  frage: was sind Ursachen für Änderungen an Software?
 
-[21a] : 
+[21a] : https://cpl.thalesgroup.com/de/software-monetization/four-types-of-software-maintenance
 
+[22a] : https://entwickler.de/agile/agile-anti-patterns-001
 
+[23a] : https://www.rewion.com/klassisches-it-projektmanagement/
