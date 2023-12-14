@@ -27,32 +27,32 @@ Der Softwareentwicklungszyklus ist der kosteneffektive und zeitsparende Prozess,
 ***
 
 Anforderungsanalyse und -spezifikation:
-
 In dieser Phase werden die Anforderungen an die Software erfasst und analysiert. Es wird definiert, welche Funktionen die Software haben soll und welche Anforderungen sie erfüllen muss.
+
 Entwurf:
-
 Auf Grundlage der Anforderungen wird ein Design für die Software erstellt. Dies umfasst die Struktur, Architektur und das Datenmodell der Software.
+
+
 Implementierung (Programmierung):
-
 In dieser Phase wird der eigentliche Code der Software geschrieben und getestet. Es erfolgt die Umsetzung des zuvor erstellten Designs.
+
 Test:
-
 Die Software wird ausgiebig getestet, um sicherzustellen, dass sie den Anforderungen entspricht und fehlerfrei funktioniert. Dies beinhaltet oft verschiedene Arten von Tests, wie z. B. Einheitstests, Integrationstests und Systemtests.
+
 Bereitstellung (Deployment):
-
 Die Software wird für die Nutzung freigegeben und auf den Zielsystemen installiert. Dies kann in einer Produktionsumgebung oder für Endbenutzer erfolgen.
-Wartung und Aktualisierung:
 
+Wartung und Aktualisierung:
 Nach der Bereitstellung erfordert die Software in der Regel Pflege. Dies kann Fehlerbehebungen, Sicherheitsupdates und die Implementierung neuer Funktionen umfassen.
 
-![:scale 20%](media\Softwarelebenszyklus.png)
+![:scale 50%](media\Softwarelebenszyklus.png)
 
 [1a]
 
 ### Klassische (sequenzielle) Vorgehensmodelle
 ***
 
-Ein Vorgehensmodell zur Softwareentwicklung ist ein für die Softwareentwicklung angepasstes Vorgehensmodell bei der professionellen („ingenieursmäßigen“) Anwendungsentwicklung. Es ist ein standardisierter, organisatorischer Rahmen für den idealen Ablauf eines Entwicklungsprojektes und dient dazu, die Softwareentwicklung übersichtlicher zu gestalten und in der Komplexität beherrschbar zu machen.
+Ein Vorgehensmodell zur Softwareentwicklung ist ein für die Softwareentwicklung angepasstes Vorgehensmodell in der Anwendungsentwicklung. Es ist ein standardisierter, organisatorischer Rahmen für den idealen Ablauf eines Entwicklungsprojektes und dient dazu, die Softwareentwicklung übersichtlicher zu gestalten und in der Komplexität beherrschbar zu machen.
 
 Ein Vorgehensmodell ist eine abstrakte Darstellung eines Softwareprozesses. Der Prozess wird hierbei immer nur aus einer bestimmten Perspektive dargestellt. Daher beinhaltet ein Vorgehensmodell immer nur einen Teil der Informationen über den Prozess. Dies hat allerdings den Vorteil, dass die den einzelnen Softwareprozessen zugrunde liegenden Prinzipien übersichtlich und verständlich dargestellt werden können. 
 
@@ -67,7 +67,7 @@ In einem Wasserfallmodell hat jede Phase vordefinierte Start- und Endpunkte mit 
 Der Name Wasserfall kommt von der häufig gewählten grafischen Darstellung der als Kaskade angeordneten Projektphasen. In der betrieblichen Praxis ist es traditionell ein weitverbreitetes Vorgehensmodell, von dem es viele Varianten gibt. 
 
 
-![:scale 20%](media\Waterfall_model.png)
+![:scale 50%](media\Waterfall_model.png)
 
 [3a]
 
@@ -78,7 +78,7 @@ Das V-Modell, ist ein Softwareentwicklungsmodell, das auf dem Wasserfallmodell b
 
 Die Hauptmerkmale des V-Modells sind:
 
-Entwicklungsphasen:
+* Entwicklungsphasen:
 
 Anforderungsanalyse und -definition
 Systementwurf
@@ -87,7 +87,7 @@ Modulentwurf
 Codierung
 Diese Phasen entsprechen im Wesentlichen den Schritten im Wasserfallmodell.
 
-Testphasen:
+* Testphasen:
 
 Komponententest
 Integrationstest
@@ -97,7 +97,7 @@ Jede Entwicklungsphase ist mit einer entsprechenden Testphase verknüpft. Währe
 
 Der Gedanke hinter dem V-Modell ist, dass die Qualitätskontrolle durch den gesamten Softwareentwicklungsprozess hindurch erfolgen sollte und nicht erst am Ende, wie es im reinen Wasserfallmodell der Fall ist. Durch die enge Verknüpfung von Entwicklungs- und Testaktivitäten soll die frühzeitige Erkennung und Behebung von Fehlern ermöglicht werden.
 
-![:scale 20%](media\v-modell.jpg)
+![:scale 50%](media\v-modell.jpg)
 
 [4a]
 
@@ -106,7 +106,7 @@ Der Gedanke hinter dem V-Modell ist, dass die Qualitätskontrolle durch den gesa
 
 Der eindeutige Mehrwert der agilen Vorgehensmodelle besteht darin, dass sich durch ihre iterative Entwicklung, das kurzfristige Feedback der Kunden und die intensive Kommunikation der gesamte Entwicklungsprozess sehr schlank und flexibel gestaltet. Durch die Konzentration auf eine schnelle Auslieferung von funktionsfähigen Inkrementen wird weniger Wert auf eine detaillierte Dokumentation und mehr auf Entwicklung & Test gelegt.
 
-![:scale 20%](media\Vorgehensmodelle.JPG)
+![:scale 50%](media\Vorgehensmodelle.JPG)
 
 [5a] [6a]
 
@@ -154,7 +154,7 @@ Der OODA-Loop ist besonders relevant in agilen Entwicklungsumgebungen, wo sich A
 
 Es ist wichtig zu beachten, dass der OODA-Loop als Denkrahmen dient und nicht strikt lineare oder starre Schritte vorschreibt. Teams können den Zyklus iterativ durchlaufen und so kontinuierlich lernen und verbessern.
 
-![:scale 20%](media\ooda-loop.png)
+![:scale 50%](media\ooda-loop.png)
 
 [9a]
 
@@ -177,7 +177,7 @@ Chaotisch (Chaotic):
 Hohe Unsicherheit und fehlende Muster. Keine klaren Ursache-Wirkungs-Beziehungen. Sofortiges Handeln ist oft erforderlich, bevor eine geplante Vorgehensweise entwickelt werden kann.
 
 
-![:scale 20%](media\stacey_Matrix.png)
+![:scale 50%](media\stacey_Matrix.png)
 
 [10a]
 
@@ -226,6 +226,7 @@ Softwareentwicklung beschreibt. Das Agile Manifest wurde im Jahr 2001 von einer 
 
 * In regelmäßigen Abständen reflektieren und denken, wie die Effektivität verbessert werden kann
 
+[24a]
 
 #### Anti patterns
 ***
@@ -269,17 +270,17 @@ Kanban ist ein agiles Ansatz, der auf der visuellen Darstellung von Arbeit basie
 ### Evolutionäre Vorgehensmodelle
 ***
 
-Evolutionäres Design (engl. evolutionary design, auch continuous design) ist ein Entwurfsansatz in der Softwareentwicklung und kommt überwiegend im Kontext des Extreme Programming zum Einsatz. Im Gegensatz zu geplantem Design propagieren die Befürworter des evolutionären Ansatzes die Entwicklung eines Softwaresystems in kleinen Schritten. Designelemente werden nur dann eingebaut, wenn sie zur Erfüllung der augenblicklichen Anforderungen wirklich notwendig sind. Design for the future wird vermieden, stattdessen vertraut man darauf, dass ein einfacher Entwurf sich auch auf einfache Weise an neue Anforderungen anpassen lässt. Die Weiterentwicklung des Design erfolgt durch Refaktorisierung. 
+Evolutionäres Design ist ein Entwurfsansatz in der Softwareentwicklung und kommt überwiegend im Kontext des Extreme Programming zum Einsatz. Im Gegensatz zu geplantem Design propagieren die Befürworter des evolutionären Ansatzes die Entwicklung eines Softwaresystems in kleinen Schritten. Designelemente werden nur dann eingebaut, wenn sie zur Erfüllung der augenblicklichen Anforderungen wirklich notwendig sind. Design for the future wird vermieden, stattdessen vertraut man darauf, dass ein einfacher Entwurf sich auch auf einfache Weise an neue Anforderungen anpassen lässt. Die Weiterentwicklung des Design erfolgt durch Refaktorisierung. 
 
 [12a]
 
 #### Prototyping (Prototype Model)
 ***
 
-Prototyping bzw. Prototypenbau ist eine Methode der Softwareentwicklung, die schnell zu ersten Ergebnissen führt und frühzeitiges Feedback bezüglich der Eignung eines Lösungsansatzes ermöglicht. Dadurch ist es möglich, Probleme und Änderungswünsche frühzeitig zu erkennen und mit weniger Aufwand zu beheben, als es nach der kompletten Fertigstellung möglich gewesen wäre
+Prototyping bzw. Prototypenbau ist eine Methode der Softwareentwicklung, die schnell zu ersten Ergebnissen führt und frühzeitiges Feedback bezüglich der Eignung eines Lösungsansatzes ermöglicht. Dadurch ist es möglich, Probleme und Änderungswünsche frühzeitig zu erkennen und mit weniger Aufwand zu beheben, als es nach der kompletten Fertigstellung möglich gewesen wäre.
 
-    Ziel: Anhand der Grundfunktionalitäten die Akzeptanz beim Nutzer und die Notwendigkeit ergänzender Funktionen zu überprüfen
-    Wichtigstes Ergebnis: Ein Programm mit den Grundfunktionalitäten
+  Ziel: Anhand der Grundfunktionalitäten die Akzeptanz beim Nutzer und die Notwendigkeit ergänzender Funktionen zu überprüfen
+  Wichtigstes Ergebnis: Ein Programm mit den Grundfunktionalitäten
 
 Beim evolutionären Prototyping wird die Anwendung nach und nach erweitert. Dabei werden vor allem die Rückmeldungen der zukünftigen Nutzer bzw. des Auftraggebers genutzt. Der Prototyp wird dabei stets lauffähig gehalten und bis zur Produktreife weiterentwickelt. 
 
@@ -297,7 +298,7 @@ Beim evolutionären Prototyping wird die Anwendung nach und nach erweitert. Dabe
 | Enge Kundenbeteiligung          | Hohe Anforderungen an Teammitglieder     |
 | Kontinuierliche Lieferung       | Möglicher Mangel an umfassender Dokumentation |
 | Fokus auf Wert durch funktionierende Software |                                        |
-| Schnelle Markteinführung        |                    
+| Schnelle Markteinführung        |      |         |              
 
 
 **Evolutionäre Vorgehensmodelle:**
@@ -370,13 +371,13 @@ Aktivitäten: Überprüfung und Aktualisierung von Codes, um potenzielle Problem
 ***
 
 **Software-Wartung** 
-In der Softwaretechnik bezeichnet der Begriff Softwarewartung „die Veränderung eines Softwareprodukts nach dessen Auslieferung, um Fehler zu beheben, Performanz oder andere Attribute zu verbessern oder Anpassungen an die veränderte Umgebung vorzunehmen.“[1] In Deutschland wird darüber hinaus geregelt: „Die Aufgabe der Wartung umfasst sämtliche Maßnahmen zur Erhaltung der Funktionsfähigkeit der eingesetzten IT-Verfahren und Software. Hierzu gehören auch erforderliche fachliche und technische Anpassungen der IT-Infrastruktur.“[2]. Diese gesetzliche Regelung grenzt hierbei bewusst die Softwarepflege gegenüber der Softwarewartung durch Fokussierung auf den Erhalt der Funktionsfähigkeit ab. 
+In der Softwaretechnik bezeichnet der Begriff Softwarewartung „die Veränderung eines Softwareprodukts nach dessen Auslieferung, um Fehler zu beheben, Performanz oder andere Attribute zu verbessern oder Anpassungen an die veränderte Umgebung vorzunehmen. In Deutschland wird darüber hinaus geregelt: „Die Aufgabe der Wartung umfasst sämtliche Maßnahmen zur Erhaltung der Funktionsfähigkeit der eingesetzten IT-Verfahren und Software. Hierzu gehören auch erforderliche fachliche und technische Anpassungen der IT-Infrastruktur.. Diese gesetzliche Regelung grenzt hierbei bewusst die Softwarepflege gegenüber der Softwarewartung durch Fokussierung auf den Erhalt der Funktionsfähigkeit ab. 
 
 [17a]
 
 **Legacy-Code**
 
-Der Begriff Altsystem, Legacy-System (englisch legacy system) oder im engeren Sinne Legacy-Code bezeichnet in der Informatik eine etablierte, historisch gewachsene Anwendung im Bereich Unternehmenssoftware. Das englische Wort legacy („Erbschaft“) ist in diesem Kontext ein weitgehend wertfreier Fachbegriff. Er kann aber umgangssprachlich auch negativ im Sinne einer lästigen „Hinterlassenschaft“ oder „Altlast“ im übertragenen Sinne verwendet werden. 
+Der Begriff Altsystem oder Legacy-System oder im engeren Sinne Legacy-Code bezeichnet in der Informatik eine etablierte, historisch gewachsene Anwendung im Bereich Unternehmenssoftware. Das englische Wort legacy ist in diesem Kontext ein weitgehend wertfreier Fachbegriff. Er kann aber umgangssprachlich auch negativ im Sinne einer lästigen „Hinterlassenschaft“ oder „Altlast“ im übertragenen Sinne verwendet werden. 
 
 [18a]
 
@@ -484,3 +485,5 @@ Die Klassifizierung von Softwareänderungen nach ihrer Art erfolgt oft anhand vo
 [22a] : https://entwickler.de/agile/agile-anti-patterns-001
 
 [23a] : https://www.rewion.com/klassisches-it-projektmanagement/
+
+[24a] : https://www.wrike.com/de/blog die-4-werte-und-12-prinzipien-des-agilen-projektmanagements/
