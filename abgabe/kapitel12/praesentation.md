@@ -372,79 +372,147 @@ Sie können verschiedene Aspekte betreffen, darunter Zeit, Budget, Qualität, Si
 
 #### Arten von technischen Schulden (Taxonomie)
 ***
-
+Technische Schulden kann man in klar definierte Kategorien Teilen, die im Folgenden benannt und erklärt werden.
 
 ---
 
 ##### Architectural Debt
 ***
+Architectural Debt (auch Architekturschulden genannt) bezieht sich auf die Konzeption und Struktur von Softwarearchitektur, die im Laufe der Zeit vernachlässigt, übersehen oder aufgrund von Zeit- und Ressourcenbeschränkungen nicht angemessen behandelt wurde.
 
+Es handelt es sich bei der Architekturschuld um Kompromisse, die bewusst oder unbewusst eingegangen wurden, um kurzfristige Ziele zu erreichen, jedoch langfristige Konsequenzen haben können.
+
+[1b,10b]
 
 ---
 
 ##### Documentation Debt
 ***
+Documentaiton Debt (Dokumentations Schulden) beziehen sich auf den Abstand des Fortschritts zwischen der aktuellen Dokumentation und der Software.
 
+Wenn Dokumentation nicht regelmäßig aktualisiert, überprüft und verbessert wird, wobei gleichzeitig die Softwareentwicklung vorankommt, nennt man es Documentation Debt.
+
+Diese Schulden fürhren zu unvollsändiger, ungenauer und veralteter Dokumentation die Benutzer, Entwickler und Stakrholder verwirren und somit die Entwicklung verlangsamen.
+
+Dadurch erhöht sich auch das Risoko and Buggs und Fehlern oder Sicherhetsproblemen.
+
+[11b]
 
 ---
 
 ##### Implementation Debt
 ***
+Implementation Debt (auch Implementierungsschulden genannt) bezieht sich auf die Kompromisse und Unzulänglichkeiten, die während der Implementierungsphase eines Softwareprojekts eingegangen wurden.
 
+Dies kann beispielsweise unklaren oder nicht optimalen Code, fehlende Testabdeckung, Verstöße gegen Coding-Standards und andere Aspekte der Codequalität umfassen.
+
+Implementation Debt entsteht oft durch Zeitdruck oder Ressourcenbeschränkungen, die dazu führen, dass Entwickler kurzfristige Entscheidungen treffen, um bestimmte Funktionen schnell zu implementieren.
+
+Diese Kompromisse können langfristig zu Wartungsproblemen, erhöhtem Aufwand für Fehlerkorrekturen und einer insgesamt schlechteren Codequalität führen.
+
+Um Implementation Debt zu reduzieren, ist es wichtig, regelmäßige Code-Reviews durchzuführen, auf bewährte Entwicklungspraktiken zu achten und kontinuierliche Verbesserungen in der Codebasis vorzunehmen.
+
+[12b]
 
 ---
 
 ##### Testing Debt
 ***
+Testing Debt beschreibt wenn die Software nicht genügend, fehlerhafte oder ungenaue Tests enthält.
 
+* stellt also den Unterschied dar zwischen wovon man ausgeht, was das System funktionieren sollte und wie das System tatsächlich funktionier
+    * (Oder eher nicht funktioniert)
 
----
+* Wie bei den anderen Arten von Schulden sind auch hier wieder Zeitmangel, Recourcen knappheit und veränderung der Prioritäten die Ursachen.
 
-##### etc.
-***
-
+[13b]
 
 ---
 
 #### Technical Debt Management
+##### Umgang mit technischen Schulden
 ***
+**Identifikation und Priorisierung:** Beginnen Sie mit der Identifizierung und Bewertung von technischen Schulden. Priorisieren Sie sie basierend auf ihrer Dringlichkeit und Auswirkung auf die Software.
 
+**Transparente Kommunikation:** Teilen Sie dem Team und den Stakeholdern die vorhandenen technischen Schulden mit. Transparente Kommunikation schafft Verständnis und Unterstützung für den Umgang mit diesen Schulden.
+
+**Inkrementelle Verbesserungen:** Statt versuch, technische Schulden auf einmal zu beseitigen, setzen Sie auf inkrementelle Verbesserungen. Planen Sie regelmäßige Sprints oder Iterationen, um schrittweise Verbesserungen vorzunehmen.
+
+**Automatisierte Tests:** Investieren Sie in automatisierte Tests, um sicherzustellen, dass die Software weiterhin stabil bleibt, während technische Schulden behoben werden. Dies erleichtert auch zukünftige Änderungen und Upgrades.
+
+[1b,14b]
 
 ---
 
+#### Technical Debt Management
 ##### Umgang mit technischen Schulden
 ***
+**Refaktorisierung:** Planen Sie Zeit für Refaktorisierungsarbeiten ein, um den Code zu verbessern, ohne die Funktionalität zu beeinträchtigen. Refaktorisierung hilft, Code klarer und leichter wartbar zu machen.
 
+**Schulungen und Schulungen:** Stellen Sie sicher, dass Ihr Entwicklungsteam über die neuesten Best Practices und Technologien informiert ist. Schulungen können dazu beitragen, zukünftige technische Schulden zu vermeiden.
+
+**Dokumentation aktualisieren:** Aktualisieren Sie die interne und externe Dokumentation, um sicherzustellen, dass sie mit den aktuellen Implementierungen übereinstimmt. Klare Dokumentation erleicht
+
+[1b,14b]
 
 ---
 
 ###### operativ / konzeptionell
 ***
+Operative Schulden und konzeptionelle Schulden sind zwei Arten von technischen Schulden, die sich in Softwareprojekten manifestieren können. Hier sind ihre Definitionen:
 
+**Operative Schulden:**
+
+Definition: Operative Schulden beziehen sich auf Kompromisse und Mängel, die während der laufenden Entwicklung und Wartung einer Software eingegangen werden.
+
+Beispiele: Dies könnte unklaren oder nicht optimalen Code, fehlende Testabdeckung, kurzfristige Lösungen und andere Aspekte der Codequalität umfassen, die während der täglichen Entwicklungsarbeit entstehen.
+
+[15b]
+
+---
+
+###### operativ / konzeptionell
+***
+**Konzeptionelle Schulden:**
+
+Definition: Konzeptionelle Schulden beziehen sich auf Kompromisse und Mängel auf höherer, konzeptioneller Ebene, die oft bereits in der Planungs- und Designphase einer Softwareentscheidung getroffen werden.
+
+Beispiele: Dies könnte eine nicht ausreichend durchdachte Architektur, unklare Anforderungen, eine unzureichende Modellierung der Domäne oder andere konzeptionelle Entscheidungen umfassen, die langfristige Auswirkungen auf die Softwarequalität haben.
+
+[15b]
 
 ---
 
 ##### Erkennung von technischen Schulden
 ***
-
-
----
-
-###### Metriken 
-***
-
+**Technische Schulden lassen sich mit verschiedenen vorgehensweisen Messen/Erkennen.**
 
 ---
 
-###### Werkzeuge
-***
+###### Metriken
+Es gibt verschiedene Metriken zur Messung von technischen Schulden.
 
+**Code-Metriken:** Sie umfassen verschiedene Maßnahmen wie Code-Duplizierung und zyklomatische Komplexität.
+Hohe Werte bedeuten hierbei auf hohe Schulden hin.
+
+**Code-Churn:** Code-Churn ist eine Metrik die die quantiät der codeveränderungen misst.
+Auch hier weißt ein hoher Wert auf Schulden hin.
+
+**Time-to-Market:** Mit zunehmenden Schulden daurt es länger neue Features zu implementieren, da Entwickler mit kompizierteren/unverständlicherem Code Arbeiten müssen.
+Eine Folge davon ist, dass sich er release der Softwarea verzögert.
+Die Metrik misst diese verzögerung.
+
+[16b]
 
 ---
 
 ###### SonarQube
 ***
+SonarQube ist eine Plattform für Codeanalysen, die technische Qualität von Quellcode misst.
 
+Das Tool unterstützt Entwickler die Qualität der Software zur überprüfen und zu verwalten um technische Schulden zu verringern.
+
+[17b]
 
 ---
 

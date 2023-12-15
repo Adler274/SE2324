@@ -189,9 +189,8 @@ Dadurch erhöht sich auch das Risoko and Buggs und Fehlern oder Sicherhetsproble
 [11b]
 
 ##### Implementation Debt
-Implementation Debt (auch Implementierungsschulden genannt) bezieht sich auf die Kompromisse und Unzulänglichkeiten, die während der 
+Implementation Debt (auch Implementierungsschulden genannt) bezieht sich auf die Kompromisse und Unzulänglichkeiten, die während der Implementierungsphase eines Softwareprojekts eingegangen wurden.
 
-Implementierungsphase eines Softwareprojekts eingegangen wurden.
 Dies kann beispielsweise unklaren oder nicht optimalen Code, fehlende Testabdeckung, Verstöße gegen Coding-Standards und andere Aspekte der Codequalität umfassen.
 
 Implementation Debt entsteht oft durch Zeitdruck oder Ressourcenbeschränkungen, die dazu führen, dass Entwickler kurzfristige Entscheidungen treffen, um bestimmte Funktionen schnell zu implementieren.
@@ -203,7 +202,7 @@ Um Implementation Debt zu reduzieren, ist es wichtig, regelmäßige Code-Reviews
 [12b]
 
 ##### Testing Debt
-Testing Debt beschreibt wenn die Software nicht genügend, fehlerhafte oder ungenau Tests enthält.
+Testing Debt beschreibt wenn die Software nicht genügend, fehlerhafte oder ungenaue Tests enthält.
 Es stellt also den Unterschied dar zwischen wovon man ausgeht, was das System funktionieren sollte und wie das System tatsächlich funktioniert (Oder eher nicht funktioniert).
 Wie bei den anderen Arten von Schulden sind auch hier wieder Zeitmangel, Recourcen knappheit und veränderung der Prioritäten die Ursachen.
 
@@ -245,7 +244,6 @@ Beispiele: Dies könnte eine nicht ausreichend durchdachte Architektur, unklare 
 ##### Erkennung von technischen Schulden
 Technische Schulden lassen sich mit verschiedenen vorgehensweisen Messen/Erkennen.
 
-[16b]
 ###### Metriken
 Es gibt verschiedene Metriken zur Messung von technischen Schulden.
 
