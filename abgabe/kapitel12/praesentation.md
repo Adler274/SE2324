@@ -6,25 +6,25 @@ class: center, middle
 
 ## Wartung von Software (Software Maintainance)
 
-
 Simon Fedrau, Sascha Hahn
 
 ---
 
 # Inhalt
 ***
-1. 
+1. Wartung von Software
 
-1.
+    1. Evolution von Software
+
+    1. Softare System Management
+
+    1. Technische Schulden
+
+        1. Technische Schulden Management
 
 1. Zusammenfassung
 
 1. Quellen
-
----
-
-### Fragen
-***
 
 ---
 
@@ -524,3 +524,45 @@ class: center, middle
 
 # Quellen
 ***
+
+[1b] :https://chat.openai.com
+
+[2b] :https://software-sanieren.de/was-ist-software-sanierung/
+
+[3b] :https://alokratnaparkhi8.medium.com/differences-between-code-smells-and-anti-patterns-d19351539f7f#:~:text=The%20most%20basic%20difference%20between,of%20hint%20and%20not%20patterns.
+
+[4b] :https://www.ip-insider.de/was-ist-system-management-systems-management-a-1113687/#:~:text=Das%20Systems%20Management%20ist%20in,Drucker%2C%20Endger%C3%A4te%20und%20vieles%20mehr.
+
+[5b] :https://rvprasad.medium.com/logging-monitoring-and-observability-219c043b5c81
+
+[6b] :https://www.splunk.com/de_de/data-insider/what-is-observability.html
+
+[7b] :https://chat.openai.com: Werkzeuge für software Management Prometheus, Grafana, Jaeger
+
+---
+
+# Quellen
+***
+[8b] :https://www.palladio-consulting.de/technische-schulden/#:~:text=Technical%20Debt%20oder%20kurz%20Tech,und%20k%C3%B6nnen%20IT%2DSystemfehler%20verursachen.
+
+[9b] :https://www.objectbay.com/blog/technische-schulden
+
+[10b] :https://www.google.com/search?q=software+architectural+debt+definition&sca_esv=591223588&rlz=1C1GCEA_enDE1022DE1022&sxsrf=AM9HkKnm0oqoROKTzxN84kEHDbRne4bniw%3A1702651146837&ei=CmV8ZZ3QMqTd7_UP67OrqAM&ved=0ahUKEwid_aHm1ZGDAxWk7rsIHevZCjUQ4dUDCBA&uact=5&oq=software+architectural+debt+definition&gs_lp=Egxnd3Mtd2l6LXNlcnAiJnNvZnR3YXJlIGFyY2hpdGVjdHVyYWwgZGVidCBkZWZpbml0aW9uMgUQIRigATIIECEYFhgeGB1IpAtQqgJYgQpwAXgBkAEAmAG3AaAB-QqqAQQwLjExuAEDyAEA-AEBwgIKEAAYRxjWBBiwA8ICCBAAGBYYHhgPwgIKECEYFhgeGA8YHcICBxAhGKABGAriAwQYACBBiAYBkAYC&sclient=gws-wiz-serp&safe=active&ssui=on
+
+[11b] :https://www.linkedin.com/advice/0/how-do-you-deal-documentation-debt-legacy#was-sind-dokumentationsschulden?
+
+[12b] ::https://chat.openai.com: Erkäre Implementation Debt
+
+[13b] :https://testsigma.com/guides/test-debt/
+
+[14b] :https://entwickler.de/programmierung/der-umgang-mit-technischen-schulden
+
+---
+
+# Quellen
+***
+[15b] :https://chat.openai.com: was sind operative und konzeptionelle Schulden?
+
+[16b] :https://www.centron.de/tutorial/was-sind-technische-schulden/#:~:text=Messung%20der%20technischen%20Schulden&text=Hier%20sind%20einige%20M%C3%B6glichkeiten%2C%20technische,auf%20hohe%20technische%20Schulden%20hin.
+
+[17b] :https://cloudogu.com/de/glossar/sonarqube/
