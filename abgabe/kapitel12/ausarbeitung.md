@@ -11,6 +11,9 @@
 #### Arten von Änderungen an Software
 ##### Korrektive, präventive, perfektionierende, adaptive Änderungen
 
+##### Software System Management
+##### Technische Schulden
+###### Management
 
 ### Sanierung von Software
 Software-Sanierung bezeichnet den Prozess der umfassenden Überarbeitung und Modernisierung von bestehender Software, um ihre Leistungsfähigkeit, Sicherheit und Wartbarkeit zu verbessern.
