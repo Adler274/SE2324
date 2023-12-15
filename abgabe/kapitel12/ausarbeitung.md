@@ -5,15 +5,95 @@
 ## Lernziele
 
 ## Wartung von Software (Software Maintainance)
-### Definition Software-Wartung und Legacy-Code
-### Evolution von Software
-#### Ursachen für Änderungen an Software
-#### Arten von Änderungen an Software
-##### Korrektive, präventive, perfektionierende, adaptive Änderungen
+***
 
-##### Software System Management
-##### Technische Schulden
-###### Management
+Die Wartung von Software, auch als Software Maintenance bekannt, bezieht sich auf den Prozess der Modifikation und Pflege einer Softwareanwendung nach ihrer ursprünglichen Entwicklung und Bereitstellung. Dieser Lebenszyklusaspekt ist entscheidend, um sicherzustellen, dass die Software effizient funktioniert, aktuell bleibt und den sich ändernden Anforderungen und Umgebungen gerecht wird. Die Softwarewartung umfasst verschiedene Aktivitäten, die im Allgemeinen in vier Kategorien unterteilt werden:
+
+1. Korrigierende Wartung (Corrective Maintenance):
+Ziel: Behebung von Fehlern oder Mängeln in der Software.
+Aktivitäten: Identifikation, Analyse und Beseitigung von Fehlern, um die Softwarestabilität zu gewährleisten.
+2. Adaptive Wartung (Adaptive Maintenance):
+Ziel: Anpassung der Software an Änderungen in der Umgebung, wie Betriebssystem-Upgrades oder Hardwareänderungen.
+Aktivitäten: Anpassung von Codes und Funktionen, um die Kompatibilität und Leistung sicherzustellen.
+3. Perfective Wartung (Perfective Maintenance):
+Ziel: Verbesserung der Softwareleistung, Funktionalität oder Benutzerfreundlichkeit.
+Aktivitäten: Hinzufügen neuer Funktionen, Optimierung von Algorithmen oder Verbesserung der Benutzeroberfläche.
+4. Preventive Wartung (Preventive Maintenance):
+Ziel: Verhinderung zukünftiger Probleme oder Fehlfunktionen.
+Aktivitäten: Überprüfung und Aktualisierung von Codes, um potenzielle Probleme zu identifizieren und zu beheben, bevor sie auftreten.
+
+[15a] [16a]
+
+### Definition Software-Wartung und Legacy-Code
+***
+
+**Software-Wartung** 
+In der Softwaretechnik bezeichnet der Begriff Softwarewartung „die Veränderung eines Softwareprodukts nach dessen Auslieferung, um Fehler zu beheben, Performanz oder andere Attribute zu verbessern oder Anpassungen an die veränderte Umgebung vorzunehmen. In Deutschland wird darüber hinaus geregelt: „Die Aufgabe der Wartung umfasst sämtliche Maßnahmen zur Erhaltung der Funktionsfähigkeit der eingesetzten IT-Verfahren und Software. Hierzu gehören auch erforderliche fachliche und technische Anpassungen der IT-Infrastruktur.. Diese gesetzliche Regelung grenzt hierbei bewusst die Softwarepflege gegenüber der Softwarewartung durch Fokussierung auf den Erhalt der Funktionsfähigkeit ab. 
+
+[17a]
+
+**Legacy-Code**
+
+Der Begriff Altsystem oder Legacy-System oder im engeren Sinne Legacy-Code bezeichnet in der Informatik eine etablierte, historisch gewachsene Anwendung im Bereich Unternehmenssoftware. Das englische Wort legacy ist in diesem Kontext ein weitgehend wertfreier Fachbegriff. Er kann aber umgangssprachlich auch negativ im Sinne einer lästigen „Hinterlassenschaft“ oder „Altlast“ im übertragenen Sinne verwendet werden. 
+
+[18a]
+
+### Evolution von Software
+***
+
+Software-Evolution ist ein Begriff aus der Softwaretechnik, im Speziellen aus der Softwarewartung, und beschreibt den Prozess, der folgt, nachdem ein Softwaresystem entwickelt und ausgeliefert wurde. Nach Auslieferung und Benutzung kommen neue Anforderungen dazu und alte Anforderungen verändern sich. Teile des Softwaresystems müssen möglicherweise korrigiert werden, da Fehler auftreten, die zuvor nicht bemerkt wurden. Das System muss an eine neue Plattform adaptiert werden. Die Performance muss verbessert werden und andere nichtfunktionale Anforderungen müssen überprüft werden.
+
+[19a]
+
+#### Ursachen für Änderungen an Software
+***
+
+  * Fehlerkorrektur (Bugfixing): Software enthält oft Fehler, die während oder nach der Entwicklung entdeckt werden. Änderungen sind erforderlich, um diese Fehler zu beheben und die Software zu stabilisieren.
+
+  * Neue Anforderungen: Kunden oder Benutzer können neue Anforderungen oder Funktionen an die Software stellen. Entwickler müssen die Software aktualisieren, um diesen neuen Anforderungen gerecht zu werden.
+
+  * Verbesserungen und Optimierungen: Auch wenn die Software funktioniert, können Entwickler Verbesserungen vornehmen, um die Leistung, Effizienz oder Benutzerfreundlichkeit zu steigern.
+
+  * Sicherheitsaktualisierungen: Wenn Sicherheitslücken entdeckt werden, müssen Softwareentwickler entsprechende Aktualisierungen bereitstellen, um die Software vor möglichen Angriffen zu schützen.
+
+  * Technologischer Fortschritt: Neue Technologien oder Plattformen können verfügbar werden, und die Software muss möglicherweise angepasst werden, um mit den neuesten Entwicklungen Schritt zu halten.
+
+  * Gesetzliche Anforderungen: Änderungen an Software können notwendig sein, um gesetzlichen Bestimmungen oder regulatorischen Anforderungen zu entsprechen.
+
+  * Hardwareänderungen: Wenn sich die zugrunde liegende Hardware ändert, kann es erforderlich sein, die Software anzupassen, um weiterhin kompatibel zu bleiben.
+
+  * Benutzerfeedback: Rückmeldungen von Benutzern können dazu führen, dass Entwickler Änderungen vornehmen, um die Benutzererfahrung zu verbessern oder auf bestimmte Bedürfnisse einzugehen.
+
+  * Lebenszyklus-Management: Software unterliegt einem Lebenszyklus, der Wartung, Unterstützung und schließlich die Ablösung durch eine neue Version oder ein neues Produkt umfassen kann.
+
+[20a]
+
+#### Arten von Änderungen an Software
+***
+Die Klassifizierung von Softwareänderungen nach ihrer Art erfolgt oft anhand von vier Haupttypen, korrektive, präventive, perfektionierende und adaptive Änderungen. 
+
+
+
+##### Korrektive, präventive, perfektionierende, adaptive Änderungen
+***
+
+  * Korrektive Änderungen:
+      Ziel: Behebung von Fehlern oder Bugs in der Software.
+      Warum: Diese Änderungen werden vorgenommen, um Probleme zu lösen, die während der Entwicklung oder nach der Bereitstellung entdeckt wurden.
+
+  * Präventive Änderungen:
+      Ziel: Vermeidung potenzieller zukünftiger Probleme oder Risiken.
+      Warum: Diese Änderungen werden durchgeführt, um mögliche Fehler oder Schwachstellen zu identifizieren und zu beheben, bevor sie zu ernsthaften Problemen führen.
+
+  * Perfektionierende Änderungen:
+      Ziel: Verbesserung der Leistung, Benutzerfreundlichkeit oder anderer Aspekte der Software, die nicht unbedingt mit Fehlern zusammenhängen.
+      Warum: Dies kann aufgrund von Benutzerfeedback, neuen Designprinzipien oder dem Wunsch nach kontinuierlicher Verbesserung geschehen.
+
+  * Adaptive Änderungen:
+      Ziel: Anpassung der Software an veränderte Umgebungen, Plattformen oder Anforderungen.
+      Warum: Änderungen sind erforderlich, um die Software mit neuen Technologien, Betriebssystemversionen oder sich ändernden Anforderungen in Einklang zu bringen.
+
+[21a]
 
 ### Sanierung von Software
 Software-Sanierung bezeichnet den Prozess der umfassenden Überarbeitung und Modernisierung von bestehender Software, um ihre Leistungsfähigkeit, Sicherheit und Wartbarkeit zu verbessern.

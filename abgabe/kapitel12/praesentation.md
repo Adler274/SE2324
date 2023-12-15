@@ -28,39 +28,85 @@ Simon Fedrau, Sascha Hahn
 
 ---
 
-## Wartung von Software (Software Maintainance)
+### Wartung von Software (Software Maintainance)
 ***
+Die Wartung von Software, auch als Software Maintenance bekannt, bezieht sich auf den Prozess der Modifikation und Pflege einer Softwareanwendung nach ihrer Bereitstellung.
 
+1. Korrigierende Wartung (Corrective Maintenance):
+    * Ziel: Behebung von Fehlern oder Mängeln in der Software.
+
+2. Adaptive Wartung (Adaptive Maintenance):
+    * Ziel: Anpassung der Software an Änderungen in der Umgebung, wie Betriebssystem-Upgrades.
+3. Perfective Wartung (Perfective Maintenance):
+    * Ziel: Verbesserung der Softwareleistung, Funktionalität.
+
+4. Preventive Wartung (Preventive Maintenance):
+    * Ziel: Verhinderung zukünftiger Probleme oder Fehlfunktionen.
+
+[15a] [16a]
 
 ---
-
 ### Definition Software-Wartung und Legacy-Code
 ***
 
+In der Softwaretechnik bezeichnet der Begriff Softwarewartung „die Veränderung eines Softwareprodukts nach dessen Auslieferung, um Fehler zu beheben, Performanz oder andere Attribute zu verbessern oder Anpassungen an die veränderte Umgebung vorzunehmen.
 
+
+**Legacy-Code**
+
+Der Begriff Altsystem oder Legacy-System oder im engeren Sinne Legacy-Code bezeichnet in der Informatik eine etablierte, historisch gewachsene Anwendung im Bereich Unternehmenssoftware
+
+
+[17a]
 ---
-
 ### Evolution von Software
 ***
 
+Software-Evolution ist ein Begriff aus der Softwaretechnik, im Speziellen aus der Softwarewartung, und beschreibt den Prozess, der folgt, nachdem ein Softwaresystem entwickelt und ausgeliefert wurde. Nach Auslieferung und Benutzung kommen neue Anforderungen dazu und alte Anforderungen verändern sich. Teile des Softwaresystems müssen möglicherweise korrigiert werden, da Fehler auftreten, die zuvor nicht bemerkt wurden. Das System muss an eine neue Plattform adaptiert werden. Die Performance muss verbessert werden und andere nichtfunktionale Anforderungen müssen überprüft werden.
+
+[19a]
 
 ---
-
-#### Ursachen für Änderungen an Software
+### Ursachen für Änderungen an Software
 ***
 
+* Fehlerkorrektur (Bugfixing)
 
+* Neue Anforderungen
+
+* Verbesserungen und Optimierungen
+
+* Sicherheitsaktualisierungen
+* Technologischer Fortschritt
+
+* Gesetzliche Anforderungen
+* Hardwareänderungen
+
+* Benutzerfeedback
+* Lebenszyklus-Management
+
+[20a]
 ---
-
 #### Arten von Änderungen an Software
 ***
-
+Die Klassifizierung von Softwareänderungen nach ihrer Art erfolgt oft anhand von vier Haupttypen, korrektive, präventive, perfektionierende und adaptive Änderungen. 
 
 ---
-
-##### Korrektive, präventive, perfektionierende, adaptive Änderungen
+### Korrektive, präventive, perfektionierende, adaptive Änderungen
 ***
+* Korrektive Änderungen:
+    Ziel: Behebung von Fehlern oder Bugs in der Software.
 
+* Präventive Änderungen:
+    Ziel: Vermeidung potenzieller zukünftiger Probleme oder Risiken.
+
+* Perfektionierende Änderungen:
+    Ziel: Verbesserung der Leistung, Benutzerfreundlichkeit oder anderer Aspekte der Software, die nicht unbedingt mit Fehlern zusammenhängen.
+
+* Adaptive Änderungen:
+    Ziel: Anpassung der Software an veränderte Umgebungen, Plattformen oder Anforderungen.
+
+[21a]
 
 ---
 
@@ -566,3 +612,45 @@ class: center, middle
 [16b] :https://www.centron.de/tutorial/was-sind-technische-schulden/#:~:text=Messung%20der%20technischen%20Schulden&text=Hier%20sind%20einige%20M%C3%B6glichkeiten%2C%20technische,auf%20hohe%20technische%20Schulden%20hin.
 
 [17b] :https://cloudogu.com/de/glossar/sonarqube/
+---
+
+# Quellen
+***
+[1a]  : https://aws.amazon.com/de/what-is/sdlc/
+
+[2a]  : https://de.wikipedia.org/wiki/Vorgehensmodell_zur_Softwareentwicklung
+
+[3a]  : https://de.wikipedia.org/wiki/Wasserfallmodell
+
+[4a]  : https://de.wikipedia.org/wiki/V-Modell
+
+[5a]  : https://fh-bielefeld-mif-sw-engineerin.gitbooks.io/klausurthemen/content/continuous-software-engineering/Agile-Vorgehensmodelle.html#:~:text=Agile%20Vorgehensmodelle%20sind%20eine%20Methode,%2DAufwand%20verbunden%20sind%2C%20abl%C3%B6sen.
+
+[6a]  : https://www.rewion.com/agiles-it-projektmanagement-vorgehensmodelle/
+
+[7a]  : https://de.wikipedia.org/wiki/Demingkreis
+
+[8a]  : https://karrierebibel.de/pdca-zyklus/
+
+---
+
+# Quellen
+***
+
+[9a]  : https://waydev.co/ooda-agile-data-driven/
+
+[10a] : https://digitaleneuordnung.de/blog/stacey-matrix/
+
+[11a] : https://www.heise.de/blog/Extreme-Programming-Scrum-Kanban-was-fuer-wen-4951363.html
+
+[12a] : https://de.wikipedia.org/wiki/Evolution%C3%A4res_Design
+
+[13a] : https://de.wikipedia.org/wiki/Prototyping_(Softwareentwicklung)
+
+[14a] : https://chat.openai.com/ frage: Schreib mir einen Vergleich zwischen den Agilen Vorgehensmodellen  und den Evolutionären Vorgehensmodellen 
+
+[15a] : https://cpl.thalesgroup.com/de/software-monetization/four-types-of-software-maintenance
+
+[16a] : https://www.geeksforgeeks.org/software-engineering-software-maintenance/
+
+[17a] : https://de.wikipedia.org/wiki/Softwarewartung
